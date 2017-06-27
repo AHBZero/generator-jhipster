@@ -37,6 +37,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 <%_ } _%>
 
 <%_ if (databaseType === 'sql') { _%>
+import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 <%_ } _%>
 import javax.validation.constraints.NotNull;
@@ -52,11 +53,11 @@ import java.time.Instant;
  * A user.
  */<% if (databaseType === 'sql') { %>
 @Entity
-@Table(name = "jhi_user")<% } %>
+@Table(name = "user")<% } %>
 <%_ if (hibernateCache !== 'no' && databaseType === 'sql') { if (hibernateCache === 'infinispan') { _%>
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE) <%_ } else { _%>
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE) <%_ } } _%><% if (databaseType === 'mongodb') { %>
-@Document(collection = "jhi_user")<% } %><% if (databaseType === 'cassandra') { %>
+@Document(collection = "user")<% } %><% if (databaseType === 'cassandra') { %>
 @Table(name = "user")<% } %><% if (searchEngine === 'elasticsearch') { %>
 @Document(indexName = "user")<% } %>
 public class User<% if (databaseType === 'sql' || databaseType === 'mongodb') { %> extends AbstractAuditingEntity<% } %> implements Serializable {
@@ -65,12 +66,13 @@ public class User<% if (databaseType === 'sql' || databaseType === 'mongodb') { 
 <% if (databaseType === 'sql') { %>
     @Id
     <%_ if (prodDatabaseType === 'mysql' || prodDatabaseType === 'mariadb') { _%>
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
     <%_ }  else { _%>
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
     @SequenceGenerator(name = "sequenceGenerator")
     <%_ } _%>
-    private Long id;<% } %><% if (databaseType === 'mongodb') { %>
+    private String id;<% } %><% if (databaseType === 'mongodb') { %>
     @Id
     private String id;<% } %><% if (databaseType === 'cassandra') { %>
     @PartitionKey
@@ -150,7 +152,7 @@ public class User<% if (databaseType === 'sql' || databaseType === 'mongodb') { 
     @JsonIgnore<% if (databaseType === 'sql') { %>
     @ManyToMany
     @JoinTable(
-        name = "jhi_user_authority",
+        name = "user_authority",
         joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
         inverseJoinColumns = {@JoinColumn(name = "authority_name", referencedColumnName = "name")})
     <%_ if (hibernateCache !== 'no') { if (hibernateCache === 'infinispan') { _%>

@@ -24,6 +24,7 @@ import org.springframework.stereotype.Repository;
 import com.datastax.driver.core.*;
 import com.datastax.driver.mapping.Mapper;
 import com.datastax.driver.mapping.MappingManager;<% } %><% if (databaseType === 'sql') { %>
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.*;<% if (fieldsContainOwnerManyToMany==true) { %>
 import org.springframework.data.repository.query.Param;<% } %>
 <%_ let importList = fieldsContainOwnerManyToMany;
@@ -50,21 +51,12 @@ import java.util.Set;
 import java.util.UUID;<% } %>
 
 <%_ if (databaseType === 'sql') { _%>
-/**
- * Spring Data JPA repository for the <%= entityClass %> entity.
- */
 <%_ } if (databaseType === 'mongodb') { _%>
-/**
- * Spring Data MongoDB repository for the <%= entityClass %> entity.
- */
 <%_ } if (databaseType === 'cassandra') { _%>
-/**
- * Cassandra repository for the <%= entityClass %> entity.
- */
 <%_ } if (databaseType === 'sql' || databaseType === 'mongodb') { _%>
 @SuppressWarnings("unused")
 @Repository
-public interface <%=entityClass%>Repository extends <% if (databaseType === 'sql') { %>JpaRepository<% } %><% if (databaseType === 'mongodb') { %>MongoRepository<% } %><<%=entityClass%>,<%= pkType %>> {
+public interface <%=entityClass%>Repository extends <% if (databaseType === 'sql') { %>JpaRepository<% } %><% if (databaseType === 'mongodb') { %>MongoRepository<% } %><<%=entityClass%>, <%= pkType %>>, <% if (databaseType === 'sql') { %>JpaSpecificationExecutor<<%=entityClass%>><% } %> {
     <%_ for (idx in relationships) {
         if (relationships[idx].relationshipType === 'many-to-one' && relationships[idx].otherEntityName === 'user') { _%>
 
@@ -78,7 +70,7 @@ public interface <%=entityClass%>Repository extends <% if (databaseType === 'sql
 
     @Query("select <%= entityTableName %> from <%= entityClass %> <%= entityTableName %><% for (idx in relationships) {
     if (relationships[idx].relationshipType === 'many-to-many' && relationships[idx].ownerSide === true) { %> left join fetch <%=entityTableName%>.<%=relationships[idx].relationshipFieldNamePlural%><%} }%> where <%=entityTableName%>.id =:id")
-    <%=entityClass%> findOneWithEagerRelationships(@Param("id") Long id);
+    <%=entityClass%> findOneWithEagerRelationships(@Param("id") String id);
     <% } %>
 }
 <%_ } if (databaseType === 'cassandra') { _%>

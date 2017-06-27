@@ -62,9 +62,6 @@ import java.util.stream.StreamSupport;<% } %><% if (searchEngine === 'elasticsea
 
 import static org.elasticsearch.index.query.QueryBuilders.*;<% } %>
 
-/**
- * REST controller for managing <%= entityClass %>.
- */
 @RestController
 @RequestMapping("/api")
 public class <%= entityClass %>Resource {
@@ -77,13 +74,6 @@ public class <%= entityClass %>Resource {
     const instanceName = (dto === 'mapstruct') ? entityInstance + 'DTO' : entityInstance;
     _%><%- include('../../common/inject_template', {viaService: viaService, constructorName: entityClass + 'Resource'}); -%>
 
-    /**
-     * POST  /<%= entityApiUrl %> : Create a new <%= entityInstance %>.
-     *
-     * @param <%= instanceName %> the <%= instanceName %> to create
-     * @return the ResponseEntity with status 201 (Created) and with body the new <%= instanceName %>, or with status 400 (Bad Request) if the <%= entityInstance %> has already an ID
-     * @throws URISyntaxException if the Location URI syntax is incorrect
-     */
     @PostMapping("/<%= entityApiUrl %>")
     @Timed
     public ResponseEntity<<%= instanceType %>> create<%= entityClass %>(<% if (validation) { %>@Valid <% } %>@RequestBody <%= instanceType %> <%= instanceName %>) throws URISyntaxException {
@@ -96,20 +86,11 @@ public class <%= entityClass %>Resource {
             .body(result);
     }
 
-    /**
-     * PUT  /<%= entityApiUrl %> : Updates an existing <%= entityInstance %>.
-     *
-     * @param <%= instanceName %> the <%= instanceName %> to update
-     * @return the ResponseEntity with status 200 (OK) and with body the updated <%= instanceName %>,
-     * or with status 400 (Bad Request) if the <%= instanceName %> is not valid,
-     * or with status 500 (Internal Server Error) if the <%= instanceName %> couldn't be updated
-     * @throws URISyntaxException if the Location URI syntax is incorrect
-     */
-    @PutMapping("/<%= entityApiUrl %>")
+    @PutMapping("/<%= entityApiUrl %>/{id}")
     @Timed
-    public ResponseEntity<<%= instanceType %>> update<%= entityClass %>(<% if (validation) { %>@Valid <% } %>@RequestBody <%= instanceType %> <%= instanceName %>) throws URISyntaxException {
+    public ResponseEntity<<%= instanceType %>> update<%= entityClass %>(<% if (validation) { %>@Valid <% } %>@RequestBody <%= instanceType %> <%= instanceName %>, String id) throws URISyntaxException {
         log.debug("REST request to update <%= entityClass %> : {}", <%= instanceName %>);
-        if (<%= instanceName %>.getId() == null) {
+        if (<%= instanceName %>.getId() == null || id == null) {
             return create<%= entityClass %>(<%= instanceName %>);
         }<%- include('../../common/save_template', {viaService: viaService, returnDirectly: false}); -%>
         return ResponseEntity.ok()
@@ -117,22 +98,9 @@ public class <%= entityClass %>Resource {
             .body(result);
     }
 
-    /**
-     * GET  /<%= entityApiUrl %> : get all the <%= entityInstancePlural %>.
-     *<% if (pagination !== 'no') { %>
-     * @param pageable the pagination information<% } if (fieldsContainNoOwnerOneToOne) { %>
-     * @param filter the filter of the request<% } %>
-     * @return the ResponseEntity with status 200 (OK) and the list of <%= entityInstancePlural %> in body
-     */
     @GetMapping("/<%= entityApiUrl %>")
     @Timed<%- include('../../common/get_all_template', {viaService: viaService}); -%>
 
-    /**
-     * GET  /<%= entityApiUrl %>/:id : get the "id" <%= entityInstance %>.
-     *
-     * @param id the id of the <%= instanceName %> to retrieve
-     * @return the ResponseEntity with status 200 (OK) and with body the <%= instanceName %>, or with status 404 (Not Found)
-     */
     @GetMapping("/<%= entityApiUrl %>/{id}")
     @Timed
     public ResponseEntity<<%= instanceType %>> get<%= entityClass %>(@PathVariable <%= pkType %> id) {
@@ -140,12 +108,6 @@ public class <%= entityClass %>Resource {
         return ResponseUtil.wrapOrNotFound(Optional.ofNullable(<%= instanceName %>));
     }
 
-    /**
-     * DELETE  /<%= entityApiUrl %>/:id : delete the "id" <%= entityInstance %>.
-     *
-     * @param id the id of the <%= instanceName %> to delete
-     * @return the ResponseEntity with status 200 (OK)
-     */
     @DeleteMapping("/<%= entityApiUrl %>/{id}")
     @Timed
     public ResponseEntity<Void> delete<%= entityClass %>(@PathVariable <%= pkType %> id) {
@@ -153,14 +115,6 @@ public class <%= entityClass %>Resource {
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id<% if (pkType !== 'String') { %>.toString()<% } %>)).build();
     }<% if (searchEngine === 'elasticsearch') { %>
 
-    /**
-     * SEARCH  /_search/<%= entityApiUrl %>?query=:query : search for the <%= entityInstance %> corresponding
-     * to the query.
-     *
-     * @param query the query of the <%= entityInstance %> search<% if (pagination !== 'no') { %>
-     * @param pageable the pagination information<% } %>
-     * @return the result of the search
-     */
     @GetMapping("/_search/<%= entityApiUrl %>")
     @Timed<%- include('../../common/search_template', {viaService: viaService}); -%><% } %>
 }

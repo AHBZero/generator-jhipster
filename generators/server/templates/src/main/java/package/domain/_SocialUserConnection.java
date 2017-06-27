@@ -30,7 +30,7 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 <%_ } _%>
 <%_ if (databaseType === 'sql') { _%>
-
+import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 <%_ } _%>
 import javax.validation.constraints.NotNull;
@@ -44,11 +44,11 @@ import java.util.Objects;
  * A Social user.
  */<% if (databaseType === 'sql') { %>
 @Entity
-@Table(name = "jhi_social_user_connection")
+@Table(name = "social_user_connection")
 <%_ if (hibernateCache !== 'no') { if (hibernateCache === 'infinispan') { _%>
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE) <%_ } else { _%>
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)<%_ } } _%><% } %><% if (databaseType === 'mongodb') { %>
-@Document(collection = "jhi_social_user_connection")
+@Document(collection = "social_user_connection")
 @CompoundIndexes(
     @CompoundIndex(name = "user2-prov-provusr-idx", unique = true, def = "{'user_id': 1, 'provider_id': 1, 'provider_user_id': 1}")
 )<% } %>
@@ -58,12 +58,13 @@ public class SocialUserConnection implements Serializable {
 <% if (databaseType === 'sql') { %>
     @Id
     <%_ if (prodDatabaseType === 'mysql' || prodDatabaseType === 'mariadb') { _%>
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
     <%_ }  else { _%>
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
     @SequenceGenerator(name = "sequenceGenerator")
     <%_ } _%>
-    private Long id;<% } %><% if (databaseType === 'mongodb') { %>
+    private String id;<% } %><% if (databaseType === 'mongodb') { %>
     @Id
     private String id;<% } %>
 

@@ -1,29 +1,20 @@
 {
-  "name": "generator-jhipster",
+  "name": "generator-esparta-hipster",
   "version": "4.5.6",
-  "description": "Spring Boot + Angular in one handy generator",
+  "description": "Fork from jhipster",
   "files": [
     "cli",
     "generators"
   ],
   "keywords": [
-    "yeoman-generator",
-    "Java",
-    "Spring",
-    "Spring Boot",
-    "Spring Security",
-    "JPA",
-    "Hibernate",
-    "AngularJS",
-    "Angular",
-    "Twitter Bootstrap"
+    "esparta.io"
   ],
-  "homepage": "http://jhipster.github.io/",
-  "bugs": "https://github.com/jhipster/generator-jhipster/issues",
+  "homepage": "http://esparta.io/",
+  "bugs": "https://github.com/esparta-io/generator-jhipster/issues",
   "author": {
-    "name": "Julien Dubois",
+    "name": "Esparta",
     "email": "",
-    "url": "https://github.com/jdubois"
+    "url": "https://github.com/esparta-io"
   },
   "main": "cli/index.js",
   "bin": {

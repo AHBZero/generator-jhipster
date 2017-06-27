@@ -53,9 +53,7 @@ import java.util.stream.StreamSupport;<% } %><% if (searchEngine === 'elasticsea
 
 import static org.elasticsearch.index.query.QueryBuilders.*;<% } %>
 
-/**
- * Service Implementation for managing <%= entityClass %>.
- */
+
 @Service<% if (databaseType === 'sql') { %>
 @Transactional<% } %>
 public class <%= serviceClassName %> <% if (service === 'serviceImpl') { %>implements <%= entityClass %>Service<% } %>{
@@ -63,12 +61,7 @@ public class <%= serviceClassName %> <% if (service === 'serviceImpl') { %>imple
     private final Logger log = LoggerFactory.getLogger(<%= serviceClassName %>.class);
 <%- include('../../common/inject_template', {viaService: viaService, constructorName: serviceClassName}); -%>
 
-    /**
-     * Save a <%= entityInstance %>.
-     *
-     * @param <%= instanceName %> the entity to save
-     * @return the persisted entity
-     */
+
     <%_ if (service === 'serviceImpl') { _%>
     @Override
     <%_ } _%>
@@ -76,12 +69,7 @@ public class <%= serviceClassName %> <% if (service === 'serviceImpl') { %>imple
         log.debug("Request to save <%= entityClass %> : {}", <%= instanceName %>);<%- include('../../common/save_template', {viaService: viaService, returnDirectly: true}); -%>
     }
 
-    /**
-     *  Get all the <%= entityInstancePlural %>.
-     *<% if (pagination !== 'no') { %>
-     *  @param pageable the pagination information<% } %>
-     *  @return the list of entities
-     */
+
     <%_ if (service === 'serviceImpl') { _%>
     @Override
     <%_ } _%>
@@ -100,12 +88,7 @@ public class <%= serviceClassName %> <% if (service === 'serviceImpl') { %>imple
         <%_ } _%>
     }
 <%- include('../../common/get_filtered_template'); -%>
-    /**
-     *  Get one <%= entityInstance %> by id.
-     *
-     *  @param id the id of the entity
-     *  @return the entity
-     */
+
     <%_ if (service === 'serviceImpl') { _%>
     @Override
     <%_ } _%>
@@ -116,11 +99,7 @@ public class <%= serviceClassName %> <% if (service === 'serviceImpl') { %>imple
         log.debug("Request to get <%= entityClass %> : {}", id);<%- include('../../common/get_template', {viaService: viaService, returnDirectly:true}); -%>
     }
 
-    /**
-     *  Delete the  <%= entityInstance %> by id.
-     *
-     *  @param id the id of the entity
-     */
+
     <%_ if (service === 'serviceImpl') { _%>
     @Override
     <%_ } _%>
@@ -129,13 +108,7 @@ public class <%= serviceClassName %> <% if (service === 'serviceImpl') { %>imple
     }
     <%_ if (searchEngine === 'elasticsearch') { _%>
 
-    /**
-     * Search for the <%= entityInstance %> corresponding to the query.
-     *
-     *  @param query the query of the search<% if (pagination !== 'no') { %>
-     *  @param pageable the pagination information<% } %>
-     *  @return the list of entities
-     */
+  
     <%_ if (service === 'serviceImpl') { _%>
     @Override
     <%_ } _%>

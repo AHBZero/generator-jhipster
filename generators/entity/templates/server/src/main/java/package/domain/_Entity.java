@@ -40,7 +40,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 <%_ } if (searchEngine === 'elasticsearch') { _%>
 import org.springframework.data.elasticsearch.annotations.Document;
 <%_ } if (databaseType === 'sql') { _%>
-
+import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 <%_ } if (validation) { _%>
 import javax.validation.constraints.*;
@@ -70,9 +70,7 @@ import <%=packageName%>.domain.enumeration.<%= element %>;
 <%_ }); _%>
 
 <%_ if (typeof javadoc == 'undefined') { _%>
-/**
- * A <%= entityClass %>.
- */
+
 <%_ } else { _%>
 <%- formatAsClassJavadoc(javadoc) %>
 @ApiModel(description = "<%- formatAsApiDescription(javadoc) %>")
@@ -100,12 +98,13 @@ public class <%= entityClass %> implements Serializable {
 <% if (databaseType === 'sql') { %>
     @Id
     <%_ if (prodDatabaseType === 'mysql' || prodDatabaseType === 'mariadb') { _%>
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
     <%_ }  else { _%>
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
     @SequenceGenerator(name = "sequenceGenerator")
     <%_ } _%>
-    private Long id;
+    private String id;
 <%_ } if (databaseType === 'mongodb') { _%>
     @Id
     private String id;
@@ -248,11 +247,11 @@ public class <%= entityClass %> implements Serializable {
 
     <%_ }
     } _%>
-    public <% if (databaseType === 'sql') { %>Long<% } %><% if (databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %> getId() {
+    public <% if (databaseType === 'sql') { %>String<% } %><% if (databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %> getId() {
         return id;
     }
 
-    public void setId(<% if (databaseType === 'sql') { %>Long<% } %><% if (databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %> id) {
+    public void setId(<% if (databaseType === 'sql') { %>String<% } %><% if (databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %> id) {
         this.id = id;
     }
 <%_ for (idx in fields) {

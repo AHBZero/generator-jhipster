@@ -35,12 +35,9 @@ import javax.persistence.Lob;<% } %>
 import <%=packageName%>.domain.enumeration.<%= fields[idx].fieldType %>;
 <%_ } } _%>
 
-/**
- * A DTO for the <%= entityClass %> entity.
- */
 public class <%= entityClass %>DTO implements Serializable {
 <% if (databaseType === 'sql') { %>
-    private Long id;<% } %><% if (databaseType === 'mongodb') { %>
+    private String id;<% } %><% if (databaseType === 'mongodb') { %>
     private String id;<% } %><% if (databaseType === 'cassandra') { %>
     private UUID id;<% } %>
     <%_ for (idx in fields) {
@@ -89,11 +86,9 @@ public class <%= entityClass %>DTO implements Serializable {
     private Set<<%= otherEntityNameCapitalized %>DTO> <%= relationshipFieldNamePlural %> = new HashSet<>();
     <%_ } else if (relationshipType === 'many-to-one' || (relationshipType === 'one-to-one' && ownerSide === true)) { _%>
 
-    private Long <%= relationshipFieldName %>Id;
-    <%_ if (otherEntityFieldCapitalized !='Id' && otherEntityFieldCapitalized !== '') { _%>
+    private <%= otherEntityNameCapitalized %>DTO <%= relationshipFieldName %>;
 
-    private String <%= relationshipFieldName %><%= otherEntityFieldCapitalized %>;
-    <%_ } } } _%>
+    <%_  } } _%>
 
     public <% if (databaseType === 'sql') { %>Long<% } %><% if (databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %> getId() {
         return id;
