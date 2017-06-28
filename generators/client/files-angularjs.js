@@ -74,7 +74,27 @@ const files = {
             templates: [
                 { file: 'content/images/_hipster.jpg', method: 'copy' },
                 { file: 'content/images/_hipster2x.jpg', method: 'copy' },
-                { file: 'content/images/_logo-jhipster.png', method: 'copy' }
+                { file: 'content/images/_logo-jhipster.png', method: 'copy' },
+                { file: 'content/images/_edit_active.png', method: 'copy' },
+                { file: 'content/images/_edit.png', method: 'copy' },
+                { file: 'content/images/_email_active.png', method: 'copy' },
+                { file: 'content/images/_email.png', method: 'copy' },
+                { file: 'content/images/_facebook.png', method: 'copy' },
+                { file: 'content/images/_instagram.png', method: 'copy' },
+                { file: 'content/images/_no_user.png', method: 'copy' },
+                { file: 'content/images/_notification.png', method: 'copy' },
+                { file: 'content/images/_password_active.png', method: 'copy' },
+                { file: 'content/images/_password.png', method: 'copy' },
+                { file: 'content/images/_phone.png', method: 'copy' },
+                { file: 'content/images/_update.png', method: 'copy' },
+                { file: 'content/images/_user_active.png', method: 'copy' },
+                { file: 'content/images/_user.png', method: 'copy' },
+                { file: 'content/images/_view_active.png', method: 'copy' },
+                { file: 'content/images/_view.png', method: 'copy' },
+                { file: 'content/images/_whatsapp_2.png', method: 'copy' },
+                { file: 'content/images/_whatsapp_3_active.png', method: 'copy' },
+                { file: 'content/images/_whatsapp_3.png', method: 'copy' },
+                { file: 'content/images/_whatsapp.png', method: 'copy' }
             ]
         }
     ],

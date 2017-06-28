@@ -25,15 +25,12 @@ const ngValidators = './ng_validators';
 
     <jhi-alert-error></jhi-alert-error>
 
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
-                ng-click="vm.clear()">&times;</button>
-        <h4 class="modal-title" id="my<%= entityClass %>Label" data-translate="<%= keyPrefix %>home.createOrEditLabel">Create or edit a <%= entityClassHumanized %></h4>
-    </div>
-    <div class="modal-body">
+    <h4 class="form-section" id="my<%= entityClass %>Label" data-translate="<%= keyPrefix %>home.createOrEditLabel">Create or edit a <%= entityClassHumanized %></h4>
 
-        <div class="form-group" ng-show="vm.<%=entityInstance %>.id">
-            <label for="id" data-translate="global.field.id">ID</label>
+    <div class="row row-form">
+
+        <div class="form-group col-xs-12 col-sm-6" ng-show="vm.<%=entityInstance %>.id">
+            <label class="control-label" for="id" data-translate="global.field.id">ID</label>
             <input type="text" class="form-control" id="id" name="id"
                     ng-model="vm.<%=entityInstance %>.id" readonly />
         </div>
@@ -57,7 +54,7 @@ const ngValidators = './ng_validators';
             } else if ((fieldType === 'byte[]' || fieldType === 'ByteBuffer') && fieldTypeBlobContent !== 'text') {
                 fieldInputType = 'hidden';
             } _%>
-        <div class="form-group"<% if ((fieldType === 'byte[]' || fieldType === 'ByteBuffer') && fieldTypeBlobContent !== 'text') { %> ngf-drop ngf-change="vm.set<%=fieldNameCapitalized %>($file, vm.<%= entityInstance %>)"<% if (fieldTypeBlobContent === 'image') { %> ngf-pattern="'image/*'"<% } %><% } %>>
+        <div class="form-group form-group col-xs-12 col-sm-6"<% if ((fieldType === 'byte[]' || fieldType === 'ByteBuffer') && fieldTypeBlobContent !== 'text') { %> ngf-drop ngf-change="vm.set<%=fieldNameCapitalized %>($file, vm.<%= entityInstance %>)"<% if (fieldTypeBlobContent === 'image') { %> ngf-pattern="'image/*'"<% } %><% } %>>
             <label class="control-label" data-translate="<%= translationKey %>" for="field_<%= fieldName %>"><%= fieldNameHumanized %></label>
             <%_ if (fields[idx].fieldIsEnum) { _%>
             <select class="form-control" name="<%= fieldName %>" ng-model="vm.<%= entityInstance %>.<%= fieldName %>" id="field_<%= fieldName %>"<% if (fields[idx].fieldValidate === true && fields[idx].fieldValidateRules.indexOf('required') !== -1) { %> required<% } %>>
@@ -73,7 +70,10 @@ const ngValidators = './ng_validators';
             <div>
                     <%_ if (fieldTypeBlobContent === 'image') { _%>
                 <img data-ng-src="{{'data:' + vm.<%=entityInstance %>.<%=fieldName%>ContentType + ';base64,' + vm.<%=entityInstance %>.<%=fieldName%>}}" style="max-height: 100px;" ng-if="vm.<%= entityInstance %>.<%= fieldName %>" alt="<%=entityInstance %> image"/>
+                <img src="../content/images/no_user.png"
+                 ng-if="!vm.<%=entityInstance %>.<%=fieldName%>.file">
                     <%_ } _%>
+
                 <div ng-if="vm.<%= entityInstance %>.<%= fieldName %>" class="help-block clearfix">
                     <%_ if (fieldTypeBlobContent === 'any') { _%>
                     <a class="pull-left" ng-click="vm.openFile(vm.<%= entityInstance %>.<%= fieldName %>ContentType, vm.<%= entityInstance %>.<%= fieldName %>)" data-translate="entity.action.open">open</a><br>
@@ -81,14 +81,14 @@ const ngValidators = './ng_validators';
                     <%_ } else { _%>
                     <span class="pull-left">{{vm.<%= entityInstance %>.<%= fieldName %>ContentType}}, {{vm.byteSize(vm.<%= entityInstance %>.<%= fieldName %>)}}</span>
                     <%_ } _%>
-                    <button type="button" ng-click="vm.<%= entityInstance %>.<%= fieldName %>=null;vm.<%= entityInstance %>.<%= fieldName %>ContentType=null;"
-                            class="btn btn-default btn-xs pull-right">
-                        <span class="glyphicon glyphicon-remove"></span>
-                    </button>
+                    <a type="button" ng-click="vm.<%= entityInstance %>.<%= fieldName %>=null;vm.<%= entityInstance %>.<%= fieldName %>ContentType=null;"
+                            class="form-remove-image">
+                        <span class="fa fa-times"></span>
+                    </a>
                 </div>
-                <button type="button" ngf-select class="btn btn-default btn-block"
+                <button type="button" ngf-select class="btn btn-sm btn-warning btn-leaked"
                         ngf-change="vm.set<%=fieldNameCapitalized %>($file, vm.<%= entityInstance %>)"<% if (fieldTypeBlobContent === 'image') { %> accept="image/*" data-translate="entity.action.addimage"<% } else { %> data-translate="entity.action.addblob"<% } %>>
-                    <% if (fieldTypeBlobContent === 'image') { %>Add image<% } else { %>Add blob<% } %>
+                    <% if (fieldTypeBlobContent === 'image') { %>Add image<% } else { %>Add file<% } %>
                 </button>
             </div>
                 <%_ } _%>
@@ -209,7 +209,7 @@ const ngValidators = './ng_validators';
             const selectizeRender = relationships[idx].selectizeRender;
              _%>
             <%_ if (relationshipType === 'many-to-one' || (relationshipType === 'one-to-one' && ownerSide === true && otherEntityName === 'user')) { _%>
-        <div class="form-group">
+        <div class="form-group form-group col-xs-12 col-sm-6">
             <label data-translate="<%= translationKey %>" for="field_<%= relationshipName %>"><%= relationshipNameHumanized %></label>
             <%_ if (selectize) { _%>
             <input selectize="{maxItems: 1, create: false, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
@@ -233,7 +233,7 @@ const ngValidators = './ng_validators';
            <%_ } _%>
         </div>
             <%_ } else if (relationshipType === 'one-to-one' && ownerSide === true) { _%>
-        <div class="form-group">
+        <div class="form-group form-group col-xs-12 col-sm-6">
             <label data-translate="<%= translationKey %>" for="field_<%= relationshipName %>"><%= relationshipNameHumanized %></label>
             <%_ if (selectize) { _%>
             <input selectize="{maxItems: 1, create: false, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
@@ -258,7 +258,7 @@ const ngValidators = './ng_validators';
 
         </div>
             <%_ } else if (relationshipType === 'many-to-many' && relationships[idx].ownerSide === true) { _%>
-        <div class="form-group">
+        <div class="form-group form-group col-xs-12 col-sm-6">
             <label data-translate="<%= translationKey %>" for="field_<%= relationshipName %>"><%= relationshipNameHumanized %></label>
             <%_ if (selectize) { _%>
             <input selectize="{maxItems: 1, create: false, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
@@ -290,13 +290,30 @@ const ngValidators = './ng_validators';
             <%_ } _%>
         <%_ } _%>
     </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
-            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
-        </button>
-        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
-            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
-        </button>
+
+    <div class="form-footer">
+      <!-- botões -->
+      <div class="row row-form">
+        <div class="col-xs-12 text-right">
+          <!-- cancelar -->
+          <button class="btn btn-link"
+                  type="button"
+                  data-dismiss="modal"
+                  ng-click="vm.clear()">
+            <span data-translate="entity.action.cancel">Cancel</span>
+          </button>
+          <!-- end cancelar -->
+
+          <!-- salvar -->
+          <button class="btn btn-success"
+                  type="submit"
+                  ng-disabled="editForm.$invalid || vm.isSaving">
+            <span data-translate="entity.action.save">Save</span>
+          </button>
+          <!-- end salvar -->
+        </div>
+      </div>
+      <!-- end botões -->
     </div>
   </form>
 </div>
