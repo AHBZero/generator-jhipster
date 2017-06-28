@@ -36,6 +36,8 @@ public interface <%= entityClass %>Service {
 
     <%= instanceType %> save(<%= instanceType %> <%= instanceName %>);
 
+    <%= instanceType %> update(<%= instanceType %> <%= instanceName %>);
+
     <% if (pagination !== 'no') { %>Page<<%= instanceType %><% } else { %>List<<%= instanceType %><% } %>> findAll(<% if (pagination !== 'no') { %>Pageable pageable<% } %>);
 <% for (idx in relationships) { if (relationships[idx].relationshipType === 'one-to-one' && relationships[idx].ownerSide !== true) { -%>
 

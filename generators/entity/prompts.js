@@ -981,6 +981,13 @@ function askForRelationship(done) {
             default: 0
         },
         {
+            when: response => response.relationshipAdd === true,
+            type: 'confirm',
+            name: 'selectize',
+            message: 'Do you want to add a selectize to manage the selection of this relationship in angularjs?',
+            default: true
+        },
+        {
             when: response => response.relationshipAdd === true && response.otherEntityName.toLowerCase() === 'user',
             type: 'list',
             name: 'relationshipType',

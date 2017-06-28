@@ -126,6 +126,10 @@ const serverFiles = {
                     renameTo: generator => `${generator.packageFolder}/service/dto/${generator.entityClass}DTO.java`
                 },
                 {
+                    file: 'package/service/dto/_EntitySimpleDTO.java',
+                    renameTo: generator => `${generator.packageFolder}/service/dto/${generator.entityClass}SimpleDTO.java`
+                },
+                {
                     file: 'package/service/mapper/_BaseEntityMapper.java',
                     renameTo: generator => `${generator.packageFolder}/service/mapper/EntityMapper.java`
                 },
@@ -351,6 +355,7 @@ function writeFiles() {
 
         writeServerFiles() {
             if (this.skipServer) return;
+
 
             // write server side files
             this.writeFilesToDisk(serverFiles, this, false, SERVER_TEMPLATES_DIR);

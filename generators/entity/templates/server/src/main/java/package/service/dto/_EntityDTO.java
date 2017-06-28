@@ -83,18 +83,18 @@ public class <%= entityClass %>DTO implements Serializable {
         const ownerSide = relationships[idx].ownerSide; _%>
     <%_ if (relationshipType === 'many-to-many' && ownerSide === true) { _%>
 
-    private Set<<%= otherEntityNameCapitalized %>DTO> <%= relationshipFieldNamePlural %> = new HashSet<>();
+    private Set<<%= otherEntityNameCapitalized %>SimpleDTO> <%= relationshipFieldNamePlural %> = new HashSet<>();
     <%_ } else if (relationshipType === 'many-to-one' || (relationshipType === 'one-to-one' && ownerSide === true)) { _%>
 
-    private <%= otherEntityNameCapitalized %>DTO <%= relationshipFieldName %>;
+    private <%= otherEntityNameCapitalized %>SimpleDTO <%= relationshipFieldName %>;
 
     <%_  } } _%>
 
-    public <% if (databaseType === 'sql') { %>Long<% } %><% if (databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %> getId() {
+    public <% if (databaseType === 'sql') { %>String<% } %><% if (databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %> getId() {
         return id;
     }
 
-    public void setId(<% if (databaseType === 'sql') { %>Long<% } %><% if (databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %> id) {
+    public void setId(<% if (databaseType === 'sql') { %>String<% } %><% if (databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %> id) {
         this.id = id;
     }
     <%_ for (idx in fields) {
@@ -153,32 +153,23 @@ public class <%= entityClass %>DTO implements Serializable {
     <%_ } else if (relationshipType === 'many-to-one' || (relationshipType === 'one-to-one' && ownerSide === true)) { _%>
 
     <%_ if (relationshipNameCapitalized.length > 1) { _%>
-    public Long get<%= relationshipNameCapitalized %>Id() {
-        return <%= relationshipFieldName %>Id;
+    public <%= otherEntityNameCapitalized %>DTO get<%= relationshipNameCapitalized %>() {
+        return <%= relationshipFieldName %>;
     }
 
-    public void set<%= relationshipNameCapitalized %>Id(Long <%= otherEntityName %>Id) {
-        this.<%= relationshipFieldName %>Id = <%= otherEntityName %>Id;
+    public void set<%= relationshipNameCapitalized %>(<%= otherEntityNameCapitalized %>DTO <%= otherEntityName %>) {
+        this.<%= relationshipFieldName %> = <%= otherEntityName %>;
     }
     <%_ } else { // special case when the entity name has one character _%>
-    public Long get<%= relationshipNameCapitalized.toLowerCase() %>Id() {
-        return <%= relationshipFieldName %>Id;
+    public <%= otherEntityNameCapitalized %>DTO get<%= relationshipNameCapitalized.toLowerCase() %>() {
+        return <%= relationshipFieldName %>;
     }
 
-    public void set<%= relationshipNameCapitalized.toLowerCase() %>Id(Long <%= otherEntityName %>Id) {
-        this.<%= relationshipFieldName %>Id = <%= otherEntityName %>Id;
+    public void set<%= relationshipNameCapitalized.toLowerCase() %>(<%= otherEntityNameCapitalized %>DTO <%= otherEntityName %>) {
+        this.<%= relationshipFieldName %> = <%= otherEntityName %>;
     }
     <%_ } _%>
-    <%_ if (otherEntityFieldCapitalized !='Id' && otherEntityFieldCapitalized !== '') { _%>
-
-    public String get<%= relationshipNameCapitalized %><%= otherEntityFieldCapitalized %>() {
-        return <%= relationshipFieldName %><%= otherEntityFieldCapitalized %>;
-    }
-
-    public void set<%= relationshipNameCapitalized %><%= otherEntityFieldCapitalized %>(String <%= otherEntityName %><%= otherEntityFieldCapitalized %>) {
-        this.<%= relationshipFieldName %><%= otherEntityFieldCapitalized %> = <%= otherEntityName %><%= otherEntityFieldCapitalized %>;
-    }
-    <%_ } } } _%>
+    <%_ } } _%>
 
     @Override
     public boolean equals(Object o) {

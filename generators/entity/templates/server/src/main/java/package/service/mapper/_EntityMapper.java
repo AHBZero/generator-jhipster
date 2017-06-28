@@ -34,4 +34,13 @@ import org.mapstruct.*;
           existingMappings.push(relationships[idx].otherEntityNameCapitalized);
       %><%= relationships[idx].otherEntityNameCapitalized %>Mapper.class, <% } } } %>})
 public interface <%= entityClass %>Mapper extends EntityMapper <<%= entityClass %>DTO, <%= entityClass %>> {
+
+    public <%= entityClass %> toEntity(<%= entityClass %>SimpleDTO dto);
+
+    public <%= entityClass %>SimpleDTO toDto(<%= entityClass %> entity);
+
+    public List<<%= entityClass %>> toEntity(List<<%= entityClass %>SimpleDTO> dtoList);
+
+    public List<<%= entityClass %>DTO> toDto(List<<%= entityClass %>> entityList);
+
 }

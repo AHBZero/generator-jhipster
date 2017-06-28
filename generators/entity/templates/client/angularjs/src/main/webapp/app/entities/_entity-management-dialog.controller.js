@@ -1,3 +1,4 @@
+
 <%#
  Copyright 2013-2017 the original author or authors from the JHipster project.
 
@@ -36,23 +37,41 @@
         vm.byteSize = DataUtils.byteSize;
         vm.openFile = DataUtils.openFile;
         <%_ } _%>
-        vm.save = save;<%
+        vm.save = save;
+        <%
             var queries = [];
             for (idx in relationships) {
                 var query;
-                if (relationships[idx].relationshipType === 'one-to-one' && relationships[idx].ownerSide === true && relationships[idx].otherEntityName !== 'user') {
-                    query = 'vm.' + relationships[idx].relationshipFieldNamePlural.toLowerCase() + ' = ' + relationships[idx].otherEntityNameCapitalized + ".query({filter: '" + relationships[idx].otherEntityRelationshipName.toLowerCase() + "-is-null'});"
-                + "\n        $q.all([vm." + entityInstance + ".$promise, vm." + relationships[idx].relationshipFieldNamePlural.toLowerCase() + ".$promise]).then(function() {";
-                        query += "\n            if (!vm." + entityInstance + "." + relationships[idx].relationshipFieldName + " || !vm." + entityInstance + "." + relationships[idx].relationshipFieldName + ".id) {"
-                    query += "\n                return $q.reject();"
-                + "\n            }"
-                + "\n            return " + relationships[idx].otherEntityNameCapitalized + ".get({id : vm." + entityInstance + "." + relationships[idx].relationshipFieldName + ".id" + "}).$promise;"
-                + "\n        }).then(function(" + relationships[idx].relationshipFieldName + ") {"
-                + "\n            vm." + relationships[idx].relationshipFieldNamePlural.toLowerCase() + ".push(" + relationships[idx].relationshipFieldName + ");"
-                + "\n        });";
+                if (relationships[idx].selectize) {
+                  var prepareArray = 'vm.' + relationships[idx].relationshipFieldNamePlural.toLowerCase() + ' = [];\n'
+                  + '        if (vm.'+ entityInstance +'.'+ relationships[idx].relationshipFieldName +' !== undefined) {\n'
+                  + '            vm.' + relationships[idx].relationshipFieldNamePlural.toLowerCase() + '.push(vm.' + entityInstance + '.'+ relationships[idx].relationshipFieldName + ');\n'
+                  + '        }\n';
+
+                  if (!contains(queries, prepareArray)) {
+                      queries.push(prepareArray);
+                  }
+
+                  query = relationships[idx].otherEntityNameCapitalized + '.get(function(result) { \n'
+                  + '            vm.' + relationships[idx].relationshipFieldNamePlural.toLowerCase() + ' = vm.' + relationships[idx].relationshipFieldNamePlural.toLowerCase() + '.concat(result.content);\n'
+                  + '        });\n';
+
                 } else {
-                    query = 'vm.' + relationships[idx].otherEntityNameCapitalizedPlural.toLowerCase() + ' = ' + relationships[idx].otherEntityNameCapitalized + '.query();';
+                    if (relationships[idx].relationshipType === 'one-to-one' && relationships[idx].ownerSide === true && relationships[idx].otherEntityName !== 'user') {
+                        query = 'vm.' + relationships[idx].relationshipFieldNamePlural.toLowerCase() + ' = ' + relationships[idx].otherEntityNameCapitalized + ".query({filter: '" + relationships[idx].otherEntityRelationshipName.toLowerCase() + "-is-null'});"
+                    + "\n        $q.all([vm." + entityInstance + ".$promise, vm." + relationships[idx].relationshipFieldNamePlural.toLowerCase() + ".$promise]).then(function() {";
+                            query += "\n            if (!vm." + entityInstance + "." + relationships[idx].relationshipFieldName + " || !vm." + entityInstance + "." + relationships[idx].relationshipFieldName + ".id) {"
+                        query += "\n                return $q.reject();"
+                    + "\n            }"
+                    + "\n            return " + relationships[idx].otherEntityNameCapitalized + ".get({id : vm." + entityInstance + "." + relationships[idx].relationshipFieldName + ".id" + "}).$promise;"
+                    + "\n        }).then(function(" + relationships[idx].relationshipFieldName + ") {"
+                    + "\n            vm." + relationships[idx].relationshipFieldNamePlural.toLowerCase() + ".push(" + relationships[idx].relationshipFieldName + ");"
+                    + "\n        });";
+                    } else {
+                        query = 'vm.' + relationships[idx].otherEntityNameCapitalizedPlural.toLowerCase() + ' = ' + relationships[idx].otherEntityNameCapitalized + '.query();';
+                    }
                 }
+
                 if (!contains(queries, query)) {
                     queries.push(query);
                 }
@@ -108,5 +127,24 @@
             vm.datePickerOpenStatus[date] = true;
         }
         <%_ } _%>
+
+        <%_ for (idx in relationships) {
+        if (relationships[idx].selectize) { _%>
+        vm.load<%=relationships[idx].relationshipFieldName%> = function (query, callback) {
+            <%=otherEntityFieldCapitalized %>.get({filter: query}, function(result) {
+                vm.<% relationships[idx].relationshipFieldNamePlural.toLowerCase() %> = vm.<%= relationships[idx].relationshipFieldNamePlural.toLowerCase() %>.concat(result.content);
+                callback(result.content);
+            }, function(error) {
+                console.log(error);
+                callback();
+            });
+        };
+
+        vm.<%=relationships[idx].relationshipFieldName%>Selected = function ($id, $model) {
+            vm.<%= entityInstance %>.<%= relationships[idx].relationshipFieldName %> = $model;
+        };
+        
+        <%_ } } _%>
+
     }
 })();

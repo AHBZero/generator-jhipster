@@ -343,6 +343,7 @@ module.exports = EntityGenerator.extend({
 
             // Validate entity json relationship content
             this.relationships.forEach((relationship) => {
+                
                 if (_.isUndefined(relationship.relationshipName)) {
                     relationship.relationshipName = relationship.otherEntityName;
                     this.warning(`relationshipName is missing in .jhipster/${this.name}.json for relationship ${JSON.stringify(relationship, null, 4)}, using ${relationship.otherEntityName} as fallback`);

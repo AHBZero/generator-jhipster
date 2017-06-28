@@ -69,6 +69,12 @@ public class <%= serviceClassName %> <% if (service === 'serviceImpl') { %>imple
         log.debug("Request to save <%= entityClass %> : {}", <%= instanceName %>);<%- include('../../common/save_template', {viaService: viaService, returnDirectly: true}); -%>
     }
 
+    <%_ if (service === 'serviceImpl') { _%>
+    @Override
+    <%_ } _%>
+    public <%= instanceType %> update(<%= instanceType %> <%= instanceName %>) {
+        log.debug("Request to update <%= entityClass %> : {}", <%= instanceName %>);<%- include('../../common/update_template', {viaService: viaService, returnDirectly: true}); -%>
+    }
 
     <%_ if (service === 'serviceImpl') { _%>
     @Override
@@ -108,7 +114,7 @@ public class <%= serviceClassName %> <% if (service === 'serviceImpl') { %>imple
     }
     <%_ if (searchEngine === 'elasticsearch') { _%>
 
-  
+
     <%_ if (service === 'serviceImpl') { _%>
     @Override
     <%_ } _%>
