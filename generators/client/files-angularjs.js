@@ -172,6 +172,7 @@ const files = {
                 'services/profiles/_profile.service.js',
                 'services/profiles/_page-ribbon.directive.js',
                 { file: 'layouts/navbar/_navbar.html', method: 'processHtml' },
+                { file: 'layouts/footer/_footer.html', method: 'processHtml' },
                 { file: 'layouts/error/_error.html', method: 'processHtml' },
                 { file: 'layouts/error/_accessdenied.html', method: 'processHtml' },
                 { file: 'layouts/error/_error.state.js', method: 'processJs' }
