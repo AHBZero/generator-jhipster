@@ -143,6 +143,7 @@ public class CacheConfiguration {
             <%_ if (!skipUserManagement) { _%>
             cm.createCache(<%=packageName%>.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(<%=packageName%>.domain.Authority.class.getName(), jcacheConfiguration);
+            cm.createCache(<%=packageName%>.domain.Installation.class.getName(), jcacheConfiguration);
             cm.createCache(<%=packageName%>.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             <%_ if (authenticationType === 'session') { _%>
             cm.createCache(<%=packageName%>.domain.PersistentToken.class.getName(), jcacheConfiguration);

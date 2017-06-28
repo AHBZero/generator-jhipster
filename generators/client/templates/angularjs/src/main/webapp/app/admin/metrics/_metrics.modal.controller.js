@@ -23,8 +23,6 @@
         .module('<%=angularAppName%>')
         .controller('<%=jhiPrefixCapitalized%>MetricsMonitoringModalController', <%=jhiPrefixCapitalized%>MetricsMonitoringModalController);
 
-    <%=jhiPrefixCapitalized%>MetricsMonitoringModalController.$inject = ['$uibModalInstance', 'threadDump'];
-
     function <%=jhiPrefixCapitalized%>MetricsMonitoringModalController ($uibModalInstance, threadDump) {
         var vm = this;
 

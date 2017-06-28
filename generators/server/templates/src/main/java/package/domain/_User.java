@@ -171,11 +171,11 @@ public class User<% if (databaseType === 'sql' || databaseType === 'mongodb') { 
     <%_ } } _%>
     private Set<PersistentToken> persistentTokens = new HashSet<>();<% } %>
 
-    public <% if (databaseType === 'sql') { %>Long<% } else if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } %> getId() {
+    public <% if (databaseType === 'sql') { %>String<% } else if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } %> getId() {
         return id;
     }
 
-    public void setId(<% if (databaseType === 'sql') { %>Long<% } else if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } %> id) {
+    public void setId(<% if (databaseType === 'sql') { %>String<% } else if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } %> id) {
         this.id = id;
     }
 

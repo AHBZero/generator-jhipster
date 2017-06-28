@@ -30,7 +30,7 @@
         loadAll();
 
         function loadAll() {
-            <%= entityClass %>.query(function(result) {
+            <%= entityClass %>.queryAll(function(result) {
                 vm.<%= entityInstancePlural %> = result;
                 vm.searchQuery = null;
             });

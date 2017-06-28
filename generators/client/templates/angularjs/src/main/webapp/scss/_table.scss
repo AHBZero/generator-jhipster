@@ -1,0 +1,32 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for Table
+// ----
+
+//
+// TABELA
+// ------------------------------------------------------------------
+.table-responsive {
+  padding: 0 30px;
+}
+
+.table {
+  color: $warm-grey-three;
+
+  thead > tr > th {
+    font-size: 12px;
+    font-weight: 300;
+    color: $warm-grey-two;
+    border-bottom: 1px solid $white-nine;
+    cursor: pointer;
+
+    .glyphicon {
+      margin-left: 4px;
+      font-size: 10px;
+    }
+  }
+
+  tbody > tr > td {
+    vertical-align: middle;
+  }
+}

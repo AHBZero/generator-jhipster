@@ -1,0 +1,200 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for NAVBAR
+// ----
+
+//
+// NAVBAR
+// ------------------------------------------------------------------
+.navbar-container {
+  position: relative;
+}
+
+.nav > li > a {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media (min-width: $screen-sm-min) {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.nav.navbar-right > li > a {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar.navbar-default {
+  @include box-shadow(0 4px 10px 0 rgba(187, 192, 211, 0.6));
+  padding: 0 10px;
+  border: none;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 0 10px;
+  }
+  @media (min-width: $screen-md-min) {
+    padding: 0 50px;
+  }
+  @media (min-width: $screen-lg-min) {
+    padding: 0 100px;
+  }
+}
+
+//
+// ITEM MENU
+// ------------------------------------------------------------------
+.navbar-nav > li > a {
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    font-size: 16px;
+  }
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  font-weight: 600;
+
+  .text {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: -28px;
+      right: 0;
+      left: 0;
+      height: 4px;
+      content: "";
+
+      @media (min-width: $screen-sm-min) {
+        background: $jungle-green-two;
+      }
+    }
+  }
+}
+
+//
+// LOGO
+// ------------------------------------------------------------------
+.navbar-brand.logo {
+  margin-right: 50px;
+  padding: 22px 0;
+
+  @media (min-width: $screen-sm-min) {
+    margin-right: 10px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    margin-right: 50px;
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
+.navbar-nav > li.entities {
+
+  li {
+    a {
+      padding: 8px;
+      margin: 2px;
+    }
+    border-bottom: 1px solid #f4f4f4;
+  }
+  li:last-child {
+    border-bottom: none
+  }
+
+}
+
+//
+// MENU USUÁRIO
+// ------------------------------------------------------------------
+.navbar-nav > li.navbar-user-menu {
+  > a {
+    padding: 19px 30px;
+    padding-left: 15px;
+
+    @media (min-width: $screen-md-min) {
+      padding-left: 50px;
+    }
+  }
+
+  .texts {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+
+  .name {
+    display: block;
+    font-weight: 900;
+    text-transform: none;
+  }
+
+  .type {
+    font-size: 14px;
+    text-transform: none;
+  }
+
+  .image {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border: 1px solid $jungle-green-two;
+    border-radius: 50%;
+
+    img {
+      @extend %center-align;
+    }
+  }
+}
+
+.nav > li.navbar-icons-item {
+  display: inline-block;
+  padding-left: 15px;
+
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
+
+  a {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: $screen-sm-min) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

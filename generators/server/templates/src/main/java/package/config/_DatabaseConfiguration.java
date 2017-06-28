@@ -63,6 +63,7 @@ import org.springframework.core.task.TaskExecutor;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.data.envers.repository.support.EnversRevisionRepositoryFactoryBean;
 
 import javax.sql.DataSource;
 <%_ if (devDatabaseType === 'h2Disk' || devDatabaseType === 'h2Memory') { _%>
@@ -75,7 +76,7 @@ import java.util.List;
 <%_ } _%>
 
 @Configuration<% if (databaseType === 'sql') { %>
-@EnableJpaRepositories("<%=packageName%>.repository")
+@EnableJpaRepositories(value = "<%=packageName%>.repository", repositoryFactoryBeanClass = EnversRevisionRepositoryFactoryBean.class)
 @EnableJpaAuditing(auditorAwareRef = "springSecurityAuditorAware")
 @EnableTransactionManagement<% } %><% if (searchEngine === 'elasticsearch') { %>
 @EnableElasticsearchRepositories("<%=packageName%>.repository.search")<% } %><% if (databaseType === 'mongodb') { %>

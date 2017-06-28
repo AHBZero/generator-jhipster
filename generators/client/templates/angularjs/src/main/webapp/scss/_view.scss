@@ -1,0 +1,22 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for detail page
+// ----
+
+//
+// TÍTULO
+// ------------------------------------------------------------------
+.view-page dt {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  color: $greyish-brown-two;
+  line-height: 24px;
+}
+
+.view-page dd {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  line-height: 24px;
+}

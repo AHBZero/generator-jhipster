@@ -23,8 +23,6 @@
         .module('<%=angularAppName%>')
         .factory('<%=jhiPrefixCapitalized%>ConfigurationService', <%=jhiPrefixCapitalized%>ConfigurationService);
 
-    <%=jhiPrefixCapitalized%>ConfigurationService.$inject = ['$filter', '$http'];
-
     function <%=jhiPrefixCapitalized%>ConfigurationService ($filter, $http) {
         var service = {
             get: get,

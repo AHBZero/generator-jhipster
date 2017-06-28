@@ -1,0 +1,139 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for Buttons
+// ----
+
+//
+// MIXINS
+// ------------------------------------------------------------------
+@mixin button-variant-leakd($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $white;
+    background-color: $color;
+    border-color: $white;
+  }
+  &:hover {
+    color: $white;
+    background-color: $color;
+    border-color: $white;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $white;
+    background-color: $color;
+    border-color: $white;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $white;
+      background-color: $color;
+      border-color: $white;
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+      border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+.btn {
+  @include button-size(9px, 15px, $font-size-base, $line-height-base, $btn-border-radius-base);
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &:focus,
+  &:active,
+  &:hover,
+  &:visited {
+    outline: none !important;
+  }
+}
+
+.btn.btn-sm {
+  @extend .btn-sm;
+}
+
+.btn.btn-xs {
+  @extend .btn-xs;
+  padding: 2px 20px;
+}
+
+.btn.btn-rounded {
+  border-radius: 100px;
+}
+
+.btn-group {
+  text-indent: 32px;
+  background: rgba($jungle-green, .79);
+
+  .btn-addon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    background: $jungle-green;
+    border-radius: 2px 0 0 2px;
+
+    img {
+      position: absolute;
+      top: 8.5px;
+      left: 10px;
+    }
+  }
+}
+
+.btn-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: $greyish-brown-two;
+}
+
+.btn-leaked {
+  &.btn-default {
+    @include button-variant-leakd($btn-default-bg, $white, $btn-default-bg);
+  }
+
+  &.btn-primary {
+    @include button-variant-leakd($btn-primary-bg, $white, $btn-primary-bg);
+  }
+
+  &.btn-success {
+    @include button-variant-leakd($btn-success-bg, $white, $btn-success-bg);
+  }
+
+  &.btn-info {
+    @include button-variant-leakd($btn-info-bg, $white, $btn-info-bg);
+  }
+
+  &.btn-warning {
+    @include button-variant-leakd($btn-warning-bg, $white, $btn-warning-bg);
+  }
+
+  &.btn-danger {
+    @include button-variant-leakd($btn-danger-bg, $white, $btn-danger-bg);
+  }
+}

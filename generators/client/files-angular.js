@@ -80,8 +80,8 @@ const files = {
         {
             path: MAIN_SRC_DIR,
             templates: [
-                { file: 'content/images/_hipster.png', method: 'copy' },
-                { file: 'content/images/_hipster2x.png', method: 'copy' },
+                { file: 'content/images/_hipster.jpg', method: 'copy' },
+                { file: 'content/images/_hipster2x.jpg', method: 'copy' },
                 { file: 'content/images/_logo-jhipster.png', method: 'copy' }
             ]
         }

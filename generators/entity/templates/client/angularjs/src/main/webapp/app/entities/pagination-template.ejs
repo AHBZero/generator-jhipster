@@ -67,10 +67,11 @@
             }
             function onSuccess(data, headers) {
                 vm.links = ParseLinks.parse(headers('link'));
-                vm.totalItems = headers('X-Total-Count');
+                //vm.totalItems = headers('X-Total-Count');
+                vm.totalItems = data.totalElements;
                 vm.queryCount = vm.totalItems;
-                vm.<%= entityInstancePlural %> = data;
-                vm.page = pagingParams.page;
+                vm.<%= entityInstancePlural %> = data.content;
+                vm.page = data.number + 1;
             }
             function onError(error) {
                 AlertService.error(error.data.message);

@@ -23,8 +23,6 @@
         .module('<%=angularAppName%>')
         .controller('UserManagementDialogController',UserManagementDialogController);
 
-    UserManagementDialogController.$inject = ['$stateParams', '$uibModalInstance', 'entity', 'User'<% if (enableTranslation) { %>, '<%=jhiPrefixCapitalized%>LanguageService'<% } %>];
-
     function UserManagementDialogController ($stateParams, $uibModalInstance, entity, User<% if (enableTranslation) { %>, <%=jhiPrefixCapitalized%>LanguageService<% } %>) {
         var vm = this;
 

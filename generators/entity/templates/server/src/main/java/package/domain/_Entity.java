@@ -92,9 +92,8 @@ import <%=packageName%>.domain.enumeration.<%= element %>;
 <%_ } if (searchEngine === 'elasticsearch') { _%>
 @Document(indexName = "<%= entityInstance.toLowerCase() %>")
 <%_ } _%>
-public class <%= entityClass %> implements Serializable {
+public class <%= entityClass %> extends AbstractAuditingEntity implements Serializable {
 
-    private static final long serialVersionUID = 1L;
 <% if (databaseType === 'sql') { %>
     @Id
     <%_ if (prodDatabaseType === 'mysql' || prodDatabaseType === 'mariadb') { _%>

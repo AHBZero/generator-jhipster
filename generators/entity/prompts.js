@@ -988,6 +988,20 @@ function askForRelationship(done) {
             default: true
         },
         {
+            when: response => response.selectize === true,
+            type: 'confirm',
+            name: 'selectizeCreate',
+            message: 'Can selectize create a new entity for this relationship using the field value?',
+            default: false
+        },
+        {
+            when: response => response.selectize === true,
+            type: 'confirm',
+            name: 'selectizeRender',
+            message: 'Do you will customize the renderize function of the template to show in the selectize dropdown?',
+            default: false
+        },
+        {
             when: response => response.relationshipAdd === true && response.otherEntityName.toLowerCase() === 'user',
             type: 'list',
             name: 'relationshipType',

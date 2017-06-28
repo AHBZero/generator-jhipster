@@ -1,0 +1,41 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for Selectize
+// ----
+
+.clean-selectize .selectize-input {
+  @include box-shadow(none);
+  background-color: transparent !important;
+  border-color: transparent !important;
+
+  .item,
+  input {
+    font-size: 14px;
+    color: $greyblue;
+  }
+
+  input {
+    &::-moz-placeholder {
+      font-size: 14px;
+      color: $greyblue;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 14px;
+      color: $greyblue;
+    }
+
+    &::-webkit-input-placeholder  {
+      font-size: 14px;
+      color: $greyblue;
+    }
+  }
+}
+
+.clean-selectize.selectize-control.single .selectize-input:after {
+  border-color: $greyblue transparent transparent transparent;
+}
+
+.clean-selectize.selectize-control.single .selectize-input.dropdown-active:after {
+  border-color: transparent transparent $greyblue transparent;
+}

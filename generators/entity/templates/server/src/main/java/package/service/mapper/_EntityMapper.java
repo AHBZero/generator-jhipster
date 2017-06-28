@@ -20,8 +20,11 @@ package <%=packageName%>.service.mapper;
 
 import <%=packageName%>.domain.*;
 import <%=packageName%>.service.dto.<%= entityClass %>DTO;
+import <%=packageName%>.service.dto.<%= entityClass %>SimpleDTO;
 
-import org.mapstruct.*;
+import java.util.List;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 /**
  * Mapper for the entity <%= entityClass %> and its DTO <%= entityClass %>DTO.
@@ -35,12 +38,16 @@ import org.mapstruct.*;
       %><%= relationships[idx].otherEntityNameCapitalized %>Mapper.class, <% } } } %>})
 public interface <%= entityClass %>Mapper extends EntityMapper <<%= entityClass %>DTO, <%= entityClass %>> {
 
-    public <%= entityClass %> toEntity(<%= entityClass %>SimpleDTO dto);
+    @Mapping(target = "createdBy", ignore = true)
+    @Mapping(target = "createdDate", ignore = true)
+    @Mapping(target = "lastModifiedBy", ignore = true)
+    @Mapping(target = "lastModifiedDate", ignore = true)
+    <%= entityClass %> toSimpleEntity(<%= entityClass %>SimpleDTO dto);
 
-    public <%= entityClass %>SimpleDTO toDto(<%= entityClass %> entity);
+    <%= entityClass %>SimpleDTO toSimpleDto(<%= entityClass %> entity);
 
-    public List<<%= entityClass %>> toEntity(List<<%= entityClass %>SimpleDTO> dtoList);
+    List<<%= entityClass %>> toSimpleEntityList(List<<%= entityClass %>SimpleDTO> dtoList);
 
-    public List<<%= entityClass %>DTO> toDto(List<<%= entityClass %>> entityList);
+    List<<%= entityClass %>DTO> toSimpleDtoList(List<<%= entityClass %>> entityList);
 
 }

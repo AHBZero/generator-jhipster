@@ -69,7 +69,7 @@ import java.time.Instant;
 <%_ } _%>
 <%_ if (databaseType === 'sql' || databaseType === 'mongodb') { _%>
 @Repository
-public interface UserRepository extends <% if (databaseType === 'sql') { %>JpaRepository<User, Long><% } %><% if (databaseType === 'mongodb') { %>MongoRepository<User, String><% } %> {
+public interface UserRepository extends <% if (databaseType === 'sql') { %>JpaRepository<User, String><% } %><% if (databaseType === 'mongodb') { %>MongoRepository<User, String><% } %> {
 
     Optional<User> findOneByActivationKey(String activationKey);
 

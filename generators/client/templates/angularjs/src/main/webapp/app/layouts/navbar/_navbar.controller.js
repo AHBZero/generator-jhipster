@@ -23,8 +23,6 @@
         .module('<%=angularAppName%>')
         .controller('NavbarController', NavbarController);
 
-    NavbarController.$inject = ['$state', 'Auth', 'Principal', 'ProfileService', 'LoginService'];
-
     function NavbarController ($state, Auth, Principal, ProfileService, LoginService) {
         var vm = this;
 

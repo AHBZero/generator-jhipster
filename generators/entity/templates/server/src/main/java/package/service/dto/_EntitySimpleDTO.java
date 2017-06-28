@@ -35,7 +35,7 @@ import javax.persistence.Lob;<% } %>
 import <%=packageName%>.domain.enumeration.<%= fields[idx].fieldType %>;
 <%_ } } _%>
 
-public class <%= entityClass %>DTO implements Serializable {
+public class <%= entityClass %>SimpleDTO implements Serializable {
 <% if (databaseType === 'sql') { %>
     private String id;<% } %><% if (databaseType === 'mongodb') { %>
     private String id;<% } %><% if (databaseType === 'cassandra') { %>

@@ -1,0 +1,35 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for SEARCH INPUT
+// ----
+
+.search-input {
+  .form-control {
+    border-radius: 100px;
+  }
+
+  .btn {
+    padding: 6.5px 18px;
+    text-transform: uppercase;
+    border-radius: 100px;
+  }
+
+  .btn-sm {
+    padding: 5px 18px;
+  }
+
+  .remove-search {
+    position: absolute;
+    right: 100px;
+    top: 6px;
+    z-index: 99;
+    color: $silver;
+
+    &:active,
+    &:focus,
+    &:hover {
+      @include box-shadow(none);
+      outline: none;
+    }
+  }
+}

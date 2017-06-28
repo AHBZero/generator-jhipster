@@ -23,8 +23,6 @@
         .module('<%=angularAppName%>')
         .config(stateConfig);
 
-    stateConfig.$inject = ['$stateProvider'];
-
     function stateConfig($stateProvider) {
         $stateProvider.state('password', {
             parent: 'account',
@@ -41,10 +39,10 @@
                 }
             },
             resolve: {
-                translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
+                translatePartialLoader: function ($translate, $translatePartialLoader) {
                     $translatePartialLoader.addPart('password');
                     return $translate.refresh();
-                }]
+                }
             }
         });
     }

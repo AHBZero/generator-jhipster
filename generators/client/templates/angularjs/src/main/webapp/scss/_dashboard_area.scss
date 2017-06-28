@@ -1,0 +1,172 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for Dashboard Area
+// ----
+
+//
+// PRINCIPAL
+// ------------------------------------------------------------------
+.dash-area {
+  .panel-body {
+    padding: 22px 18px;
+  }
+}
+
+//
+// ROW
+// ------------------------------------------------------------------
+.dash-area-row {
+  margin: 20px -18px -22px;
+  padding: 15px;
+  background: $white-four;
+}
+
+//
+// ITEM
+// ------------------------------------------------------------------
+.dash-area-item {
+  @include box-shadow(0 2px 4px 0 rgba(202, 202, 202, 0.5));
+  display: block;
+  margin: 15px;
+  padding: 18px;
+  border-radius: 4px;
+  background-color: $white;
+}
+
+// informações
+// ------------------
+.dash-area-item-infos {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 65px);
+
+  .name {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: $steel;
+  }
+
+  .address {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.57;
+    color: $steel-two;
+  }
+}
+
+// footer
+// ------------------
+.dash-area-item-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 9px;
+  border-top: solid 1px rgba($warm-grey-four, .13);
+
+  .dash-area-item-phone,
+  .dash-area-item-site {
+    display: inline-block;
+    vertical-align: middle;
+
+    .icon {
+      display: block;
+    }
+
+    .text {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 10px;
+      color: $jungle-green-two;
+    }
+  }
+
+  .dash-area-item-location {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 9px 25px;
+    border-radius: 100px;
+    border: solid 2px $jungle-green-two;
+
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 15px;
+      font-size: 14px;
+      color: $jungle-green-two;
+    }
+  }
+}
+
+// imagem
+// ------------------
+.dash-area-item-image {
+  @include box-shadow(0 2px 4px 0 rgba(0, 0, 0, 0.2));
+  display: inline-block;
+  vertical-align: middle;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    @extend %center-align;
+    max-height: 100%;
+  }
+}
+
+//
+// POPOPVER MAPA
+// ------------------------------------------------------------------
+.leaflet-popup-content-wrapper {
+  @include box-shadow(0 3px 13px rgba(0,0,0,0.2));
+  border-radius: 4px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  z-index: 99;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 42px;
+  color: $white;
+  background: $jungle-green-two;
+}
+
+.dash-area-popup-img {
+  @extend %horizontal-align;
+}
+
+.dash-area-popup-title {
+  display: block;
+  margin: 15px 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: $steel;
+}
+
+.dash-area-popup-address {
+  display: block;
+  margin: 0 15px;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $steel-two;
+}

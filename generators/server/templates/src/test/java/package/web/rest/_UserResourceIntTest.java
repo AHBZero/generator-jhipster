@@ -92,7 +92,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class UserResourceIntTest <% if (databaseType === 'cassandra') { %>extends AbstractCassandraTest <% } %>{
 
     <%_ if (databaseType === 'sql') { _%>
-    private static final Long DEFAULT_ID = 1L;
+    private static final String DEFAULT_ID = "1L";
     <%_ } else { _%>
     private static final String DEFAULT_ID = "id1";
     <%_ } _%>
@@ -262,7 +262,7 @@ public class UserResourceIntTest <% if (databaseType === 'cassandra') { %>extend
             <%_ } else if (databaseType === 'mongodb') { _%>
             "1L",
             <%_ } else { _%>
-            1L,
+            "1L",
             <%_ } _%>
             DEFAULT_LOGIN,
             DEFAULT_PASSWORD,

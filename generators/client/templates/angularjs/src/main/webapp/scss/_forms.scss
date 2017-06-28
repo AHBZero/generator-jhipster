@@ -1,0 +1,121 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for Forms
+// ----
+
+//
+// INPUT
+// ------------------------------------------------------------------
+.form-control {
+  @include form-control-focus($jungle-green);
+  @include box-shadow(none);
+
+  &:focus {
+    @include box-shadow(none);
+  }
+}
+
+//
+// INPUT GROUP
+// ------------------------------------------------------------------
+.input-group {
+  .input-group-addon {
+    border-radius: 2px;
+  }
+}
+
+.input-group.has-focus {
+
+  .input-group-addon {
+    @include transition(border-color ease-in-out .15s);
+    @include box-shadow(none);
+
+    color: $jungle-green;
+    border-color: $jungle-green;
+  }
+}
+
+.input-group.has-error {
+  .input-group-addon {
+    @include transition(border-color ease-in-out .15s);
+    @include box-shadow(none);
+
+    color: $scarlet;
+    border-color: $scarlet;
+  }
+}
+
+//
+// SEÇÃO FORM
+// ------------------------------------------------------------------
+.form-section {
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  color: $steel;
+  line-height: 32px;
+  border-bottom: solid 1px rgba($warm-grey-four, .3);
+
+  &.no-border {
+    margin-bottom: 6px;
+    padding-bottom: 0;
+    line-height: 1;
+    border-bottom: 0;
+  }
+}
+
+.row.row-form {
+  width: 100%;
+  margin: 0 !important;
+
+  @media (min-width: $screen-sm-min) {
+    @include transform(translateX(-50%));
+    position: relative;
+    left: 50%;
+    width: 70%;
+  }
+}
+
+//
+// LABEL
+// ------------------------------------------------------------------
+label,
+.label {
+  font-size: 10px;
+  font-weight: 500;
+  color: $greyish-brown-two;
+}
+
+//
+// FOOTER
+// ------------------------------------------------------------------
+.form-footer {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: solid 1px rgba($warm-grey-four, .3);
+}
+
+//
+// IMAGEM
+// ------------------------------------------------------------------
+.form-image-container {
+  width: 82px;
+  height: 82px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 1px $jungle-green-two;
+
+  img {
+    @extend %center-align;
+  }
+}
+
+.form-remove-image {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 16px;
+  color: $brownish-grey;
+}

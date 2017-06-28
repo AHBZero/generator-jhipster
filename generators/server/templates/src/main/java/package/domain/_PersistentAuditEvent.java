@@ -23,7 +23,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 <%_ } else if (databaseType === 'sql') { _%>
-
+import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 <%_ } _%>
 import javax.validation.constraints.NotNull;
@@ -43,13 +43,14 @@ public class PersistentAuditEvent implements Serializable {
 
     @Id<% if (databaseType === 'sql') { %>
     <%_ if (prodDatabaseType === 'mysql' || prodDatabaseType === 'mariadb') { _%>
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
     <%_ }  else { _%>
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
     @SequenceGenerator(name = "sequenceGenerator")
     <%_ } _%>
     @Column(name = "event_id")
-    private Long id;<% } else { %>
+    private String id;<% } else { %>
     @Field("event_id")
     private String id;<% } %>
 
@@ -69,14 +70,14 @@ public class PersistentAuditEvent implements Serializable {
     @CollectionTable(name = "persistent_audit_evt_data", joinColumns=@JoinColumn(name="event_id"))<% } %>
     private Map<String, String> data = new HashMap<>();
 <% if (databaseType === 'sql') { %>
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
     public void setId(String id) {
         this.id = id;
     }<% } else { %>
-    public String getId() {
+    public Long getId() {
         return id;
     }
 

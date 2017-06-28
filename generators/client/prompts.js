@@ -67,11 +67,11 @@ function askForClientSideOpts() {
             type: 'confirm',
             name: 'useSass',
             message: response => this.getNumberedQuestion('Would you like to use the LibSass stylesheet preprocessor for your CSS?', true),
-            default: false
+            default: true
         }
     ];
     this.prompt(prompts).then((props) => {
-        this.useSass = props.useSass;
+        this.useSass = true;
         done();
     });
 }

@@ -116,9 +116,13 @@
             data: {
                 authorities: ['ROLE_USER', 'ROLE_ADMIN']
             },
-            templateUrl: 'app/entities/<%= entityFolderName %>/<%= entityFileName %>-dialog.html',
-            controller: '<%= entityAngularName %>DialogController',
-            controllerAs: 'vm',
+            views: {
+                'content@': {
+                    templateUrl: 'app/entities/<%= entityFolderName %>/<%= entityFileName %>-manage.html',
+                    controller: '<%= entityAngularName %>ManageController',
+                    controllerAs: 'vm'
+                }
+            },
             resolve: {
                 entity: function () {
                     return {
@@ -134,6 +138,14 @@
                         <%_ } _%>
                         id: undefined
                     };
+                },
+                previousState: function ($state) {
+                    var currentStateData = {
+                        name: $state.current.name || '<%= entityStateName %>',
+                        params: $state.params,
+                        url: $state.href($state.current.name, $state.params)
+                    };
+                    return currentStateData;
                 }
             }
 
@@ -144,12 +156,24 @@
             data: {
                 authorities: ['ROLE_USER', 'ROLE_ADMIN']
             },
-            templateUrl: 'app/entities/<%= entityFolderName %>/<%= entityFileName %>-dialog.html',
-            controller: '<%= entityAngularName %>DialogController',
-            controllerAs: 'vm',
+            views: {
+                'content@': {
+                    templateUrl: 'app/entities/<%= entityFolderName %>/<%= entityFileName %>-manage.html',
+                    controller: '<%= entityAngularName %>ManageController',
+                    controllerAs: 'vm'
+                }
+            },
             resolve: {
                 entity: function($stateParams, $state, <%= entityClass %>) {
                     return <%= entityClass %>.get({id : $stateParams.id}).$promise;
+                },
+                previousState: function ($state) {
+                    var currentStateData = {
+                        name: $state.current.name || '<%= entityStateName %>',
+                        params: $state.params,
+                        url: $state.href($state.current.name, $state.params)
+                    };
+                    return currentStateData;
                 }
             }
         })

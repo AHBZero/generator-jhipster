@@ -1,0 +1,256 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for DASHBOARD
+// ----
+
+//
+// LINHAS DO DASHBOARD
+// ------------------------------------------------------------------
+.dash-row.height-fix {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 40px;
+
+  .panel {
+    height: 100%;
+  }
+}
+
+//
+// LINHAS DO DASHBOARD COM MAX HEIGHT
+// ------------------------------------------------------------------
+.dash-row.height-max-fix {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 40px;
+
+    .panel {
+        height: 100%;
+        max-height: 400px;
+    }
+}
+
+.scrollbar-effect {
+    .panel {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+
+//
+// LIST RANKING
+// ------------------------------------------------------------------
+.list-ranking {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+
+  li {
+    padding: 8px 40px;
+    cursor: pointer;
+
+    &:hover {
+      background: $pale-grey;
+    }
+  }
+
+  .ranking-item-number {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 35px;
+    margin-right: 25px;
+    font-size: 27px;
+    line-height: 0.96;
+    text-align: right;
+    color: $brownish-grey-two;
+  }
+
+  .ranking-item-image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      @extend %center-align;
+      max-height: 25px;
+    }
+  }
+
+  .ranking-item-texts {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .ranking-item-name {
+    display: block;
+    font-size: 17px;
+    color: $brownish-grey-two;
+  }
+
+  .ranking-item-size {
+    display: block;
+    font-size: 14px;
+    color: $greyish;
+  }
+}
+
+//
+// LIST PROSPECTION
+//-------------------------------------------------------------------
+.list-prospection {
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+
+    li {
+        padding: 8px 40px;
+        cursor: pointer;
+
+        &:hover {
+            background: $pale-grey;
+        }
+    }
+
+    .prospection-item-image {
+        display: inline-block;
+        vertical-align: middle;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {
+            @extend %center-align;
+            max-height: 25px;
+        }
+    }
+
+    .prospection-item-texts {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .prospection-item-name {
+        display: block;
+        font-size: 17px;
+        color: $brownish-grey-two;
+    }
+
+    .prospection-item-size {
+        display: block;
+        font-size: 14px;
+        color: $greyish;
+    }
+}
+
+//
+// LIST HISTÓRICO
+// ------------------------------------------------------------------
+.list-historic {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+
+  li {
+    //padding: 8px 40px;
+    cursor: pointer;
+
+    &:hover {
+      background: $pale-grey;
+    }
+  }
+
+  .historic-item-image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      @extend %center-align;
+      max-height: 25px;
+    }
+  }
+
+  .historic-item-date {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+
+  .historic-item-month {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: $greyish-two;
+  }
+
+  .historic-item-day {
+    display: block;
+    width: 100%;
+    font-size: 27px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.96;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: $brownish-grey-two;
+  }
+
+  .historic-item-texts {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .historic-item-name {
+    display: block;
+    font-size: 17px;
+    color: $brownish-grey-two;
+  }
+
+  .historic-item-size {
+    display: block;
+    font-size: 14px;
+    color: $greyish;
+  }
+
+  .historic-item-values {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-left: 10px;
+  }
+
+  .historic-item-total {
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    text-align: right;
+    color: $apple-green;
+  }
+
+  .historic-item-kg {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    text-align: right;
+    color: $greyish;
+  }
+}

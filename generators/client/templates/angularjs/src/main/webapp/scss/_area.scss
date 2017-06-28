@@ -1,0 +1,172 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for AREA
+// ----
+
+.area-image-full-container {
+  @include box-shadow(0 6px 12px 0 $pinkish-grey-three);
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:after {
+    position: absolute;
+    z-index: 98;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.58));
+    content: '';
+  }
+}
+
+.area-infos {
+  position: absolute;
+  z-index: 99;
+  left: 40px;
+  bottom: 20px;
+}
+
+.area-info {
+  display: inline-block;
+  vertical-align: top;
+
+  .area-name {
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+    color: $white;
+  }
+
+  .area-size {
+    display: block;
+    font-size: 14px;
+    color: $white;
+  }
+}
+
+.area-members {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 25px;
+  padding-left: 10px;
+  border-left: 1px solid $white;
+
+  .area-member-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: $white;
+  }
+
+  .area-member-image {
+    @include transition(all .2s linear);
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: $white;
+    border: solid 1px $white;
+    border-radius: 50%;
+    margin: 6px 6px 0;
+    overflow: hidden;
+
+    img {
+      @extend %center-align;
+      height: 100%;
+    }
+
+    &:hover {
+      border-radius: 10px;
+    }
+  }
+}
+
+.area-new-member {
+  position: absolute;
+  right: 40px;
+  bottom: 26px;
+  z-index: 99;
+}
+
+.area-header {
+  margin-top: 40px;
+
+  .form-section {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+
+  .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+}
+
+.area-field-container {
+  @include box-shadow(0 6px 12px 0 $pinkish-grey-three);
+  position: relative;
+  margin-top: 15px;
+  border-radius: 4px;
+  background-color: $white;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.area-field-item-name {
+  display: block;
+  padding: 7px 15px 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $steel;
+}
+
+.area-field-item-size {
+  display: block;
+  padding: 0 15px 7px;
+  font-size: 12px;
+  color: $steel;
+}
+
+.area-field-item-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 150px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    content: "";
+  }
+}
+
+.area-field-edit {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  color: $steel;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

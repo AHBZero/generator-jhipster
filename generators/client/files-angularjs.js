@@ -72,8 +72,8 @@ const files = {
         {
             path: MAIN_SRC_DIR,
             templates: [
-                { file: 'content/images/_hipster.png', method: 'copy' },
-                { file: 'content/images/_hipster2x.png', method: 'copy' },
+                { file: 'content/images/_hipster.jpg', method: 'copy' },
+                { file: 'content/images/_hipster2x.jpg', method: 'copy' },
                 { file: 'content/images/_logo-jhipster.png', method: 'copy' }
             ]
         }
@@ -420,6 +420,27 @@ module.exports = {
 
 function writeFiles() {
     mkdirp(MAIN_SRC_DIR);
+    this.copy('angularjs/src/main/webapp/scss/_bootstrap_overrides.scss', 'src/main/webapp/scss/_bootstrap_overrides.scss');
+    this.copy('angularjs/src/main/webapp/scss/_helpers.scss', 'src/main/webapp/scss/_helpers.scss');
+    this.copy('angularjs/src/main/webapp/scss/_navbar.scss', 'src/main/webapp/scss/_navbar.scss');
+    this.copy('angularjs/src/main/webapp/scss/_content.scss', 'src/main/webapp/scss/_content.scss');
+    this.copy('angularjs/src/main/webapp/scss/_footer.scss', 'src/main/webapp/scss/_footer.scss');
+    this.copy('angularjs/src/main/webapp/scss/_buttons.scss', 'src/main/webapp/scss/_buttons.scss');
+    this.copy('angularjs/src/main/webapp/scss/_forms.scss', 'src/main/webapp/scss/_forms.scss');
+    this.copy('angularjs/src/main/webapp/scss/_auth.scss', 'src/main/webapp/scss/_auth.scss');
+    this.copy('angularjs/src/main/webapp/scss/_list.scss', 'src/main/webapp/scss/_list.scss');
+    this.copy('angularjs/src/main/webapp/scss/_search_input.scss', 'src/main/webapp/scss/_search_input.scss');
+    this.copy('angularjs/src/main/webapp/scss/_table.scss', 'src/main/webapp/scss/_table.scss');
+    this.copy('angularjs/src/main/webapp/scss/_pagination.scss', 'src/main/webapp/scss/_pagination.scss');
+    this.copy('angularjs/src/main/webapp/scss/_view.scss', 'src/main/webapp/scss/_view.scss');
+    this.copy('angularjs/src/main/webapp/scss/_panel.scss', 'src/main/webapp/scss/_panel.scss');
+    this.copy('angularjs/src/main/webapp/scss/_dashboard.scss', 'src/main/webapp/scss/_dashboard.scss');
+    this.copy('angularjs/src/main/webapp/scss/_accordion.scss', 'src/main/webapp/scss/_accordion.scss');
+    this.copy('angularjs/src/main/webapp/scss/_area.scss', 'src/main/webapp/scss/_area.scss');
+    this.copy('angularjs/src/main/webapp/scss/_selectize_overrides.scss', 'src/main/webapp/scss/_selectize_overrides.scss');
+    this.copy('angularjs/src/main/webapp/scss/_dashboard_area.scss', 'src/main/webapp/scss/_dashboard_area.scss');
+    this.copy('angularjs/src/main/webapp/scss/_dashboard_batches.scss', 'src/main/webapp/scss/_dashboard_batches.scss');
+
     this.copy('angularjs/gulp/_handle-errors.js', 'gulp/handle-errors.js'); // to avoid interpolate errors
     // write angular 1.x files
     this.writeFilesToDisk(files, this, false, 'angularjs');

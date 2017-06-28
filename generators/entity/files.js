@@ -182,7 +182,7 @@ const angularjsFiles = {
                     file: 'entities/_entity-management-dialog.html',
                     method: 'processHtml',
                     template: true,
-                    renameTo: generator => `entities/${generator.entityFolderName}/${generator.entityFileName}-dialog.html`
+                    renameTo: generator => `entities/${generator.entityFolderName}/${generator.entityFileName}-manage.html`
                 },
                 {
                     file: 'entities/_entity-management-delete-dialog.html',
@@ -200,7 +200,7 @@ const angularjsFiles = {
                 },
                 {
                     file: 'entities/_entity-management-dialog.controller.js',
-                    renameTo: generator => `entities/${generator.entityFolderName}/${generator.entityFileName}-dialog.controller.js`
+                    renameTo: generator => `entities/${generator.entityFolderName}/${generator.entityFileName}-manage.controller.js`
                 },
                 {
                     file: 'entities/_entity-management-delete-dialog.controller.js',

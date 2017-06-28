@@ -22,9 +22,9 @@
 
     angular
         .module('<%=angularAppName%>')
-        .controller('<%= entityAngularName %>DialogController', <%= entityAngularName %>DialogController);
+        .controller('<%= entityAngularName %>ManageController', <%= entityAngularName %>ManageController);
 
-    function <%= entityAngularName %>DialogController ($timeout, $scope, $stateParams, $state<% if (fieldsContainOwnerOneToOne) { %>, $q<% } %><% if (fieldsContainBlob) { %>, DataUtils<% } %>, entity, <%= entityClass %><% for (idx in differentTypes) { if (differentTypes[idx] !== entityClass) {%>, <%= differentTypes[idx] %><% } } %>) {
+    function <%= entityAngularName %>ManageController (previousState, $state<% if (fieldsContainOwnerOneToOne) { %>, $q<% } %><% if (fieldsContainBlob) { %>, DataUtils<% } %>, entity, <%= entityClass %><% for (idx in differentTypes) { if (differentTypes[idx] !== entityClass) {%>, <%= differentTypes[idx] %><% } } %>) {
         var vm = this;
 
         vm.<%= entityInstance %> = entity;
@@ -143,7 +143,30 @@
         vm.<%=relationships[idx].relationshipFieldName%>Selected = function ($id, $model) {
             vm.<%= entityInstance %>.<%= relationships[idx].relationshipFieldName %> = $model;
         };
-        
+        <%_ if (relationships[idx].selectizeCreate) { _%>
+
+        vm.create<%=relationships[idx].relationshipFieldName%> = function ($name, $callback) {
+            if ($name === undefined || $name === '') {
+                return;
+            }
+
+            <%= relationships[idx].otherEntityNameCapitalized %>.save({
+                name: $name
+            }, function (result) {
+                $callback(result);
+            }, function () {
+                $callback(error);
+            })
+        };
+        <%_ } _%>
+        <%_ if (relationships[idx].selectizeRender) { _%>
+
+        vm.render<%=relationships[idx].relationshipFieldName%> = function ($name, $callback) {
+            var template = '<div><strong>' + escape(item.name) +'</strong></div>';
+            return template;
+        };
+
+        <%_ } _%>
         <%_ } } _%>
 
     }

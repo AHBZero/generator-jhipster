@@ -28,8 +28,12 @@ import <%=packageName%>.security.jwt.*;
 <%_ if (authenticationType === 'session') { _%>
 import io.github.jhipster.config.JHipsterProperties;
 <%_ } _%>
-import io.github.jhipster.security.*;
 
+import io.github.jhipster.security.Http401UnauthorizedEntryPoint;
+
+import <%=packageName%>.security.AjaxLogoutSuccessHandler;
+import <%=packageName%>.security.CustomBasicAuthenticationEntryPoint;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.BeanInitializationException;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -57,6 +61,7 @@ import org.springframework.web.filter.CorsFilter;
 <%_ } _%>
 
 import javax.annotation.PostConstruct;
+import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 
 @Configuration
 @EnableWebSecurity
@@ -85,11 +90,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private final CorsFilter corsFilter;
     <%_ } _%>
 
-    public SecurityConfiguration(AuthenticationManagerBuilder authenticationManagerBuilder, UserDetailsService userDetailsService<% if (authenticationType === 'session') { %>,
+    private final ObjectMapper objectMapper;
+
+    public SecurityConfiguration(ObjectMapper objectMapper, AuthenticationManagerBuilder authenticationManagerBuilder, UserDetailsService userDetailsService<% if (authenticationType === 'session') { %>,
         JHipsterProperties jHipsterProperties, RememberMeServices rememberMeServices<% } if (authenticationType === 'jwt') { %>,
             TokenProvider tokenProvider<% } %><% if (clusteredHttpSession === 'hazelcast') { %>, SessionRegistry sessionRegistry<% } if (authenticationType !== 'oauth2') { %>,
         CorsFilter corsFilter<% } %>) {
 
+        this.objectMapper = objectMapper;
         this.authenticationManagerBuilder = authenticationManagerBuilder;
         this.userDetailsService = userDetailsService;
         <%_ if (authenticationType === 'session') { _%>
@@ -132,8 +140,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     <%_ if (authenticationType === 'session' || authenticationType === 'oauth2') { _%>
 
     @Bean
-    public AjaxLogoutSuccessHandler ajaxLogoutSuccessHandler() {
-        return new AjaxLogoutSuccessHandler();
+    public AjaxLogoutSuccessHandler ajaxLogoutSuccessHandler(JdbcTokenStore tokenStore) {
+        return new AjaxLogoutSuccessHandler(tokenStore);
     }
     <%_ } _%>
 
@@ -244,6 +252,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .and()
                 .authorizeRequests()
                 .antMatchers("/oauth/authorize").authenticated();
+    }
+
+    @Bean
+    public CustomBasicAuthenticationEntryPoint getBasicAuthEntryPoint(){
+        CustomBasicAuthenticationEntryPoint customBasicAuthenticationEntryPoint = new CustomBasicAuthenticationEntryPoint();
+        customBasicAuthenticationEntryPoint.setRealmName("<%= baseName %>");
+        customBasicAuthenticationEntryPoint.setObjectMapper(objectMapper);
+        return customBasicAuthenticationEntryPoint;
     }
 
     @Override

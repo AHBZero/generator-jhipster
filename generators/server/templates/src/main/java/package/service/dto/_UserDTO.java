@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
  */
 public class UserDTO {
 
-    private <% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>Long<% } %> id;
+    private <% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>String<% } %> id;
 
     <%_ let columnMax = 50;
         if (enableSocialSignIn) {
@@ -94,7 +94,7 @@ public class UserDTO {
             user.getAuthorities());<% } %>
     }
 
-    public UserDTO(<% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>Long<% } %> id, String login, String firstName, String lastName,
+    public UserDTO(<% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>String<% } %> id, String login, String firstName, String lastName,
         String email, boolean activated,<% if (databaseType === 'sql' || databaseType === 'mongodb') { %> String imageUrl, <% } %>String langKey,<% if (databaseType === 'mongodb' || databaseType === 'sql') { %>
         String createdBy, Instant createdDate, String lastModifiedBy, Instant lastModifiedDate,
         <% } %>Set<String> authorities) {
@@ -118,11 +118,11 @@ public class UserDTO {
         this.authorities = authorities;
     }
 
-    public <% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>Long<% } %> getId() {
+    public <% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>String<% } %> getId() {
         return id;
     }
 
-    public void setId(<% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>Long<% } %> id) {
+    public void setId(<% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>String<% } %> id) {
         this.id = id;
     }
 

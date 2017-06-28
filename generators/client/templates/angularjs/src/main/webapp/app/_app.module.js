@@ -39,8 +39,6 @@
         ])
         .run(run);
 
-    run.$inject = ['stateHandler'<% if (enableTranslation) { %>, 'translationHandler'<% } %>];
-
     function run(stateHandler<% if (enableTranslation) { %>, translationHandler<% } %>) {
         stateHandler.initialize();<% if (enableTranslation) { %>
         translationHandler.initialize();<% } %>

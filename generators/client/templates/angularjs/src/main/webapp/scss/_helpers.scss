@@ -1,0 +1,193 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Helpers
+// ----
+
+//
+// TRANSFORM
+// ------------------------------------------------------------------
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+  transform: $value;
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  -ms-transition: $value;
+  transition: $value;
+}
+
+//
+// ALINHAMENTO
+// ------------------------------------------------------------------
+
+// VERTICAL
+// --------
+%vertical-align {
+  @include transform(translateY(-50%));
+
+  position: relative;
+  top: 50%;
+}
+
+@mixin vertical-align {
+  @include transform(translateY(-50%));
+
+  position: relative;
+  top: 50%;
+}
+
+.vertical-align {
+  @extend %vertical-align;
+}
+
+// HORIZONTAL
+// ----------
+%horizontal-align {
+  @include transform(translateX(-50%));
+  position: relative;
+  left: 50%;
+}
+
+@mixin horizontal-align {
+  @include transform(translateX(-50%));
+
+  position: relative;
+  left: 50%;
+}
+
+.horizontal-align {
+  @extend %horizontal-align;
+}
+
+// CENTRALIZADO
+// ------------
+%center-align {
+  @include transform(translate(-50%, -50%));
+
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+
+@mixin center-align {
+  @include transform(translate(-50%, -50%));
+
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+
+.center-align {
+  @extend %center-align;
+}
+
+// NENHUMA CENTRALIZAÇÃO
+// ------------
+%none-align {
+  @include transform(translate(0));
+
+  position: relative;
+  left: auto;
+  top: auto;
+}
+
+@mixin none-align {
+  @include transform(translate(0));
+
+  position: relative;
+  left: auto;
+  top: auto;
+}
+
+.none-align {
+  @extend %center-align;
+}
+
+//
+// WRAP
+// ------------------------------------------------------------------
+@mixin nowrap-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%nowrap-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nowrap-text {
+  @extend %nowrap-text;
+}
+
+//
+// TRANSFORM/TRANSITION
+// ------------------------------------------------------------------
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+  transform: $value;
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  -ms-transition: $value;
+  transition: $value;
+}
+
+//
+// CLASSES PARA SETAR MARGIN/PADDING
+// ------------------------------------------------------------------
+@for $i from 0 through 50 {
+  .set-margin-#{$i} {
+    margin: $i#{px} !important;
+  }
+
+  .set-margin-top-#{$i} {
+    margin-top: $i#{px} !important;
+  }
+
+  .set-margin-right-#{$i} {
+    margin-right: $i#{px} !important;
+  }
+
+  .set-margin-bottom-#{$i} {
+    margin-bottom: $i#{px} !important;
+  }
+
+  .set-margin-left-#{$i} {
+    margin-left: $i#{px} !important;
+  }
+
+  .set-padding-#{$i} {
+    padding: $i#{px} !important;
+  }
+
+  .set-padding-top-#{$i} {
+    padding-top: $i#{px} !important;
+  }
+
+  .set-padding-right-#{$i} {
+    padding-right: $i#{px} !important;
+  }
+
+  .set-padding-bottom-#{$i} {
+    padding-bottom: $i#{px} !important;
+  }
+
+  .set-padding-left-#{$i} {
+    padding-left: $i#{px} !important;
+  }
+}

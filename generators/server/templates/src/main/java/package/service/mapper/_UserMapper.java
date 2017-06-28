@@ -84,7 +84,7 @@ public class UserMapper {
             .collect(Collectors.toList());
     }
 
-    public User userFromId(<% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>Long<% } %> id) {
+    public User userFromId(<% if (databaseType === 'mongodb' || databaseType === 'cassandra') { %>String<% } else { %>String<% } %> id) {
         if (id == null) {
             return null;
         }

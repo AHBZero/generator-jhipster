@@ -71,9 +71,9 @@
 
             function onSuccess(data, headers) {
                 vm.links = ParseLinks.parse(headers('link'));
-                vm.totalItems = headers('X-Total-Count');
-                for (var i = 0; i < data.length; i++) {
-                    vm.<%= entityInstancePlural %>.push(data[i]);
+                vm.totalItems = data.totalElements;
+                for (var i = 0; i < data.content.length; i++) {
+                    vm.<%= entityInstancePlural %>.push(data.content[i]);
                 }
             }
 

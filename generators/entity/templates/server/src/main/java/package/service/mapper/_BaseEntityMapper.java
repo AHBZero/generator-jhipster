@@ -18,15 +18,20 @@
 -%>
 package <%=packageName%>.service.mapper;
 
+import org.mapstruct.Mapping;
 import java.util.List;
 
 public interface EntityMapper <D, E> {
 
-    public E toEntity(D dto);
+    @Mapping(target = "createdBy", ignore = true)
+    @Mapping(target = "createdDate", ignore = true)
+    @Mapping(target = "lastModifiedBy", ignore = true)
+    @Mapping(target = "lastModifiedDate", ignore = true)
+    E toEntity(D dto);
 
-    public D toDto(E entity);
+    D toDto(E entity);
 
-    public List <E> toEntity(List<D> dtoList);
+    List <E> toEntity(List<D> dtoList);
 
-    public List <D> toDto(List<E> entityList);
+    List <D> toDto(List<E> entityList);
 }

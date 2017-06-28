@@ -1,0 +1,78 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for ACCORDION
+// ----
+
+//
+// PRINCIPAL
+// ------------------------------------------------------------------
+.panel .accordion {
+  display: block;
+  margin: 0 -35px;
+}
+
+
+.accordion {
+  // PAINEL
+  // ------------------
+  .panel {
+    @include box-shadow(none);
+
+    // TÍTULO
+    // ------------------
+    .panel-heading {
+      position: relative;
+      padding: 6px 35px;
+      background-color: $pale-grey-two;
+
+      .panel-title {
+        font-size: 12px;
+        font-weight: 500;
+        color: $silver-three;
+        text-transform: uppercase;
+
+        a {
+          display: block;
+        }
+
+        a:hover,
+        a:active,
+        a:focus {
+          text-decoration: none;
+          outline: none;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        font-family: FontAwesome;
+        content: "\f0dd";
+      }
+    }
+  }
+
+  // ITEM ABERTO
+  // ------------------
+  .panel.panel-open {
+
+    .panel-heading {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        right: 30px;
+        top: 6px;
+        font-family: FontAwesome;
+        content: "\f0de";
+      }
+    }
+  }
+
+  // BODY
+  // ------------------
+  .panel-body {
+    padding: 0;
+  }
+}

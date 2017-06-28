@@ -28,10 +28,11 @@ _%>
         .factory('<%= entityClass %>', <%= entityClass %>);
 
     function <%= entityClass %> ($resource<% if (hasDate) { %>, DateUtils<% } %>) {
-        var resourceUrl = <% if (applicationType === 'gateway' && locals.microserviceName) {%> '<%= microserviceName.toLowerCase() %>/' +<% } %> 'api/<%= entityApiUrl %>/:id';
+        var resourceUrl = <% if (applicationType === 'gateway' && locals.microserviceName) {%> '<%= microserviceName.toLowerCase() %>/' +<% } %> 'api/<%= entityApiUrl %>/:id/:action';
 
         return $resource(resourceUrl, {id : '@id'}, {
-            'query': { method: 'GET', isArray: true},
+            'query': { method: 'GET'},
+            'queryAll': { method: 'GET', isArray: true, params : {action : 'all'}},
             'get': {
                 method: 'GET',
                 transformResponse: function (data) {

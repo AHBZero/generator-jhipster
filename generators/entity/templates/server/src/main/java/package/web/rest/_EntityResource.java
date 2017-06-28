@@ -19,6 +19,7 @@
 package <%=packageName%>.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
+import <%=packageName%>.security.AuthoritiesConstants;
 <%_ if (dto !== 'mapstruct' || service === 'no') { _%>
 import <%=packageName%>.domain.<%= entityClass %>;
 <%_ } _%>
@@ -46,7 +47,16 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 <%_ } _%>
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 <% if (validation) { %>
 import javax.validation.Valid;<% } %>
 import java.net.URI;
@@ -54,7 +64,6 @@ import java.net.URISyntaxException;
 <%_ const viaService = service !== 'no';
     if (pagination === 'no' && dto === 'mapstruct' && !viaService && fieldsContainNoOwnerOneToOne === true) { _%>
 import java.util.LinkedList;<% } %>
-import java.util.List;
 import java.util.Optional;<% if (databaseType === 'cassandra') { %>
 import java.util.UUID;<% } %><% if (!viaService && (searchEngine === 'elasticsearch' || fieldsContainNoOwnerOneToOne === true)) { %>
 import java.util.stream.Collectors;<% } %><% if (searchEngine === 'elasticsearch' || fieldsContainNoOwnerOneToOne === true) { %>
@@ -76,33 +85,37 @@ public class <%= entityClass %>Resource {
 
     @PostMapping("/<%= entityApiUrl %>")
     @Timed
+    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})
     public ResponseEntity<<%= instanceType %>> create<%= entityClass %>(<% if (validation) { %>@Valid <% } %>@RequestBody <%= instanceType %> <%= instanceName %>) throws URISyntaxException {
         log.debug("REST request to save <%= entityClass %> : {}", <%= instanceName %>);
         if (<%= instanceName %>.getId() != null) {
             return ResponseEntity.badRequest().headers(HeaderUtil.createFailureAlert(ENTITY_NAME, "idexists", "A new <%= entityInstance %> cannot already have an ID")).body(null);
         }<%- include('../../common/save_template', {viaService: viaService, returnDirectly: false}); -%>
         return ResponseEntity.created(new URI("/api/<%= entityApiUrl %>/" + result.getId()))
-            .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId().toString()))
+            .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId()))
             .body(result);
     }
 
     @PutMapping("/<%= entityApiUrl %>/{id}")
     @Timed
-    public ResponseEntity<<%= instanceType %>> update<%= entityClass %>(<% if (validation) { %>@Valid <% } %>@RequestBody <%= instanceType %> <%= instanceName %>, String id) throws URISyntaxException {
+    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})
+    public ResponseEntity<<%= instanceType %>> update<%= entityClass %>(<% if (validation) { %>@Valid <% } %>@RequestBody <%= instanceType %> <%= instanceName %>, @PathVariable("id") String id) throws URISyntaxException {
         log.debug("REST request to update <%= entityClass %> : {}", <%= instanceName %>);
         if (<%= instanceName %>.getId() == null || id == null) {
             return create<%= entityClass %>(<%= instanceName %>);
         }<%- include('../../common/save_template', {viaService: viaService, returnDirectly: false}); -%>
         return ResponseEntity.ok()
-            .headers(HeaderUtil.createEntityUpdateAlert(ENTITY_NAME, <%= instanceName %>.getId().toString()))
+            .headers(HeaderUtil.createEntityUpdateAlert(ENTITY_NAME, <%= instanceName %>.getId()))
             .body(result);
     }
 
     @GetMapping("/<%= entityApiUrl %>")
-    @Timed<%- include('../../common/get_all_template', {viaService: viaService}); -%>
+    @Timed
+    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})<%- include('../../common/get_all_template', {viaService: viaService}); -%>
 
     @GetMapping("/<%= entityApiUrl %>/{id}")
     @Timed
+    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})
     public ResponseEntity<<%= instanceType %>> get<%= entityClass %>(@PathVariable <%= pkType %> id) {
         log.debug("REST request to get <%= entityClass %> : {}", id);<%- include('../../common/get_template', {viaService: viaService, returnDirectly:false}); -%>
         return ResponseUtil.wrapOrNotFound(Optional.ofNullable(<%= instanceName %>));
@@ -110,11 +123,13 @@ public class <%= entityClass %>Resource {
 
     @DeleteMapping("/<%= entityApiUrl %>/{id}")
     @Timed
+    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})
     public ResponseEntity<Void> delete<%= entityClass %>(@PathVariable <%= pkType %> id) {
         log.debug("REST request to delete <%= entityClass %> : {}", id);<%- include('../../common/delete_template', {viaService: viaService}); -%>
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id<% if (pkType !== 'String') { %>.toString()<% } %>)).build();
     }<% if (searchEngine === 'elasticsearch') { %>
 
     @GetMapping("/_search/<%= entityApiUrl %>")
-    @Timed<%- include('../../common/search_template', {viaService: viaService}); -%><% } %>
+    @Timed
+    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})<%- include('../../common/search_template', {viaService: viaService}); -%><% } %>
 }

@@ -20,7 +20,10 @@
 const keyPrefix = angularAppName + '.'+ entityTranslationKey + '.';
 const ngValidators = './ng_validators';
 %>
-<form name="editForm" role="form" novalidate ng-submit="vm.save()"<% if (validation) { %> show-validation<% } %>>
+<div class="content content-bg">
+  <form name="editForm" role="form" novalidate ng-submit="vm.save()"<% if (validation) { %> show-validation<% } %>>
+
+    <jhi-alert-error></jhi-alert-error>
 
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
@@ -28,7 +31,7 @@ const ngValidators = './ng_validators';
         <h4 class="modal-title" id="my<%= entityClass %>Label" data-translate="<%= keyPrefix %>home.createOrEditLabel">Create or edit a <%= entityClassHumanized %></h4>
     </div>
     <div class="modal-body">
-        <jhi-alert-error></jhi-alert-error>
+
         <div class="form-group" ng-show="vm.<%=entityInstance %>.id">
             <label for="id" data-translate="global.field.id">ID</label>
             <input type="text" class="form-control" id="id" name="id"
@@ -202,12 +205,14 @@ const ngValidators = './ng_validators';
             const relationshipRequired = relationships[idx].relationshipRequired;
             const translationKey = keyPrefix + relationshipName;
             const selectize = relationships[idx].selectize;
+            const selectizeCreate = relationships[idx].selectizeCreate;
+            const selectizeRender = relationships[idx].selectizeRender;
              _%>
             <%_ if (relationshipType === 'many-to-one' || (relationshipType === 'one-to-one' && ownerSide === true && otherEntityName === 'user')) { _%>
         <div class="form-group">
             <label data-translate="<%= translationKey %>" for="field_<%= relationshipName %>"><%= relationshipNameHumanized %></label>
             <%_ if (selectize) { _%>
-            <input selectize="{maxItems: 1, create: false}"
+            <input selectize="{maxItems: 1, create: false, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
                    selectize-load-data="vm.load<%=relationshipFieldName%>(query, callback)"
                    selectize-on-select="vm.<%=relationshipFieldName%>Selected(id, model)"
                    selectize-update-event="reload.<%=relationshipFieldNamePlural.toLowerCase() %>"
@@ -215,6 +220,8 @@ const ngValidators = './ng_validators';
                    selectize-initial-data="vm.<%=relationshipFieldNamePlural.toLowerCase()%>"
                    selectize-initial-data-load="true"
                    selectize-initial-data-load-index="[vm.<%=entityInstance %>.<%=relationshipFieldName %>]"
+                   <% if (selectizeCreate) { %>selectize-create="vm.create<%=relationshipFieldName%>(name, callback)"<% } %>
+                   <% if (selectizeRender) { %>selectize-render="vm.render<%=relationshipFieldName%>(item, escape)"<% } %>
                    <% if (relationshipRequired) { %> required<% } %>
                    >
            <%_ } else { _%>
@@ -229,7 +236,7 @@ const ngValidators = './ng_validators';
         <div class="form-group">
             <label data-translate="<%= translationKey %>" for="field_<%= relationshipName %>"><%= relationshipNameHumanized %></label>
             <%_ if (selectize) { _%>
-            <input selectize="{maxItems: 1, create: false}"
+            <input selectize="{maxItems: 1, create: false, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
                    selectize-load-data="vm.load<%=relationshipFieldName%>(query, callback)"
                    selectize-on-select="vm.<%=relationshipFieldName%>Selected(id, model)"
                    selectize-update-event="reload.<%=relationshipFieldNamePlural.toLowerCase() %>"
@@ -237,6 +244,8 @@ const ngValidators = './ng_validators';
                    selectize-initial-data="vm.<%=relationshipFieldNamePlural.toLowerCase()%>"
                    selectize-initial-data-load="true"
                    selectize-initial-data-load-index="[vm.<%=entityInstance %>.<%=relationshipFieldName %>]"
+                   <% if (selectizeCreate) { %>selectize-create="vm.create<%=relationshipFieldName%>(name, callback)"<% } %>
+                   <% if (selectizeRender) { %>selectize-render="vm.render<%=relationshipFieldName%>(item, escape)"<% } %>
                    <% if (relationshipRequired) { %> required<% } %>
                    >
            <%_ } else { _%>
@@ -252,7 +261,7 @@ const ngValidators = './ng_validators';
         <div class="form-group">
             <label data-translate="<%= translationKey %>" for="field_<%= relationshipName %>"><%= relationshipNameHumanized %></label>
             <%_ if (selectize) { _%>
-            <input selectize="{maxItems: 1, create: false}"
+            <input selectize="{maxItems: 1, create: false, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
                    selectize-load-data="vm.load<%=relationshipFieldName%>(query, callback)"
                    selectize-on-select="vm.<%=relationshipFieldName%>Selected(id, model)"
                    selectize-update-event="reload.<%=relationshipFieldNamePlural.toLowerCase() %>"
@@ -260,6 +269,8 @@ const ngValidators = './ng_validators';
                    selectize-initial-data="vm.<%=relationshipFieldNamePlural.toLowerCase()%>"
                    selectize-initial-data-load="true"
                    selectize-initial-data-load-index="[vm.<%=entityInstance %>.<%=relationshipFieldName %>]"
+                   <% if (selectizeCreate) { %>selectize-create="vm.create<%=relationshipFieldName%>(name, callback)"<% } %>
+                   <% if (selectizeRender) { %>selectize-render="vm.render<%=relationshipFieldName%>(item, escape)"<% } %>
                    <% if (relationshipRequired) { %> required<% } %>
                    >
            <%_ } else { _%>
@@ -287,4 +298,5 @@ const ngValidators = './ng_validators';
             <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
         </button>
     </div>
-</form>
+  </form>
+</div>

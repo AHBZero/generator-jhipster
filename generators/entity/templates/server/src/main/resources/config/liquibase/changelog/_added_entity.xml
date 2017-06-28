@@ -19,10 +19,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <databaseChangeLog
     xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
-                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
     <property name="now" value="now()" dbms="h2"/>
 
@@ -48,7 +46,7 @@
     -->
     <changeSet id="<%= changelogDate %>-1" author="jhipster">
         <createTable tableName="<%= entityTableName %>">
-            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+            <column name="id" type="varchar(36)" >
                 <constraints primaryKey="true" nullable="false"/>
             </column><% for (idx in fields) {
             let nullable = true;
@@ -120,6 +118,14 @@
             <column name="<%=getColumnName(relationshipName) %>_id" type="bigint">
                 <constraints unique="true" nullable="<%= nullable_relation %>" />
             </column><% } %><% } %>
+            <column name="created_by" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="timestamp" defaultValueDate="${now}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_by" type="varchar(50)"/>
+            <column name="last_modified_date" type="timestamp"/>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
         </createTable>
         <%_ for (const idx in fields) {
@@ -147,5 +153,18 @@
 
         <addPrimaryKey columnNames="<%= getPluralColumnName(name) %>_id, <%= getPluralColumnName(relationshipName) %>_id" tableName="<%= joinTableName %>"/>
         <% } %><% } %>
+
+        <sql endDelimiter="/">
+            CREATE TRIGGER before_insert_<%= entityTableName %>
+            BEFORE INSERT ON <%= entityTableName %>
+            FOR EACH ROW
+                BEGIN
+                    IF new.id IS NULL
+                    THEN
+                        SET new.id = uuid();
+                    END IF;
+                END
+            /
+        </sql>
     </changeSet>
 </databaseChangeLog>

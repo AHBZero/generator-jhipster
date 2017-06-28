@@ -1677,15 +1677,16 @@ module.exports = class extends PrivateBase {
     /**
      * Prints a JHipster logo.
      */
+
     printJHipsterLogo() {
-        this.log(`${chalk.green('\n        ██╗')}${chalk.red(' ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗')}`);
-        this.log(`${chalk.green('        ██║')}${chalk.red(' ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗')}`);
-        this.log(`${chalk.green('        ██║')}${chalk.red(' ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝')}`);
-        this.log(`${chalk.green('  ██╗   ██║')}${chalk.red(' ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║')}`);
-        this.log(`${chalk.green('  ╚██████╔╝')}${chalk.red(' ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗')}`);
-        this.log(`${chalk.green('   ╚═════╝ ')}${chalk.red(' ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝')}\n`);
+        this.log(`${chalk.green('\n███████╗███████╗██████╗  █████╗ ██████╗ ████████╗ █████╗')}`);
+        this.log(`${chalk.green('██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗')}`);
+        this.log(`${chalk.green('█████╗  ███████╗██████╔╝███████║██████╔╝   ██║   ███████║')}`);
+        this.log(`${chalk.green('██╔══╝  ╚════██║██╔═══╝ ██╔══██║██╔══██╗   ██║   ██╔══██║')}`);
+        this.log(`${chalk.green('███████╗███████║██║     ██║  ██║██║  ██║   ██║   ██║  ██║')}`);
+        this.log(`${chalk.green('╚══════╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝')}\n`);
         this.log(chalk.white.bold('                            https://jhipster.github.io\n'));
-        this.log(chalk.white('Welcome to the JHipster Generator ') + chalk.yellow(`v${packagejs.version}`));
+        this.log(chalk.white('Welcome to the Esparta-Hipster Generator ') + chalk.yellow(`v${packagejs.version}`));
         this.log(chalk.white(`Documentation for creating an application: ${chalk.yellow('https://jhipster.github.io/creating-an-app/')}`));
         this.log(chalk.white(`Application files will be generated in folder: ${chalk.yellow(process.cwd())}`));
     }
@@ -1789,9 +1790,9 @@ module.exports = class extends PrivateBase {
                 when: response => response.enableTranslation === true,
                 type: 'list',
                 name: 'nativeLanguage',
-                message: 'Please choose the native language of the application',
+                message: 'Please choose the native language of the application (Default is pt-br)',
                 choices: languageOptions,
-                default: 'en',
+                default: 'pt-br',
                 store: true
             },
             {

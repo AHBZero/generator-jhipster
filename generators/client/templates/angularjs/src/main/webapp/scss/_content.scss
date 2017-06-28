@@ -1,0 +1,35 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for Content
+// ----
+
+//
+// CONTENT
+// ------------------------------------------------------------------
+.content {
+  @extend .container;
+  min-height: calc(100vh - #{$navbar-height} - #{$footer-height} - 135px);
+  margin: 20px;
+
+  @media (min-width: $screen-sm-min) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  &.content-bg {
+    @include box-shadow(0 6px 12px 0 $pinkish-grey-three);
+    padding: 10px 20px 40px;
+    background: $white;
+    border-radius: 4px;
+
+    .row {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+}

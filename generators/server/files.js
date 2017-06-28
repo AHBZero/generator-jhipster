@@ -346,6 +346,49 @@ function writeFiles() {
                 this.template(`${SERVER_MAIN_SRC_DIR}package/config/audit/_AuditEventConverter.java`, `${javaDir}config/audit/AuditEventConverter.java`);
             }
 
+            this.template(`${SERVER_MAIN_SRC_DIR}package/config/push/_FCMCredentials.java`, `${javaDir}config/push/FCMCredentials.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/config/push/_PushConfiguration.java`, `${javaDir}config/push/PushConfiguration.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/domain/push/_DestinationIdentifier.java`, `${javaDir}domain/push/DestinationIdentifier.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/domain/push/_DeviceTokenCheck.java`, `${javaDir}domain/push/DeviceTokenCheck.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/domain/push/_DeviceTokenValidator.java`, `${javaDir}domain/push/DeviceTokenValidator.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/domain/push/_Platform.java`, `${javaDir}domain/push/Platform.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/domain/push/_PushMessage.java`, `${javaDir}domain/push/PushMessage.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/domain/push/_PushType.java`, `${javaDir}domain/push/PushType.java`);
+
+
+            this.template(`${SERVER_MAIN_SRC_DIR}package/domain/_Installation.java`, `${javaDir}domain/Installation.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/repository/_InstallationRepository.java`, `${javaDir}repository/InstallationRepository.java`);
+
+
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/_InstallationService.java`, `${javaDir}service/InstallationService.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/_FCMSenderService.java`, `${javaDir}service/push/FCMSenderService.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/_InstallationPushService.java`, `${javaDir}service/push/InstallationPushService.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/_PushSenderCallback.java`, `${javaDir}service/push/PushSenderCallback.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/_PushSenderService.java`, `${javaDir}service/push/PushSenderService.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/_SenderType.java`, `${javaDir}service/push/SenderType.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/_PushService.java`, `${javaDir}service/push/PushService.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/sender/_Constants.java`, `${javaDir}service/push/sender/Constants.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/sender/_InvalidRequestException.java`, `${javaDir}service/push/sender/InvalidRequestException.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/sender/_Message.java`, `${javaDir}service/push/sender/Message.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/sender/_MulticastResult.java`, `${javaDir}service/push/sender/MulticastResult.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/sender/_Notification.java`, `${javaDir}service/push/sender/Notification.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/sender/_Result.java`, `${javaDir}service/push/sender/Result.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/sender/_Sender.java`, `${javaDir}service/push/sender/Sender.java`);
+            // gedanken
+
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AjaxLogoutSuccessHandler.java`, `${javaDir}security/AjaxLogoutSuccessHandler.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthenticationManagerImpl.java`, `${javaDir}security/AuthenticationManagerImpl.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthenticationToken.java`, `${javaDir}security/AuthenticationToken.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthorizationServerTokenServicesImpl.java`, `${javaDir}security/AuthorizationServerTokenServicesImpl.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomAuthenticationKeyGenerator.java`, `${javaDir}security/CustomAuthenticationKeyGenerator.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomBasicAuthenticationEntryPoint.java`, `${javaDir}security/CustomBasicAuthenticationEntryPoint.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomOAuth2AccessToken.java`, `${javaDir}security/CustomOAuth2AccessToken.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomTokenEnhancer.java`, `${javaDir}security/CustomTokenEnhancer.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomTokenGranter.java`, `${javaDir}security/CustomTokenGranter.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_OAuth2RequestFactoryImpl.java`, `${javaDir}security/OAuth2RequestFactoryImpl.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_UserTokenService.java`, `${javaDir}security/UserTokenService.java`);
+
+
             this.template(`${SERVER_MAIN_SRC_DIR}package/config/_ApplicationProperties.java`, `${javaDir}config/ApplicationProperties.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/config/_JacksonConfiguration.java`, `${javaDir}config/JacksonConfiguration.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/config/_LocaleConfiguration.java`, `${javaDir}config/LocaleConfiguration.java`);

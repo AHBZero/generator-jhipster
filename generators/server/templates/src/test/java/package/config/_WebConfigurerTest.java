@@ -72,6 +72,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.options;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
 
 /**
  * Unit tests for the WebConfigurer class.
@@ -105,7 +106,9 @@ public class WebConfigurerTest {
         env = new MockEnvironment();
         props = new JHipsterProperties();
 
-        webConfigurer = new WebConfigurer(env, props<% if (clusteredHttpSession === 'hazelcast' || hibernateCache === 'hazelcast') { %>, new MockHazelcastInstance()<% } %>);
+        PageableHandlerMethodArgumentResolver resolver = new PageableHandlerMethodArgumentResolver();
+
+        webConfigurer = new WebConfigurer(resolver, env, props<% if (clusteredHttpSession === 'hazelcast' || hibernateCache === 'hazelcast') { %>, new MockHazelcastInstance()<% } %>);
         metricRegistry = new MetricRegistry();
         webConfigurer.setMetricRegistry(metricRegistry);
     }

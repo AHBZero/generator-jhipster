@@ -28,8 +28,6 @@ import <%=packageName%>.repository.*;
 import <%=packageName%>.security.AuthoritiesConstants;
 
 import io.github.jhipster.security.Http401UnauthorizedEntryPoint;
-import io.github.jhipster.security.AjaxLogoutSuccessHandler;
-
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -45,6 +43,31 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
+
+import <%=packageName%>.security.AjaxLogoutSuccessHandler;
+import <%=packageName%>.security.CustomAuthenticationKeyGenerator;
+import <%=packageName%>.security.CustomTokenEnhancer;
+import <%=packageName%>.security.CustomTokenGranter;
+
+import com.google.common.collect.Lists;
+
+import org.springframework.security.oauth2.provider.ClientDetailsService;
+import org.springframework.security.oauth2.provider.CompositeTokenGranter;
+import org.springframework.security.oauth2.provider.OAuth2RequestFactory;
+import org.springframework.security.oauth2.provider.TokenGranter;
+import org.springframework.security.oauth2.provider.approval.ApprovalStore;
+import org.springframework.security.oauth2.provider.approval.JdbcApprovalStore;
+import org.springframework.security.oauth2.provider.client.ClientCredentialsTokenGranter;
+import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
+import org.springframework.security.oauth2.provider.code.AuthorizationCodeServices;
+import org.springframework.security.oauth2.provider.code.JdbcAuthorizationCodeServices;
+import org.springframework.security.oauth2.provider.implicit.ImplicitTokenGranter;
+import org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter;
+import org.springframework.security.oauth2.provider.refresh.RefreshTokenGranter;
+import org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices;
+import org.springframework.security.oauth2.provider.token.TokenEnhancerChain;
+import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+
 import org.springframework.security.oauth2.provider.approval.ApprovalStore;<% if (databaseType === 'sql') { %>
 import org.springframework.security.oauth2.provider.approval.JdbcApprovalStore;<% } %>
 import org.springframework.security.oauth2.provider.code.AuthorizationCodeServices;<% if (databaseType === 'sql') { %>
@@ -58,6 +81,9 @@ import org.springframework.web.filter.CorsFilter;
 import javax.sql.DataSource;
 <%_ } _%>
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Configuration
 public class OAuth2ServerConfiguration {<% if (databaseType === 'sql') { %>
 
@@ -68,8 +94,15 @@ public class OAuth2ServerConfiguration {<% if (databaseType === 'sql') { %>
     }
 
     @Bean
+    protected JdbcClientDetailsService jdbcClientDetailsService() {
+        return new JdbcClientDetailsService(dataSource);
+    }
+
+    @Bean
     public JdbcTokenStore tokenStore() {
-        return new JdbcTokenStore(dataSource);
+        JdbcTokenStore jdbcTokenStore = new JdbcTokenStore(dataSource);
+        jdbcTokenStore.setAuthenticationKeyGenerator(new CustomAuthenticationKeyGenerator());
+        return jdbcTokenStore;
     }<% } %><% if (databaseType === 'mongodb') { %>
 
     @Bean
@@ -81,7 +114,9 @@ public class OAuth2ServerConfiguration {<% if (databaseType === 'sql') { %>
     @EnableResourceServer
     protected static class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
 
-        private final TokenStore tokenStore;
+        private final AuthenticationManager authenticationManager;
+
+        private final JdbcTokenStore tokenStore;
 
         private final Http401UnauthorizedEntryPoint http401UnauthorizedEntryPoint;
 
@@ -89,9 +124,9 @@ public class OAuth2ServerConfiguration {<% if (databaseType === 'sql') { %>
 
         private final CorsFilter corsFilter;
 
-        public ResourceServerConfiguration(TokenStore tokenStore, Http401UnauthorizedEntryPoint http401UnauthorizedEntryPoint,
+        public ResourceServerConfiguration(@Qualifier("authenticationManager") AuthenticationManager authenticationManager, JdbcTokenStore tokenStore, Http401UnauthorizedEntryPoint http401UnauthorizedEntryPoint,
             AjaxLogoutSuccessHandler ajaxLogoutSuccessHandler, CorsFilter corsFilter) {
-
+            this.authenticationManager = authenticationManager;
             this.tokenStore = tokenStore;
             this.http401UnauthorizedEntryPoint = http401UnauthorizedEntryPoint;
             this.ajaxLogoutSuccessHandler = ajaxLogoutSuccessHandler;
@@ -143,14 +178,26 @@ public class OAuth2ServerConfiguration {<% if (databaseType === 'sql') { %>
 
         private final AuthenticationManager authenticationManager;
 
-        private final TokenStore tokenStore;
+        private final org.springframework.security.core.userdetails.UserDetailsService userDetailsService;
+
+        private final ClientDetailsService clientDetailsService;
+
+        private final AuthorizationServerTokenServices authorizationServerTokenServices;
+
+        private final OAuth2RequestFactory oAuth2RequestFactory;
+
+        private final JdbcTokenStore tokenStore;
 <%_ if (databaseType === 'sql') { _%>
 
         private final DataSource dataSource;
 
-        public AuthorizationServerConfiguration(@Qualifier("authenticationManagerBean") AuthenticationManager authenticationManager,
-                TokenStore tokenStore, DataSource dataSource) {
+        public AuthorizationServerConfiguration(ClientDetailsService clientDetailsService, @Qualifier("userDetailsService") org.springframework.security.core.userdetails.UserDetailsService userDetailsService, @Qualifier("authorizationServerTokenServices") AuthorizationServerTokenServices authorizationServerTokenServices, @Qualifier("oAuth2RequestFactory") OAuth2RequestFactory oAuth2RequestFactory, @Qualifier("authenticationManager") AuthenticationManager authenticationManager,
+                JdbcTokenStore tokenStore, DataSource dataSource) {
 
+            this.clientDetailsService = clientDetailsService;
+            this.userDetailsService = userDetailsService;
+            this.oAuth2RequestFactory = oAuth2RequestFactory;
+            this.authorizationServerTokenServices = authorizationServerTokenServices;
             this.authenticationManager = authenticationManager;
             this.tokenStore = tokenStore;
             this.dataSource = dataSource;
@@ -202,7 +249,40 @@ public class OAuth2ServerConfiguration {<% if (databaseType === 'sql') { %>
                 .authorizationCodeServices(authorizationCodeServices())
                 .approvalStore(approvalStore())
                 .tokenStore(tokenStore)
-                .authenticationManager(authenticationManager);
+                .authenticationManager(authenticationManager)
+                .tokenServices(authorizationServerTokenServices)
+                .tokenEnhancer(tokenEnhancerChain())
+                .tokenGranter(tokenGranter(clientDetailsService, authenticationManager, authorizationServerTokenServices, oAuth2RequestFactory, endpoints));
+        }
+
+        @Bean
+        public TokenEnhancerChain tokenEnhancerChain() {
+            final TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
+            tokenEnhancerChain.setTokenEnhancers(Lists.newArrayList(new CustomTokenEnhancer()));
+            return tokenEnhancerChain;
+        }
+
+        @Bean
+        public CustomTokenGranter getTokenGranter() {
+            return new CustomTokenGranter(authorizationServerTokenServices, clientDetailsService, oAuth2RequestFactory, authenticationManager, tokenStore);
+        }
+
+        private TokenGranter tokenGranter(final ClientDetailsService clientService,
+                                          final AuthenticationManager manager,
+                                          final AuthorizationServerTokenServices tokenServices,
+                                          final OAuth2RequestFactory requestFactory,
+                                          final AuthorizationServerEndpointsConfigurer endpoints) {
+
+            TokenGranter tokenGranter = endpoints.getTokenGranter();
+
+            List<TokenGranter> granters = new ArrayList<>();
+            granters.add(getTokenGranter());
+            granters.add(tokenGranter);
+            granters.add(new ImplicitTokenGranter(tokenServices, clientService, requestFactory));
+            granters.add(new ClientCredentialsTokenGranter(tokenServices, clientService, requestFactory));
+            granters.add(new ResourceOwnerPasswordTokenGranter(manager, tokenServices, clientService, requestFactory));
+            granters.add(new RefreshTokenGranter(tokenServices, clientService, requestFactory));
+            return new CompositeTokenGranter(granters);
         }
 
         @Override

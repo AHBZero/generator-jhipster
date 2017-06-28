@@ -39,6 +39,8 @@ import org.springframework.boot.web.servlet.ServletContextInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
@@ -56,6 +58,8 @@ public class WebConfigurer implements ServletContextInitializer, EmbeddedServlet
 
     private final Logger log = LoggerFactory.getLogger(WebConfigurer.class);
 
+    private final PageableHandlerMethodArgumentResolver resolver;
+
     private final Environment env;
 
     private final JHipsterProperties jHipsterProperties;<% if (clusteredHttpSession === 'hazelcast' || hibernateCache === 'hazelcast') { %>
@@ -64,8 +68,9 @@ public class WebConfigurer implements ServletContextInitializer, EmbeddedServlet
 
     private MetricRegistry metricRegistry;
 
-    public WebConfigurer(Environment env, JHipsterProperties jHipsterProperties<% if (clusteredHttpSession === 'hazelcast' || hibernateCache === 'hazelcast') { %>, HazelcastInstance hazelcastInstance<% } %>) {
+    public WebConfigurer(PageableHandlerMethodArgumentResolver resolver, Environment env, JHipsterProperties jHipsterProperties<% if (clusteredHttpSession === 'hazelcast' || hibernateCache === 'hazelcast') { %>, HazelcastInstance hazelcastInstance<% } %>) {
 
+        this.resolver = resolver;
         this.env = env;
         this.jHipsterProperties = jHipsterProperties;
         <%_ if (clusteredHttpSession === 'hazelcast' || hibernateCache === 'hazelcast') { _%>
@@ -87,6 +92,11 @@ public class WebConfigurer implements ServletContextInitializer, EmbeddedServlet
         if (env.acceptsProfiles(JHipsterConstants.SPRING_PROFILE_DEVELOPMENT)) {
             initH2Console(servletContext);
         }<% } %>
+
+        PageRequest pageRequest = new PageRequest(0, 20);
+        resolver.setFallbackPageable(pageRequest);
+        resolver.setMaxPageSize(100);
+
         log.info("Web application fully configured");
     }<% if (clusteredHttpSession === 'hazelcast') { %>
 

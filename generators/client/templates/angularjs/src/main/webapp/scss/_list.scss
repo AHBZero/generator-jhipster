@@ -1,0 +1,123 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for screen of list
+// ----
+
+//
+// HEADER
+// ------------------------------------------------------------------
+.list-header {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba($warm-grey-four, 0.3);
+
+  .col-left {
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+  }
+
+  .col-right {
+    @media (min-width: $screen-sm-min) {
+      padding-right: 0;
+    }
+  }
+
+  .title {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 26px;
+    font-size: 20px;
+    font-weight: 600;
+    color: $steel;
+  }
+
+  .btn-new {
+    @extend .btn;
+    @extend .btn-success;
+    @extend .btn-xs;
+    @extend .btn-rounded;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+}
+
+//
+// BUTTONS
+// ------------------------------------------------------------------
+.list-buttons {
+  .btn {
+    @include box-shadow(none);
+    min-width: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    padding: 7px;
+    font-size: 13px;
+    color: $cloudy-blue;
+    line-height: 22px;
+    background: none;
+    border: none;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .btn-primary:hover {
+    @extend .btn-primary;
+  }
+
+  .btn-info:hover {
+    @extend .btn-info;
+  }
+
+  .btn-danger:hover {
+    @extend .btn-danger;
+  }
+
+  .btn-success:hover {
+    @extend .btn-success;
+  }
+
+  .btn-default:hover {
+    @extend .btn-default;
+  }
+
+  .btn-warning:hover {
+    @extend .btn-default;
+  }
+}
+
+//
+// ATIVO/INATIVO
+// ------------------------------------------------------------------
+.list-active-icon,
+.list-inactive-icon {
+  position: relative;
+  padding-left: 15px !important;
+
+  &:before {
+    position: absolute;
+    top: calc(50% - 4px);
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: $booger;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.list-inactive-icon {
+  &:before {
+    background: $brownish-grey-five;
+  }
+}
+

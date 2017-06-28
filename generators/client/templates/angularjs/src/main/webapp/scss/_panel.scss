@@ -1,0 +1,128 @@
+// ----
+// Created by: Tabata Ruiz
+// Description: Styles for PANEL
+// ----
+
+//
+// PANEL DEFAULT
+// ------------------------------------------------------------------
+.panel.panel-default {
+  @include box-shadow(0 6px 12px 0 $pinkish-grey-three);
+  border: none;
+
+  .panel-heading {
+    .panel-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: $steel;
+    }
+  }
+}
+
+//
+// TIPOGRAFIA
+// ------------------------------------------------------------------
+
+// descrição simples
+// ------------------
+.panel-description {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: $greyish;
+}
+
+// título grande verde
+// ------------------
+.panel-large-title {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: $jungle-green-two;
+}
+
+// descrição grande
+// ------------------
+.panel-large-description {
+  display: block;
+  width: 100%;
+  font-size: 66px;
+  font-weight: 500;
+  text-align: center;
+  color: $brownish-grey;
+}
+
+// descrição média
+// ------------------
+.panel-medium-description {
+  display: block;
+  font-size: 25px;
+  color: $brownish-grey;
+}
+
+// TÍTULO COLORIDO
+// ------------------
+.panel-colored-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+
+  .fa {
+    line-height: 20px;
+  }
+
+  &.success {
+    color: $apple-green;
+
+    .caret {
+      @include transform(rotate(180deg));
+    }
+  }
+
+  &.info {
+    color: $bright-sky-blue;
+  }
+
+  &.danger {
+    color: $salmon;
+  }
+}
+
+//
+// DROPDOWN
+// ------------------------------------------------------------------
+.panel-dropdown {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+
+  .selected-item {
+    font-size: 18px;
+    color: $greyblue !important;
+  }
+}
+
+//
+// BUTTON GROUP
+// ------------------------------------------------------------------
+.panel-btn-group {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+
+  .item {
+    margin: 0 17px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    color: $white-eight;
+    line-height: 33px;
+    cursor: pointer;
+
+    &.active {
+      color: $jungle-green-two;
+    }
+  }
+}

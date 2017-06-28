@@ -23,8 +23,6 @@
         .module('<%=angularAppName%>')
         .controller('LoginController', LoginController);
 
-    LoginController.$inject = ['$rootScope', '$state', '$timeout', 'Auth', '$uibModalInstance'];
-
     function LoginController ($rootScope, $state, $timeout, Auth, $uibModalInstance) {
         var vm = this;
 
