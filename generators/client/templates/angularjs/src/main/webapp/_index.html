@@ -47,36 +47,17 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <page-ribbon></page-ribbon>
-    <div ui-view="navbar" ng-cloak></div>
-    <div class="container">
-        <div class="well" ui-view="content">
-            <!-- inject:troubleshoot -->
-            <!-- This content is for troubleshooting purpose and will be removed by `gulp install` task -->
-            <h1>An error has occured :-(</h1>
-            <em>There was an error when generating this application with <a href="http://jhipster.github.io/">JHipster</a></em>
-            <p>If you are seeing this, it means something went wrong during the initial setup of the application.</p>
-            <h2>Usual error causes</h2>
-            <ol>
-                <li>You had a network error while running <code style="color:red">npm install</code> or <code style="color:red">bower install</code>. If you are behind a corporate proxy, it is likely that this error was caused by your proxy. Have a look at the JHipster error logs, you will probably have the cause of the error.</li>
-                <li>You installed a Node.js version that doesn't work with JHipster: please use an LTS (long-term support) version, as it's the only version we support.</li>
-            </ol>
-            <h2>Running JHipster again</h2>
-            <p>If you want to go fast, run <code style="color:red">jhipster --force</code> to regenerate application and run everything again.</p>
-            <p>If you want to have more control on what you generate, so you can debug your issue more easily, you should follow the following steps:</p>
-            <ol>
-                <li>Install npm dependencies with the command <code style="color:red">npm install</code></li>
-                <li>Install bower dependencies with the command <code style="color:red">bower install</code></li>
-                <li>Run the initial setup using gulp with the command <code style="color:red">gulp install</code></li>
-            </ol>
-            <p><em>Note:</em> if you are re-generating an existing JHipster application with some existing entities, use <code style="color:red">jhipster --force --with-entities</code> to regenerate your applications with its entities.</p>
 
-            <!-- endinject -->
-        </div>
+   <div ui-view="navbar" ng-cloak></div>
 
-        <div class="footer" ng-cloak>
-            <p data-translate="footer">footer</p>
-        </div>
-    </div>
+   <div ui-view="content">
+       <!-- Angular views -->
+   </div>
+
+    <ng-include src="'app/layouts/footer/footer.html'">
+    </ng-include>
+
+
     <noscript>
         <h1>You must enable javascript to view this page.</h1>
     </noscript>

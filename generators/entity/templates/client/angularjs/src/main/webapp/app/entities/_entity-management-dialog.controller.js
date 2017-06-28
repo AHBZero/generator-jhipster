@@ -24,7 +24,7 @@
         .module('<%=angularAppName%>')
         .controller('<%= entityAngularName %>ManageController', <%= entityAngularName %>ManageController);
 
-    function <%= entityAngularName %>ManageController (previousState, $state<% if (fieldsContainOwnerOneToOne) { %>, $q<% } %><% if (fieldsContainBlob) { %>, DataUtils<% } %>, entity, <%= entityClass %><% for (idx in differentTypes) { if (differentTypes[idx] !== entityClass) {%>, <%= differentTypes[idx] %><% } } %>) {
+    function <%= entityAngularName %>ManageController ($stateParams, previousState, $state<% if (fieldsContainOwnerOneToOne) { %>, $q<% } %><% if (fieldsContainBlob) { %>, DataUtils<% } %>, entity, <%= entityClass %><% for (idx in differentTypes) { if (differentTypes[idx] !== entityClass) {%>, <%= differentTypes[idx] %><% } } %>) {
         var vm = this;
 
         vm.<%= entityInstance %> = entity;
@@ -92,7 +92,7 @@
         }
 
         function onSaveSuccess (result) {
-            $state.go(previousState.name || '^');
+            $state.go(previousState.name || '^', $stateParams);
             vm.isSaving = false;
         }
 

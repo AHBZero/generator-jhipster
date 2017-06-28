@@ -96,12 +96,12 @@
     <div class="form-footer">
         <div class="row row-form">
           <div class="col-lg-12 text-right">
-            <button ng-click="vm.clear()"
+            <button ui-sref="^"
                     class="btn btn-link">
               <span data-translate="entity.action.back">Back</span>
             </button>
 
-            <button type="button" ui-sref="person.edit({id:vm.<%=entityInstance %>.id})" class="btn btn-primary">
+            <button type="button" ui-sref="<%=entityInstance %>.edit({id:vm.<%=entityInstance %>.id})" class="btn btn-primary">
               <span data-translate="entity.action.edit"> Edit</span>
             </button>
           </div>
