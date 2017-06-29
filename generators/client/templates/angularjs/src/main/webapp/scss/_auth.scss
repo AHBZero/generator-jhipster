@@ -75,7 +75,7 @@
   font-size: 22px;
   font-weight: 500;
   line-height: 1.11;
-  color: $white;
+  color: $battleship_grey;
 
   @media (min-width: $screen-sm-min) {
     margin-top: 20px;
@@ -94,7 +94,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 1.3;
-  color: $white;
+  color: $battleship_grey;
 
   @media (min-width: $screen-sm-min) {
     font-size: 28px;
@@ -114,7 +114,7 @@
   width: 355px;
   font-size: 16px;
   line-height: 1.2;
-  color: $white;
+  color: $battleship_grey;
 
   @media (min-width: $screen-sm-min) {
     font-size: 18px;
@@ -234,7 +234,7 @@
   @include box-shadow(0 1px 12px 0 $pinkish-grey-three);
 
   display: block;
-  margin: 26px -35px -14px -35px;
+  margin: 80px -35px -14px -35px;
   padding: 6px 10px 14px;
   text-align: center;
   border-radius: 4px;
@@ -242,7 +242,7 @@
 
   .btn-link {
     font-size: 18px;
-    color: rgba($jungle-green, 0.96);
+    color: rgba($turquoise_blue, 0.96);
     text-transform: uppercase;
   }
 }
@@ -256,7 +256,7 @@
   font-size: 12px;
   font-weight: 300;
   text-align: center;
-  color: $greyish-brown-two;
+  color: $battleship_grey;
 }
 
 //
@@ -274,7 +274,7 @@
     max-width: 100%;
     font-size: 18px;
     font-weight: 600;
-    color: $greyish-brown-two;
+    color: $battleship_grey;
     text-align: left;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 
@@ -290,7 +290,7 @@
     font-size: 12px;
     text-align: left;
     line-height: 1.8;
-    color: $greyish-brown-two;
+    color: $battleship_grey;
 
     @media (min-width: $screen-sm-min) {
       font-size: 13px;

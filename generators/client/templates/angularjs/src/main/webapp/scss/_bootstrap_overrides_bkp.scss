@@ -65,10 +65,9 @@ $pinkish-grey-three: #d1d1d1;
 $charcoal-grey: #39393a;
 $black: #000000;
 
+$battleship_grey: #637381;
 $turquoise_blue: #00aadd;
 $turquoise_blue_dark: #008ec0;
-$battleship_grey: #637381;
-
 // TAMANHOS
 // ------------------
 $footer-height: 83px;
@@ -101,7 +100,7 @@ $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
-$brand-success:         $jungle-green;
+$brand-success:         $turquoise_blue;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
@@ -243,7 +242,7 @@ $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 
 $btn-success-color:              #fff !default;
-$btn-success-bg:                 $turquoise_blue_dark;
+$btn-success-bg:                 $turquoise_blue;
 $btn-success-border:             $turquoise_blue_dark;
 
 $btn-info-color:                 #fff !default;
@@ -374,7 +373,7 @@ $zindex-modal:             1050 !default;
 
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
-$screen-xs:                  320px !default;
+$screen-xs:                  480px !default;
 //** Deprecated `$screen-xs-min` as of v3.2.0
 $screen-xs-min:              $screen-xs !default;
 //** Deprecated `$screen-phone` as of v3.0.1

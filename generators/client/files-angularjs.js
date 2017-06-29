@@ -320,8 +320,11 @@ const files = {
         {
             path: ANGULAR_DIR,
             templates: [
+                { file: 'components/login/_modal.login.html', method: 'processHtml' },
                 { file: 'components/login/_login.html', method: 'processHtml' },
-                { file: 'components/login/_login.service.js', method: 'processJs' },
+                { file: 'components/login/_modal.login.service.js', method: 'processJs' },
+                { file: 'components/login/_login.state.js', method: 'processJs' },
+                'components/login/_modal.login.controller.js',
                 'components/login/_login.controller.js',
                 'components/form/_show-validation.directive.js',
                 'components/form/_maxbytes.directive.js',

@@ -24,8 +24,6 @@
         .controller('RegisterController', RegisterController);
 
 
-    RegisterController.$inject = [<% if (enableTranslation){ %>'$translate',<% } %> '$timeout', 'Auth', 'LoginService'];
-
     function RegisterController (<% if (enableTranslation){ %>$translate, <% } %>$timeout, Auth, LoginService) {
         var vm = this;
 

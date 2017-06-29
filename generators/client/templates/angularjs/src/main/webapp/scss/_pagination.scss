@@ -22,10 +22,10 @@
   }
 
   li.active a {
-    background-color: $jungle-green-two;
+    background-color: $turquoise_blue;
 
     &:hover {
-      background-color: darken($jungle-green-two, 2);
+      background-color: darken($turquoise_blue_dark, 2);
     }
   }
 

@@ -39,16 +39,33 @@
         vm.toggleNavbar = toggleNavbar;
         vm.collapseNavbar = collapseNavbar;
         vm.$state = $state;
+        vm.goHome = goHome;
+
+        vm.checkShowNavbar = function () {
+           if ($state.current.name === 'login' ||
+               $state.current.name === 'register' ||
+               $state.current.name === 'requestReset') {
+               vm.showNavBar = false;
+           } else {
+               vm.showNavBar = true;
+           }
+        };
+
+        vm.checkShowNavbar();
 
         function login() {
             collapseNavbar();
-            LoginService.open();
+            $state.go('login', {}, {reload: true});
+        }
+
+        function goHome() {
+            $state.go('home')
         }
 
         function logout() {
             collapseNavbar();
             Auth.logout();
-            $state.go('home');
+            $state.go('login', {}, {reload: true});
         }
 
         function toggleNavbar() {

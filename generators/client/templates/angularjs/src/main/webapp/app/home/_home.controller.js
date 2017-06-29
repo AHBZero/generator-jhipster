@@ -38,12 +38,16 @@
 
         function getAccount() {
             Principal.identity().then(function(account) {
-                vm.account = account;
-                vm.isAuthenticated = Principal.isAuthenticated;
+              if (!Principal.isAuthenticated()) {
+                  $state.go('login', {}, {reload: true});
+              } else {
+                  vm.account = account;
+                  vm.isAuthenticated = Principal.isAuthenticated;
+              }
             });
         }
         function register () {
-            $state.go('register');
+            $state.go('register', {}, {reload: true});
         }
     }
 })();
