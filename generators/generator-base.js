@@ -1663,7 +1663,7 @@ module.exports = class extends PrivateBase {
                 '-storepass password ' +
                 '-keypass password ' +
                 '-keysize 2048 ' +
-                `-dname "CN=Java Hipster, OU=Development, O=${this.packageName}, L=, ST=, C="`
+                `-dname "CN=esparta, OU=Development, O=${this.packageName}, L=, ST=, C="`
                 , (code) => {
                 if (code !== 0) {
                     this.error('\nFailed to create a KeyStore with \'keytool\'', code);

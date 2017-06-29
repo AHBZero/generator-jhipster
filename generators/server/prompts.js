@@ -579,8 +579,8 @@ function getUaaAppName(input) {
 
     if (shelljs.test('-f', fromPath)) {
         const fileData = this.fs.readJSON(fromPath);
-        if (fileData && fileData['generator-jhipster']) {
-            return fileData['generator-jhipster'];
+        if (fileData && fileData['generator-esparta-hipster']) {
+            return fileData['generator-esparta-hipster'];
         } return false;
     }
     return false;

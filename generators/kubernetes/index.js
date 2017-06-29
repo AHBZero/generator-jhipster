@@ -126,7 +126,7 @@ module.exports = KubernetesGenerator.extend({
                     && (shelljs.test('-f', `${file.name}/src/main/docker/app.yml`))) {
                     try {
                         const fileData = this.fs.readJSON(`${file.name}/.yo-rc.json`);
-                        if (fileData['generator-jhipster'].baseName !== undefined) {
+                        if (fileData['generator-esparta-hipster'].baseName !== undefined) {
                             appsFolders.push(file.name.match(/([^/]*)\/*$/)[1]);
                         }
                     } catch (err) {

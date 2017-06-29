@@ -130,7 +130,7 @@ function askForApps() {
         this.appsFolders.forEach((appFolder) => {
             const path = this.destinationPath(`${this.directoryPath + appFolder}/.yo-rc.json`);
             const fileData = this.fs.readJSON(path);
-            const config = fileData['generator-jhipster'];
+            const config = fileData['generator-esparta-hipster'];
 
             if (config.applicationType === 'monolith') {
                 this.monolithicNb++;
@@ -304,11 +304,11 @@ function getAppFolders(input, composeApplicationType) {
                 && (shelljs.test('-f', `${input + file.name}/src/main/docker/app.yml`))) {
                 try {
                     const fileData = this.fs.readJSON(`${input + file.name}/.yo-rc.json`);
-                    if ((fileData['generator-jhipster'].baseName !== undefined)
+                    if ((fileData['generator-esparta-hipster'].baseName !== undefined)
                         && ((composeApplicationType === undefined)
-                            || (composeApplicationType === fileData['generator-jhipster'].applicationType)
-                            || ((composeApplicationType === 'microservice') && (fileData['generator-jhipster'].applicationType === 'gateway'))
-                            || ((composeApplicationType === 'microservice') && (fileData['generator-jhipster'].applicationType === 'uaa')))) {
+                            || (composeApplicationType === fileData['generator-esparta-hipster'].applicationType)
+                            || ((composeApplicationType === 'microservice') && (fileData['generator-esparta-hipster'].applicationType === 'gateway'))
+                            || ((composeApplicationType === 'microservice') && (fileData['generator-esparta-hipster'].applicationType === 'uaa')))) {
                         appsFolders.push(file.name.match(/([^/]*)\/*$/)[1]);
                     }
                 } catch (err) {

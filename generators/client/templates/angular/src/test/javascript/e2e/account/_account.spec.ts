@@ -39,7 +39,7 @@ describe('account', () => {
         <%_ if (enableTranslation) { _%>
         const expect1 = /home.title/;
         <%_ } else { _%>
-        const expect1 = /Welcome, Java Hipster!/;
+        const expect1 = /Welcome, esparta!/;
         <%_ } _%>
         element.all(by.css('h1')).first().<%- elementGetter %>.then((value) => {
             expect(value).toMatch(expect1);

@@ -143,29 +143,29 @@ public class <%= entityClass %>DTO implements Serializable {
         ownerSide = relationships[idx].ownerSide;
         if (relationshipType === 'many-to-many' && ownerSide === true) { _%>
 
-    public Set<<%= otherEntityNameCapitalized %>DTO> get<%= relationshipNameCapitalizedPlural %>() {
+    public Set<<%= otherEntityNameCapitalized %>SimpleDTO> get<%= relationshipNameCapitalizedPlural %>() {
         return <%= relationshipFieldNamePlural %>;
     }
 
-    public void set<%= relationshipNameCapitalizedPlural %>(Set<<%= otherEntityNameCapitalized %>DTO> <%= otherEntityNamePlural %>) {
+    public void set<%= relationshipNameCapitalizedPlural %>(Set<<%= otherEntityNameCapitalized %>SimpleDTO> <%= otherEntityNamePlural %>) {
         this.<%= relationshipFieldNamePlural %> = <%= otherEntityNamePlural %>;
     }
     <%_ } else if (relationshipType === 'many-to-one' || (relationshipType === 'one-to-one' && ownerSide === true)) { _%>
 
     <%_ if (relationshipNameCapitalized.length > 1) { _%>
-    public <%= otherEntityNameCapitalized %>DTO get<%= relationshipNameCapitalized %>() {
+    public <%= otherEntityNameCapitalized %>SimpleDTO get<%= relationshipNameCapitalized %>() {
         return <%= relationshipFieldName %>;
     }
 
-    public void set<%= relationshipNameCapitalized %>(<%= otherEntityNameCapitalized %>DTO <%= otherEntityName %>) {
+    public void set<%= relationshipNameCapitalized %>(<%= otherEntityNameCapitalized %>SimpleDTO <%= otherEntityName %>) {
         this.<%= relationshipFieldName %> = <%= otherEntityName %>;
     }
     <%_ } else { // special case when the entity name has one character _%>
-    public <%= otherEntityNameCapitalized %>DTO get<%= relationshipNameCapitalized.toLowerCase() %>() {
+    public <%= otherEntityNameCapitalized %>SimpleDTO get<%= relationshipNameCapitalized.toLowerCase() %>() {
         return <%= relationshipFieldName %>;
     }
 
-    public void set<%= relationshipNameCapitalized.toLowerCase() %>(<%= otherEntityNameCapitalized %>DTO <%= otherEntityName %>) {
+    public void set<%= relationshipNameCapitalized.toLowerCase() %>(<%= otherEntityNameCapitalized %>SimpleDTO <%= otherEntityName %>) {
         this.<%= relationshipFieldName %> = <%= otherEntityName %>;
     }
     <%_ } _%>

@@ -23,8 +23,6 @@
         .module('<%=angularAppName%>')
         .controller('PasswordController', PasswordController);
 
-    PasswordController.$inject = ['Auth', 'Principal'];
-
     function PasswordController (Auth, Principal) {
         var vm = this;
 

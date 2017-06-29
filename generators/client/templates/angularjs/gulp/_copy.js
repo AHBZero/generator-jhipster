@@ -39,7 +39,7 @@ module.exports = {<% if(enableTranslation) { /* copy i18n folders only if transl
     images: images
 }
 <% if(enableTranslation) { %>
-var yorc = require('../.yo-rc.json')['generator-jhipster'];
+var yorc = require('../.yo-rc.json')['generator-esparta-hipster'];
 
 function i18n() {
     return gulp.src(config.app + 'i18n/**')

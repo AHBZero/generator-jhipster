@@ -289,13 +289,14 @@ function askForDTO() {
             message: 'Do you want to use a Data Transfer Object (DTO)?',
             choices: [
                 {
-                    value: 'no',
-                    name: 'No, use the entity directly'
+                    value: 'mapstruct',
+                    name: 'Yes, generate a DTO with MapStruct (Recommended)'
                 },
                 {
-                    value: 'mapstruct',
-                    name: '[BETA] Yes, generate a DTO with MapStruct'
+                    value: 'no',
+                    name: 'No, use the entity directly'
                 }
+
             ],
             default: 0
         }
@@ -319,17 +320,18 @@ function askForService() {
             message: 'Do you want to use separate service class for your business logic?',
             choices: [
                 {
-                    value: 'no',
-                    name: 'No, the REST controller should use the repository directly'
+                    value: 'serviceImpl',
+                    name: 'Yes, generate a separate service interface and implementation (Recommended)'
                 },
                 {
                     value: 'serviceClass',
                     name: 'Yes, generate a separate service class'
                 },
                 {
-                    value: 'serviceImpl',
-                    name: 'Yes, generate a separate service interface and implementation'
+                    value: 'no',
+                    name: 'No, the REST controller should use the repository directly'
                 }
+
             ],
             default: 0
         }
@@ -356,16 +358,16 @@ function askForPagination() {
             message: 'Do you want pagination on your entity?',
             choices: [
                 {
+                    value: 'pagination',
+                    name: 'Yes, with pagination links (Recommended)'
+                },
+                {
                     value: 'no',
                     name: 'No'
                 },
                 {
                     value: 'pager',
                     name: 'Yes, with a simple pager'
-                },
-                {
-                    value: 'pagination',
-                    name: 'Yes, with pagination links'
                 },
                 {
                     value: 'infinite-scroll',
@@ -1027,7 +1029,7 @@ function askForRelationship(done) {
                 (response.relationshipType === 'many-to-many' || response.relationshipType === 'one-to-one')),
             type: 'confirm',
             name: 'ownerSide',
-            message: 'Is this entity the owner of the relationship?',
+            message: 'Is this entity the owner of the relationship? (@JoinColumn(unique = true) - YES --OR-- @OneToOne(mappedBy = "bar") @JsonIgnore - NO)',
             default: false
         },
         {
@@ -1046,7 +1048,7 @@ function askForRelationship(done) {
             type: 'input',
             name: 'otherEntityField',
             message: response => `When you display this relationship with Angular, which field from '${response.otherEntityName}' do you want to use?`,
-            default: 'id'
+            default: 'name'
         },
         {
             when: response => (response.relationshipAdd === true && (response.relationshipType === 'many-to-one' ||
