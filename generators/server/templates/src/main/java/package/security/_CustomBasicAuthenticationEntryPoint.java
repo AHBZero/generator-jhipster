@@ -37,12 +37,12 @@ public class CustomBasicAuthenticationEntryPoint extends BasicAuthenticationEntr
     @Override
     public void afterPropertiesSet() throws Exception {
         super.afterPropertiesSet();
-        setRealmName("datamate");
+        setRealmName("<%= baseName %>");
     }
 
     @Override
     public String getRealmName() {
-        return "datamate";
+        return "<%= baseName %>";
     }
 
     @Override
