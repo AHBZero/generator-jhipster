@@ -111,11 +111,11 @@
                     nullable_relation = false;
                 }
                 if (relationships[idx].relationshipType === 'many-to-one') { %>
-            <column name="<%=getColumnName(relationshipName) %>_id" type="bigint">
+            <column name="<%=getColumnName(relationshipName) %>_id" type="varchar(36)">
                 <constraints nullable="<%= nullable_relation %>" />
             </column>
             <%_ } else if (relationshipType === 'one-to-one' && relationships[idx].ownerSide === true) { _%>
-            <column name="<%=getColumnName(relationshipName) %>_id" type="bigint">
+            <column name="<%=getColumnName(relationshipName) %>_id" type="varchar(36)">
                 <constraints unique="true" nullable="<%= nullable_relation %>" />
             </column><% } %><% } %>
             <column name="created_by" type="varchar(50)">
@@ -143,10 +143,10 @@
           _%>
 
         <createTable tableName="<%= joinTableName %>">
-            <column name="<%= getPluralColumnName(relationshipName) %>_id" type="bigint">
+            <column name="<%= getPluralColumnName(relationshipName) %>_id" type="varchar(36)">
                 <constraints nullable="false"/>
             </column>
-            <column name="<%= getPluralColumnName(name) %>_id" type="bigint">
+            <column name="<%= getPluralColumnName(name) %>_id" type="varchar(36)">
                 <constraints nullable="false"/>
             </column>
         </createTable>

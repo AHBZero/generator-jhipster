@@ -212,11 +212,11 @@ const ngValidators = './ng_validators';
         <div class="form-group form-group col-xs-12 col-sm-6">
             <label data-translate="<%= translationKey %>" for="field_<%= relationshipName %>"><%= relationshipNameHumanized %></label>
             <%_ if (selectize) { _%>
-            <input selectize="{maxItems: 1, create: false, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
+            <input selectize="{maxItems: 1, create: <% if (selectizeCreate) { %>true<% } else { %>false<% } %>, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
                    selectize-load-data="vm.load<%=relationshipFieldName%>(query, callback)"
                    selectize-on-select="vm.<%=relationshipFieldName%>Selected(id, model)"
                    selectize-update-event="reload.<%=relationshipFieldNamePlural.toLowerCase() %>"
-                   selectize-label-type="disable"
+                   <% if (!selectizeCreate) { %>selectize-label-type="disable"<% } %>
                    selectize-initial-data="vm.<%=relationshipFieldNamePlural.toLowerCase()%>"
                    selectize-initial-data-load="true"
                    selectize-initial-data-load-index="[vm.<%=entityInstance %>.<%=relationshipFieldName %>]"
@@ -236,11 +236,11 @@ const ngValidators = './ng_validators';
         <div class="form-group form-group col-xs-12 col-sm-6">
             <label data-translate="<%= translationKey %>" for="field_<%= relationshipName %>"><%= relationshipNameHumanized %></label>
             <%_ if (selectize) { _%>
-            <input selectize="{maxItems: 1, create: false, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
+            <input selectize="{maxItems: 1, create: <% if (selectizeCreate) { %>true<% } else { %>false<% } %>, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
                    selectize-load-data="vm.load<%=relationshipFieldName%>(query, callback)"
                    selectize-on-select="vm.<%=relationshipFieldName%>Selected(id, model)"
                    selectize-update-event="reload.<%=relationshipFieldNamePlural.toLowerCase() %>"
-                   selectize-label-type="disable"
+                   <% if (!selectizeCreate) { %>selectize-label-type="disable"<% } %>
                    selectize-initial-data="vm.<%=relationshipFieldNamePlural.toLowerCase()%>"
                    selectize-initial-data-load="true"
                    selectize-initial-data-load-index="[vm.<%=entityInstance %>.<%=relationshipFieldName %>]"
@@ -261,11 +261,11 @@ const ngValidators = './ng_validators';
         <div class="form-group form-group col-xs-12 col-sm-6">
             <label data-translate="<%= translationKey %>" for="field_<%= relationshipName %>"><%= relationshipNameHumanized %></label>
             <%_ if (selectize) { _%>
-            <input selectize="{maxItems: 1, create: false, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
+            <input selectize="{maxItems: 1, create: <% if (selectizeCreate) { %>true<% } else { %>false<% } %>, labelField: 'name', searchField: 'name'<% if (selectizeRender) { %>, renderize: true <% } %>}"
                    selectize-load-data="vm.load<%=relationshipFieldName%>(query, callback)"
                    selectize-on-select="vm.<%=relationshipFieldName%>Selected(id, model)"
                    selectize-update-event="reload.<%=relationshipFieldNamePlural.toLowerCase() %>"
-                   selectize-label-type="disable"
+                   <% if (!selectizeCreate) { %>selectize-label-type="disable"<% } %>
                    selectize-initial-data="vm.<%=relationshipFieldNamePlural.toLowerCase()%>"
                    selectize-initial-data-load="true"
                    selectize-initial-data-load-index="[vm.<%=entityInstance %>.<%=relationshipFieldName %>]"

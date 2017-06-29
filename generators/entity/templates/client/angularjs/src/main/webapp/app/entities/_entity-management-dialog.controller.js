@@ -131,8 +131,8 @@
         <%_ for (idx in relationships) {
         if (relationships[idx].selectize) { _%>
         vm.load<%=relationships[idx].relationshipFieldName%> = function (query, callback) {
-            <%=otherEntityFieldCapitalized %>.get({filter: query}, function(result) {
-                vm.<% relationships[idx].relationshipFieldNamePlural.toLowerCase() %> = vm.<%= relationships[idx].relationshipFieldNamePlural.toLowerCase() %>.concat(result.content);
+            <%= relationships[idx].otherEntityNameCapitalized %>.get({filter: query}, function(result) {
+                vm.<%= relationships[idx].relationshipFieldNamePlural.toLowerCase() %> = vm.<%= relationships[idx].relationshipFieldNamePlural.toLowerCase() %>.concat(result.content);
                 callback(result.content);
             }, function(error) {
                 console.log(error);
@@ -161,8 +161,8 @@
         <%_ } _%>
         <%_ if (relationships[idx].selectizeRender) { _%>
 
-        vm.render<%=relationships[idx].relationshipFieldName%> = function ($name, $callback) {
-            var template = '<div><strong>' + escape(item.name) +'</strong></div>';
+        vm.render<%=relationships[idx].relationshipFieldName%> = function ($item, $escape) {
+            var template = '<div><strong>' + $escape($item.name) +'</strong></div>';
             return template;
         };
 
