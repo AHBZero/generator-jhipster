@@ -583,6 +583,7 @@ function writeFiles() {
             }
 
             /* User management java web files */
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/exceptions/_BusinessException.java`, `${javaDir}service/exceptions/_BusinessException.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/service/dto/_package-info.java`, `${javaDir}service/dto/package-info.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/service/dto/_UserDTO.java`, `${javaDir}service/dto/UserDTO.java`);
 

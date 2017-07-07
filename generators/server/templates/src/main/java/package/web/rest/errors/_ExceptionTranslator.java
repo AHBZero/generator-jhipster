@@ -31,7 +31,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.ResponseEntity.BodyBuilder;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.validation.BindingResult;
+import <%=packageName%>.service.exceptions.BusinessException;
 import org.springframework.validation.FieldError;
+import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
@@ -105,5 +107,20 @@ public class ExceptionTranslator {
             errorVM = new ErrorVM(ErrorConstants.ERR_INTERNAL_SERVER_ERROR, "Internal server error");
         }
         return builder.body(errorVM);
+    }
+
+    @ExceptionHandler(BusinessException.class)
+    public ResponseEntity<ErrorResponse> processBusinessException(BusinessException ex) {
+        BodyBuilder builder;
+        builder = ResponseEntity.status(ex.getStatus());
+        ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), ex.getDescription, ex.getCode());
+        return builder.body(errorResponse);
+    }
+
+    @ExceptionHandler(OAuth2Exception.class)
+    public ResponseEntity<OAuth2Exception> processOAuth2Exception(OAuth2Exception ex) {
+        BodyBuilder builder;
+        builder = ResponseEntity.status(HttpStatus.UNAUTHORIZED);
+        return builder.body(ex);
     }
 }
