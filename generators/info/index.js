@@ -49,7 +49,9 @@ module.exports = ReportGenerator.extend({
 
         displayConfiguration() {
             const done = this.async();
-            const result = shelljs.cat('.yo-rc.json');
+            let result = shelljs.cat('.yo-rc.json');
+            result = result.replace(/"rememberMeKey": ".*"/g, '"rememberMeKey": "replaced-by-jhipster-info"');
+            result = result.replace(/"jwtSecretKey": ".*"/g, '"jwtSecretKey": "replaced-by-jhipster-info"');
             this.log(`${'\n##### **JHipster configuration, a `.yo-rc.json` file generated in the root folder**\n' +
                 '\n```yaml\n'}${result}\n\`\`\`\n`);
             done();
@@ -57,12 +59,9 @@ module.exports = ReportGenerator.extend({
 
         displayEntities() {
             const done = this.async();
-            this.log('\n##### **Entity configuration(s) `entityName.json` files generated in the `.jhipster` directory**\n');
-            shelljs.ls('.jhipster/*.json').forEach((file) => {
-                this.log(file.split('/')[1]);
-                const result = shelljs.cat(file);
-                this.log(`\n\`\`\`yaml\n${result}\n\`\`\`\n`);
-            });
+            this.log('\n##### **JDL for the Entity configuration(s) `entityName.json` files generated in the `.jhipster` directory**\n');
+            const jdl = this.generateJDLFromEntities();
+            this.log(`\n\`\`\`yaml\n${jdl.toString()}\n\`\`\`\n`);
             done();
         },
 
