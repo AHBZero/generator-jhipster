@@ -65,6 +65,7 @@
             "username.placeholder": "Seu usuário",
             "name": "Nome",
             "login": "Login",
+            "login.error": "Preencha um valor válido",
             "name.placeholder": "Seu nome",
             "login.placeholder": "Seu Login",
             "newpassword": "Nova senha",
