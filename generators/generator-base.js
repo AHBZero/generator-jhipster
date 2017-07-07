@@ -228,7 +228,7 @@ module.exports = class extends PrivateBase {
             if (clientFramework === 'angular1') {
                 return;
             }
-            const appName = this.getAngular2AppName();
+            const appName = this.getAngularXAppName();
             let importStatement = `|import { ${appName}${entityAngularName}Module } from './${entityFolderName}/${entityFileName}.module';`;
             if (importStatement.length > constants.LINE_LENGTH) {
                 importStatement =
@@ -534,6 +534,9 @@ module.exports = class extends PrivateBase {
         const fullPath = 'bower.json';
         try {
             jhipsterUtils.rewriteJSONFile(fullPath, (jsonObj) => {
+                if (jsonObj.dependencies === undefined) {
+                    jsonObj.dependencies = {};
+                }
                 jsonObj.dependencies[name] = version;
             }, this);
         } catch (e) {
@@ -603,6 +606,9 @@ module.exports = class extends PrivateBase {
         const fullPath = 'package.json';
         try {
             jhipsterUtils.rewriteJSONFile(fullPath, (jsonObj) => {
+                if (jsonObj.dependencies === undefined) {
+                    jsonObj.dependencies = {};
+                }
                 jsonObj.dependencies[name] = version;
             }, this);
         } catch (e) {
@@ -621,6 +627,9 @@ module.exports = class extends PrivateBase {
         const fullPath = 'package.json';
         try {
             jhipsterUtils.rewriteJSONFile(fullPath, (jsonObj) => {
+                if (jsonObj.devDependencies === undefined) {
+                    jsonObj.devDependencies = {};
+                }
                 jsonObj.devDependencies[name] = version;
             }, this);
         } catch (e) {
@@ -639,6 +648,9 @@ module.exports = class extends PrivateBase {
         const fullPath = 'package.json';
         try {
             jhipsterUtils.rewriteJSONFile(fullPath, (jsonObj) => {
+                if (jsonObj.scripts === undefined) {
+                    jsonObj.scripts = {};
+                }
                 jsonObj.scripts[name] = data;
             }, this);
         } catch (e) {
@@ -1728,6 +1740,10 @@ module.exports = class extends PrivateBase {
      * get the Angular 2+ application name.
      */
     getAngular2AppName() {
+        return this.getAngularXAppName();
+    }
+
+    getAngularXAppName() {
         return _.upperFirst(_.camelCase(this.baseName, true));
     }
 
