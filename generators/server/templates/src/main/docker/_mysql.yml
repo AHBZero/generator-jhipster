@@ -27,7 +27,6 @@ services:
             - MYSQL_PASSWORD=password
             - MYSQL_ROOT_PASSWORD=password
             - MYSQL_ALLOW_EMPTY_PASSWORD=no
-            - MYSQL_USER=root
             - MYSQL_DATABASE=<%=baseName.toLowerCase()%>
         ports:
             - 3306:3306

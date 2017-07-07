@@ -20,8 +20,14 @@ version: '2'
 services:
     <%= baseName.toLowerCase() %>-app:
         image: <%= baseName.toLowerCase() %>
+        container_name: <%= baseName.toLowerCase() %>-app
+        volumes:
+            - /home/esparta/<%= baseName.toLowerCase() %>/logs:/home/esparta/<%= baseName.toLowerCase() %>/logs
+            - /etc/letsencrypt:/etc/letsencrypt
         environment:
             - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SERVER_PORT=8080
+            - LOGGING_PATH=/home/esparta/<%= baseName.toLowerCase() %>/logs
             <%_ if (serviceDiscoveryType === 'consul') { _%>
             - SPRING_CLOUD_CONSUL_HOST=consul
             - SPRING_CLOUD_CONSUL_PORT=8500
@@ -32,6 +38,8 @@ services:
             <%_ } _%>
             <%_ if (prodDatabaseType === 'mysql') { _%>
             - SPRING_DATASOURCE_URL=jdbc:mysql://<%= baseName.toLowerCase() %>-mysql:3306/<%= baseName.toLowerCase() %>?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - SPRING_DATASOURCE_USERNAME=<%= baseName.toLowerCase() %>
+            - SPRING_DATASOURCE_PASSWORD=password
             <%_ } _%>
             <%_ if (prodDatabaseType === 'mariadb') { _%>
             - SPRING_DATASOURCE_URL=jdbc:mariadb://<%= baseName.toLowerCase() %>-mariadb:3306/<%= baseName.toLowerCase() %>
@@ -75,7 +83,7 @@ services:
             <%_ } _%>
         <%_ if (applicationType === 'monolith' || applicationType === 'gateway') { _%>
         ports:
-            - <%= serverPort %>:<%= serverPort %>
+            - 127.0.0.1:<%= serverPort %>:<%= serverPort %>
         <%_ } _%>
     <%_ if (prodDatabaseType === 'mysql') { _%>
     <%= baseName.toLowerCase() %>-mysql:
