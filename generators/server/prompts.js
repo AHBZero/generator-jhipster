@@ -115,6 +115,10 @@ function askForServerSideOpts() {
             message: response => this.getNumberedQuestion('Which *type* of authentication would you like to use?', applicationType === 'monolith'),
             choices: [
                 {
+                    value: 'oauth2',
+                    name: 'OAuth2 Authentication (stateless, with an OAuth2 server implementation)'
+                },
+                {
                     value: 'jwt',
                     name: 'JWT authentication (stateless, with a token)'
                 },
@@ -122,10 +126,7 @@ function askForServerSideOpts() {
                     value: 'session',
                     name: 'HTTP Session Authentication (stateful, default Spring Security mechanism)'
                 },
-                {
-                    value: 'oauth2',
-                    name: 'OAuth2 Authentication (stateless, with an OAuth2 server implementation)'
-                }
+
             ],
             default: 0
         },
@@ -274,16 +275,16 @@ function askForServerSideOpts() {
             ),
             choices: [
                 {
+                    value: 'mysql',
+                    name: 'MySQL'
+                },
+                {
                     value: 'h2Disk',
                     name: 'H2 with disk-based persistence'
                 },
                 {
                     value: 'h2Memory',
                     name: 'H2 with in-memory persistence'
-                },
-                {
-                    value: 'mysql',
-                    name: 'MySQL'
                 }
             ],
             default: 0
@@ -414,15 +415,16 @@ function askForServerSideOpts() {
             message: response => this.getNumberedQuestion('Would you like to use Maven or Gradle for building the backend?', true),
             choices: [
                 {
-                    value: 'maven',
-                    name: 'Maven'
-                },
-                {
                     value: 'gradle',
                     name: 'Gradle'
+                },
+                {
+                    value: 'maven',
+                    name: 'Maven'
                 }
+
             ],
-            default: 'maven'
+            default: 'gradle'
         }
     ];
 

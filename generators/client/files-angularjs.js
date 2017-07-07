@@ -342,6 +342,7 @@ const files = {
                 'components/util/_sort-by.directive.js',
                 'components/util/_jhi-item-count.directive.js',
                 // alert service code
+                'components/noty/_noty.js',
                 'components/alert/_alert.service.js',
                 'components/alert/_alert.directive.js',
                 'components/alert/_alert-error.directive.js'
@@ -447,6 +448,7 @@ function writeFiles() {
     this.copy('angularjs/src/main/webapp/scss/_bootstrap_overrides.scss', 'src/main/webapp/scss/_bootstrap_overrides.scss');
     this.copy('angularjs/src/main/webapp/scss/_helpers.scss', 'src/main/webapp/scss/_helpers.scss');
     this.copy('angularjs/src/main/webapp/scss/_navbar.scss', 'src/main/webapp/scss/_navbar.scss');
+    this.copy('angularjs/src/main/webapp/scss/_noty_sunset.scss', 'src/main/webapp/scss/_noty_sunset.scss');
     this.copy('angularjs/src/main/webapp/scss/_content.scss', 'src/main/webapp/scss/_content.scss');
     this.copy('angularjs/src/main/webapp/scss/_footer.scss', 'src/main/webapp/scss/_footer.scss');
     this.copy('angularjs/src/main/webapp/scss/_buttons.scss', 'src/main/webapp/scss/_buttons.scss');

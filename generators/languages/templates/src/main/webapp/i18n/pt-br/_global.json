@@ -55,31 +55,100 @@
             "language": "Idioma"
         },
         "form": {
+            "name.error": "Insira um nome válido",
+            "birthDate.error": "Insira sua data de nascimento",
+            "zipCode.error": "Insira o CEP",
+            "addressStreet.error": "Insira o endereço",
+            "addressNumber.error": "Insira o número do endereço",
+            "neighborHood.error": "Insira o bairro.",
             "username": "Usuário",
             "username.placeholder": "Seu usuário",
+            "name": "Nome",
+            "login": "Login",
+            "name.placeholder": "Seu nome",
+            "login.placeholder": "Seu Login",
             "newpassword": "Nova senha",
             "newpassword.placeholder": "Nova senha",
             "confirmpassword": "Confirmação de nova senha",
             "confirmpassword.placeholder": "Confirme a nova senha",
-            "email": "Email",
-            "email.placeholder": "Seu email"
+            "email": "E-mail",
+            "email.placeholder": "Seu e-mail",
+            "birthDate": "Data de nascimento",
+            "birthDate.placeholder": "DD/MM/AAAA",
+            "identificationNumber": "Número de identificação",
+            "identificationNumber.placeholder": "Número de identificação",
+            "identificationNumber.cnpj": "CNPJ",
+            "identificationNumber.cnpj.placeholder": "xx.xxx.xxx/xxxx-xx",
+            "identificationNumber.cpf": "CPF",
+            "identificationNumber.cpf.placeholder": "xxx.xxx.xxx-xx",
+            "identificationNumber.cpfCnpj": "CPF / CNPJ",
+            "identificationNumber.cpfCnpj.placeholder": "Seu CPF ou CNPJ",
+            "rg": "RG",
+            "rg.placeholder": "Seu RG",
+            "cellphone": "Celular",
+            "phone": "Telefone",
+            "phoneHome": "Telefone Residencial",
+            "phoneCommercial": "Telefone Comercial",
+            "phone.placeholder": "(99) 9999-9999",
+            "maritalStatus": "Estado civil",
+            "maritalStatus.placeholder": "Seu estado civil",
+            "addressStreet": "Endereço",
+            "addressStreet.placeholder": "Seu endereço",
+            "addressNumber": "Número",
+            "addressNumber.placeholder": "Seu número",
+            "addressNeighborhood": "Bairro",
+            "addressNeighborhood.placeholder": "Seu bairro",
+            "addressComplement": "Complemento",
+            "addressComplement.placeholder": "Complemento",
+            "addressCity": "Cidade",
+            "addressCity.placeholder": "Sua cidade",
+            "addressState": "Estado",
+            "addressState.placeholder": "Seu estado",
+            "zipCode": "CEP",
+            "zipCode.placeholder": "xxxxx-xxx",
+            "comment": "Obervações",
+            "comment.placeholder": "Observações",
+            "paymentMethod": "Método de pagamento",
+            "paymentMethods": "Métodos de pagamento",
+            "account.label": "Conta",
+            "personalinformations.label": "Informações Pessoais",
+            "professionalinformations.label": "Informações Profissionais",
+            "address.label": "Logradouro"
+        },
+        "maritalStatus": {
+            "single": "Solteiro(a)",
+            "married": "Casado(a)",
+            "divorced": "Divociado(a)",
+            "widowed": "Viúvo(a)",
+            "other": "Outro(a)"
+        },
+        "paymentMethod": {
+            "money": "Dinheiro",
+            "debit": "Débito",
+            "credit": "Crédito"
+        },
+        "dayOfWeek": {
+            "sunday": "Domingo",
+            "monday": "Segunda",
+            "tuesday": "Terça",
+            "wednesday": "Quarta",
+            "thursday": "Quinta",
+            "friday": "Sexta",
+            "saturday": "Sábado"
+        },
+        "DayOfWeek": {
+            "SUNDAY": "Domingo",
+            "MONDAY": "Segunda",
+            "TUESDAY": "Terça",
+            "WEDNESDAY": "Quarta",
+            "THURSDAY": "Quinta",
+            "FRIDAY": "Sexta",
+            "SATURDAY": "Sábado"
         },
         "messages": {
             "info": {
-                <%_ if (clientFramework === 'angular1') { _%>
-                "authenticated": "Para <a class=\"alert-link\" href=\"\" ng-click=\"vm.login()\">entrar</a>, utilize as seguintes contas padrões:<br/>- Administrador (usuário=\"admin\" and senha=\"admin\") <br/>- Usuário (usuário=\"user\" and senha=\"user\").",
+                "authenticated": "Para entrar, <a class=\"alert-link\" href=\"\" ng-click=\"vm.login()\">clique aqui.</a>",
                 "register": "Não possui uma conta ainda? <a class=\"alert-link\" href=\"\" ng-click=\"vm.register()\">Crie uma nova conta</a>"
-                <%_ } else { _%>
-                "authenticated": {
-                    "prefix": "Para ",
-                    "link": "entrar",
-                    "suffix": ", utilize as seguintes contas padrões:<br/>- Administrador (usuário=\"admin\" and senha=\"admin\") <br/>- Usuário (usuário=\"user\" and senha=\"user\")."
-                },
-                "register": {
-                    "noaccount": "Não possui uma conta ainda?",
-                    "link": "Crie uma nova conta"
-                }
-                <%_ } _%>
             },
             "error": {
                 "dontmatch" : "A senha e sua confirmação devem ser iguais!"
@@ -97,15 +166,21 @@
                     "maxlength": "A confirmação da senha não pode ter mais de 50 caracteres"
                 },
                 "email": {
-                    "required": "O email é obrigatório.",
-                    "invalid": "Email inválido.",
-                    "minlength": "O email deve ter pelo menos 5 caracteres",
-                    "maxlength": "O email não pode ter mais de 50 caracteres"
+                    "required": "O e-mail é obrigatório.",
+                    "invalid": "E-mail inválido.",
+                    "minlength": "O e-mail deve ter pelo menos 5 caracteres",
+                    "maxlength": "O e-mail não pode ter mais de 50 caracteres"
+                },
+                "comment": {
+                    "maxlength": "As obervações não podem ter mais de 2000 caracteres"
                 }
             }
         },
         "field": {
-            "id" : "Código"
+            "id" : "Código",
+            "dayOfWeek": "Dia da semana",
+            "start": "Início",
+            "finish": "Fim"
         },
         "ribbon": {
             "dev":"Development"

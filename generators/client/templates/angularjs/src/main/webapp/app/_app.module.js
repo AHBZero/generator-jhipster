@@ -29,6 +29,7 @@
             'ngAria',
             'ngCacheBuster',
             'ngFileUpload',
+            'notyModule',
             'ui.bootstrap',
             'ui.bootstrap.datetimepicker',
             'ui.router',

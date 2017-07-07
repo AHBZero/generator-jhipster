@@ -49,6 +49,8 @@
     <%_ } _%>
     "bootstrap-ui-datetime-picker": "2.4.3",
     "jquery": "3.1.0",
+    "moment": "~2.10.6",
+    "noty": "3.1.0",
     "json3": "3.3.2",
     "messageformat": "0.3.1",
     "modernizr": "3.3.1",
@@ -74,6 +76,12 @@
       "dependencies": {
         "angular": "1.5.8"
       }
+    },
+    "noty": {
+      "main": [
+        "lib/noty.css",
+        "lib/noty.js"
+      ]
     },
     <%_ if (enableTranslation) { _%>
     "angular-dynamic-locale": {

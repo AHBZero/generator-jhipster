@@ -68,8 +68,8 @@
                 if (to.name !== 'accessdenied') {
                     Auth.storePreviousState(to.name, params);
                 }
-                var LoginService = $injector.get('LoginService');
-                LoginService.open();
+                var $state  = $injector.get('$state');
+                $state.go('login');
             }
             return $q.reject(response);
         }

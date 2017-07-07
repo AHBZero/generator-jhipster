@@ -32,8 +32,6 @@
         .module('<%=angularAppName%>')
         .component('jhiAlertError', jhiAlertError);
 
-    jhiAlertErrorController.$inject = ['$scope', 'AlertService', '$rootScope'<% if (enableTranslation) { %>, '$translate'<% } %>];
-
     function jhiAlertErrorController ($scope, AlertService, $rootScope<% if (enableTranslation) { %>, $translate<% } %>) {
         var vm = this;
 

@@ -63,6 +63,7 @@
   @include button-size(9px, 15px, $font-size-base, $line-height-base, $btn-border-radius-base);
   font-weight: 600;
   text-transform: uppercase;
+  position: inherit;
 
   &:focus,
   &:active,

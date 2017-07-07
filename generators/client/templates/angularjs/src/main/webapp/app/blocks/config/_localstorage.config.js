@@ -23,10 +23,10 @@
         .module('<%=angularAppName%>')
         .config(localStorageConfig);
 
-    localStorageConfig.$inject = ['$localStorageProvider', '$sessionStorageProvider'];
+    function localStorageConfig($localStorageProvider, $sessionStorageProvider, $sceProvider) {
+        $localStorageProvider.setKeyPrefix('<%=angularAppName%>-');
+        $sessionStorageProvider.setKeyPrefix('<%=angularAppName%>-');
 
-    function localStorageConfig($localStorageProvider, $sessionStorageProvider) {
-        $localStorageProvider.setKeyPrefix('jhi-');
-        $sessionStorageProvider.setKeyPrefix('jhi-');
+        $sceProvider.enabled(true);
     }
 })();

@@ -19,6 +19,13 @@ Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
     display: none !important;
 }
 
+.selectize-has-error {
+    .required {
+        &.invalid {
+            border: 1px solid red;
+        }
+    }
+}
 /* ==========================================================================
 Development Ribbon
 ========================================================================== */

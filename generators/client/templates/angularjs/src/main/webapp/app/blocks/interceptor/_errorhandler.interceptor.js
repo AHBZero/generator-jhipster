@@ -23,8 +23,6 @@
         .module('<%=angularAppName%>')
         .factory('errorHandlerInterceptor', errorHandlerInterceptor);
 
-    errorHandlerInterceptor.$inject = ['$q', '$rootScope'];
-
     function errorHandlerInterceptor ($q, $rootScope) {
         var service = {
             responseError: responseError

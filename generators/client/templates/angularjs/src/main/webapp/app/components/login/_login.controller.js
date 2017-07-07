@@ -13,11 +13,9 @@
         vm.login = login;
         vm.username = null;
         vm.password = null;
-        vm.registerAsCustomer = registerAsCustomer
-        vm.registerAsSpecialist = registerAsSpecialist
+        vm.register = register;
         vm.requestResetPassword = requestResetPassword;
         vm.isLoginWhatsapp = false;
-
 
         function login() {
             event.preventDefault();
