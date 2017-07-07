@@ -220,9 +220,10 @@
         }
     },
     "error": {
-        "internalServerError": "Internal server error",
+        "internalServerError": "Erro interno: {{message}}",
         "server.not.reachable": "Servidor indisponível",
         "url.not.found": "Not found",
+        "NotBlank": "O Campo {{fieldName}} não pode ser vazio!",
         "NotNull": "O Campo {{fieldName}} não pode ser vazio!",
         "Size": "O campo {{fieldName}} não obedece os requisitos de tamanho mínimo ou máximo!",
         "userexists": "Usuário já existente!",
