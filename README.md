@@ -1,3 +1,4 @@
+
 Esparta fork for custom projects.
 
 This fork is a specific version of jhipster with internal customizations.

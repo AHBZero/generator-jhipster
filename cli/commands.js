@@ -22,6 +22,9 @@ module.exports = {
         argument: ['name'],
         desc: 'Create a new JHipster entity: JPA entity, Spring server-side components and Angular client-side components'
     },
+    address: {
+        desc: 'Create a new JHipster entity: JPA entity, Spring server-side components and Angular client-side components'
+    },
     'export-jdl': {
         argument: ['jdlFile'],
         desc: 'Create a JDL file from the existing entities'
