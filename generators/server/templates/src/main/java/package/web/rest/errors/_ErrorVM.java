@@ -27,10 +27,11 @@ import java.util.List;
  */
 public class ErrorVM implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-
     private final String message;
     private final String description;
+    private int code = 0;
+    private HttpStatus status = HttpStatus.BAD_REQUEST;
+
 
     private List<FieldErrorVM> fieldErrors;
 
@@ -43,10 +44,44 @@ public class ErrorVM implements Serializable {
         this.description = description;
     }
 
+    public ErrorVM(String message, String description, HttpStatus status) {
+        this.message = message;
+        this.description = description;
+        this.status = status;
+    }
+
     public ErrorVM(String message, String description, List<FieldErrorVM> fieldErrors) {
         this.message = message;
         this.description = description;
         this.fieldErrors = fieldErrors;
+    }
+
+    public ErrorVM(String message, String description, int code, List<FieldErrorVM> fieldErrors) {
+        this.message = message;
+        this.description = description;
+        this.fieldErrors = fieldErrors;
+        this.code = code;
+    }
+
+    public ErrorVM(String message, String description, int code, HttpStatus status, List<FieldErrorVM> fieldErrors) {
+        this.message = message;
+        this.description = description;
+        this.fieldErrors = fieldErrors;
+        this.code = code;
+        this.status = status;
+    }
+
+    public ErrorVM(String message, String description, int code) {
+        this.message = message;
+        this.description = description;
+        this.code = code;
+    }
+
+    public ErrorVM(String message, String description, int code, HttpStatus status) {
+        this.message = message;
+        this.description = description;
+        this.code = code;
+        this.status = status;
     }
 
     public void add(String objectName, String field, String message) {
@@ -66,5 +101,13 @@ public class ErrorVM implements Serializable {
 
     public List<FieldErrorVM> getFieldErrors() {
         return fieldErrors;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public HttpStatus getStatus() {
+        return status;
     }
 }

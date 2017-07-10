@@ -110,10 +110,10 @@ public class ExceptionTranslator {
     }
 
     @ExceptionHandler(BusinessException.class)
-    public ResponseEntity<ErrorResponse> processBusinessException(BusinessException ex) {
+    public ResponseEntity<ErrorVM> processBusinessException(BusinessException ex) {
         BodyBuilder builder;
         builder = ResponseEntity.status(ex.getStatus());
-        ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), ex.getDescription, ex.getCode());
+        ErrorVM errorResponse = new ErrorVM(ex.getMessage(), ex.getDescription(), ex.getCode());
         return builder.body(errorResponse);
     }
 
