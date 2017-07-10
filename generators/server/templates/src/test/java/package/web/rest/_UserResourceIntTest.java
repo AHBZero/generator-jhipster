@@ -721,11 +721,11 @@ public class UserResourceIntTest <% if (databaseType === 'cassandra') { %>extend
     public void testUserEquals() throws Exception {
         TestUtil.equalsVerifier(User.class);
         User user1 = new User();
-        user1.setId(<% if (databaseType === 'sql') { %>1L<% } else { %>"id1"<% } %>);
+        user1.setId(<% if (databaseType === 'sql') { %>"1L"<% } else { %>"id1"<% } %>);
         User user2 = new User();
         user2.setId(user1.getId());
         assertThat(user1).isEqualTo(user2);
-        user2.setId(<% if (databaseType === 'sql') { %>2L<% } else { %>"id2"<% } %>);
+        user2.setId(<% if (databaseType === 'sql') { %>"2L"<% } else { %>"id2"<% } %>);
         assertThat(user1).isNotEqualTo(user2);
         user1.setId(null);
         assertThat(user1).isNotEqualTo(user2);

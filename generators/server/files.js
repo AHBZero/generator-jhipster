@@ -116,39 +116,39 @@ function writeFiles() {
 
         writeServerBuildFiles() {
             switch (this.buildTool) {
-            case 'gradle':
-                this.template('_build.gradle', 'build.gradle');
-                this.template('_settings.gradle', 'settings.gradle');
-                this.template('_gradle.properties', 'gradle.properties');
-                if (!this.skipClient && this.clientFramework === 'angular1') {
-                    this.template('gradle/_yeoman.gradle', 'gradle/yeoman.gradle');
-                }
-                this.template('gradle/_sonar.gradle', 'gradle/sonar.gradle');
-                this.template('gradle/_docker.gradle', 'gradle/docker.gradle');
-                this.template('gradle/_profile_dev.gradle', 'gradle/profile_dev.gradle', this, { interpolate: INTERPOLATE_REGEX });
-                this.template('gradle/_profile_prod.gradle', 'gradle/profile_prod.gradle', this, { interpolate: INTERPOLATE_REGEX });
-                this.template('gradle/_mapstruct.gradle', 'gradle/mapstruct.gradle', this, { interpolate: INTERPOLATE_REGEX });
-                this.template('gradle/_graphite.gradle', 'gradle/graphite.gradle');
-                this.template('gradle/_prometheus.gradle', 'gradle/prometheus.gradle');
-                this.template('gradle/_zipkin.gradle', 'gradle/zipkin.gradle');
-                if (this.gatlingTests) {
-                    this.template('gradle/_gatling.gradle', 'gradle/gatling.gradle');
-                }
-                if (this.databaseType === 'sql') {
-                    this.template('gradle/_liquibase.gradle', 'gradle/liquibase.gradle');
-                }
-                this.copy('gradlew', 'gradlew');
-                this.copy('gradlew.bat', 'gradlew.bat');
-                this.copy('gradle/wrapper/gradle-wrapper.jar', 'gradle/wrapper/gradle-wrapper.jar');
-                this.copy('gradle/wrapper/gradle-wrapper.properties', 'gradle/wrapper/gradle-wrapper.properties');
-                break;
-            case 'maven':
-            default :
-                this.copy('mvnw', 'mvnw');
-                this.copy('mvnw.cmd', 'mvnw.cmd');
-                this.copy('.mvn/wrapper/maven-wrapper.jar', '.mvn/wrapper/maven-wrapper.jar');
-                this.copy('.mvn/wrapper/maven-wrapper.properties', '.mvn/wrapper/maven-wrapper.properties');
-                this.template('_pom.xml', 'pom.xml', null, { interpolate: INTERPOLATE_REGEX });
+                case 'gradle':
+                    this.template('_build.gradle', 'build.gradle');
+                    this.template('_settings.gradle', 'settings.gradle');
+                    this.template('_gradle.properties', 'gradle.properties');
+                    if (!this.skipClient && this.clientFramework === 'angular1') {
+                        this.template('gradle/_yeoman.gradle', 'gradle/yeoman.gradle');
+                    }
+                    this.template('gradle/_sonar.gradle', 'gradle/sonar.gradle');
+                    this.template('gradle/_docker.gradle', 'gradle/docker.gradle');
+                    this.template('gradle/_profile_dev.gradle', 'gradle/profile_dev.gradle', this, {interpolate: INTERPOLATE_REGEX});
+                    this.template('gradle/_profile_prod.gradle', 'gradle/profile_prod.gradle', this, {interpolate: INTERPOLATE_REGEX});
+                    this.template('gradle/_mapstruct.gradle', 'gradle/mapstruct.gradle', this, {interpolate: INTERPOLATE_REGEX});
+                    this.template('gradle/_graphite.gradle', 'gradle/graphite.gradle');
+                    this.template('gradle/_prometheus.gradle', 'gradle/prometheus.gradle');
+                    this.template('gradle/_zipkin.gradle', 'gradle/zipkin.gradle');
+                    if (this.gatlingTests) {
+                        this.template('gradle/_gatling.gradle', 'gradle/gatling.gradle');
+                    }
+                    if (this.databaseType === 'sql') {
+                        this.template('gradle/_liquibase.gradle', 'gradle/liquibase.gradle');
+                    }
+                    this.copy('gradlew', 'gradlew');
+                    this.copy('gradlew.bat', 'gradlew.bat');
+                    this.copy('gradle/wrapper/gradle-wrapper.jar', 'gradle/wrapper/gradle-wrapper.jar');
+                    this.copy('gradle/wrapper/gradle-wrapper.properties', 'gradle/wrapper/gradle-wrapper.properties');
+                    break;
+                case 'maven':
+                default :
+                    this.copy('mvnw', 'mvnw');
+                    this.copy('mvnw.cmd', 'mvnw.cmd');
+                    this.copy('.mvn/wrapper/maven-wrapper.jar', '.mvn/wrapper/maven-wrapper.jar');
+                    this.copy('.mvn/wrapper/maven-wrapper.properties', '.mvn/wrapper/maven-wrapper.properties');
+                    this.template('_pom.xml', 'pom.xml', null, {interpolate: INTERPOLATE_REGEX});
             }
         },
 
@@ -164,14 +164,14 @@ function writeFiles() {
             // Thymeleaf templates
             this.copy(`${SERVER_MAIN_RES_DIR}templates/error.html`, `${SERVER_MAIN_RES_DIR}templates/error.html`);
 
-            this.template(`${SERVER_MAIN_RES_DIR}_logback-spring.xml`, `${SERVER_MAIN_RES_DIR}logback-spring.xml`, this, { interpolate: INTERPOLATE_REGEX });
+            this.template(`${SERVER_MAIN_RES_DIR}_logback-spring.xml`, `${SERVER_MAIN_RES_DIR}logback-spring.xml`, this, {interpolate: INTERPOLATE_REGEX});
 
             this.template(`${SERVER_MAIN_RES_DIR}config/_application.yml`, `${SERVER_MAIN_RES_DIR}config/application.yml`);
             this.template(`${SERVER_MAIN_RES_DIR}config/_application-dev.yml`, `${SERVER_MAIN_RES_DIR}config/application-dev.yml`);
             this.template(`${SERVER_MAIN_RES_DIR}config/_application-prod.yml`, `${SERVER_MAIN_RES_DIR}config/application-prod.yml`);
 
             if (this.databaseType === 'sql') {
-                this.template(`${SERVER_MAIN_RES_DIR}/config/liquibase/changelog/_initial_schema.xml`, `${SERVER_MAIN_RES_DIR}config/liquibase/changelog/00000000000000_initial_schema.xml`, this, { interpolate: INTERPOLATE_REGEX });
+                this.template(`${SERVER_MAIN_RES_DIR}/config/liquibase/changelog/_initial_schema.xml`, `${SERVER_MAIN_RES_DIR}config/liquibase/changelog/00000000000000_initial_schema.xml`, this, {interpolate: INTERPOLATE_REGEX});
                 this.copy(`${SERVER_MAIN_RES_DIR}/config/liquibase/master.xml`, `${SERVER_MAIN_RES_DIR}config/liquibase/master.xml`);
             }
 
@@ -327,7 +327,6 @@ function writeFiles() {
             this.template(`${SERVER_MAIN_SRC_DIR}package/aop/logging/_LoggingAspect.java`, `${javaDir}aop/logging/LoggingAspect.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/config/_DefaultProfileUtil.java`, `${javaDir}config/DefaultProfileUtil.java`);
 
-            this.template(`${SERVER_MAIN_SRC_DIR}package/config/_package-info.java`, `${javaDir}config/package-info.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/config/_AsyncConfiguration.java`, `${javaDir}config/AsyncConfiguration.java`);
             if (this.hibernateCache === 'ehcache' || this.hibernateCache === 'hazelcast' || this.hibernateCache === 'infinispan' || this.clusteredHttpSession === 'hazelcast' || this.applicationType === 'gateway') {
                 this.template(`${SERVER_MAIN_SRC_DIR}package/config/_CacheConfiguration.java`, `${javaDir}config/CacheConfiguration.java`);
@@ -342,7 +341,6 @@ function writeFiles() {
             if (this.databaseType === 'sql' || this.databaseType === 'mongodb') {
                 this.template(`${SERVER_MAIN_SRC_DIR}package/config/_CloudDatabaseConfiguration.java`, `${javaDir}config/CloudDatabaseConfiguration.java`);
                 this.template(`${SERVER_MAIN_SRC_DIR}package/config/_DatabaseConfiguration.java`, `${javaDir}config/DatabaseConfiguration.java`);
-                this.template(`${SERVER_MAIN_SRC_DIR}package/config/audit/_package-info.java`, `${javaDir}config/audit/package-info.java`);
                 this.template(`${SERVER_MAIN_SRC_DIR}package/config/audit/_AuditEventConverter.java`, `${javaDir}config/audit/AuditEventConverter.java`);
             }
 
@@ -402,14 +400,12 @@ function writeFiles() {
             }
 
             if (this.databaseType === 'cassandra') {
-                this.template(`${SERVER_MAIN_SRC_DIR}package/config/metrics/_package-info.java`, `${javaDir}config/metrics/package-info.java`);
                 this.template(`${SERVER_MAIN_SRC_DIR}package/config/metrics/_JHipsterHealthIndicatorConfiguration.java`, `${javaDir}config/metrics/JHipsterHealthIndicatorConfiguration.java`);
                 this.template(`${SERVER_MAIN_SRC_DIR}package/config/metrics/_CassandraHealthIndicator.java`, `${javaDir}config/metrics/CassandraHealthIndicator.java`);
             }
 
             if (this.databaseType === 'cassandra') {
                 this.template(`${SERVER_MAIN_SRC_DIR}package/config/cassandra/_CassandraConfiguration.java`, `${javaDir}config/cassandra/CassandraConfiguration.java`);
-                this.template(`${SERVER_MAIN_SRC_DIR}package/config/cassandra/_package-info.java`, `${javaDir}config/cassandra/package-info.java`);
             }
             if (this.searchEngine === 'elasticsearch') {
                 this.template(`${SERVER_MAIN_SRC_DIR}package/config/_ElasticsearchConfiguration.java`, `${javaDir}config/ElasticsearchConfiguration.java`);
@@ -420,12 +416,12 @@ function writeFiles() {
         },
 
         writeServerJavaDomainFiles() {
-            this.template(`${SERVER_MAIN_SRC_DIR}package/domain/_package-info.java`, `${javaDir}domain/package-info.java`);
 
             if (this.databaseType === 'sql' || this.databaseType === 'mongodb') {
                 this.template(`${SERVER_MAIN_SRC_DIR}package/domain/_AbstractAuditingEntity.java`, `${javaDir}domain/AbstractAuditingEntity.java`);
                 this.template(`${SERVER_MAIN_SRC_DIR}package/domain/_PersistentAuditEvent.java`, `${javaDir}domain/PersistentAuditEvent.java`);
             }
+            this.template(`${SERVER_MAIN_SRC_DIR}package/domain/_Photo.java`, `${javaDir}domain/Photo.java`);
         },
 
         writeServerJavaPackageInfoFiles() {
@@ -455,12 +451,10 @@ function writeFiles() {
         },
 
         writeServerJavaWebFiles() {
-            this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/vm/_package-info.java`, `${javaDir}web/rest/vm/package-info.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/vm/_LoggerVM.java`, `${javaDir}web/rest/vm/LoggerVM.java`);
 
             this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/util/_HeaderUtil.java`, `${javaDir}web/rest/util/HeaderUtil.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/util/_PaginationUtil.java`, `${javaDir}web/rest/util/PaginationUtil.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/_package-info.java`, `${javaDir}web/rest/package-info.java`);
 
             this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/_LogsResource.java`, `${javaDir}web/rest/LogsResource.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/_ProfileInfoResource.java`, `${javaDir}web/rest/ProfileInfoResource.java`);
@@ -584,7 +578,10 @@ function writeFiles() {
 
             /* User management java web files */
             this.template(`${SERVER_MAIN_SRC_DIR}package/service/exceptions/_BusinessException.java`, `${javaDir}service/exceptions/BusinessException.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/service/dto/_package-info.java`, `${javaDir}service/dto/package-info.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/_PhotoUploadService.java`, `${javaDir}service/PhotoUploadService.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/repository/_PhotoRepository.java`, `${javaDir}repository/PhotoRepository.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/event/_ProcessPhotoEvent.java`, `${javaDir}event/ProcessPhotoEvent.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/util/_ObjectId.java`, `${javaDir}service/util/_ObjectId.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/service/dto/_UserDTO.java`, `${javaDir}service/dto/UserDTO.java`);
 
             this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/vm/_ManagedUserVM.java`, `${javaDir}web/rest/vm/ManagedUserVM.java`);
@@ -592,7 +589,6 @@ function writeFiles() {
             this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/_AccountResource.java`, `${javaDir}web/rest/AccountResource.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/vm/_KeyAndPasswordVM.java`, `${javaDir}web/rest/vm/KeyAndPasswordVM.java`);
 
-            this.template(`${SERVER_MAIN_SRC_DIR}package/service/mapper/_package-info.java`, `${javaDir}service/mapper/package-info.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/service/mapper/_UserMapper.java`, `${javaDir}service/mapper/UserMapper.java`);
 
 

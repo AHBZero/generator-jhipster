@@ -230,6 +230,4 @@ jhipster:
 
 application:
 
-push:
-    fcm:
-        key: YOUR:KEY
+

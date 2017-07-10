@@ -362,3 +362,14 @@ jhipster:
 # ===================================================================
 
 application:
+
+
+push:
+    fcm:
+        key: YOUR:KEY
+
+aws:
+    key: KEY
+    secret: SECRET
+    bucket: <%=baseName%>/images
+    region:
