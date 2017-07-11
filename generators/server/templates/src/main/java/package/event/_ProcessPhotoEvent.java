@@ -16,7 +16,6 @@ public class ProcessPhotoEvent {
         return this.update;
     }
 
-    @Override
     public Photo get() {
         return photo;
     }

@@ -17,38 +17,129 @@
  * limitations under the License.
  */
 const util = require('util');
+const shelljs = require('shelljs');
 const generator = require('yeoman-generator');
+const chalk = require('chalk');
+const jhiCore = require('jhipster-core');
+const writeFiles = require('./files').writeFiles;
 const BaseGenerator = require('../generator-base');
-const exec = require('child_process').exec;
 
-const EntityGenerator = generator.extend({});
+const AddressGenerator = generator.extend({});
 
-util.inherits(EntityGenerator, BaseGenerator);
+util.inherits(AddressGenerator, BaseGenerator);
 
-module.exports = EntityGenerator.extend({
+module.exports = AddressGenerator.extend({
     constructor: function (...args) { // eslint-disable-line object-shorthand
         generator.apply(this, args);
-    },
-    initializing: {
-    },
-    prompting: {},
+        this.addressFiles = ['./src/main/resources/config/liquibase/address.jh'];
 
-    configuring: {
+        // This adds support for a `--db` flag
+        this.option('db', {
+            desc: 'Provide DB option for the application when using skip-server flag',
+            type: String
+        });
+    },
+
+    initializing: {
+        validate() {
+            if (this.addressFiles) {
+                this.addressFiles.forEach((key) => {
+                    if (!shelljs.test('-f', key)) {
+                        this.env.error(chalk.red(`\nCould not find ${key}, make sure the path is correct!\n`));
+                    }
+                });
+            }
+        },
+
+        getConfig() {
+            this.applicationType = this.config.get('applicationType');
+            this.baseName = this.config.get('baseName');
+            this.databaseType = this.config.get('databaseType') || this.getDBTypeFromDBValue(this.options.db);
+            this.prodDatabaseType = this.config.get('prodDatabaseType') || this.options.db;
+            this.devDatabaseType = this.config.get('devDatabaseType') || this.options.db;
+            this.skipClient = this.config.get('skipClient');
+            this.clientFramework = this.config.get('clientFramework');
+            if (!this.clientFramework) {
+                this.clientFramework = 'angular1';
+            }
+            this.clientPackageManager = this.config.get('clientPackageManager');
+            if (!this.clientPackageManager) {
+                if (this.useYarn) {
+                    this.clientPackageManager = 'yarn';
+                } else {
+                    this.clientPackageManager = 'npm';
+                }
+            }
+        }
+    },
+
+    default: {
+        insight() {
+            const insight = this.insight();
+            insight.trackWithEvent('generator', 'import-jdl');
+        },
+
+        parseJDL() {
+            this.log('The jdl is being parsed.');
+            try {
+                const jdlObject = jhiCore.convertToJDL(jhiCore.parseFromFiles(this.addressFiles), this.prodDatabaseType, this.applicationType);
+                const entities = jhiCore.convertToJHipsterJSON({
+                    jdlObject,
+                    databaseType: this.prodDatabaseType,
+                    applicationType: this.applicationType
+                });
+                this.log('Writing entity JSON files.');
+                jhiCore.exportToJSON(entities, this.options.force);
+            } catch (e) {
+                this.log(e);
+                this.error('\nError while parsing entities from JDL\n');
+            }
+        },
+
+        generateEntities() {
+            this.log('Generating entities.');
+            try {
+                this.getExistingEntities().forEach((entity) => {
+                    this.composeWith(require.resolve('../entity'), {
+                        regenerate: true,
+                        'skip-install': true,
+                        'skip-client': entity.definition.skipClient,
+                        'skip-server': entity.definition.skipServer,
+                        'no-fluent-methods': entity.definition.noFluentMethod,
+                        'skip-user-management': entity.definition.skipUserManagement,
+                        arguments: [entity.name],
+                    });
+                });
+            } catch (e) {
+                this.error(`Error while generating entities from parsed JDL\n${e}`);
+            }
+        }
+    },
+
+    writing: writeFiles(),
+
+    install() {
+        const injectJsFilesToIndex = () => {
+            this.log(`\n${chalk.bold.green('Running gulp Inject to add javascript to index\n')}`);
+            this.spawnCommand('gulp', ['inject:app']);
+        };
+        // rebuild client for Angular
+        const rebuildClient = () => {
+            this.log(`\n${chalk.bold.green('Running `webpack:build` to update client app')}\n`);
+            this.spawnCommand(this.clientPackageManager, ['run', 'webpack:build']);
+        };
+
+        if (!this.options['skip-install'] && !this.skipClient) {
+            if (this.clientFramework === 'angular1') {
+                injectJsFilesToIndex();
+            } else {
+                rebuildClient();
+            }
+        }
     },
     end: {
-        generateAddress() {
-            const buildCmd = 'jhipster import-jdl src/main/resources/config/liquibase/jhipster-jdl.jh';
-            const child = {};
-            child.stdout = exec(buildCmd, (err, s) => {
-                if (err) {
-                    this.error(console.log(err));
-                } else {
-                    console.log(s);
-                }
-            }).stdout;
-            child.buildCmd = buildCmd;
-
-            return child;
+        after() {
+            this.addConstraintsChangelogToLiquibase('00000000000000_address_schema');
         }
     }
 });

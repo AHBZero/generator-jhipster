@@ -1,0 +1,5565 @@
+id;name;active;state_id;created_by
+1;Afonso Cláudio;true;8;system
+2;Água Doce do Norte;true;8;system
+3;Águia Branca;true;8;system
+4;Alegre;true;8;system
+5;Alfredo Chaves;true;8;system
+6;Alto Rio Novo;true;8;system
+7;Anchieta;true;8;system
+8;Apiacá;true;8;system
+9;Aracruz;true;8;system
+10;Atilio Vivacqua;true;8;system
+11;Baixo Guandu;true;8;system
+12;Barra de São Francisco;true;8;system
+13;Boa Esperança;true;8;system
+14;Bom Jesus do Norte;true;8;system
+15;Brejetuba;true;8;system
+16;Cachoeiro de Itapemirim;true;8;system
+17;Cariacica;true;8;system
+18;Castelo;true;8;system
+19;Colatina;true;8;system
+20;Conceição da Barra;true;8;system
+21;Conceição do Castelo;true;8;system
+22;Divino de São Lourenço;true;8;system
+23;Domingos Martins;true;8;system
+24;Dores do Rio Preto;true;8;system
+25;Ecoporanga;true;8;system
+26;Fundão;true;8;system
+27;Governador Lindenberg;true;8;system
+28;Guaçuí;true;8;system
+29;Guarapari;true;8;system
+30;Ibatiba;true;8;system
+31;Ibiraçu;true;8;system
+32;Ibitirama;true;8;system
+33;Iconha;true;8;system
+34;Irupi;true;8;system
+35;Itaguaçu;true;8;system
+36;Itapemirim;true;8;system
+37;Itarana;true;8;system
+38;Iúna;true;8;system
+39;Jaguaré;true;8;system
+40;Jerônimo Monteiro;true;8;system
+41;João Neiva;true;8;system
+42;Laranja da Terra;true;8;system
+43;Linhares;true;8;system
+44;Mantenópolis;true;8;system
+45;Marataízes;true;8;system
+46;Marechal Floriano;true;8;system
+47;Marilândia;true;8;system
+48;Mimoso do Sul;true;8;system
+49;Montanha;true;8;system
+50;Mucurici;true;8;system
+51;Muniz Freire;true;8;system
+52;Muqui;true;8;system
+53;Nova Venécia;true;8;system
+54;Pancas;true;8;system
+55;Pedro Canário;true;8;system
+56;Pinheiros;true;8;system
+57;Piúma;true;8;system
+58;Ponto Belo;true;8;system
+59;Presidente Kennedy;true;8;system
+60;Rio Bananal;true;8;system
+61;Rio Novo do Sul;true;8;system
+62;Santa Leopoldina;true;8;system
+63;Santa Maria de Jetibá;true;8;system
+64;Santa Teresa;true;8;system
+65;São Domingos do Norte;true;8;system
+66;São Gabriel da Palha;true;8;system
+67;São José do Calçado;true;8;system
+68;São Mateus;true;8;system
+69;São Roque do Canaã;true;8;system
+70;Serra;true;8;system
+71;Sooretama;true;8;system
+72;Vargem Alta;true;8;system
+73;Venda Nova do Imigrante;true;8;system
+74;Viana;true;8;system
+75;Vila Pavão;true;8;system
+76;Vila Valério;true;8;system
+77;Vila Velha;true;8;system
+78;Vitória;true;8;system
+79;Acrelândia;true;1;system
+80;Assis Brasil;true;1;system
+81;Brasiléia;true;1;system
+82;Bujari;true;1;system
+83;Capixaba;true;1;system
+84;Cruzeiro do Sul;true;1;system
+85;Epitaciolândia;true;1;system
+86;Feijó;true;1;system
+87;Jordão;true;1;system
+88;Mâncio Lima;true;1;system
+89;Manoel Urbano;true;1;system
+90;Marechal Thaumaturgo;true;1;system
+91;Plácido de Castro;true;1;system
+92;Porto Acre;true;1;system
+93;Porto Walter;true;1;system
+94;Rio Branco;true;1;system
+95;Rodrigues Alves;true;1;system
+96;Santa Rosa do Purus;true;1;system
+97;Sena Madureira;true;1;system
+98;Senador Guiomard;true;1;system
+99;Tarauacá;true;1;system
+100;Xapuri;true;1;system
+101;Água Branca;true;2;system
+102;Anadia;true;2;system
+103;Arapiraca;true;2;system
+104;Atalaia;true;2;system
+105;Barra de Santo Antônio;true;2;system
+106;Barra de São Miguel;true;2;system
+107;Batalha;true;2;system
+108;Belém;true;2;system
+109;Belo Monte;true;2;system
+110;Boca da Mata;true;2;system
+111;Branquinha;true;2;system
+112;Cacimbinhas;true;2;system
+113;Cajueiro;true;2;system
+114;Campestre;true;2;system
+115;Campo Alegre;true;2;system
+116;Campo Grande;true;2;system
+117;Canapi;true;2;system
+118;Capela;true;2;system
+119;Carneiros;true;2;system
+120;Chã Preta;true;2;system
+121;Coité do Nóia;true;2;system
+122;Colônia Leopoldina;true;2;system
+123;Coqueiro Seco;true;2;system
+124;Coruripe;true;2;system
+125;Craíbas;true;2;system
+126;Delmiro Gouveia;true;2;system
+127;Dois Riachos;true;2;system
+128;Estrela de Alagoas;true;2;system
+129;Feira Grande;true;2;system
+130;Feliz Deserto;true;2;system
+131;Flexeiras;true;2;system
+132;Girau do Ponciano;true;2;system
+133;Ibateguara;true;2;system
+134;Igaci;true;2;system
+135;Igreja Nova;true;2;system
+136;Inhapi;true;2;system
+137;Jacaré dos Homens;true;2;system
+138;Jacuípe;true;2;system
+139;Japaratinga;true;2;system
+140;Jaramataia;true;2;system
+141;Jequiá da Praia;true;2;system
+142;Joaquim Gomes;true;2;system
+143;Jundiá;true;2;system
+144;Junqueiro;true;2;system
+145;Lagoa da Canoa;true;2;system
+146;Limoeiro de Anadia;true;2;system
+147;Maceió;true;2;system
+148;Major Isidoro;true;2;system
+149;Mar Vermelho;true;2;system
+150;Maragogi;true;2;system
+151;Maravilha;true;2;system
+152;Marechal Deodoro;true;2;system
+153;Maribondo;true;2;system
+154;Mata Grande;true;2;system
+155;Matriz de Camaragibe;true;2;system
+156;Messias;true;2;system
+157;Minador do Negrão;true;2;system
+158;Monteirópolis;true;2;system
+159;Murici;true;2;system
+160;Novo Lino;true;2;system
+161;Olho d`Água das Flores;true;2;system
+162;Olho d`Água do Casado;true;2;system
+163;Olho d`Água Grande;true;2;system
+164;Olivença;true;2;system
+165;Ouro Branco;true;2;system
+166;Palestina;true;2;system
+167;Palmeira dos Índios;true;2;system
+168;Pão de Açúcar;true;2;system
+169;Pariconha;true;2;system
+170;Paripueira;true;2;system
+171;Passo de Camaragibe;true;2;system
+172;Paulo Jacinto;true;2;system
+173;Penedo;true;2;system
+174;Piaçabuçu;true;2;system
+175;Pilar;true;2;system
+176;Pindoba;true;2;system
+177;Piranhas;true;2;system
+178;Poço das Trincheiras;true;2;system
+179;Porto Calvo;true;2;system
+180;Porto de Pedras;true;2;system
+181;Porto Real do Colégio;true;2;system
+182;Quebrangulo;true;2;system
+183;Rio Largo;true;2;system
+184;Roteiro;true;2;system
+185;Santa Luzia do Norte;true;2;system
+186;Santana do Ipanema;true;2;system
+187;Santana do Mundaú;true;2;system
+188;São Brás;true;2;system
+189;São José da Laje;true;2;system
+190;São José da Tapera;true;2;system
+191;São Luís do Quitunde;true;2;system
+192;São Miguel dos Campos;true;2;system
+193;São Miguel dos Milagres;true;2;system
+194;São Sebastião;true;2;system
+195;Satuba;true;2;system
+196;Senador Rui Palmeira;true;2;system
+197;Tanque d`Arca;true;2;system
+198;Taquarana;true;2;system
+199;Teotônio Vilela;true;2;system
+200;Traipu;true;2;system
+201;União dos Palmares;true;2;system
+202;Viçosa;true;2;system
+203;Amapá;true;4;system
+204;Calçoene;true;4;system
+205;Cutias;true;4;system
+206;Ferreira Gomes;true;4;system
+207;Itaubal;true;4;system
+208;Laranjal do Jari;true;4;system
+209;Macapá;true;4;system
+210;Mazagão;true;4;system
+211;Oiapoque;true;4;system
+212;Pedra Branca do Amaparí;true;4;system
+213;Porto Grande;true;4;system
+214;Pracuúba;true;4;system
+215;Santana;true;4;system
+216;Serra do Navio;true;4;system
+217;Tartarugalzinho;true;4;system
+218;Vitória do Jari;true;4;system
+219;Alvarães;true;3;system
+220;Amaturá;true;3;system
+221;Anamã;true;3;system
+222;Anori;true;3;system
+223;Apuí;true;3;system
+224;Atalaia do Norte;true;3;system
+225;Autazes;true;3;system
+226;Barcelos;true;3;system
+227;Barreirinha;true;3;system
+228;Benjamin Constant;true;3;system
+229;Beruri;true;3;system
+230;Boa Vista do Ramos;true;3;system
+231;Boca do Acre;true;3;system
+232;Borba;true;3;system
+233;Caapiranga;true;3;system
+234;Canutama;true;3;system
+235;Carauari;true;3;system
+236;Careiro;true;3;system
+237;Careiro da Várzea;true;3;system
+238;Coari;true;3;system
+239;Codajás;true;3;system
+240;Eirunepé;true;3;system
+241;Envira;true;3;system
+242;Fonte Boa;true;3;system
+243;Guajará;true;3;system
+244;Humaitá;true;3;system
+245;Ipixuna;true;3;system
+246;Iranduba;true;3;system
+247;Itacoatiara;true;3;system
+248;Itamarati;true;3;system
+249;Itapiranga;true;3;system
+250;Japurá;true;3;system
+251;Juruá;true;3;system
+252;Jutaí;true;3;system
+253;Lábrea;true;3;system
+254;Manacapuru;true;3;system
+255;Manaquiri;true;3;system
+256;Manaus;true;3;system
+257;Manicoré;true;3;system
+258;Maraã;true;3;system
+259;Maués;true;3;system
+260;Nhamundá;true;3;system
+261;Nova Olinda do Norte;true;3;system
+262;Novo Airão;true;3;system
+263;Novo Aripuanã;true;3;system
+264;Parintins;true;3;system
+265;Pauini;true;3;system
+266;Presidente Figueiredo;true;3;system
+267;Rio Preto da Eva;true;3;system
+268;Santa Isabel do Rio Negro;true;3;system
+269;Santo Antônio do Içá;true;3;system
+270;São Gabriel da Cachoeira;true;3;system
+271;São Paulo de Olivença;true;3;system
+272;São Sebastião do Uatumã;true;3;system
+273;Silves;true;3;system
+274;Tabatinga;true;3;system
+275;Tapauá;true;3;system
+276;Tefé;true;3;system
+277;Tonantins;true;3;system
+278;Uarini;true;3;system
+279;Urucará;true;3;system
+280;Urucurituba;true;3;system
+281;Abaíra;true;5;system
+282;Abaré;true;5;system
+283;Acajutiba;true;5;system
+284;Adustina;true;5;system
+285;Água Fria;true;5;system
+286;Aiquara;true;5;system
+287;Alagoinhas;true;5;system
+288;Alcobaça;true;5;system
+289;Almadina;true;5;system
+290;Amargosa;true;5;system
+291;Amélia Rodrigues;true;5;system
+292;América Dourada;true;5;system
+293;Anagé;true;5;system
+294;Andaraí;true;5;system
+295;Andorinha;true;5;system
+296;Angical;true;5;system
+297;Anguera;true;5;system
+298;Antas;true;5;system
+299;Antônio Cardoso;true;5;system
+300;Antônio Gonçalves;true;5;system
+301;Aporá;true;5;system
+302;Apuarema;true;5;system
+303;Araças;true;5;system
+304;Aracatu;true;5;system
+305;Araci;true;5;system
+306;Aramari;true;5;system
+307;Arataca;true;5;system
+308;Aratuípe;true;5;system
+309;Aurelino Leal;true;5;system
+310;Baianópolis;true;5;system
+311;Baixa Grande;true;5;system
+312;Banzaê;true;5;system
+313;Barra;true;5;system
+314;Barra da Estiva;true;5;system
+315;Barra do Choça;true;5;system
+316;Barra do Mendes;true;5;system
+317;Barra do Rocha;true;5;system
+318;Barreiras;true;5;system
+319;Barro Alto;true;5;system
+320;Barro Preto (antigo Gov. Lomanto Jr.);true;5;system
+321;Barrocas;true;5;system
+322;Belmonte;true;5;system
+323;Belo Campo;true;5;system
+324;Biritinga;true;5;system
+325;Boa Nova;true;5;system
+326;Boa Vista do Tupim;true;5;system
+327;Bom Jesus da Lapa;true;5;system
+328;Bom Jesus da Serra;true;5;system
+329;Boninal;true;5;system
+330;Bonito;true;5;system
+331;Boquira;true;5;system
+332;Botuporã;true;5;system
+333;Brejões;true;5;system
+334;Brejolândia;true;5;system
+335;Brotas de Macaúbas;true;5;system
+336;Brumado;true;5;system
+337;Buerarema;true;5;system
+338;Buritirama;true;5;system
+339;Caatiba;true;5;system
+340;Cabaceiras do Paraguaçu;true;5;system
+341;Cachoeira;true;5;system
+342;Caculé;true;5;system
+343;Caém;true;5;system
+344;Caetanos;true;5;system
+345;Caetité;true;5;system
+346;Cafarnaum;true;5;system
+347;Cairu;true;5;system
+348;Caldeirão Grande;true;5;system
+349;Camacan;true;5;system
+350;Camaçari;true;5;system
+351;Camamu;true;5;system
+352;Campo Alegre de Lourdes;true;5;system
+353;Campo Formoso;true;5;system
+354;Canápolis;true;5;system
+355;Canarana;true;5;system
+356;Canavieiras;true;5;system
+357;Candeal;true;5;system
+358;Candeias;true;5;system
+359;Candiba;true;5;system
+360;Cândido Sales;true;5;system
+361;Cansanção;true;5;system
+362;Canudos;true;5;system
+363;Capela do Alto Alegre;true;5;system
+364;Capim Grosso;true;5;system
+365;Caraíbas;true;5;system
+366;Caravelas;true;5;system
+367;Cardeal da Silva;true;5;system
+368;Carinhanha;true;5;system
+369;Casa Nova;true;5;system
+370;Castro Alves;true;5;system
+371;Catolândia;true;5;system
+372;Catu;true;5;system
+373;Caturama;true;5;system
+374;Central;true;5;system
+375;Chorrochó;true;5;system
+376;Cícero Dantas;true;5;system
+377;Cipó;true;5;system
+378;Coaraci;true;5;system
+379;Cocos;true;5;system
+380;Conceição da Feira;true;5;system
+381;Conceição do Almeida;true;5;system
+382;Conceição do Coité;true;5;system
+383;Conceição do Jacuípe;true;5;system
+384;Conde;true;5;system
+385;Condeúba;true;5;system
+386;Contendas do Sincorá;true;5;system
+387;Coração de Maria;true;5;system
+388;Cordeiros;true;5;system
+389;Coribe;true;5;system
+390;Coronel João Sá;true;5;system
+391;Correntina;true;5;system
+392;Cotegipe;true;5;system
+393;Cravolândia;true;5;system
+394;Crisópolis;true;5;system
+395;Cristópolis;true;5;system
+396;Cruz das Almas;true;5;system
+397;Curaçá;true;5;system
+398;Dário Meira;true;5;system
+399;Dias d`Ávila;true;5;system
+400;Dom Basílio;true;5;system
+401;Dom Macedo Costa;true;5;system
+402;Elísio Medrado;true;5;system
+403;Encruzilhada;true;5;system
+404;Entre Rios;true;5;system
+405;Érico Cardoso;true;5;system
+406;Esplanada;true;5;system
+407;Euclides da Cunha;true;5;system
+408;Eunápolis;true;5;system
+409;Fátima;true;5;system
+410;Feira da Mata;true;5;system
+411;Feira de Santana;true;5;system
+412;Filadélfia;true;5;system
+413;Firmino Alves;true;5;system
+414;Floresta Azul;true;5;system
+415;Formosa do Rio Preto;true;5;system
+416;Gandu;true;5;system
+417;Gavião;true;5;system
+418;Gentio do Ouro;true;5;system
+419;Glória;true;5;system
+420;Gongogi;true;5;system
+421;Governador Mangabeira;true;5;system
+422;Guajeru;true;5;system
+423;Guanambi;true;5;system
+424;Guaratinga;true;5;system
+425;Heliópolis;true;5;system
+426;Iaçu;true;5;system
+427;Ibiassucê;true;5;system
+428;Ibicaraí;true;5;system
+429;Ibicoara;true;5;system
+430;Ibicuí;true;5;system
+431;Ibipeba;true;5;system
+432;Ibipitanga;true;5;system
+433;Ibiquera;true;5;system
+434;Ibirapitanga;true;5;system
+435;Ibirapuã;true;5;system
+436;Ibirataia;true;5;system
+437;Ibitiara;true;5;system
+438;Ibititá;true;5;system
+439;Ibotirama;true;5;system
+440;Ichu;true;5;system
+441;Igaporã;true;5;system
+442;Igrapiúna;true;5;system
+443;Iguaí;true;5;system
+444;Ilhéus;true;5;system
+445;Inhambupe;true;5;system
+446;Ipecaetá;true;5;system
+447;Ipiaú;true;5;system
+448;Ipirá;true;5;system
+449;Ipupiara;true;5;system
+450;Irajuba;true;5;system
+451;Iramaia;true;5;system
+452;Iraquara;true;5;system
+453;Irará;true;5;system
+454;Irecê;true;5;system
+455;Itabela;true;5;system
+456;Itaberaba;true;5;system
+457;Itabuna;true;5;system
+458;Itacaré;true;5;system
+459;Itaeté;true;5;system
+460;Itagi;true;5;system
+461;Itagibá;true;5;system
+462;Itagimirim;true;5;system
+463;Itaguaçu da Bahia;true;5;system
+464;Itaju do Colônia;true;5;system
+465;Itajuípe;true;5;system
+466;Itamaraju;true;5;system
+467;Itamari;true;5;system
+468;Itambé;true;5;system
+469;Itanagra;true;5;system
+470;Itanhém;true;5;system
+471;Itaparica;true;5;system
+472;Itapé;true;5;system
+473;Itapebi;true;5;system
+474;Itapetinga;true;5;system
+475;Itapicuru;true;5;system
+476;Itapitanga;true;5;system
+477;Itaquara;true;5;system
+478;Itarantim;true;5;system
+479;Itatim;true;5;system
+480;Itiruçu;true;5;system
+481;Itiúba;true;5;system
+482;Itororó;true;5;system
+483;Ituaçu;true;5;system
+484;Ituberá;true;5;system
+485;Iuiú;true;5;system
+486;Jaborandi;true;5;system
+487;Jacaraci;true;5;system
+488;Jacobina;true;5;system
+489;Jaguaquara;true;5;system
+490;Jaguarari;true;5;system
+491;Jaguaripe;true;5;system
+492;Jandaíra;true;5;system
+493;Jequié;true;5;system
+494;Jeremoabo;true;5;system
+495;Jiquiriçá;true;5;system
+496;Jitaúna;true;5;system
+497;João Dourado;true;5;system
+498;Juazeiro;true;5;system
+499;Jucuruçu;true;5;system
+500;Jussara;true;5;system
+501;Jussari;true;5;system
+502;Jussiape;true;5;system
+503;Lafaiete Coutinho;true;5;system
+504;Lagoa Real;true;5;system
+505;Laje;true;5;system
+506;Lajedão;true;5;system
+507;Lajedinho;true;5;system
+508;Lajedo do Tabocal;true;5;system
+509;Lamarão;true;5;system
+510;Lapão;true;5;system
+511;Lauro de Freitas;true;5;system
+512;Lençóis;true;5;system
+513;Licínio de Almeida;true;5;system
+514;Livramento de Nossa Senhora;true;5;system
+515;Luís Eduardo Magalhães;true;5;system
+516;Macajuba;true;5;system
+517;Macarani;true;5;system
+518;Macaúbas;true;5;system
+519;Macururé;true;5;system
+520;Madre de Deus;true;5;system
+521;Maetinga;true;5;system
+522;Maiquinique;true;5;system
+523;Mairi;true;5;system
+524;Malhada;true;5;system
+525;Malhada de Pedras;true;5;system
+526;Manoel Vitorino;true;5;system
+527;Mansidão;true;5;system
+528;Maracás;true;5;system
+529;Maragogipe;true;5;system
+530;Maraú;true;5;system
+531;Marcionílio Souza;true;5;system
+532;Mascote;true;5;system
+533;Mata de São João;true;5;system
+534;Matina;true;5;system
+535;Medeiros Neto;true;5;system
+536;Miguel Calmon;true;5;system
+537;Milagres;true;5;system
+538;Mirangaba;true;5;system
+539;Mirante;true;5;system
+540;Monte Santo;true;5;system
+541;Morpará;true;5;system
+542;Morro do Chapéu;true;5;system
+543;Mortugaba;true;5;system
+544;Mucugê;true;5;system
+545;Mucuri;true;5;system
+546;Mulungu do Morro;true;5;system
+547;Mundo Novo;true;5;system
+548;Muniz Ferreira;true;5;system
+549;Muquém de São Francisco;true;5;system
+550;Muritiba;true;5;system
+551;Mutuípe;true;5;system
+552;Nazaré;true;5;system
+553;Nilo Peçanha;true;5;system
+554;Nordestina;true;5;system
+555;Nova Canaã;true;5;system
+556;Nova Fátima;true;5;system
+557;Nova Ibiá;true;5;system
+558;Nova Itarana;true;5;system
+559;Nova Redenção;true;5;system
+560;Nova Soure;true;5;system
+561;Nova Viçosa;true;5;system
+562;Novo Horizonte;true;5;system
+563;Novo Triunfo;true;5;system
+564;Olindina;true;5;system
+565;Oliveira dos Brejinhos;true;5;system
+566;Ouriçangas;true;5;system
+567;Ourolândia;true;5;system
+568;Palmas de Monte Alto;true;5;system
+569;Palmeiras;true;5;system
+570;Paramirim;true;5;system
+571;Paratinga;true;5;system
+572;Paripiranga;true;5;system
+573;Pau Brasil;true;5;system
+574;Paulo Afonso;true;5;system
+575;Pé de Serra;true;5;system
+576;Pedrão;true;5;system
+577;Pedro Alexandre;true;5;system
+578;Piatã;true;5;system
+579;Pilão Arcado;true;5;system
+580;Pindaí;true;5;system
+581;Pindobaçu;true;5;system
+582;Pintadas;true;5;system
+583;Piraí do Norte;true;5;system
+584;Piripá;true;5;system
+585;Piritiba;true;5;system
+586;Planaltino;true;5;system
+587;Planalto;true;5;system
+588;Poções;true;5;system
+589;Pojuca;true;5;system
+590;Ponto Novo;true;5;system
+591;Porto Seguro;true;5;system
+592;Potiraguá;true;5;system
+593;Prado;true;5;system
+594;Presidente Dutra;true;5;system
+595;Presidente Jânio Quadros;true;5;system
+596;Presidente Tancredo Neves;true;5;system
+597;Queimadas;true;5;system
+598;Quijingue;true;5;system
+599;Quixabeira;true;5;system
+600;Rafael Jambeiro;true;5;system
+601;Remanso;true;5;system
+602;Retirolândia;true;5;system
+603;Riachão das Neves;true;5;system
+604;Riachão do Jacuípe;true;5;system
+605;Riacho de Santana;true;5;system
+606;Ribeira do Amparo;true;5;system
+607;Ribeira do Pombal;true;5;system
+608;Ribeirão do Largo;true;5;system
+609;Rio de Contas;true;5;system
+610;Rio do Antônio;true;5;system
+611;Rio do Pires;true;5;system
+612;Rio Real;true;5;system
+613;Rodelas;true;5;system
+614;Ruy Barbosa;true;5;system
+615;Salinas da Margarida;true;5;system
+616;Salvador;true;5;system
+617;Santa Bárbara;true;5;system
+618;Santa Brígida;true;5;system
+619;Santa Cruz Cabrália;true;5;system
+620;Santa Cruz da Vitória;true;5;system
+621;Santa Inês;true;5;system
+622;Santa Luzia;true;5;system
+623;Santa Maria da Vitória;true;5;system
+624;Santa Rita de Cássia;true;5;system
+625;Santa Teresinha;true;5;system
+626;Santaluz;true;5;system
+627;Santana;true;5;system
+628;Santanópolis;true;5;system
+629;Santo Amaro;true;5;system
+630;Santo Antônio de Jesus;true;5;system
+631;Santo Estêvão;true;5;system
+632;São Desidério;true;5;system
+633;São Domingos;true;5;system
+634;São Felipe;true;5;system
+635;São Félix;true;5;system
+636;São Félix do Coribe;true;5;system
+637;São Francisco do Conde;true;5;system
+638;São Gabriel;true;5;system
+639;São Gonçalo dos Campos;true;5;system
+640;São José da Vitória;true;5;system
+641;São José do Jacuípe;true;5;system
+642;São Miguel das Matas;true;5;system
+643;São Sebastião do Passé;true;5;system
+644;Sapeaçu;true;5;system
+645;Sátiro Dias;true;5;system
+646;Saubara;true;5;system
+647;Saúde;true;5;system
+648;Seabra;true;5;system
+649;Sebastião Laranjeiras;true;5;system
+650;Senhor do Bonfim;true;5;system
+651;Sento Sé;true;5;system
+652;Serra do Ramalho;true;5;system
+653;Serra Dourada;true;5;system
+654;Serra Preta;true;5;system
+655;Serrinha;true;5;system
+656;Serrolândia;true;5;system
+657;Simões Filho;true;5;system
+658;Sítio do Mato;true;5;system
+659;Sítio do Quinto;true;5;system
+660;Sobradinho;true;5;system
+661;Souto Soares;true;5;system
+662;Tabocas do Brejo Velho;true;5;system
+663;Tanhaçu;true;5;system
+664;Tanque Novo;true;5;system
+665;Tanquinho;true;5;system
+666;Taperoá;true;5;system
+667;Tapiramutá;true;5;system
+668;Teixeira de Freitas;true;5;system
+669;Teodoro Sampaio;true;5;system
+670;Teofilândia;true;5;system
+671;Teolândia;true;5;system
+672;Terra Nova;true;5;system
+673;Tremedal;true;5;system
+674;Tucano;true;5;system
+675;Uauá;true;5;system
+676;Ubaíra;true;5;system
+677;Ubaitaba;true;5;system
+678;Ubatã;true;5;system
+679;Uibaí;true;5;system
+680;Umburanas;true;5;system
+681;Una;true;5;system
+682;Urandi;true;5;system
+683;Uruçuca;true;5;system
+684;Utinga;true;5;system
+685;Valença;true;5;system
+686;Valente;true;5;system
+687;Várzea da Roça;true;5;system
+688;Várzea do Poço;true;5;system
+689;Várzea Nova;true;5;system
+690;Varzedo;true;5;system
+691;Vera Cruz;true;5;system
+692;Vereda;true;5;system
+693;Vitória da Conquista;true;5;system
+694;Wagner;true;5;system
+695;Wanderley;true;5;system
+696;Wenceslau Guimarães;true;5;system
+697;Xique-Xique;true;5;system
+698;Abaiara;true;6;system
+699;Acarape;true;6;system
+700;Acaraú;true;6;system
+701;Acopiara;true;6;system
+702;Aiuaba;true;6;system
+703;Alcântaras;true;6;system
+704;Altaneira;true;6;system
+705;Alto Santo;true;6;system
+706;Amontada;true;6;system
+707;Antonina do Norte;true;6;system
+708;Apuiarés;true;6;system
+709;Aquiraz;true;6;system
+710;Aracati;true;6;system
+711;Aracoiaba;true;6;system
+712;Ararendá;true;6;system
+713;Araripe;true;6;system
+714;Aratuba;true;6;system
+715;Arneiroz;true;6;system
+716;Assaré;true;6;system
+717;Aurora;true;6;system
+718;Baixio;true;6;system
+719;Banabuiú;true;6;system
+720;Barbalha;true;6;system
+721;Barreira;true;6;system
+722;Barro;true;6;system
+723;Barroquinha;true;6;system
+724;Baturité;true;6;system
+725;Beberibe;true;6;system
+726;Bela Cruz;true;6;system
+727;Boa Viagem;true;6;system
+728;Brejo Santo;true;6;system
+729;Camocim;true;6;system
+730;Campos Sales;true;6;system
+731;Canindé;true;6;system
+732;Capistrano;true;6;system
+733;Caridade;true;6;system
+734;Cariré;true;6;system
+735;Caririaçu;true;6;system
+736;Cariús;true;6;system
+737;Carnaubal;true;6;system
+738;Cascavel;true;6;system
+739;Catarina;true;6;system
+740;Catunda;true;6;system
+741;Caucaia;true;6;system
+742;Cedro;true;6;system
+743;Chaval;true;6;system
+744;Choró;true;6;system
+745;Chorozinho;true;6;system
+746;Coreaú;true;6;system
+747;Crateús;true;6;system
+748;Crato;true;6;system
+749;Croatá;true;6;system
+750;Cruz;true;6;system
+751;Deputado Irapuan Pinheiro;true;6;system
+752;Ererê;true;6;system
+753;Eusébio;true;6;system
+754;Farias Brito;true;6;system
+755;Forquilha;true;6;system
+756;Fortaleza;true;6;system
+757;Fortim;true;6;system
+758;Frecheirinha;true;6;system
+759;General Sampaio;true;6;system
+760;Graça;true;6;system
+761;Granja;true;6;system
+762;Granjeiro;true;6;system
+763;Groaíras;true;6;system
+764;Guaiúba;true;6;system
+765;Guaraciaba do Norte;true;6;system
+766;Guaramiranga;true;6;system
+767;Hidrolândia;true;6;system
+768;Horizonte;true;6;system
+769;Ibaretama;true;6;system
+770;Ibiapina;true;6;system
+771;Ibicuitinga;true;6;system
+772;Icapuí;true;6;system
+773;Icó;true;6;system
+774;Iguatu;true;6;system
+775;Independência;true;6;system
+776;Ipaporanga;true;6;system
+777;Ipaumirim;true;6;system
+778;Ipu;true;6;system
+779;Ipueiras;true;6;system
+780;Iracema;true;6;system
+781;Irauçuba;true;6;system
+782;Itaiçaba;true;6;system
+783;Itaitinga;true;6;system
+784;Itapagé;true;6;system
+785;Itapipoca;true;6;system
+786;Itapiúna;true;6;system
+787;Itarema;true;6;system
+788;Itatira;true;6;system
+789;Jaguaretama;true;6;system
+790;Jaguaribara;true;6;system
+791;Jaguaribe;true;6;system
+792;Jaguaruana;true;6;system
+793;Jardim;true;6;system
+794;Jati;true;6;system
+795;Jijoca de Jericoacoara;true;6;system
+796;Juazeiro do Norte;true;6;system
+797;Jucás;true;6;system
+798;Lavras da Mangabeira;true;6;system
+799;Limoeiro do Norte;true;6;system
+800;Madalena;true;6;system
+801;Maracanaú;true;6;system
+802;Maranguape;true;6;system
+803;Marco;true;6;system
+804;Martinópole;true;6;system
+805;Massapê;true;6;system
+806;Mauriti;true;6;system
+807;Meruoca;true;6;system
+808;Milagres;true;6;system
+809;Milhã;true;6;system
+810;Miraíma;true;6;system
+811;Missão Velha;true;6;system
+812;Mombaça;true;6;system
+813;Monsenhor Tabosa;true;6;system
+814;Morada Nova;true;6;system
+815;Moraújo;true;6;system
+816;Morrinhos;true;6;system
+817;Mucambo;true;6;system
+818;Mulungu;true;6;system
+819;Nova Olinda;true;6;system
+820;Nova Russas;true;6;system
+821;Novo Oriente;true;6;system
+822;Ocara;true;6;system
+823;Orós;true;6;system
+824;Pacajus;true;6;system
+825;Pacatuba;true;6;system
+826;Pacoti;true;6;system
+827;Pacujá;true;6;system
+828;Palhano;true;6;system
+829;Palmácia;true;6;system
+830;Paracuru;true;6;system
+831;Paraipaba;true;6;system
+832;Parambu;true;6;system
+833;Paramoti;true;6;system
+834;Pedra Branca;true;6;system
+835;Penaforte;true;6;system
+836;Pentecoste;true;6;system
+837;Pereiro;true;6;system
+838;Pindoretama;true;6;system
+839;Piquet Carneiro;true;6;system
+840;Pires Ferreira;true;6;system
+841;Poranga;true;6;system
+842;Porteiras;true;6;system
+843;Potengi;true;6;system
+844;Potiretama;true;6;system
+845;Quiterianópolis;true;6;system
+846;Quixadá;true;6;system
+847;Quixelô;true;6;system
+848;Quixeramobim;true;6;system
+849;Quixeré;true;6;system
+850;Redenção;true;6;system
+851;Reriutaba;true;6;system
+852;Russas;true;6;system
+853;Saboeiro;true;6;system
+854;Salitre;true;6;system
+855;Santa Quitéria;true;6;system
+856;Santana do Acaraú;true;6;system
+857;Santana do Cariri;true;6;system
+858;São Benedito;true;6;system
+859;São Gonçalo do Amarante;true;6;system
+860;São João do Jaguaribe;true;6;system
+861;São Luís do Curu;true;6;system
+862;Senador Pompeu;true;6;system
+863;Senador Sá;true;6;system
+864;Sobral;true;6;system
+865;Solonópole;true;6;system
+866;Tabuleiro do Norte;true;6;system
+867;Tamboril;true;6;system
+868;Tarrafas;true;6;system
+869;Tauá;true;6;system
+870;Tejuçuoca;true;6;system
+871;Tianguá;true;6;system
+872;Trairi;true;6;system
+873;Tururu;true;6;system
+874;Ubajara;true;6;system
+875;Umari;true;6;system
+876;Umirim;true;6;system
+877;Uruburetama;true;6;system
+878;Uruoca;true;6;system
+879;Varjota;true;6;system
+880;Várzea Alegre;true;6;system
+881;Viçosa do Ceará;true;6;system
+882;Brasília;true;7;system
+883;Abadia de Goiás;true;9;system
+884;Abadiânia;true;9;system
+885;Acreúna;true;9;system
+886;Adelândia;true;9;system
+887;Água Fria de Goiás;true;9;system
+888;Água Limpa;true;9;system
+889;Águas Lindas de Goiás;true;9;system
+890;Alexânia;true;9;system
+891;Aloândia;true;9;system
+892;Alto Horizonte;true;9;system
+893;Alto Paraíso de Goiás;true;9;system
+894;Alvorada do Norte;true;9;system
+895;Amaralina;true;9;system
+896;Americano do Brasil;true;9;system
+897;Amorinópolis;true;9;system
+898;Anápolis;true;9;system
+899;Anhanguera;true;9;system
+900;Anicuns;true;9;system
+901;Aparecida de Goiânia;true;9;system
+902;Aparecida do Rio Doce;true;9;system
+903;Aporé;true;9;system
+904;Araçu;true;9;system
+905;Aragarças;true;9;system
+906;Aragoiânia;true;9;system
+907;Araguapaz;true;9;system
+908;Arenópolis;true;9;system
+909;Aruanã;true;9;system
+910;Aurilândia;true;9;system
+911;Avelinópolis;true;9;system
+912;Baliza;true;9;system
+913;Barro Alto;true;9;system
+914;Bela Vista de Goiás;true;9;system
+915;Bom Jardim de Goiás;true;9;system
+916;Bom Jesus de Goiás;true;9;system
+917;Bonfinópolis;true;9;system
+918;Bonópolis;true;9;system
+919;Brazabrantes;true;9;system
+920;Britânia;true;9;system
+921;Buriti Alegre;true;9;system
+922;Buriti de Goiás;true;9;system
+923;Buritinópolis;true;9;system
+924;Cabeceiras;true;9;system
+925;Cachoeira Alta;true;9;system
+926;Cachoeira de Goiás;true;9;system
+927;Cachoeira Dourada;true;9;system
+928;Caçu;true;9;system
+929;Caiapônia;true;9;system
+930;Caldas Novas;true;9;system
+931;Caldazinha;true;9;system
+932;Campestre de Goiás;true;9;system
+933;Campinaçu;true;9;system
+934;Campinorte;true;9;system
+935;Campo Alegre de Goiás;true;9;system
+936;Campo Limpo de Goiás;true;9;system
+937;Campos Belos;true;9;system
+938;Campos Verdes;true;9;system
+939;Carmo do Rio Verde;true;9;system
+940;Castelândia;true;9;system
+941;Catalão;true;9;system
+942;Caturaí;true;9;system
+943;Cavalcante;true;9;system
+944;Ceres;true;9;system
+945;Cezarina;true;9;system
+946;Chapadão do Céu;true;9;system
+947;Cidade Ocidental;true;9;system
+948;Cocalzinho de Goiás;true;9;system
+949;Colinas do Sul;true;9;system
+950;Córrego do Ouro;true;9;system
+951;Corumbá de Goiás;true;9;system
+952;Corumbaíba;true;9;system
+953;Cristalina;true;9;system
+954;Cristianópolis;true;9;system
+955;Crixás;true;9;system
+956;Cromínia;true;9;system
+957;Cumari;true;9;system
+958;Damianópolis;true;9;system
+959;Damolândia;true;9;system
+960;Davinópolis;true;9;system
+961;Diorama;true;9;system
+962;Divinópolis de Goiás;true;9;system
+963;Doverlândia;true;9;system
+964;Edealina;true;9;system
+965;Edéia;true;9;system
+966;Estrela do Norte;true;9;system
+967;Faina;true;9;system
+968;Fazenda Nova;true;9;system
+969;Firminópolis;true;9;system
+970;Flores de Goiás;true;9;system
+971;Formosa;true;9;system
+972;Formoso;true;9;system
+973;Gameleira de Goiás;true;9;system
+974;Goianápolis;true;9;system
+975;Goiandira;true;9;system
+976;Goianésia;true;9;system
+977;Goiânia;true;9;system
+978;Goianira;true;9;system
+979;Goiás;true;9;system
+980;Goiatuba;true;9;system
+981;Gouvelândia;true;9;system
+982;Guapó;true;9;system
+983;Guaraíta;true;9;system
+984;Guarani de Goiás;true;9;system
+985;Guarinos;true;9;system
+986;Heitoraí;true;9;system
+987;Hidrolândia;true;9;system
+988;Hidrolina;true;9;system
+989;Iaciara;true;9;system
+990;Inaciolândia;true;9;system
+991;Indiara;true;9;system
+992;Inhumas;true;9;system
+993;Ipameri;true;9;system
+994;Ipiranga de Goiás;true;9;system
+995;Iporá;true;9;system
+996;Israelândia;true;9;system
+997;Itaberaí;true;9;system
+998;Itaguari;true;9;system
+999;Itaguaru;true;9;system
+1000;Itajá;true;9;system
+1001;Itapaci;true;9;system
+1002;Itapirapuã;true;9;system
+1003;Itapuranga;true;9;system
+1004;Itarumã;true;9;system
+1005;Itauçu;true;9;system
+1006;Itumbiara;true;9;system
+1007;Ivolândia;true;9;system
+1008;Jandaia;true;9;system
+1009;Jaraguá;true;9;system
+1010;Jataí;true;9;system
+1011;Jaupaci;true;9;system
+1012;Jesúpolis;true;9;system
+1013;Joviânia;true;9;system
+1014;Jussara;true;9;system
+1015;Lagoa Santa;true;9;system
+1016;Leopoldo de Bulhões;true;9;system
+1017;Luziânia;true;9;system
+1018;Mairipotaba;true;9;system
+1019;Mambaí;true;9;system
+1020;Mara Rosa;true;9;system
+1021;Marzagão;true;9;system
+1022;Matrinchã;true;9;system
+1023;Maurilândia;true;9;system
+1024;Mimoso de Goiás;true;9;system
+1025;Minaçu;true;9;system
+1026;Mineiros;true;9;system
+1027;Moiporá;true;9;system
+1028;Monte Alegre de Goiás;true;9;system
+1029;Montes Claros de Goiás;true;9;system
+1030;Montividiu;true;9;system
+1031;Montividiu do Norte;true;9;system
+1032;Morrinhos;true;9;system
+1033;Morro Agudo de Goiás;true;9;system
+1034;Mossâmedes;true;9;system
+1035;Mozarlândia;true;9;system
+1036;Mundo Novo;true;9;system
+1037;Mutunópolis;true;9;system
+1038;Nazário;true;9;system
+1039;Nerópolis;true;9;system
+1040;Niquelândia;true;9;system
+1041;Nova América;true;9;system
+1042;Nova Aurora;true;9;system
+1043;Nova Crixás;true;9;system
+1044;Nova Glória;true;9;system
+1045;Nova Iguaçu de Goiás;true;9;system
+1046;Nova Roma;true;9;system
+1047;Nova Veneza;true;9;system
+1048;Novo Brasil;true;9;system
+1049;Novo Gama;true;9;system
+1050;Novo Planalto;true;9;system
+1051;Orizona;true;9;system
+1052;Ouro Verde de Goiás;true;9;system
+1053;Ouvidor;true;9;system
+1054;Padre Bernardo;true;9;system
+1055;Palestina de Goiás;true;9;system
+1056;Palmeiras de Goiás;true;9;system
+1057;Palmelo;true;9;system
+1058;Palminópolis;true;9;system
+1059;Panamá;true;9;system
+1060;Paranaiguara;true;9;system
+1061;Paraúna;true;9;system
+1062;Perolândia;true;9;system
+1063;Petrolina de Goiás;true;9;system
+1064;Pilar de Goiás;true;9;system
+1065;Piracanjuba;true;9;system
+1066;Piranhas;true;9;system
+1067;Pirenópolis;true;9;system
+1068;Pires do Rio;true;9;system
+1069;Planaltina;true;9;system
+1070;Pontalina;true;9;system
+1071;Porangatu;true;9;system
+1072;Porteirão;true;9;system
+1073;Portelândia;true;9;system
+1074;Posse;true;9;system
+1075;Professor Jamil;true;9;system
+1076;Quirinópolis;true;9;system
+1077;Rialma;true;9;system
+1078;Rianápolis;true;9;system
+1079;Rio Quente;true;9;system
+1080;Rio Verde;true;9;system
+1081;Rubiataba;true;9;system
+1082;Sanclerlândia;true;9;system
+1083;Santa Bárbara de Goiás;true;9;system
+1084;Santa Cruz de Goiás;true;9;system
+1085;Santa Fé de Goiás;true;9;system
+1086;Santa Helena de Goiás;true;9;system
+1087;Santa Isabel;true;9;system
+1088;Santa Rita do Araguaia;true;9;system
+1089;Santa Rita do Novo Destino;true;9;system
+1090;Santa Rosa de Goiás;true;9;system
+1091;Santa Tereza de Goiás;true;9;system
+1092;Santa Terezinha de Goiás;true;9;system
+1093;Santo Antônio da Barra;true;9;system
+1094;Santo Antônio de Goiás;true;9;system
+1095;Santo Antônio do Descoberto;true;9;system
+1096;São Domingos;true;9;system
+1097;São Francisco de Goiás;true;9;system
+1098;São João d`Aliança;true;9;system
+1099;São João da Paraúna;true;9;system
+1100;São Luís de Montes Belos;true;9;system
+1101;São Luíz do Norte;true;9;system
+1102;São Miguel do Araguaia;true;9;system
+1103;São Miguel do Passa Quatro;true;9;system
+1104;São Patrício;true;9;system
+1105;São Simão;true;9;system
+1106;Senador Canedo;true;9;system
+1107;Serranópolis;true;9;system
+1108;Silvânia;true;9;system
+1109;Simolândia;true;9;system
+1110;Sítio d`Abadia;true;9;system
+1111;Taquaral de Goiás;true;9;system
+1112;Teresina de Goiás;true;9;system
+1113;Terezópolis de Goiás;true;9;system
+1114;Três Ranchos;true;9;system
+1115;Trindade;true;9;system
+1116;Trombas;true;9;system
+1117;Turvânia;true;9;system
+1118;Turvelândia;true;9;system
+1119;Uirapuru;true;9;system
+1120;Uruaçu;true;9;system
+1121;Uruana;true;9;system
+1122;Urutaí;true;9;system
+1123;Valparaíso de Goiás;true;9;system
+1124;Varjão;true;9;system
+1125;Vianópolis;true;9;system
+1126;Vicentinópolis;true;9;system
+1127;Vila Boa;true;9;system
+1128;Vila Propício;true;9;system
+1129;Açailândia;true;10;system
+1130;Afonso Cunha;true;10;system
+1131;Água Doce do Maranhão;true;10;system
+1132;Alcântara;true;10;system
+1133;Aldeias Altas;true;10;system
+1134;Altamira do Maranhão;true;10;system
+1135;Alto Alegre do Maranhão;true;10;system
+1136;Alto Alegre do Pindaré;true;10;system
+1137;Alto Parnaíba;true;10;system
+1138;Amapá do Maranhão;true;10;system
+1139;Amarante do Maranhão;true;10;system
+1140;Anajatuba;true;10;system
+1141;Anapurus;true;10;system
+1142;Apicum-Açu;true;10;system
+1143;Araguanã;true;10;system
+1144;Araioses;true;10;system
+1145;Arame;true;10;system
+1146;Arari;true;10;system
+1147;Axixá;true;10;system
+1148;Bacabal;true;10;system
+1149;Bacabeira;true;10;system
+1150;Bacuri;true;10;system
+1151;Bacurituba;true;10;system
+1152;Balsas;true;10;system
+1153;Barão de Grajaú;true;10;system
+1154;Barra do Corda;true;10;system
+1155;Barreirinhas;true;10;system
+1156;Bela Vista do Maranhão;true;10;system
+1157;Belágua;true;10;system
+1158;Benedito Leite;true;10;system
+1159;Bequimão;true;10;system
+1160;Bernardo do Mearim;true;10;system
+1161;Boa Vista do Gurupi;true;10;system
+1162;Bom Jardim;true;10;system
+1163;Bom Jesus das Selvas;true;10;system
+1164;Bom Lugar;true;10;system
+1165;Brejo;true;10;system
+1166;Brejo de Areia;true;10;system
+1167;Buriti;true;10;system
+1168;Buriti Bravo;true;10;system
+1169;Buriticupu;true;10;system
+1170;Buritirana;true;10;system
+1171;Cachoeira Grande;true;10;system
+1172;Cajapió;true;10;system
+1173;Cajari;true;10;system
+1174;Campestre do Maranhão;true;10;system
+1175;Cândido Mendes;true;10;system
+1176;Cantanhede;true;10;system
+1177;Capinzal do Norte;true;10;system
+1178;Carolina;true;10;system
+1179;Carutapera;true;10;system
+1180;Caxias;true;10;system
+1181;Cedral;true;10;system
+1182;Central do Maranhão;true;10;system
+1183;Centro do Guilherme;true;10;system
+1184;Centro Novo do Maranhão;true;10;system
+1185;Chapadinha;true;10;system
+1186;Cidelândia;true;10;system
+1187;Codó;true;10;system
+1188;Coelho Neto;true;10;system
+1189;Colinas;true;10;system
+1190;Conceição do Lago-Açu;true;10;system
+1191;Coroatá;true;10;system
+1192;Cururupu;true;10;system
+1193;Davinópolis;true;10;system
+1194;Dom Pedro;true;10;system
+1195;Duque Bacelar;true;10;system
+1196;Esperantinópolis;true;10;system
+1197;Estreito;true;10;system
+1198;Feira Nova do Maranhão;true;10;system
+1199;Fernando Falcão;true;10;system
+1200;Formosa da Serra Negra;true;10;system
+1201;Fortaleza dos Nogueiras;true;10;system
+1202;Fortuna;true;10;system
+1203;Godofredo Viana;true;10;system
+1204;Gonçalves Dias;true;10;system
+1205;Governador Archer;true;10;system
+1206;Governador Edison Lobão;true;10;system
+1207;Governador Eugênio Barros;true;10;system
+1208;Governador Luiz Rocha;true;10;system
+1209;Governador Newton Bello;true;10;system
+1210;Governador Nunes Freire;true;10;system
+1211;Graça Aranha;true;10;system
+1212;Grajaú;true;10;system
+1213;Guimarães;true;10;system
+1214;Humberto de Campos;true;10;system
+1215;Icatu;true;10;system
+1216;Igarapé do Meio;true;10;system
+1217;Igarapé Grande;true;10;system
+1218;Imperatriz;true;10;system
+1219;Itaipava do Grajaú;true;10;system
+1220;Itapecuru Mirim;true;10;system
+1221;Itinga do Maranhão;true;10;system
+1222;Jatobá;true;10;system
+1223;Jenipapo dos Vieiras;true;10;system
+1224;João Lisboa;true;10;system
+1225;Joselândia;true;10;system
+1226;Junco do Maranhão;true;10;system
+1227;Lago da Pedra;true;10;system
+1228;Lago do Junco;true;10;system
+1229;Lago dos Rodrigues;true;10;system
+1230;Lago Verde;true;10;system
+1231;Lagoa do Mato;true;10;system
+1232;Lagoa Grande do Maranhão;true;10;system
+1233;Lajeado Novo;true;10;system
+1234;Lima Campos;true;10;system
+1235;Loreto;true;10;system
+1236;Luís Domingues;true;10;system
+1237;Magalhães de Almeida;true;10;system
+1238;Maracaçumé;true;10;system
+1239;Marajá do Sena;true;10;system
+1240;Maranhãozinho;true;10;system
+1241;Mata Roma;true;10;system
+1242;Matinha;true;10;system
+1243;Matões;true;10;system
+1244;Matões do Norte;true;10;system
+1245;Milagres do Maranhão;true;10;system
+1246;Mirador;true;10;system
+1247;Miranda do Norte;true;10;system
+1248;Mirinzal;true;10;system
+1249;Monção;true;10;system
+1250;Montes Altos;true;10;system
+1251;Morros;true;10;system
+1252;Nina Rodrigues;true;10;system
+1253;Nova Colinas;true;10;system
+1254;Nova Iorque;true;10;system
+1255;Nova Olinda do Maranhão;true;10;system
+1256;Olho d`Água das Cunhãs;true;10;system
+1257;Olinda Nova do Maranhão;true;10;system
+1258;Paço do Lumiar;true;10;system
+1259;Palmeirândia;true;10;system
+1260;Paraibano;true;10;system
+1261;Parnarama;true;10;system
+1262;Passagem Franca;true;10;system
+1263;Pastos Bons;true;10;system
+1264;Paulino Neves;true;10;system
+1265;Paulo Ramos;true;10;system
+1266;Pedreiras;true;10;system
+1267;Pedro do Rosário;true;10;system
+1268;Penalva;true;10;system
+1269;Peri Mirim;true;10;system
+1270;Peritoró;true;10;system
+1271;Pindaré-Mirim;true;10;system
+1272;Pinheiro;true;10;system
+1273;Pio XII;true;10;system
+1274;Pirapemas;true;10;system
+1275;Poção de Pedras;true;10;system
+1276;Porto Franco;true;10;system
+1277;Porto Rico do Maranhão;true;10;system
+1278;Presidente Dutra;true;10;system
+1279;Presidente Juscelino;true;10;system
+1280;Presidente Médici;true;10;system
+1281;Presidente Sarney;true;10;system
+1282;Presidente Vargas;true;10;system
+1283;Primeira Cruz;true;10;system
+1284;Raposa;true;10;system
+1285;Riachão;true;10;system
+1286;Ribamar Fiquene;true;10;system
+1287;Rosário;true;10;system
+1288;Sambaíba;true;10;system
+1289;Santa Filomena do Maranhão;true;10;system
+1290;Santa Helena;true;10;system
+1291;Santa Inês;true;10;system
+1292;Santa Luzia;true;10;system
+1293;Santa Luzia do Paruá;true;10;system
+1294;Santa Quitéria do Maranhão;true;10;system
+1295;Santa Rita;true;10;system
+1296;Santana do Maranhão;true;10;system
+1297;Santo Amaro do Maranhão;true;10;system
+1298;Santo Antônio dos Lopes;true;10;system
+1299;São Benedito do Rio Preto;true;10;system
+1300;São Bento;true;10;system
+1301;São Bernardo;true;10;system
+1302;São Domingos do Azeitão;true;10;system
+1303;São Domingos do Maranhão;true;10;system
+1304;São Félix de Balsas;true;10;system
+1305;São Francisco do Brejão;true;10;system
+1306;São Francisco do Maranhão;true;10;system
+1307;São João Batista;true;10;system
+1308;São João do Carú;true;10;system
+1309;São João do Paraíso;true;10;system
+1310;São João do Soter;true;10;system
+1311;São João dos Patos;true;10;system
+1312;São José de Ribamar;true;10;system
+1313;São José dos Basílios;true;10;system
+1314;São Luís;true;10;system
+1315;São Luís Gonzaga do Maranhão;true;10;system
+1316;São Mateus do Maranhão;true;10;system
+1317;São Pedro da Água Branca;true;10;system
+1318;São Pedro dos Crentes;true;10;system
+1319;São Raimundo das Mangabeiras;true;10;system
+1320;São Raimundo do Doca Bezerra;true;10;system
+1321;São Roberto;true;10;system
+1322;São Vicente Ferrer;true;10;system
+1323;Satubinha;true;10;system
+1324;Senador Alexandre Costa;true;10;system
+1325;Senador La Rocque;true;10;system
+1326;Serrano do Maranhão;true;10;system
+1327;Sítio Novo;true;10;system
+1328;Sucupira do Norte;true;10;system
+1329;Sucupira do Riachão;true;10;system
+1330;Tasso Fragoso;true;10;system
+1331;Timbiras;true;10;system
+1332;Timon;true;10;system
+1333;Trizidela do Vale;true;10;system
+1334;Tufilândia;true;10;system
+1335;Tuntum;true;10;system
+1336;Turiaçu;true;10;system
+1337;Turilândia;true;10;system
+1338;Tutóia;true;10;system
+1339;Urbano Santos;true;10;system
+1340;Vargem Grande;true;10;system
+1341;Viana;true;10;system
+1342;Vila Nova dos Martírios;true;10;system
+1343;Vitória do Mearim;true;10;system
+1344;Vitorino Freire;true;10;system
+1345;Zé Doca;true;10;system
+1346;Acorizal;true;13;system
+1347;Água Boa;true;13;system
+1348;Alta Floresta;true;13;system
+1349;Alto Araguaia;true;13;system
+1350;Alto Boa Vista;true;13;system
+1351;Alto Garças;true;13;system
+1352;Alto Paraguai;true;13;system
+1353;Alto Taquari;true;13;system
+1354;Apiacás;true;13;system
+1355;Araguaiana;true;13;system
+1356;Araguainha;true;13;system
+1357;Araputanga;true;13;system
+1358;Arenápolis;true;13;system
+1359;Aripuanã;true;13;system
+1360;Barão de Melgaço;true;13;system
+1361;Barra do Bugres;true;13;system
+1362;Barra do Garças;true;13;system
+1363;Bom Jesus do Araguaia;true;13;system
+1364;Brasnorte;true;13;system
+1365;Cáceres;true;13;system
+1366;Campinápolis;true;13;system
+1367;Campo Novo do Parecis;true;13;system
+1368;Campo Verde;true;13;system
+1369;Campos de Júlio;true;13;system
+1370;Canabrava do Norte;true;13;system
+1371;Canarana;true;13;system
+1372;Carlinda;true;13;system
+1373;Castanheira;true;13;system
+1374;Chapada dos Guimarães;true;13;system
+1375;Cláudia;true;13;system
+1376;Cocalinho;true;13;system
+1377;Colíder;true;13;system
+1378;Colniza;true;13;system
+1379;Comodoro;true;13;system
+1380;Confresa;true;13;system
+1381;Conquista d`Oeste;true;13;system
+1382;Cotriguaçu;true;13;system
+1383;Cuiabá;true;13;system
+1384;Curvelândia;true;13;system
+1385;Curvelândia;true;13;system
+1386;Denise;true;13;system
+1387;Diamantino;true;13;system
+1388;Dom Aquino;true;13;system
+1389;Feliz Natal;true;13;system
+1390;Figueirópolis d`Oeste;true;13;system
+1391;Gaúcha do Norte;true;13;system
+1392;General Carneiro;true;13;system
+1393;Glória d`Oeste;true;13;system
+1394;Guarantã do Norte;true;13;system
+1395;Guiratinga;true;13;system
+1396;Indiavaí;true;13;system
+1397;Ipiranga do Norte;true;13;system
+1398;Itanhangá;true;13;system
+1399;Itaúba;true;13;system
+1400;Itiquira;true;13;system
+1401;Jaciara;true;13;system
+1402;Jangada;true;13;system
+1403;Jauru;true;13;system
+1404;Juara;true;13;system
+1405;Juína;true;13;system
+1406;Juruena;true;13;system
+1407;Juscimeira;true;13;system
+1408;Lambari d`Oeste;true;13;system
+1409;Lucas do Rio Verde;true;13;system
+1410;Luciára;true;13;system
+1411;Marcelândia;true;13;system
+1412;Matupá;true;13;system
+1413;Mirassol d`Oeste;true;13;system
+1414;Nobres;true;13;system
+1415;Nortelândia;true;13;system
+1416;Nossa Senhora do Livramento;true;13;system
+1417;Nova Bandeirantes;true;13;system
+1418;Nova Brasilândia;true;13;system
+1419;Nova Canaã do Norte;true;13;system
+1420;Nova Guarita;true;13;system
+1421;Nova Lacerda;true;13;system
+1422;Nova Marilândia;true;13;system
+1423;Nova Maringá;true;13;system
+1424;Nova Monte verde;true;13;system
+1425;Nova Mutum;true;13;system
+1426;Nova Olímpia;true;13;system
+1427;Nova Santa Helena;true;13;system
+1428;Nova Ubiratã;true;13;system
+1429;Nova Xavantina;true;13;system
+1430;Novo Horizonte do Norte;true;13;system
+1431;Novo Mundo;true;13;system
+1432;Novo Santo Antônio;true;13;system
+1433;Novo São Joaquim;true;13;system
+1434;Paranaíta;true;13;system
+1435;Paranatinga;true;13;system
+1436;Pedra Preta;true;13;system
+1437;Peixoto de Azevedo;true;13;system
+1438;Planalto da Serra;true;13;system
+1439;Poconé;true;13;system
+1440;Pontal do Araguaia;true;13;system
+1441;Ponte Branca;true;13;system
+1442;Pontes e Lacerda;true;13;system
+1443;Porto Alegre do Norte;true;13;system
+1444;Porto dos Gaúchos;true;13;system
+1445;Porto Esperidião;true;13;system
+1446;Porto Estrela;true;13;system
+1447;Poxoréo;true;13;system
+1448;Primavera do Leste;true;13;system
+1449;Querência;true;13;system
+1450;Reserva do Cabaçal;true;13;system
+1451;Ribeirão Cascalheira;true;13;system
+1452;Ribeirãozinho;true;13;system
+1453;Rio Branco;true;13;system
+1454;Rondolândia;true;13;system
+1455;Rondonópolis;true;13;system
+1456;Rosário Oeste;true;13;system
+1457;Salto do Céu;true;13;system
+1458;Santa Carmem;true;13;system
+1459;Santa Cruz do Xingu;true;13;system
+1460;Santa Rita do Trivelato;true;13;system
+1461;Santa Terezinha;true;13;system
+1462;Santo Afonso;true;13;system
+1463;Santo Antônio do Leste;true;13;system
+1464;Santo Antônio do Leverger;true;13;system
+1465;São Félix do Araguaia;true;13;system
+1466;São José do Povo;true;13;system
+1467;São José do Rio Claro;true;13;system
+1468;São José do Xingu;true;13;system
+1469;São José dos Quatro Marcos;true;13;system
+1470;São Pedro da Cipa;true;13;system
+1471;Sapezal;true;13;system
+1472;Serra Nova Dourada;true;13;system
+1473;Sinop;true;13;system
+1474;Sorriso;true;13;system
+1475;Tabaporã;true;13;system
+1476;Tangará da Serra;true;13;system
+1477;Tapurah;true;13;system
+1478;Terra Nova do Norte;true;13;system
+1479;Tesouro;true;13;system
+1480;Torixoréu;true;13;system
+1481;União do Sul;true;13;system
+1482;Vale de São Domingos;true;13;system
+1483;Várzea Grande;true;13;system
+1484;Vera;true;13;system
+1485;Vila Bela da Santíssima Trindade;true;13;system
+1486;Vila Rica;true;13;system
+1487;Água Clara;true;12;system
+1488;Alcinópolis;true;12;system
+1489;Amambaí;true;12;system
+1490;Anastácio;true;12;system
+1491;Anaurilândia;true;12;system
+1492;Angélica;true;12;system
+1493;Antônio João;true;12;system
+1494;Aparecida do Taboado;true;12;system
+1495;Aquidauana;true;12;system
+1496;Aral Moreira;true;12;system
+1497;Bandeirantes;true;12;system
+1498;Bataguassu;true;12;system
+1499;Bataiporã;true;12;system
+1500;Bela Vista;true;12;system
+1501;Bodoquena;true;12;system
+1502;Bonito;true;12;system
+1503;Brasilândia;true;12;system
+1504;Caarapó;true;12;system
+1505;Camapuã;true;12;system
+1506;Campo Grande;true;12;system
+1507;Caracol;true;12;system
+1508;Cassilândia;true;12;system
+1509;Chapadão do Sul;true;12;system
+1510;Corguinho;true;12;system
+1511;Coronel Sapucaia;true;12;system
+1512;Corumbá;true;12;system
+1513;Costa Rica;true;12;system
+1514;Coxim;true;12;system
+1515;Deodápolis;true;12;system
+1516;Dois Irmãos do Buriti;true;12;system
+1517;Douradina;true;12;system
+1518;Dourados;true;12;system
+1519;Eldorado;true;12;system
+1520;Fátima do Sul;true;12;system
+1521;Figueirão;true;12;system
+1522;Glória de Dourados;true;12;system
+1523;Guia Lopes da Laguna;true;12;system
+1524;Iguatemi;true;12;system
+1525;Inocência;true;12;system
+1526;Itaporã;true;12;system
+1527;Itaquiraí;true;12;system
+1528;Ivinhema;true;12;system
+1529;Japorã;true;12;system
+1530;Jaraguari;true;12;system
+1531;Jardim;true;12;system
+1532;Jateí;true;12;system
+1533;Juti;true;12;system
+1534;Ladário;true;12;system
+1535;Laguna Carapã;true;12;system
+1536;Maracaju;true;12;system
+1537;Miranda;true;12;system
+1538;Mundo Novo;true;12;system
+1539;Naviraí;true;12;system
+1540;Nioaque;true;12;system
+1541;Nova Alvorada do Sul;true;12;system
+1542;Nova Andradina;true;12;system
+1543;Novo Horizonte do Sul;true;12;system
+1544;Paranaíba;true;12;system
+1545;Paranhos;true;12;system
+1546;Pedro Gomes;true;12;system
+1547;Ponta Porã;true;12;system
+1548;Porto Murtinho;true;12;system
+1549;Ribas do Rio Pardo;true;12;system
+1550;Rio Brilhante;true;12;system
+1551;Rio Negro;true;12;system
+1552;Rio Verde de Mato Grosso;true;12;system
+1553;Rochedo;true;12;system
+1554;Santa Rita do Pardo;true;12;system
+1555;São Gabriel do Oeste;true;12;system
+1556;Selvíria;true;12;system
+1557;Sete Quedas;true;12;system
+1558;Sidrolândia;true;12;system
+1559;Sonora;true;12;system
+1560;Tacuru;true;12;system
+1561;Taquarussu;true;12;system
+1562;Terenos;true;12;system
+1563;Três Lagoas;true;12;system
+1564;Vicentina;true;12;system
+1565;Abadia dos Dourados;true;11;system
+1566;Abaeté;true;11;system
+1567;Abre Campo;true;11;system
+1568;Acaiaca;true;11;system
+1569;Açucena;true;11;system
+1570;Água Boa;true;11;system
+1571;Água Comprida;true;11;system
+1572;Aguanil;true;11;system
+1573;Águas Formosas;true;11;system
+1574;Águas Vermelhas;true;11;system
+1575;Aimorés;true;11;system
+1576;Aiuruoca;true;11;system
+1577;Alagoa;true;11;system
+1578;Albertina;true;11;system
+1579;Além Paraíba;true;11;system
+1580;Alfenas;true;11;system
+1581;Alfredo Vasconcelos;true;11;system
+1582;Almenara;true;11;system
+1583;Alpercata;true;11;system
+1584;Alpinópolis;true;11;system
+1585;Alterosa;true;11;system
+1586;Alto Caparaó;true;11;system
+1587;Alto Jequitibá;true;11;system
+1588;Alto Rio Doce;true;11;system
+1589;Alvarenga;true;11;system
+1590;Alvinópolis;true;11;system
+1591;Alvorada de Minas;true;11;system
+1592;Amparo do Serra;true;11;system
+1593;Andradas;true;11;system
+1594;Andrelândia;true;11;system
+1595;Angelândia;true;11;system
+1596;Antônio Carlos;true;11;system
+1597;Antônio Dias;true;11;system
+1598;Antônio Prado de Minas;true;11;system
+1599;Araçaí;true;11;system
+1600;Aracitaba;true;11;system
+1601;Araçuaí;true;11;system
+1602;Araguari;true;11;system
+1603;Arantina;true;11;system
+1604;Araponga;true;11;system
+1605;Araporã;true;11;system
+1606;Arapuá;true;11;system
+1607;Araújos;true;11;system
+1608;Araxá;true;11;system
+1609;Arceburgo;true;11;system
+1610;Arcos;true;11;system
+1611;Areado;true;11;system
+1612;Argirita;true;11;system
+1613;Aricanduva;true;11;system
+1614;Arinos;true;11;system
+1615;Astolfo Dutra;true;11;system
+1616;Ataléia;true;11;system
+1617;Augusto de Lima;true;11;system
+1618;Baependi;true;11;system
+1619;Baldim;true;11;system
+1620;Bambuí;true;11;system
+1621;Bandeira;true;11;system
+1622;Bandeira do Sul;true;11;system
+1623;Barão de Cocais;true;11;system
+1624;Barão de Monte Alto;true;11;system
+1625;Barbacena;true;11;system
+1626;Barra Longa;true;11;system
+1627;Barroso;true;11;system
+1628;Bela Vista de Minas;true;11;system
+1629;Belmiro Braga;true;11;system
+1630;Belo Horizonte;true;11;system
+1631;Belo Oriente;true;11;system
+1632;Belo Vale;true;11;system
+1633;Berilo;true;11;system
+1634;Berizal;true;11;system
+1635;Bertópolis;true;11;system
+1636;Betim;true;11;system
+1637;Bias Fortes;true;11;system
+1638;Bicas;true;11;system
+1639;Biquinhas;true;11;system
+1640;Boa Esperança;true;11;system
+1641;Bocaina de Minas;true;11;system
+1642;Bocaiúva;true;11;system
+1643;Bom Despacho;true;11;system
+1644;Bom Jardim de Minas;true;11;system
+1645;Bom Jesus da Penha;true;11;system
+1646;Bom Jesus do Amparo;true;11;system
+1647;Bom Jesus do Galho;true;11;system
+1648;Bom Repouso;true;11;system
+1649;Bom Sucesso;true;11;system
+1650;Bonfim;true;11;system
+1651;Bonfinópolis de Minas;true;11;system
+1652;Bonito de Minas;true;11;system
+1653;Borda da Mata;true;11;system
+1654;Botelhos;true;11;system
+1655;Botumirim;true;11;system
+1656;Brás Pires;true;11;system
+1657;Brasilândia de Minas;true;11;system
+1658;Brasília de Minas;true;11;system
+1659;Brasópolis;true;11;system
+1660;Braúnas;true;11;system
+1661;Brumadinho;true;11;system
+1662;Bueno Brandão;true;11;system
+1663;Buenópolis;true;11;system
+1664;Bugre;true;11;system
+1665;Buritis;true;11;system
+1666;Buritizeiro;true;11;system
+1667;Cabeceira Grande;true;11;system
+1668;Cabo Verde;true;11;system
+1669;Cachoeira da Prata;true;11;system
+1670;Cachoeira de Minas;true;11;system
+1671;Cachoeira de Pajeú;true;11;system
+1672;Cachoeira Dourada;true;11;system
+1673;Caetanópolis;true;11;system
+1674;Caeté;true;11;system
+1675;Caiana;true;11;system
+1676;Cajuri;true;11;system
+1677;Caldas;true;11;system
+1678;Camacho;true;11;system
+1679;Camanducaia;true;11;system
+1680;Cambuí;true;11;system
+1681;Cambuquira;true;11;system
+1682;Campanário;true;11;system
+1683;Campanha;true;11;system
+1684;Campestre;true;11;system
+1685;Campina Verde;true;11;system
+1686;Campo Azul;true;11;system
+1687;Campo Belo;true;11;system
+1688;Campo do Meio;true;11;system
+1689;Campo Florido;true;11;system
+1690;Campos Altos;true;11;system
+1691;Campos Gerais;true;11;system
+1692;Cana Verde;true;11;system
+1693;Canaã;true;11;system
+1694;Canápolis;true;11;system
+1695;Candeias;true;11;system
+1696;Cantagalo;true;11;system
+1697;Caparaó;true;11;system
+1698;Capela Nova;true;11;system
+1699;Capelinha;true;11;system
+1700;Capetinga;true;11;system
+1701;Capim Branco;true;11;system
+1702;Capinópolis;true;11;system
+1703;Capitão Andrade;true;11;system
+1704;Capitão Enéas;true;11;system
+1705;Capitólio;true;11;system
+1706;Caputira;true;11;system
+1707;Caraí;true;11;system
+1708;Caranaíba;true;11;system
+1709;Carandaí;true;11;system
+1710;Carangola;true;11;system
+1711;Caratinga;true;11;system
+1712;Carbonita;true;11;system
+1713;Careaçu;true;11;system
+1714;Carlos Chagas;true;11;system
+1715;Carmésia;true;11;system
+1716;Carmo da Cachoeira;true;11;system
+1717;Carmo da Mata;true;11;system
+1718;Carmo de Minas;true;11;system
+1719;Carmo do Cajuru;true;11;system
+1720;Carmo do Paranaíba;true;11;system
+1721;Carmo do Rio Claro;true;11;system
+1722;Carmópolis de Minas;true;11;system
+1723;Carneirinho;true;11;system
+1724;Carrancas;true;11;system
+1725;Carvalhópolis;true;11;system
+1726;Carvalhos;true;11;system
+1727;Casa Grande;true;11;system
+1728;Cascalho Rico;true;11;system
+1729;Cássia;true;11;system
+1730;Cataguases;true;11;system
+1731;Catas Altas;true;11;system
+1732;Catas Altas da Noruega;true;11;system
+1733;Catuji;true;11;system
+1734;Catuti;true;11;system
+1735;Caxambu;true;11;system
+1736;Cedro do Abaeté;true;11;system
+1737;Central de Minas;true;11;system
+1738;Centralina;true;11;system
+1739;Chácara;true;11;system
+1740;Chalé;true;11;system
+1741;Chapada do Norte;true;11;system
+1742;Chapada Gaúcha;true;11;system
+1743;Chiador;true;11;system
+1744;Cipotânea;true;11;system
+1745;Claraval;true;11;system
+1746;Claro dos Poções;true;11;system
+1747;Cláudio;true;11;system
+1748;Coimbra;true;11;system
+1749;Coluna;true;11;system
+1750;Comendador Gomes;true;11;system
+1751;Comercinho;true;11;system
+1752;Conceição da Aparecida;true;11;system
+1753;Conceição da Barra de Minas;true;11;system
+1754;Conceição das Alagoas;true;11;system
+1755;Conceição das Pedras;true;11;system
+1756;Conceição de Ipanema;true;11;system
+1757;Conceição do Mato Dentro;true;11;system
+1758;Conceição do Pará;true;11;system
+1759;Conceição do Rio Verde;true;11;system
+1760;Conceição dos Ouros;true;11;system
+1761;Cônego Marinho;true;11;system
+1762;Confins;true;11;system
+1763;Congonhal;true;11;system
+1764;Congonhas;true;11;system
+1765;Congonhas do Norte;true;11;system
+1766;Conquista;true;11;system
+1767;Conselheiro Lafaiete;true;11;system
+1768;Conselheiro Pena;true;11;system
+1769;Consolação;true;11;system
+1770;Contagem;true;11;system
+1771;Coqueiral;true;11;system
+1772;Coração de Jesus;true;11;system
+1773;Cordisburgo;true;11;system
+1774;Cordislândia;true;11;system
+1775;Corinto;true;11;system
+1776;Coroaci;true;11;system
+1777;Coromandel;true;11;system
+1778;Coronel Fabriciano;true;11;system
+1779;Coronel Murta;true;11;system
+1780;Coronel Pacheco;true;11;system
+1781;Coronel Xavier Chaves;true;11;system
+1782;Córrego Danta;true;11;system
+1783;Córrego do Bom Jesus;true;11;system
+1784;Córrego Fundo;true;11;system
+1785;Córrego Novo;true;11;system
+1786;Couto de Magalhães de Minas;true;11;system
+1787;Crisólita;true;11;system
+1788;Cristais;true;11;system
+1789;Cristália;true;11;system
+1790;Cristiano Otoni;true;11;system
+1791;Cristina;true;11;system
+1792;Crucilândia;true;11;system
+1793;Cruzeiro da Fortaleza;true;11;system
+1794;Cruzília;true;11;system
+1795;Cuparaque;true;11;system
+1796;Curral de Dentro;true;11;system
+1797;Curvelo;true;11;system
+1798;Datas;true;11;system
+1799;Delfim Moreira;true;11;system
+1800;Delfinópolis;true;11;system
+1801;Delta;true;11;system
+1802;Descoberto;true;11;system
+1803;Desterro de Entre Rios;true;11;system
+1804;Desterro do Melo;true;11;system
+1805;Diamantina;true;11;system
+1806;Diogo de Vasconcelos;true;11;system
+1807;Dionísio;true;11;system
+1808;Divinésia;true;11;system
+1809;Divino;true;11;system
+1810;Divino das Laranjeiras;true;11;system
+1811;Divinolândia de Minas;true;11;system
+1812;Divinópolis;true;11;system
+1813;Divisa Alegre;true;11;system
+1814;Divisa Nova;true;11;system
+1815;Divisópolis;true;11;system
+1816;Dom Bosco;true;11;system
+1817;Dom Cavati;true;11;system
+1818;Dom Joaquim;true;11;system
+1819;Dom Silvério;true;11;system
+1820;Dom Viçoso;true;11;system
+1821;Dona Eusébia;true;11;system
+1822;Dores de Campos;true;11;system
+1823;Dores de Guanhães;true;11;system
+1824;Dores do Indaiá;true;11;system
+1825;Dores do Turvo;true;11;system
+1826;Doresópolis;true;11;system
+1827;Douradoquara;true;11;system
+1828;Durandé;true;11;system
+1829;Elói Mendes;true;11;system
+1830;Engenheiro Caldas;true;11;system
+1831;Engenheiro Navarro;true;11;system
+1832;Entre Folhas;true;11;system
+1833;Entre Rios de Minas;true;11;system
+1834;Ervália;true;11;system
+1835;Esmeraldas;true;11;system
+1836;Espera Feliz;true;11;system
+1837;Espinosa;true;11;system
+1838;Espírito Santo do Dourado;true;11;system
+1839;Estiva;true;11;system
+1840;Estrela Dalva;true;11;system
+1841;Estrela do Indaiá;true;11;system
+1842;Estrela do Sul;true;11;system
+1843;Eugenópolis;true;11;system
+1844;Ewbank da Câmara;true;11;system
+1845;Extrema;true;11;system
+1846;Fama;true;11;system
+1847;Faria Lemos;true;11;system
+1848;Felício dos Santos;true;11;system
+1849;Felisburgo;true;11;system
+1850;Felixlândia;true;11;system
+1851;Fernandes Tourinho;true;11;system
+1852;Ferros;true;11;system
+1853;Fervedouro;true;11;system
+1854;Florestal;true;11;system
+1855;Formiga;true;11;system
+1856;Formoso;true;11;system
+1857;Fortaleza de Minas;true;11;system
+1858;Fortuna de Minas;true;11;system
+1859;Francisco Badaró;true;11;system
+1860;Francisco Dumont;true;11;system
+1861;Francisco Sá;true;11;system
+1862;Franciscópolis;true;11;system
+1863;Frei Gaspar;true;11;system
+1864;Frei Inocêncio;true;11;system
+1865;Frei Lagonegro;true;11;system
+1866;Fronteira;true;11;system
+1867;Fronteira dos Vales;true;11;system
+1868;Fruta de Leite;true;11;system
+1869;Frutal;true;11;system
+1870;Funilândia;true;11;system
+1871;Galiléia;true;11;system
+1872;Gameleiras;true;11;system
+1873;Glaucilândia;true;11;system
+1874;Goiabeira;true;11;system
+1875;Goianá;true;11;system
+1876;Gonçalves;true;11;system
+1877;Gonzaga;true;11;system
+1878;Gouveia;true;11;system
+1879;Governador Valadares;true;11;system
+1880;Grão Mogol;true;11;system
+1881;Grupiara;true;11;system
+1882;Guanhães;true;11;system
+1883;Guapé;true;11;system
+1884;Guaraciaba;true;11;system
+1885;Guaraciama;true;11;system
+1886;Guaranésia;true;11;system
+1887;Guarani;true;11;system
+1888;Guarará;true;11;system
+1889;Guarda-Mor;true;11;system
+1890;Guaxupé;true;11;system
+1891;Guidoval;true;11;system
+1892;Guimarânia;true;11;system
+1893;Guiricema;true;11;system
+1894;Gurinhatã;true;11;system
+1895;Heliodora;true;11;system
+1896;Iapu;true;11;system
+1897;Ibertioga;true;11;system
+1898;Ibiá;true;11;system
+1899;Ibiaí;true;11;system
+1900;Ibiracatu;true;11;system
+1901;Ibiraci;true;11;system
+1902;Ibirité;true;11;system
+1903;Ibitiúra de Minas;true;11;system
+1904;Ibituruna;true;11;system
+1905;Icaraí de Minas;true;11;system
+1906;Igarapé;true;11;system
+1907;Igaratinga;true;11;system
+1908;Iguatama;true;11;system
+1909;Ijaci;true;11;system
+1910;Ilicínea;true;11;system
+1911;Imbé de Minas;true;11;system
+1912;Inconfidentes;true;11;system
+1913;Indaiabira;true;11;system
+1914;Indianópolis;true;11;system
+1915;Ingaí;true;11;system
+1916;Inhapim;true;11;system
+1917;Inhaúma;true;11;system
+1918;Inimutaba;true;11;system
+1919;Ipaba;true;11;system
+1920;Ipanema;true;11;system
+1921;Ipatinga;true;11;system
+1922;Ipiaçu;true;11;system
+1923;Ipuiúna;true;11;system
+1924;Iraí de Minas;true;11;system
+1925;Itabira;true;11;system
+1926;Itabirinha de Mantena;true;11;system
+1927;Itabirito;true;11;system
+1928;Itacambira;true;11;system
+1929;Itacarambi;true;11;system
+1930;Itaguara;true;11;system
+1931;Itaipé;true;11;system
+1932;Itajubá;true;11;system
+1933;Itamarandiba;true;11;system
+1934;Itamarati de Minas;true;11;system
+1935;Itambacuri;true;11;system
+1936;Itambé do Mato Dentro;true;11;system
+1937;Itamogi;true;11;system
+1938;Itamonte;true;11;system
+1939;Itanhandu;true;11;system
+1940;Itanhomi;true;11;system
+1941;Itaobim;true;11;system
+1942;Itapagipe;true;11;system
+1943;Itapecerica;true;11;system
+1944;Itapeva;true;11;system
+1945;Itatiaiuçu;true;11;system
+1946;Itaú de Minas;true;11;system
+1947;Itaúna;true;11;system
+1948;Itaverava;true;11;system
+1949;Itinga;true;11;system
+1950;Itueta;true;11;system
+1951;Ituiutaba;true;11;system
+1952;Itumirim;true;11;system
+1953;Iturama;true;11;system
+1954;Itutinga;true;11;system
+1955;Jaboticatubas;true;11;system
+1956;Jacinto;true;11;system
+1957;Jacuí;true;11;system
+1958;Jacutinga;true;11;system
+1959;Jaguaraçu;true;11;system
+1960;Jaíba;true;11;system
+1961;Jampruca;true;11;system
+1962;Janaúba;true;11;system
+1963;Januária;true;11;system
+1964;Japaraíba;true;11;system
+1965;Japonvar;true;11;system
+1966;Jeceaba;true;11;system
+1967;Jenipapo de Minas;true;11;system
+1968;Jequeri;true;11;system
+1969;Jequitaí;true;11;system
+1970;Jequitibá;true;11;system
+1971;Jequitinhonha;true;11;system
+1972;Jesuânia;true;11;system
+1973;Joaíma;true;11;system
+1974;Joanésia;true;11;system
+1975;João Monlevade;true;11;system
+1976;João Pinheiro;true;11;system
+1977;Joaquim Felício;true;11;system
+1978;Jordânia;true;11;system
+1979;José Gonçalves de Minas;true;11;system
+1980;José Raydan;true;11;system
+1981;Josenópolis;true;11;system
+1982;Juatuba;true;11;system
+1983;Juiz de Fora;true;11;system
+1984;Juramento;true;11;system
+1985;Juruaia;true;11;system
+1986;Juvenília;true;11;system
+1987;Ladainha;true;11;system
+1988;Lagamar;true;11;system
+1989;Lagoa da Prata;true;11;system
+1990;Lagoa dos Patos;true;11;system
+1991;Lagoa Dourada;true;11;system
+1992;Lagoa Formosa;true;11;system
+1993;Lagoa Grande;true;11;system
+1994;Lagoa Santa;true;11;system
+1995;Lajinha;true;11;system
+1996;Lambari;true;11;system
+1997;Lamim;true;11;system
+1998;Laranjal;true;11;system
+1999;Lassance;true;11;system
+2000;Lavras;true;11;system
+2001;Leandro Ferreira;true;11;system
+2002;Leme do Prado;true;11;system
+2003;Leopoldina;true;11;system
+2004;Liberdade;true;11;system
+2005;Lima Duarte;true;11;system
+2006;Limeira do Oeste;true;11;system
+2007;Lontra;true;11;system
+2008;Luisburgo;true;11;system
+2009;Luislândia;true;11;system
+2010;Luminárias;true;11;system
+2011;Luz;true;11;system
+2012;Machacalis;true;11;system
+2013;Machado;true;11;system
+2014;Madre de Deus de Minas;true;11;system
+2015;Malacacheta;true;11;system
+2016;Mamonas;true;11;system
+2017;Manga;true;11;system
+2018;Manhuaçu;true;11;system
+2019;Manhumirim;true;11;system
+2020;Mantena;true;11;system
+2021;Mar de Espanha;true;11;system
+2022;Maravilhas;true;11;system
+2023;Maria da Fé;true;11;system
+2024;Mariana;true;11;system
+2025;Marilac;true;11;system
+2026;Mário Campos;true;11;system
+2027;Maripá de Minas;true;11;system
+2028;Marliéria;true;11;system
+2029;Marmelópolis;true;11;system
+2030;Martinho Campos;true;11;system
+2031;Martins Soares;true;11;system
+2032;Mata Verde;true;11;system
+2033;Materlândia;true;11;system
+2034;Mateus Leme;true;11;system
+2035;Mathias Lobato;true;11;system
+2036;Matias Barbosa;true;11;system
+2037;Matias Cardoso;true;11;system
+2038;Matipó;true;11;system
+2039;Mato Verde;true;11;system
+2040;Matozinhos;true;11;system
+2041;Matutina;true;11;system
+2042;Medeiros;true;11;system
+2043;Medina;true;11;system
+2044;Mendes Pimentel;true;11;system
+2045;Mercês;true;11;system
+2046;Mesquita;true;11;system
+2047;Minas Novas;true;11;system
+2048;Minduri;true;11;system
+2049;Mirabela;true;11;system
+2050;Miradouro;true;11;system
+2051;Miraí;true;11;system
+2052;Miravânia;true;11;system
+2053;Moeda;true;11;system
+2054;Moema;true;11;system
+2055;Monjolos;true;11;system
+2056;Monsenhor Paulo;true;11;system
+2057;Montalvânia;true;11;system
+2058;Monte Alegre de Minas;true;11;system
+2059;Monte Azul;true;11;system
+2060;Monte Belo;true;11;system
+2061;Monte Carmelo;true;11;system
+2062;Monte Formoso;true;11;system
+2063;Monte Santo de Minas;true;11;system
+2064;Monte Sião;true;11;system
+2065;Montes Claros;true;11;system
+2066;Montezuma;true;11;system
+2067;Morada Nova de Minas;true;11;system
+2068;Morro da Garça;true;11;system
+2069;Morro do Pilar;true;11;system
+2070;Munhoz;true;11;system
+2071;Muriaé;true;11;system
+2072;Mutum;true;11;system
+2073;Muzambinho;true;11;system
+2074;Nacip Raydan;true;11;system
+2075;Nanuque;true;11;system
+2076;Naque;true;11;system
+2077;Natalândia;true;11;system
+2078;Natércia;true;11;system
+2079;Nazareno;true;11;system
+2080;Nepomuceno;true;11;system
+2081;Ninheira;true;11;system
+2082;Nova Belém;true;11;system
+2083;Nova Era;true;11;system
+2084;Nova Lima;true;11;system
+2085;Nova Módica;true;11;system
+2086;Nova Ponte;true;11;system
+2087;Nova Porteirinha;true;11;system
+2088;Nova Resende;true;11;system
+2089;Nova Serrana;true;11;system
+2090;Nova União;true;11;system
+2091;Novo Cruzeiro;true;11;system
+2092;Novo Oriente de Minas;true;11;system
+2093;Novorizonte;true;11;system
+2094;Olaria;true;11;system
+2095;Olhos-d`Água;true;11;system
+2096;Olímpio Noronha;true;11;system
+2097;Oliveira;true;11;system
+2098;Oliveira Fortes;true;11;system
+2099;Onça de Pitangui;true;11;system
+2100;Oratórios;true;11;system
+2101;Orizânia;true;11;system
+2102;Ouro Branco;true;11;system
+2103;Ouro Fino;true;11;system
+2104;Ouro Preto;true;11;system
+2105;Ouro Verde de Minas;true;11;system
+2106;Padre Carvalho;true;11;system
+2107;Padre Paraíso;true;11;system
+2108;Pai Pedro;true;11;system
+2109;Paineiras;true;11;system
+2110;Pains;true;11;system
+2111;Paiva;true;11;system
+2112;Palma;true;11;system
+2113;Palmópolis;true;11;system
+2114;Papagaios;true;11;system
+2115;Pará de Minas;true;11;system
+2116;Paracatu;true;11;system
+2117;Paraguaçu;true;11;system
+2118;Paraisópolis;true;11;system
+2119;Paraopeba;true;11;system
+2120;Passa Quatro;true;11;system
+2121;Passa Tempo;true;11;system
+2122;Passabém;true;11;system
+2123;Passa-Vinte;true;11;system
+2124;Passos;true;11;system
+2125;Patis;true;11;system
+2126;Patos de Minas;true;11;system
+2127;Patrocínio;true;11;system
+2128;Patrocínio do Muriaé;true;11;system
+2129;Paula Cândido;true;11;system
+2130;Paulistas;true;11;system
+2131;Pavão;true;11;system
+2132;Peçanha;true;11;system
+2133;Pedra Azul;true;11;system
+2134;Pedra Bonita;true;11;system
+2135;Pedra do Anta;true;11;system
+2136;Pedra do Indaiá;true;11;system
+2137;Pedra Dourada;true;11;system
+2138;Pedralva;true;11;system
+2139;Pedras de Maria da Cruz;true;11;system
+2140;Pedrinópolis;true;11;system
+2141;Pedro Leopoldo;true;11;system
+2142;Pedro Teixeira;true;11;system
+2143;Pequeri;true;11;system
+2144;Pequi;true;11;system
+2145;Perdigão;true;11;system
+2146;Perdizes;true;11;system
+2147;Perdões;true;11;system
+2148;Periquito;true;11;system
+2149;Pescador;true;11;system
+2150;Piau;true;11;system
+2151;Piedade de Caratinga;true;11;system
+2152;Piedade de Ponte Nova;true;11;system
+2153;Piedade do Rio Grande;true;11;system
+2154;Piedade dos Gerais;true;11;system
+2155;Pimenta;true;11;system
+2156;Pingo-d`Água;true;11;system
+2157;Pintópolis;true;11;system
+2158;Piracema;true;11;system
+2159;Pirajuba;true;11;system
+2160;Piranga;true;11;system
+2161;Piranguçu;true;11;system
+2162;Piranguinho;true;11;system
+2163;Pirapetinga;true;11;system
+2164;Pirapora;true;11;system
+2165;Piraúba;true;11;system
+2166;Pitangui;true;11;system
+2167;Piumhi;true;11;system
+2168;Planura;true;11;system
+2169;Poço Fundo;true;11;system
+2170;Poços de Caldas;true;11;system
+2171;Pocrane;true;11;system
+2172;Pompéu;true;11;system
+2173;Ponte Nova;true;11;system
+2174;Ponto Chique;true;11;system
+2175;Ponto dos Volantes;true;11;system
+2176;Porteirinha;true;11;system
+2177;Porto Firme;true;11;system
+2178;Poté;true;11;system
+2179;Pouso Alegre;true;11;system
+2180;Pouso Alto;true;11;system
+2181;Prados;true;11;system
+2182;Prata;true;11;system
+2183;Pratápolis;true;11;system
+2184;Pratinha;true;11;system
+2185;Presidente Bernardes;true;11;system
+2186;Presidente Juscelino;true;11;system
+2187;Presidente Kubitschek;true;11;system
+2188;Presidente Olegário;true;11;system
+2189;Prudente de Morais;true;11;system
+2190;Quartel Geral;true;11;system
+2191;Queluzito;true;11;system
+2192;Raposos;true;11;system
+2193;Raul Soares;true;11;system
+2194;Recreio;true;11;system
+2195;Reduto;true;11;system
+2196;Resende Costa;true;11;system
+2197;Resplendor;true;11;system
+2198;Ressaquinha;true;11;system
+2199;Riachinho;true;11;system
+2200;Riacho dos Machados;true;11;system
+2201;Ribeirão das Neves;true;11;system
+2202;Ribeirão Vermelho;true;11;system
+2203;Rio Acima;true;11;system
+2204;Rio Casca;true;11;system
+2205;Rio do Prado;true;11;system
+2206;Rio Doce;true;11;system
+2207;Rio Espera;true;11;system
+2208;Rio Manso;true;11;system
+2209;Rio Novo;true;11;system
+2210;Rio Paranaíba;true;11;system
+2211;Rio Pardo de Minas;true;11;system
+2212;Rio Piracicaba;true;11;system
+2213;Rio Pomba;true;11;system
+2214;Rio Preto;true;11;system
+2215;Rio Vermelho;true;11;system
+2216;Ritápolis;true;11;system
+2217;Rochedo de Minas;true;11;system
+2218;Rodeiro;true;11;system
+2219;Romaria;true;11;system
+2220;Rosário da Limeira;true;11;system
+2221;Rubelita;true;11;system
+2222;Rubim;true;11;system
+2223;Sabará;true;11;system
+2224;Sabinópolis;true;11;system
+2225;Sacramento;true;11;system
+2226;Salinas;true;11;system
+2227;Salto da Divisa;true;11;system
+2228;Santa Bárbara;true;11;system
+2229;Santa Bárbara do Leste;true;11;system
+2230;Santa Bárbara do Monte Verde;true;11;system
+2231;Santa Bárbara do Tugúrio;true;11;system
+2232;Santa Cruz de Minas;true;11;system
+2233;Santa Cruz de Salinas;true;11;system
+2234;Santa Cruz do Escalvado;true;11;system
+2235;Santa Efigênia de Minas;true;11;system
+2236;Santa Fé de Minas;true;11;system
+2237;Santa Helena de Minas;true;11;system
+2238;Santa Juliana;true;11;system
+2239;Santa Luzia;true;11;system
+2240;Santa Margarida;true;11;system
+2241;Santa Maria de Itabira;true;11;system
+2242;Santa Maria do Salto;true;11;system
+2243;Santa Maria do Suaçuí;true;11;system
+2244;Santa Rita de Caldas;true;11;system
+2245;Santa Rita de Ibitipoca;true;11;system
+2246;Santa Rita de Jacutinga;true;11;system
+2247;Santa Rita de Minas;true;11;system
+2248;Santa Rita do Itueto;true;11;system
+2249;Santa Rita do Sapucaí;true;11;system
+2250;Santa Rosa da Serra;true;11;system
+2251;Santa Vitória;true;11;system
+2252;Santana da Vargem;true;11;system
+2253;Santana de Cataguases;true;11;system
+2254;Santana de Pirapama;true;11;system
+2255;Santana do Deserto;true;11;system
+2256;Santana do Garambéu;true;11;system
+2257;Santana do Jacaré;true;11;system
+2258;Santana do Manhuaçu;true;11;system
+2259;Santana do Paraíso;true;11;system
+2260;Santana do Riacho;true;11;system
+2261;Santana dos Montes;true;11;system
+2262;Santo Antônio do Amparo;true;11;system
+2263;Santo Antônio do Aventureiro;true;11;system
+2264;Santo Antônio do Grama;true;11;system
+2265;Santo Antônio do Itambé;true;11;system
+2266;Santo Antônio do Jacinto;true;11;system
+2267;Santo Antônio do Monte;true;11;system
+2268;Santo Antônio do Retiro;true;11;system
+2269;Santo Antônio do Rio Abaixo;true;11;system
+2270;Santo Hipólito;true;11;system
+2271;Santos Dumont;true;11;system
+2272;São Bento Abade;true;11;system
+2273;São Brás do Suaçuí;true;11;system
+2274;São Domingos das Dores;true;11;system
+2275;São Domingos do Prata;true;11;system
+2276;São Félix de Minas;true;11;system
+2277;São Francisco;true;11;system
+2278;São Francisco de Paula;true;11;system
+2279;São Francisco de Sales;true;11;system
+2280;São Francisco do Glória;true;11;system
+2281;São Geraldo;true;11;system
+2282;São Geraldo da Piedade;true;11;system
+2283;São Geraldo do Baixio;true;11;system
+2284;São Gonçalo do Abaeté;true;11;system
+2285;São Gonçalo do Pará;true;11;system
+2286;São Gonçalo do Rio Abaixo;true;11;system
+2287;São Gonçalo do Rio Preto;true;11;system
+2288;São Gonçalo do Sapucaí;true;11;system
+2289;São Gotardo;true;11;system
+2290;São João Batista do Glória;true;11;system
+2291;São João da Lagoa;true;11;system
+2292;São João da Mata;true;11;system
+2293;São João da Ponte;true;11;system
+2294;São João das Missões;true;11;system
+2295;São João del Rei;true;11;system
+2296;São João do Manhuaçu;true;11;system
+2297;São João do Manteninha;true;11;system
+2298;São João do Oriente;true;11;system
+2299;São João do Pacuí;true;11;system
+2300;São João do Paraíso;true;11;system
+2301;São João Evangelista;true;11;system
+2302;São João Nepomuceno;true;11;system
+2303;São Joaquim de Bicas;true;11;system
+2304;São José da Barra;true;11;system
+2305;São José da Lapa;true;11;system
+2306;São José da Safira;true;11;system
+2307;São José da Varginha;true;11;system
+2308;São José do Alegre;true;11;system
+2309;São José do Divino;true;11;system
+2310;São José do Goiabal;true;11;system
+2311;São José do Jacuri;true;11;system
+2312;São José do Mantimento;true;11;system
+2313;São Lourenço;true;11;system
+2314;São Miguel do Anta;true;11;system
+2315;São Pedro da União;true;11;system
+2316;São Pedro do Suaçuí;true;11;system
+2317;São Pedro dos Ferros;true;11;system
+2318;São Romão;true;11;system
+2319;São Roque de Minas;true;11;system
+2320;São Sebastião da Bela Vista;true;11;system
+2321;São Sebastião da Vargem Alegre;true;11;system
+2322;São Sebastião do Anta;true;11;system
+2323;São Sebastião do Maranhão;true;11;system
+2324;São Sebastião do Oeste;true;11;system
+2325;São Sebastião do Paraíso;true;11;system
+2326;São Sebastião do Rio Preto;true;11;system
+2327;São Sebastião do Rio Verde;true;11;system
+2328;São Thomé das Letras;true;11;system
+2329;São Tiago;true;11;system
+2330;São Tomás de Aquino;true;11;system
+2331;São Vicente de Minas;true;11;system
+2332;Sapucaí-Mirim;true;11;system
+2333;Sardoá;true;11;system
+2334;Sarzedo;true;11;system
+2335;Sem-Peixe;true;11;system
+2336;Senador Amaral;true;11;system
+2337;Senador Cortes;true;11;system
+2338;Senador Firmino;true;11;system
+2339;Senador José Bento;true;11;system
+2340;Senador Modestino Gonçalves;true;11;system
+2341;Senhora de Oliveira;true;11;system
+2342;Senhora do Porto;true;11;system
+2343;Senhora dos Remédios;true;11;system
+2344;Sericita;true;11;system
+2345;Seritinga;true;11;system
+2346;Serra Azul de Minas;true;11;system
+2347;Serra da Saudade;true;11;system
+2348;Serra do Salitre;true;11;system
+2349;Serra dos Aimorés;true;11;system
+2350;Serrania;true;11;system
+2351;Serranópolis de Minas;true;11;system
+2352;Serranos;true;11;system
+2353;Serro;true;11;system
+2354;Sete Lagoas;true;11;system
+2355;Setubinha;true;11;system
+2356;Silveirânia;true;11;system
+2357;Silvianópolis;true;11;system
+2358;Simão Pereira;true;11;system
+2359;Simonésia;true;11;system
+2360;Sobrália;true;11;system
+2361;Soledade de Minas;true;11;system
+2362;Tabuleiro;true;11;system
+2363;Taiobeiras;true;11;system
+2364;Taparuba;true;11;system
+2365;Tapira;true;11;system
+2366;Tapiraí;true;11;system
+2367;Taquaraçu de Minas;true;11;system
+2368;Tarumirim;true;11;system
+2369;Teixeiras;true;11;system
+2370;Teófilo Otoni;true;11;system
+2371;Timóteo;true;11;system
+2372;Tiradentes;true;11;system
+2373;Tiros;true;11;system
+2374;Tocantins;true;11;system
+2375;Tocos do Moji;true;11;system
+2376;Toledo;true;11;system
+2377;Tombos;true;11;system
+2378;Três Corações;true;11;system
+2379;Três Marias;true;11;system
+2380;Três Pontas;true;11;system
+2381;Tumiritinga;true;11;system
+2382;Tupaciguara;true;11;system
+2383;Turmalina;true;11;system
+2384;Turvolândia;true;11;system
+2385;Ubá;true;11;system
+2386;Ubaí;true;11;system
+2387;Ubaporanga;true;11;system
+2388;Uberaba;true;11;system
+2389;Uberlândia;true;11;system
+2390;Umburatiba;true;11;system
+2391;Unaí;true;11;system
+2392;União de Minas;true;11;system
+2393;Uruana de Minas;true;11;system
+2394;Urucânia;true;11;system
+2395;Urucuia;true;11;system
+2396;Vargem Alegre;true;11;system
+2397;Vargem Bonita;true;11;system
+2398;Vargem Grande do Rio Pardo;true;11;system
+2399;Varginha;true;11;system
+2400;Varjão de Minas;true;11;system
+2401;Várzea da Palma;true;11;system
+2402;Varzelândia;true;11;system
+2403;Vazante;true;11;system
+2404;Verdelândia;true;11;system
+2405;Veredinha;true;11;system
+2406;Veríssimo;true;11;system
+2407;Vermelho Novo;true;11;system
+2408;Vespasiano;true;11;system
+2409;Viçosa;true;11;system
+2410;Vieiras;true;11;system
+2411;Virgem da Lapa;true;11;system
+2412;Virgínia;true;11;system
+2413;Virginópolis;true;11;system
+2414;Virgolândia;true;11;system
+2415;Visconde do Rio Branco;true;11;system
+2416;Volta Grande;true;11;system
+2417;Wenceslau Braz;true;11;system
+2418;Abaetetuba;true;14;system
+2419;Abel Figueiredo;true;14;system
+2420;Acará;true;14;system
+2421;Afuá;true;14;system
+2422;Água Azul do Norte;true;14;system
+2423;Alenquer;true;14;system
+2424;Almeirim;true;14;system
+2425;Altamira;true;14;system
+2426;Anajás;true;14;system
+2427;Ananindeua;true;14;system
+2428;Anapu;true;14;system
+2429;Augusto Corrêa;true;14;system
+2430;Aurora do Pará;true;14;system
+2431;Aveiro;true;14;system
+2432;Bagre;true;14;system
+2433;Baião;true;14;system
+2434;Bannach;true;14;system
+2435;Barcarena;true;14;system
+2436;Belém;true;14;system
+2437;Belterra;true;14;system
+2438;Benevides;true;14;system
+2439;Bom Jesus do Tocantins;true;14;system
+2440;Bonito;true;14;system
+2441;Bragança;true;14;system
+2442;Brasil Novo;true;14;system
+2443;Brejo Grande do Araguaia;true;14;system
+2444;Breu Branco;true;14;system
+2445;Breves;true;14;system
+2446;Bujaru;true;14;system
+2447;Cachoeira do Arari;true;14;system
+2448;Cachoeira do Piriá;true;14;system
+2449;Cametá;true;14;system
+2450;Canaã dos Carajás;true;14;system
+2451;Capanema;true;14;system
+2452;Capitão Poço;true;14;system
+2453;Castanhal;true;14;system
+2454;Chaves;true;14;system
+2455;Colares;true;14;system
+2456;Conceição do Araguaia;true;14;system
+2457;Concórdia do Pará;true;14;system
+2458;Cumaru do Norte;true;14;system
+2459;Curionópolis;true;14;system
+2460;Curralinho;true;14;system
+2461;Curuá;true;14;system
+2462;Curuçá;true;14;system
+2463;Dom Eliseu;true;14;system
+2464;Eldorado dos Carajás;true;14;system
+2465;Faro;true;14;system
+2466;Floresta do Araguaia;true;14;system
+2467;Garrafão do Norte;true;14;system
+2468;Goianésia do Pará;true;14;system
+2469;Gurupá;true;14;system
+2470;Igarapé-Açu;true;14;system
+2471;Igarapé-Miri;true;14;system
+2472;Inhangapi;true;14;system
+2473;Ipixuna do Pará;true;14;system
+2474;Irituia;true;14;system
+2475;Itaituba;true;14;system
+2476;Itupiranga;true;14;system
+2477;Jacareacanga;true;14;system
+2478;Jacundá;true;14;system
+2479;Juruti;true;14;system
+2480;Limoeiro do Ajuru;true;14;system
+2481;Mãe do Rio;true;14;system
+2482;Magalhães Barata;true;14;system
+2483;Marabá;true;14;system
+2484;Maracanã;true;14;system
+2485;Marapanim;true;14;system
+2486;Marituba;true;14;system
+2487;Medicilândia;true;14;system
+2488;Melgaço;true;14;system
+2489;Mocajuba;true;14;system
+2490;Moju;true;14;system
+2491;Monte Alegre;true;14;system
+2492;Muaná;true;14;system
+2493;Nova Esperança do Piriá;true;14;system
+2494;Nova Ipixuna;true;14;system
+2495;Nova Timboteua;true;14;system
+2496;Novo Progresso;true;14;system
+2497;Novo Repartimento;true;14;system
+2498;Óbidos;true;14;system
+2499;Oeiras do Pará;true;14;system
+2500;Oriximiná;true;14;system
+2501;Ourém;true;14;system
+2502;Ourilândia do Norte;true;14;system
+2503;Pacajá;true;14;system
+2504;Palestina do Pará;true;14;system
+2505;Paragominas;true;14;system
+2506;Parauapebas;true;14;system
+2507;Pau d`Arco;true;14;system
+2508;Peixe-Boi;true;14;system
+2509;Piçarra;true;14;system
+2510;Placas;true;14;system
+2511;Ponta de Pedras;true;14;system
+2512;Portel;true;14;system
+2513;Porto de Moz;true;14;system
+2514;Prainha;true;14;system
+2515;Primavera;true;14;system
+2516;Quatipuru;true;14;system
+2517;Redenção;true;14;system
+2518;Rio Maria;true;14;system
+2519;Rondon do Pará;true;14;system
+2520;Rurópolis;true;14;system
+2521;Salinópolis;true;14;system
+2522;Salvaterra;true;14;system
+2523;Santa Bárbara do Pará;true;14;system
+2524;Santa Cruz do Arari;true;14;system
+2525;Santa Isabel do Pará;true;14;system
+2526;Santa Luzia do Pará;true;14;system
+2527;Santa Maria das Barreiras;true;14;system
+2528;Santa Maria do Pará;true;14;system
+2529;Santana do Araguaia;true;14;system
+2530;Santarém;true;14;system
+2531;Santarém Novo;true;14;system
+2532;Santo Antônio do Tauá;true;14;system
+2533;São Caetano de Odivelas;true;14;system
+2534;São Domingos do Araguaia;true;14;system
+2535;São Domingos do Capim;true;14;system
+2536;São Félix do Xingu;true;14;system
+2537;São Francisco do Pará;true;14;system
+2538;São Geraldo do Araguaia;true;14;system
+2539;São João da Ponta;true;14;system
+2540;São João de Pirabas;true;14;system
+2541;São João do Araguaia;true;14;system
+2542;São Miguel do Guamá;true;14;system
+2543;São Sebastião da Boa Vista;true;14;system
+2544;Sapucaia;true;14;system
+2545;Senador José Porfírio;true;14;system
+2546;Soure;true;14;system
+2547;Tailândia;true;14;system
+2548;Terra Alta;true;14;system
+2549;Terra Santa;true;14;system
+2550;Tomé-Açu;true;14;system
+2551;Tracuateua;true;14;system
+2552;Trairão;true;14;system
+2553;Tucumã;true;14;system
+2554;Tucuruí;true;14;system
+2555;Ulianópolis;true;14;system
+2556;Uruará;true;14;system
+2557;Vigia;true;14;system
+2558;Viseu;true;14;system
+2559;Vitória do Xingu;true;14;system
+2560;Xinguara;true;14;system
+2561;Água Branca;true;15;system
+2562;Aguiar;true;15;system
+2563;Alagoa Grande;true;15;system
+2564;Alagoa Nova;true;15;system
+2565;Alagoinha;true;15;system
+2566;Alcantil;true;15;system
+2567;Algodão de Jandaíra;true;15;system
+2568;Alhandra;true;15;system
+2569;Amparo;true;15;system
+2570;Aparecida;true;15;system
+2571;Araçagi;true;15;system
+2572;Arara;true;15;system
+2573;Araruna;true;15;system
+2574;Areia;true;15;system
+2575;Areia de Baraúnas;true;15;system
+2576;Areial;true;15;system
+2577;Aroeiras;true;15;system
+2578;Assunção;true;15;system
+2579;Baía da Traição;true;15;system
+2580;Bananeiras;true;15;system
+2581;Baraúna;true;15;system
+2582;Barra de Santa Rosa;true;15;system
+2583;Barra de Santana;true;15;system
+2584;Barra de São Miguel;true;15;system
+2585;Bayeux;true;15;system
+2586;Belém;true;15;system
+2587;Belém do Brejo do Cruz;true;15;system
+2588;Bernardino Batista;true;15;system
+2589;Boa Ventura;true;15;system
+2590;Boa Vista;true;15;system
+2591;Bom Jesus;true;15;system
+2592;Bom Sucesso;true;15;system
+2593;Bonito de Santa Fé;true;15;system
+2594;Boqueirão;true;15;system
+2595;Borborema;true;15;system
+2596;Brejo do Cruz;true;15;system
+2597;Brejo dos Santos;true;15;system
+2598;Caaporã;true;15;system
+2599;Cabaceiras;true;15;system
+2600;Cabedelo;true;15;system
+2601;Cachoeira dos Índios;true;15;system
+2602;Cacimba de Areia;true;15;system
+2603;Cacimba de Dentro;true;15;system
+2604;Cacimbas;true;15;system
+2605;Caiçara;true;15;system
+2606;Cajazeiras;true;15;system
+2607;Cajazeirinhas;true;15;system
+2608;Caldas Brandão;true;15;system
+2609;Camalaú;true;15;system
+2610;Campina Grande;true;15;system
+2611;Campo de Santana;true;15;system
+2612;Capim;true;15;system
+2613;Caraúbas;true;15;system
+2614;Carrapateira;true;15;system
+2615;Casserengue;true;15;system
+2616;Catingueira;true;15;system
+2617;Catolé do Rocha;true;15;system
+2618;Caturité;true;15;system
+2619;Conceição;true;15;system
+2620;Condado;true;15;system
+2621;Conde;true;15;system
+2622;Congo;true;15;system
+2623;Coremas;true;15;system
+2624;Coxixola;true;15;system
+2625;Cruz do Espírito Santo;true;15;system
+2626;Cubati;true;15;system
+2627;Cuité;true;15;system
+2628;Cuité de Mamanguape;true;15;system
+2629;Cuitegi;true;15;system
+2630;Curral de Cima;true;15;system
+2631;Curral Velho;true;15;system
+2632;Damião;true;15;system
+2633;Desterro;true;15;system
+2634;Diamante;true;15;system
+2635;Dona Inês;true;15;system
+2636;Duas Estradas;true;15;system
+2637;Emas;true;15;system
+2638;Esperança;true;15;system
+2639;Fagundes;true;15;system
+2640;Frei Martinho;true;15;system
+2641;Gado Bravo;true;15;system
+2642;Guarabira;true;15;system
+2643;Gurinhém;true;15;system
+2644;Gurjão;true;15;system
+2645;Ibiara;true;15;system
+2646;Igaracy;true;15;system
+2647;Imaculada;true;15;system
+2648;Ingá;true;15;system
+2649;Itabaiana;true;15;system
+2650;Itaporanga;true;15;system
+2651;Itapororoca;true;15;system
+2652;Itatuba;true;15;system
+2653;Jacaraú;true;15;system
+2654;Jericó;true;15;system
+2655;João Pessoa;true;15;system
+2656;Juarez Távora;true;15;system
+2657;Juazeirinho;true;15;system
+2658;Junco do Seridó;true;15;system
+2659;Juripiranga;true;15;system
+2660;Juru;true;15;system
+2661;Lagoa;true;15;system
+2662;Lagoa de Dentro;true;15;system
+2663;Lagoa Seca;true;15;system
+2664;Lastro;true;15;system
+2665;Livramento;true;15;system
+2666;Logradouro;true;15;system
+2667;Lucena;true;15;system
+2668;Mãe d`Água;true;15;system
+2669;Malta;true;15;system
+2670;Mamanguape;true;15;system
+2671;Manaíra;true;15;system
+2672;Marcação;true;15;system
+2673;Mari;true;15;system
+2674;Marizópolis;true;15;system
+2675;Massaranduba;true;15;system
+2676;Mataraca;true;15;system
+2677;Matinhas;true;15;system
+2678;Mato Grosso;true;15;system
+2679;Maturéia;true;15;system
+2680;Mogeiro;true;15;system
+2681;Montadas;true;15;system
+2682;Monte Horebe;true;15;system
+2683;Monteiro;true;15;system
+2684;Mulungu;true;15;system
+2685;Natuba;true;15;system
+2686;Nazarezinho;true;15;system
+2687;Nova Floresta;true;15;system
+2688;Nova Olinda;true;15;system
+2689;Nova Palmeira;true;15;system
+2690;Olho d`Água;true;15;system
+2691;Olivedos;true;15;system
+2692;Ouro Velho;true;15;system
+2693;Parari;true;15;system
+2694;Passagem;true;15;system
+2695;Patos;true;15;system
+2696;Paulista;true;15;system
+2697;Pedra Branca;true;15;system
+2698;Pedra Lavrada;true;15;system
+2699;Pedras de Fogo;true;15;system
+2700;Pedro Régis;true;15;system
+2701;Piancó;true;15;system
+2702;Picuí;true;15;system
+2703;Pilar;true;15;system
+2704;Pilões;true;15;system
+2705;Pilõezinhos;true;15;system
+2706;Pirpirituba;true;15;system
+2707;Pitimbu;true;15;system
+2708;Pocinhos;true;15;system
+2709;Poço Dantas;true;15;system
+2710;Poço de José de Moura;true;15;system
+2711;Pombal;true;15;system
+2712;Prata;true;15;system
+2713;Princesa Isabel;true;15;system
+2714;Puxinanã;true;15;system
+2715;Queimadas;true;15;system
+2716;Quixabá;true;15;system
+2717;Remígio;true;15;system
+2718;Riachão;true;15;system
+2719;Riachão do Bacamarte;true;15;system
+2720;Riachão do Poço;true;15;system
+2721;Riacho de Santo Antônio;true;15;system
+2722;Riacho dos Cavalos;true;15;system
+2723;Rio Tinto;true;15;system
+2724;Salgadinho;true;15;system
+2725;Salgado de São Félix;true;15;system
+2726;Santa Cecília;true;15;system
+2727;Santa Cruz;true;15;system
+2728;Santa Helena;true;15;system
+2729;Santa Inês;true;15;system
+2730;Santa Luzia;true;15;system
+2731;Santa Rita;true;15;system
+2732;Santa Teresinha;true;15;system
+2733;Santana de Mangueira;true;15;system
+2734;Santana dos Garrotes;true;15;system
+2735;Santarém;true;15;system
+2736;Santo André;true;15;system
+2737;São Bentinho;true;15;system
+2738;São Bento;true;15;system
+2739;São Domingos de Pombal;true;15;system
+2740;São Domingos do Cariri;true;15;system
+2741;São Francisco;true;15;system
+2742;São João do Cariri;true;15;system
+2743;São João do Rio do Peixe;true;15;system
+2744;São João do Tigre;true;15;system
+2745;São José da Lagoa Tapada;true;15;system
+2746;São José de Caiana;true;15;system
+2747;São José de Espinharas;true;15;system
+2748;São José de Piranhas;true;15;system
+2749;São José de Princesa;true;15;system
+2750;São José do Bonfim;true;15;system
+2751;São José do Brejo do Cruz;true;15;system
+2752;São José do Sabugi;true;15;system
+2753;São José dos Cordeiros;true;15;system
+2754;São José dos Ramos;true;15;system
+2755;São Mamede;true;15;system
+2756;São Miguel de Taipu;true;15;system
+2757;São Sebastião de Lagoa de Roça;true;15;system
+2758;São Sebastião do Umbuzeiro;true;15;system
+2759;Sapé;true;15;system
+2760;Seridó;true;15;system
+2761;Serra Branca;true;15;system
+2762;Serra da Raiz;true;15;system
+2763;Serra Grande;true;15;system
+2764;Serra Redonda;true;15;system
+2765;Serraria;true;15;system
+2766;Sertãozinho;true;15;system
+2767;Sobrado;true;15;system
+2768;Solânea;true;15;system
+2769;Soledade;true;15;system
+2770;Sossêgo;true;15;system
+2771;Sousa;true;15;system
+2772;Sumé;true;15;system
+2773;Taperoá;true;15;system
+2774;Tavares;true;15;system
+2775;Teixeira;true;15;system
+2776;Tenório;true;15;system
+2777;Triunfo;true;15;system
+2778;Uiraúna;true;15;system
+2779;Umbuzeiro;true;15;system
+2780;Várzea;true;15;system
+2781;Vieirópolis;true;15;system
+2782;Vista Serrana;true;15;system
+2783;Zabelê;true;15;system
+2784;Abatiá;true;18;system
+2785;Adrianópolis;true;18;system
+2786;Agudos do Sul;true;18;system
+2787;Almirante Tamandaré;true;18;system
+2788;Altamira do Paraná;true;18;system
+2789;Alto Paraíso;true;18;system
+2790;Alto Paraná;true;18;system
+2791;Alto Piquiri;true;18;system
+2792;Altônia;true;18;system
+2793;Alvorada do Sul;true;18;system
+2794;Amaporã;true;18;system
+2795;Ampére;true;18;system
+2796;Anahy;true;18;system
+2797;Andirá;true;18;system
+2798;Ângulo;true;18;system
+2799;Antonina;true;18;system
+2800;Antônio Olinto;true;18;system
+2801;Apucarana;true;18;system
+2802;Arapongas;true;18;system
+2803;Arapoti;true;18;system
+2804;Arapuã;true;18;system
+2805;Araruna;true;18;system
+2806;Araucária;true;18;system
+2807;Ariranha do Ivaí;true;18;system
+2808;Assaí;true;18;system
+2809;Assis Chateaubriand;true;18;system
+2810;Astorga;true;18;system
+2811;Atalaia;true;18;system
+2812;Balsa Nova;true;18;system
+2813;Bandeirantes;true;18;system
+2814;Barbosa Ferraz;true;18;system
+2815;Barra do Jacaré;true;18;system
+2816;Barracão;true;18;system
+2817;Bela Vista da Caroba;true;18;system
+2818;Bela Vista do Paraíso;true;18;system
+2819;Bituruna;true;18;system
+2820;Boa Esperança;true;18;system
+2821;Boa Esperança do Iguaçu;true;18;system
+2822;Boa Ventura de São Roque;true;18;system
+2823;Boa Vista da Aparecida;true;18;system
+2824;Bocaiúva do Sul;true;18;system
+2825;Bom Jesus do Sul;true;18;system
+2826;Bom Sucesso;true;18;system
+2827;Bom Sucesso do Sul;true;18;system
+2828;Borrazópolis;true;18;system
+2829;Braganey;true;18;system
+2830;Brasilândia do Sul;true;18;system
+2831;Cafeara;true;18;system
+2832;Cafelândia;true;18;system
+2833;Cafezal do Sul;true;18;system
+2834;Califórnia;true;18;system
+2835;Cambará;true;18;system
+2836;Cambé;true;18;system
+2837;Cambira;true;18;system
+2838;Campina da Lagoa;true;18;system
+2839;Campina do Simão;true;18;system
+2840;Campina Grande do Sul;true;18;system
+2841;Campo Bonito;true;18;system
+2842;Campo do Tenente;true;18;system
+2843;Campo Largo;true;18;system
+2844;Campo Magro;true;18;system
+2845;Campo Mourão;true;18;system
+2846;Cândido de Abreu;true;18;system
+2847;Candói;true;18;system
+2848;Cantagalo;true;18;system
+2849;Capanema;true;18;system
+2850;Capitão Leônidas Marques;true;18;system
+2851;Carambeí;true;18;system
+2852;Carlópolis;true;18;system
+2853;Cascavel;true;18;system
+2854;Castro;true;18;system
+2855;Catanduvas;true;18;system
+2856;Centenário do Sul;true;18;system
+2857;Cerro Azul;true;18;system
+2858;Céu Azul;true;18;system
+2859;Chopinzinho;true;18;system
+2860;Cianorte;true;18;system
+2861;Cidade Gaúcha;true;18;system
+2862;Clevelândia;true;18;system
+2863;Colombo;true;18;system
+2864;Colorado;true;18;system
+2865;Congonhinhas;true;18;system
+2866;Conselheiro Mairinck;true;18;system
+2867;Contenda;true;18;system
+2868;Corbélia;true;18;system
+2869;Cornélio Procópio;true;18;system
+2870;Coronel Domingos Soares;true;18;system
+2871;Coronel Vivida;true;18;system
+2872;Corumbataí do Sul;true;18;system
+2873;Cruz Machado;true;18;system
+2874;Cruzeiro do Iguaçu;true;18;system
+2875;Cruzeiro do Oeste;true;18;system
+2876;Cruzeiro do Sul;true;18;system
+2877;Cruzmaltina;true;18;system
+2878;Curitiba;true;18;system
+2879;Curiúva;true;18;system
+2880;Diamante d`Oeste;true;18;system
+2881;Diamante do Norte;true;18;system
+2882;Diamante do Sul;true;18;system
+2883;Dois Vizinhos;true;18;system
+2884;Douradina;true;18;system
+2885;Doutor Camargo;true;18;system
+2886;Doutor Ulysses;true;18;system
+2887;Enéas Marques;true;18;system
+2888;Engenheiro Beltrão;true;18;system
+2889;Entre Rios do Oeste;true;18;system
+2890;Esperança Nova;true;18;system
+2891;Espigão Alto do Iguaçu;true;18;system
+2892;Farol;true;18;system
+2893;Faxinal;true;18;system
+2894;Fazenda Rio Grande;true;18;system
+2895;Fênix;true;18;system
+2896;Fernandes Pinheiro;true;18;system
+2897;Figueira;true;18;system
+2898;Flor da Serra do Sul;true;18;system
+2899;Floraí;true;18;system
+2900;Floresta;true;18;system
+2901;Florestópolis;true;18;system
+2902;Flórida;true;18;system
+2903;Formosa do Oeste;true;18;system
+2904;Foz do Iguaçu;true;18;system
+2905;Foz do Jordão;true;18;system
+2906;Francisco Alves;true;18;system
+2907;Francisco Beltrão;true;18;system
+2908;General Carneiro;true;18;system
+2909;Godoy Moreira;true;18;system
+2910;Goioerê;true;18;system
+2911;Goioxim;true;18;system
+2912;Grandes Rios;true;18;system
+2913;Guaíra;true;18;system
+2914;Guairaçá;true;18;system
+2915;Guamiranga;true;18;system
+2916;Guapirama;true;18;system
+2917;Guaporema;true;18;system
+2918;Guaraci;true;18;system
+2919;Guaraniaçu;true;18;system
+2920;Guarapuava;true;18;system
+2921;Guaraqueçaba;true;18;system
+2922;Guaratuba;true;18;system
+2923;Honório Serpa;true;18;system
+2924;Ibaiti;true;18;system
+2925;Ibema;true;18;system
+2926;Ibiporã;true;18;system
+2927;Icaraíma;true;18;system
+2928;Iguaraçu;true;18;system
+2929;Iguatu;true;18;system
+2930;Imbaú;true;18;system
+2931;Imbituva;true;18;system
+2932;Inácio Martins;true;18;system
+2933;Inajá;true;18;system
+2934;Indianópolis;true;18;system
+2935;Ipiranga;true;18;system
+2936;Iporã;true;18;system
+2937;Iracema do Oeste;true;18;system
+2938;Irati;true;18;system
+2939;Iretama;true;18;system
+2940;Itaguajé;true;18;system
+2941;Itaipulândia;true;18;system
+2942;Itambaracá;true;18;system
+2943;Itambé;true;18;system
+2944;Itapejara d`Oeste;true;18;system
+2945;Itaperuçu;true;18;system
+2946;Itaúna do Sul;true;18;system
+2947;Ivaí;true;18;system
+2948;Ivaiporã;true;18;system
+2949;Ivaté;true;18;system
+2950;Ivatuba;true;18;system
+2951;Jaboti;true;18;system
+2952;Jacarezinho;true;18;system
+2953;Jaguapitã;true;18;system
+2954;Jaguariaíva;true;18;system
+2955;Jandaia do Sul;true;18;system
+2956;Janiópolis;true;18;system
+2957;Japira;true;18;system
+2958;Japurá;true;18;system
+2959;Jardim Alegre;true;18;system
+2960;Jardim Olinda;true;18;system
+2961;Jataizinho;true;18;system
+2962;Jesuítas;true;18;system
+2963;Joaquim Távora;true;18;system
+2964;Jundiaí do Sul;true;18;system
+2965;Juranda;true;18;system
+2966;Jussara;true;18;system
+2967;Kaloré;true;18;system
+2968;Lapa;true;18;system
+2969;Laranjal;true;18;system
+2970;Laranjeiras do Sul;true;18;system
+2971;Leópolis;true;18;system
+2972;Lidianópolis;true;18;system
+2973;Lindoeste;true;18;system
+2974;Loanda;true;18;system
+2975;Lobato;true;18;system
+2976;Londrina;true;18;system
+2977;Luiziana;true;18;system
+2978;Lunardelli;true;18;system
+2979;Lupionópolis;true;18;system
+2980;Mallet;true;18;system
+2981;Mamborê;true;18;system
+2982;Mandaguaçu;true;18;system
+2983;Mandaguari;true;18;system
+2984;Mandirituba;true;18;system
+2985;Manfrinópolis;true;18;system
+2986;Mangueirinha;true;18;system
+2987;Manoel Ribas;true;18;system
+2988;Marechal Cândido Rondon;true;18;system
+2989;Maria Helena;true;18;system
+2990;Marialva;true;18;system
+2991;Marilândia do Sul;true;18;system
+2992;Marilena;true;18;system
+2993;Mariluz;true;18;system
+2994;Maringá;true;18;system
+2995;Mariópolis;true;18;system
+2996;Maripá;true;18;system
+2997;Marmeleiro;true;18;system
+2998;Marquinho;true;18;system
+2999;Marumbi;true;18;system
+3000;Matelândia;true;18;system
+3001;Matinhos;true;18;system
+3002;Mato Rico;true;18;system
+3003;Mauá da Serra;true;18;system
+3004;Medianeira;true;18;system
+3005;Mercedes;true;18;system
+3006;Mirador;true;18;system
+3007;Miraselva;true;18;system
+3008;Missal;true;18;system
+3009;Moreira Sales;true;18;system
+3010;Morretes;true;18;system
+3011;Munhoz de Melo;true;18;system
+3012;Nossa Senhora das Graças;true;18;system
+3013;Nova Aliança do Ivaí;true;18;system
+3014;Nova América da Colina;true;18;system
+3015;Nova Aurora;true;18;system
+3016;Nova Cantu;true;18;system
+3017;Nova Esperança;true;18;system
+3018;Nova Esperança do Sudoeste;true;18;system
+3019;Nova Fátima;true;18;system
+3020;Nova Laranjeiras;true;18;system
+3021;Nova Londrina;true;18;system
+3022;Nova Olímpia;true;18;system
+3023;Nova Prata do Iguaçu;true;18;system
+3024;Nova Santa Bárbara;true;18;system
+3025;Nova Santa Rosa;true;18;system
+3026;Nova Tebas;true;18;system
+3027;Novo Itacolomi;true;18;system
+3028;Ortigueira;true;18;system
+3029;Ourizona;true;18;system
+3030;Ouro Verde do Oeste;true;18;system
+3031;Paiçandu;true;18;system
+3032;Palmas;true;18;system
+3033;Palmeira;true;18;system
+3034;Palmital;true;18;system
+3035;Palotina;true;18;system
+3036;Paraíso do Norte;true;18;system
+3037;Paranacity;true;18;system
+3038;Paranaguá;true;18;system
+3039;Paranapoema;true;18;system
+3040;Paranavaí;true;18;system
+3041;Pato Bragado;true;18;system
+3042;Pato Branco;true;18;system
+3043;Paula Freitas;true;18;system
+3044;Paulo Frontin;true;18;system
+3045;Peabiru;true;18;system
+3046;Perobal;true;18;system
+3047;Pérola;true;18;system
+3048;Pérola d`Oeste;true;18;system
+3049;Piên;true;18;system
+3050;Pinhais;true;18;system
+3051;Pinhal de São Bento;true;18;system
+3052;Pinhalão;true;18;system
+3053;Pinhão;true;18;system
+3054;Piraí do Sul;true;18;system
+3055;Piraquara;true;18;system
+3056;Pitanga;true;18;system
+3057;Pitangueiras;true;18;system
+3058;Planaltina do Paraná;true;18;system
+3059;Planalto;true;18;system
+3060;Ponta Grossa;true;18;system
+3061;Pontal do Paraná;true;18;system
+3062;Porecatu;true;18;system
+3063;Porto Amazonas;true;18;system
+3064;Porto Barreiro;true;18;system
+3065;Porto Rico;true;18;system
+3066;Porto Vitória;true;18;system
+3067;Prado Ferreira;true;18;system
+3068;Pranchita;true;18;system
+3069;Presidente Castelo Branco;true;18;system
+3070;Primeiro de Maio;true;18;system
+3071;Prudentópolis;true;18;system
+3072;Quarto Centenário;true;18;system
+3073;Quatiguá;true;18;system
+3074;Quatro Barras;true;18;system
+3075;Quatro Pontes;true;18;system
+3076;Quedas do Iguaçu;true;18;system
+3077;Querência do Norte;true;18;system
+3078;Quinta do Sol;true;18;system
+3079;Quitandinha;true;18;system
+3080;Ramilândia;true;18;system
+3081;Rancho Alegre;true;18;system
+3082;Rancho Alegre d`Oeste;true;18;system
+3083;Realeza;true;18;system
+3084;Rebouças;true;18;system
+3085;Renascença;true;18;system
+3086;Reserva;true;18;system
+3087;Reserva do Iguaçu;true;18;system
+3088;Ribeirão Claro;true;18;system
+3089;Ribeirão do Pinhal;true;18;system
+3090;Rio Azul;true;18;system
+3091;Rio Bom;true;18;system
+3092;Rio Bonito do Iguaçu;true;18;system
+3093;Rio Branco do Ivaí;true;18;system
+3094;Rio Branco do Sul;true;18;system
+3095;Rio Negro;true;18;system
+3096;Rolândia;true;18;system
+3097;Roncador;true;18;system
+3098;Rondon;true;18;system
+3099;Rosário do Ivaí;true;18;system
+3100;Sabáudia;true;18;system
+3101;Salgado Filho;true;18;system
+3102;Salto do Itararé;true;18;system
+3103;Salto do Lontra;true;18;system
+3104;Santa Amélia;true;18;system
+3105;Santa Cecília do Pavão;true;18;system
+3106;Santa Cruz de Monte Castelo;true;18;system
+3107;Santa Fé;true;18;system
+3108;Santa Helena;true;18;system
+3109;Santa Inês;true;18;system
+3110;Santa Isabel do Ivaí;true;18;system
+3111;Santa Izabel do Oeste;true;18;system
+3112;Santa Lúcia;true;18;system
+3113;Santa Maria do Oeste;true;18;system
+3114;Santa Mariana;true;18;system
+3115;Santa Mônica;true;18;system
+3116;Santa Tereza do Oeste;true;18;system
+3117;Santa Terezinha de Itaipu;true;18;system
+3118;Santana do Itararé;true;18;system
+3119;Santo Antônio da Platina;true;18;system
+3120;Santo Antônio do Caiuá;true;18;system
+3121;Santo Antônio do Paraíso;true;18;system
+3122;Santo Antônio do Sudoeste;true;18;system
+3123;Santo Inácio;true;18;system
+3124;São Carlos do Ivaí;true;18;system
+3125;São Jerônimo da Serra;true;18;system
+3126;São João;true;18;system
+3127;São João do Caiuá;true;18;system
+3128;São João do Ivaí;true;18;system
+3129;São João do Triunfo;true;18;system
+3130;São Jorge d`Oeste;true;18;system
+3131;São Jorge do Ivaí;true;18;system
+3132;São Jorge do Patrocínio;true;18;system
+3133;São José da Boa Vista;true;18;system
+3134;São José das Palmeiras;true;18;system
+3135;São José dos Pinhais;true;18;system
+3136;São Manoel do Paraná;true;18;system
+3137;São Mateus do Sul;true;18;system
+3138;São Miguel do Iguaçu;true;18;system
+3139;São Pedro do Iguaçu;true;18;system
+3140;São Pedro do Ivaí;true;18;system
+3141;São Pedro do Paraná;true;18;system
+3142;São Sebastião da Amoreira;true;18;system
+3143;São Tomé;true;18;system
+3144;Sapopema;true;18;system
+3145;Sarandi;true;18;system
+3146;Saudade do Iguaçu;true;18;system
+3147;Sengés;true;18;system
+3148;Serranópolis do Iguaçu;true;18;system
+3149;Sertaneja;true;18;system
+3150;Sertanópolis;true;18;system
+3151;Siqueira Campos;true;18;system
+3152;Sulina;true;18;system
+3153;Tamarana;true;18;system
+3154;Tamboara;true;18;system
+3155;Tapejara;true;18;system
+3156;Tapira;true;18;system
+3157;Teixeira Soares;true;18;system
+3158;Telêmaco Borba;true;18;system
+3159;Terra Boa;true;18;system
+3160;Terra Rica;true;18;system
+3161;Terra Roxa;true;18;system
+3162;Tibagi;true;18;system
+3163;Tijucas do Sul;true;18;system
+3164;Toledo;true;18;system
+3165;Tomazina;true;18;system
+3166;Três Barras do Paraná;true;18;system
+3167;Tunas do Paraná;true;18;system
+3168;Tuneiras do Oeste;true;18;system
+3169;Tupãssi;true;18;system
+3170;Turvo;true;18;system
+3171;Ubiratã;true;18;system
+3172;Umuarama;true;18;system
+3173;União da Vitória;true;18;system
+3174;Uniflor;true;18;system
+3175;Uraí;true;18;system
+3176;Ventania;true;18;system
+3177;Vera Cruz do Oeste;true;18;system
+3178;Verê;true;18;system
+3179;Virmond;true;18;system
+3180;Vitorino;true;18;system
+3181;Wenceslau Braz;true;18;system
+3182;Xambrê;true;18;system
+3183;Abreu e Lima;true;16;system
+3184;Afogados da Ingazeira;true;16;system
+3185;Afrânio;true;16;system
+3186;Agrestina;true;16;system
+3187;Água Preta;true;16;system
+3188;Águas Belas;true;16;system
+3189;Alagoinha;true;16;system
+3190;Aliança;true;16;system
+3191;Altinho;true;16;system
+3192;Amaraji;true;16;system
+3193;Angelim;true;16;system
+3194;Araçoiaba;true;16;system
+3195;Araripina;true;16;system
+3196;Arcoverde;true;16;system
+3197;Barra de Guabiraba;true;16;system
+3198;Barreiros;true;16;system
+3199;Belém de Maria;true;16;system
+3200;Belém de São Francisco;true;16;system
+3201;Belo Jardim;true;16;system
+3202;Betânia;true;16;system
+3203;Bezerros;true;16;system
+3204;Bodocó;true;16;system
+3205;Bom Conselho;true;16;system
+3206;Bom Jardim;true;16;system
+3207;Bonito;true;16;system
+3208;Brejão;true;16;system
+3209;Brejinho;true;16;system
+3210;Brejo da Madre de Deus;true;16;system
+3211;Buenos Aires;true;16;system
+3212;Buíque;true;16;system
+3213;Cabo de Santo Agostinho;true;16;system
+3214;Cabrobó;true;16;system
+3215;Cachoeirinha;true;16;system
+3216;Caetés;true;16;system
+3217;Calçado;true;16;system
+3218;Calumbi;true;16;system
+3219;Camaragibe;true;16;system
+3220;Camocim de São Félix;true;16;system
+3221;Camutanga;true;16;system
+3222;Canhotinho;true;16;system
+3223;Capoeiras;true;16;system
+3224;Carnaíba;true;16;system
+3225;Carnaubeira da Penha;true;16;system
+3226;Carpina;true;16;system
+3227;Caruaru;true;16;system
+3228;Casinhas;true;16;system
+3229;Catende;true;16;system
+3230;Cedro;true;16;system
+3231;Chã de Alegria;true;16;system
+3232;Chã Grande;true;16;system
+3233;Condado;true;16;system
+3234;Correntes;true;16;system
+3235;Cortês;true;16;system
+3236;Cumaru;true;16;system
+3237;Cupira;true;16;system
+3238;Custódia;true;16;system
+3239;Dormentes;true;16;system
+3240;Escada;true;16;system
+3241;Exu;true;16;system
+3242;Feira Nova;true;16;system
+3243;Fernando de Noronha;true;16;system
+3244;Ferreiros;true;16;system
+3245;Flores;true;16;system
+3246;Floresta;true;16;system
+3247;Frei Miguelinho;true;16;system
+3248;Gameleira;true;16;system
+3249;Garanhuns;true;16;system
+3250;Glória do Goitá;true;16;system
+3251;Goiana;true;16;system
+3252;Granito;true;16;system
+3253;Gravatá;true;16;system
+3254;Iati;true;16;system
+3255;Ibimirim;true;16;system
+3256;Ibirajuba;true;16;system
+3257;Igarassu;true;16;system
+3258;Iguaraci;true;16;system
+3259;Ilha de Itamaracá;true;16;system
+3260;Inajá;true;16;system
+3261;Ingazeira;true;16;system
+3262;Ipojuca;true;16;system
+3263;Ipubi;true;16;system
+3264;Itacuruba;true;16;system
+3265;Itaíba;true;16;system
+3266;Itambé;true;16;system
+3267;Itapetim;true;16;system
+3268;Itapissuma;true;16;system
+3269;Itaquitinga;true;16;system
+3270;Jaboatão dos Guararapes;true;16;system
+3271;Jaqueira;true;16;system
+3272;Jataúba;true;16;system
+3273;Jatobá;true;16;system
+3274;João Alfredo;true;16;system
+3275;Joaquim Nabuco;true;16;system
+3276;Jucati;true;16;system
+3277;Jupi;true;16;system
+3278;Jurema;true;16;system
+3279;Lagoa do Carro;true;16;system
+3280;Lagoa do Itaenga;true;16;system
+3281;Lagoa do Ouro;true;16;system
+3282;Lagoa dos Gatos;true;16;system
+3283;Lagoa Grande;true;16;system
+3284;Lajedo;true;16;system
+3285;Limoeiro;true;16;system
+3286;Macaparana;true;16;system
+3287;Machados;true;16;system
+3288;Manari;true;16;system
+3289;Maraial;true;16;system
+3290;Mirandiba;true;16;system
+3291;Moreilândia;true;16;system
+3292;Moreno;true;16;system
+3293;Nazaré da Mata;true;16;system
+3294;Olinda;true;16;system
+3295;Orobó;true;16;system
+3296;Orocó;true;16;system
+3297;Ouricuri;true;16;system
+3298;Palmares;true;16;system
+3299;Palmeirina;true;16;system
+3300;Panelas;true;16;system
+3301;Paranatama;true;16;system
+3302;Parnamirim;true;16;system
+3303;Passira;true;16;system
+3304;Paudalho;true;16;system
+3305;Paulista;true;16;system
+3306;Pedra;true;16;system
+3307;Pesqueira;true;16;system
+3308;Petrolândia;true;16;system
+3309;Petrolina;true;16;system
+3310;Poção;true;16;system
+3311;Pombos;true;16;system
+3312;Primavera;true;16;system
+3313;Quipapá;true;16;system
+3314;Quixaba;true;16;system
+3315;Recife;true;16;system
+3316;Riacho das Almas;true;16;system
+3317;Ribeirão;true;16;system
+3318;Rio Formoso;true;16;system
+3319;Sairé;true;16;system
+3320;Salgadinho;true;16;system
+3321;Salgueiro;true;16;system
+3322;Saloá;true;16;system
+3323;Sanharó;true;16;system
+3324;Santa Cruz;true;16;system
+3325;Santa Cruz da Baixa Verde;true;16;system
+3326;Santa Cruz do Capibaribe;true;16;system
+3327;Santa Filomena;true;16;system
+3328;Santa Maria da Boa Vista;true;16;system
+3329;Santa Maria do Cambucá;true;16;system
+3330;Santa Terezinha;true;16;system
+3331;São Benedito do Sul;true;16;system
+3332;São Bento do Una;true;16;system
+3333;São Caitano;true;16;system
+3334;São João;true;16;system
+3335;São Joaquim do Monte;true;16;system
+3336;São José da Coroa Grande;true;16;system
+3337;São José do Belmonte;true;16;system
+3338;São José do Egito;true;16;system
+3339;São Lourenço da Mata;true;16;system
+3340;São Vicente Ferrer;true;16;system
+3341;Serra Talhada;true;16;system
+3342;Serrita;true;16;system
+3343;Sertânia;true;16;system
+3344;Sirinhaém;true;16;system
+3345;Solidão;true;16;system
+3346;Surubim;true;16;system
+3347;Tabira;true;16;system
+3348;Tacaimbó;true;16;system
+3349;Tacaratu;true;16;system
+3350;Tamandaré;true;16;system
+3351;Taquaritinga do Norte;true;16;system
+3352;Terezinha;true;16;system
+3353;Terra Nova;true;16;system
+3354;Timbaúba;true;16;system
+3355;Toritama;true;16;system
+3356;Tracunhaém;true;16;system
+3357;Trindade;true;16;system
+3358;Triunfo;true;16;system
+3359;Tupanatinga;true;16;system
+3360;Tuparetama;true;16;system
+3361;Venturosa;true;16;system
+3362;Verdejante;true;16;system
+3363;Vertente do Lério;true;16;system
+3364;Vertentes;true;16;system
+3365;Vicência;true;16;system
+3366;Vitória de Santo Antão;true;16;system
+3367;Xexéu;true;16;system
+3368;Acauã;true;17;system
+3369;Agricolândia;true;17;system
+3370;Água Branca;true;17;system
+3371;Alagoinha do Piauí;true;17;system
+3372;Alegrete do Piauí;true;17;system
+3373;Alto Longá;true;17;system
+3374;Altos;true;17;system
+3375;Alvorada do Gurguéia;true;17;system
+3376;Amarante;true;17;system
+3377;Angical do Piauí;true;17;system
+3378;Anísio de Abreu;true;17;system
+3379;Antônio Almeida;true;17;system
+3380;Aroazes;true;17;system
+3381;Aroeiras do Itaim;true;17;system
+3382;Arraial;true;17;system
+3383;Assunção do Piauí;true;17;system
+3384;Avelino Lopes;true;17;system
+3385;Baixa Grande do Ribeiro;true;17;system
+3386;Barra d`Alcântara;true;17;system
+3387;Barras;true;17;system
+3388;Barreiras do Piauí;true;17;system
+3389;Barro Duro;true;17;system
+3390;Batalha;true;17;system
+3391;Bela Vista do Piauí;true;17;system
+3392;Belém do Piauí;true;17;system
+3393;Beneditinos;true;17;system
+3394;Bertolínia;true;17;system
+3395;Betânia do Piauí;true;17;system
+3396;Boa Hora;true;17;system
+3397;Bocaina;true;17;system
+3398;Bom Jesus;true;17;system
+3399;Bom Princípio do Piauí;true;17;system
+3400;Bonfim do Piauí;true;17;system
+3401;Boqueirão do Piauí;true;17;system
+3402;Brasileira;true;17;system
+3403;Brejo do Piauí;true;17;system
+3404;Buriti dos Lopes;true;17;system
+3405;Buriti dos Montes;true;17;system
+3406;Cabeceiras do Piauí;true;17;system
+3407;Cajazeiras do Piauí;true;17;system
+3408;Cajueiro da Praia;true;17;system
+3409;Caldeirão Grande do Piauí;true;17;system
+3410;Campinas do Piauí;true;17;system
+3411;Campo Alegre do Fidalgo;true;17;system
+3412;Campo Grande do Piauí;true;17;system
+3413;Campo Largo do Piauí;true;17;system
+3414;Campo Maior;true;17;system
+3415;Canavieira;true;17;system
+3416;Canto do Buriti;true;17;system
+3417;Capitão de Campos;true;17;system
+3418;Capitão Gervásio Oliveira;true;17;system
+3419;Caracol;true;17;system
+3420;Caraúbas do Piauí;true;17;system
+3421;Caridade do Piauí;true;17;system
+3422;Castelo do Piauí;true;17;system
+3423;Caxingó;true;17;system
+3424;Cocal;true;17;system
+3425;Cocal de Telha;true;17;system
+3426;Cocal dos Alves;true;17;system
+3427;Coivaras;true;17;system
+3428;Colônia do Gurguéia;true;17;system
+3429;Colônia do Piauí;true;17;system
+3430;Conceição do Canindé;true;17;system
+3431;Coronel José Dias;true;17;system
+3432;Corrente;true;17;system
+3433;Cristalândia do Piauí;true;17;system
+3434;Cristino Castro;true;17;system
+3435;Curimatá;true;17;system
+3436;Currais;true;17;system
+3437;Curral Novo do Piauí;true;17;system
+3438;Curralinhos;true;17;system
+3439;Demerval Lobão;true;17;system
+3440;Dirceu Arcoverde;true;17;system
+3441;Dom Expedito Lopes;true;17;system
+3442;Dom Inocêncio;true;17;system
+3443;Domingos Mourão;true;17;system
+3444;Elesbão Veloso;true;17;system
+3445;Eliseu Martins;true;17;system
+3446;Esperantina;true;17;system
+3447;Fartura do Piauí;true;17;system
+3448;Flores do Piauí;true;17;system
+3449;Floresta do Piauí;true;17;system
+3450;Floriano;true;17;system
+3451;Francinópolis;true;17;system
+3452;Francisco Ayres;true;17;system
+3453;Francisco Macedo;true;17;system
+3454;Francisco Santos;true;17;system
+3455;Fronteiras;true;17;system
+3456;Geminiano;true;17;system
+3457;Gilbués;true;17;system
+3458;Guadalupe;true;17;system
+3459;Guaribas;true;17;system
+3460;Hugo Napoleão;true;17;system
+3461;Ilha Grande;true;17;system
+3462;Inhuma;true;17;system
+3463;Ipiranga do Piauí;true;17;system
+3464;Isaías Coelho;true;17;system
+3465;Itainópolis;true;17;system
+3466;Itaueira;true;17;system
+3467;Jacobina do Piauí;true;17;system
+3468;Jaicós;true;17;system
+3469;Jardim do Mulato;true;17;system
+3470;Jatobá do Piauí;true;17;system
+3471;Jerumenha;true;17;system
+3472;João Costa;true;17;system
+3473;Joaquim Pires;true;17;system
+3474;Joca Marques;true;17;system
+3475;José de Freitas;true;17;system
+3476;Juazeiro do Piauí;true;17;system
+3477;Júlio Borges;true;17;system
+3478;Jurema;true;17;system
+3479;Lagoa Alegre;true;17;system
+3480;Lagoa de São Francisco;true;17;system
+3481;Lagoa do Barro do Piauí;true;17;system
+3482;Lagoa do Piauí;true;17;system
+3483;Lagoa do Sítio;true;17;system
+3484;Lagoinha do Piauí;true;17;system
+3485;Landri Sales;true;17;system
+3486;Luís Correia;true;17;system
+3487;Luzilândia;true;17;system
+3488;Madeiro;true;17;system
+3489;Manoel Emídio;true;17;system
+3490;Marcolândia;true;17;system
+3491;Marcos Parente;true;17;system
+3492;Massapê do Piauí;true;17;system
+3493;Matias Olímpio;true;17;system
+3494;Miguel Alves;true;17;system
+3495;Miguel Leão;true;17;system
+3496;Milton Brandão;true;17;system
+3497;Monsenhor Gil;true;17;system
+3498;Monsenhor Hipólito;true;17;system
+3499;Monte Alegre do Piauí;true;17;system
+3500;Morro Cabeça no Tempo;true;17;system
+3501;Morro do Chapéu do Piauí;true;17;system
+3502;Murici dos Portelas;true;17;system
+3503;Nazaré do Piauí;true;17;system
+3504;Nossa Senhora de Nazaré;true;17;system
+3505;Nossa Senhora dos Remédios;true;17;system
+3506;Nova Santa Rita;true;17;system
+3507;Novo Oriente do Piauí;true;17;system
+3508;Novo Santo Antônio;true;17;system
+3509;Oeiras;true;17;system
+3510;Olho d`Água do Piauí;true;17;system
+3511;Padre Marcos;true;17;system
+3512;Paes Landim;true;17;system
+3513;Pajeú do Piauí;true;17;system
+3514;Palmeira do Piauí;true;17;system
+3515;Palmeirais;true;17;system
+3516;Paquetá;true;17;system
+3517;Parnaguá;true;17;system
+3518;Parnaíba;true;17;system
+3519;Passagem Franca do Piauí;true;17;system
+3520;Patos do Piauí;true;17;system
+3521;Pau d`Arco do Piauí;true;17;system
+3522;Paulistana;true;17;system
+3523;Pavussu;true;17;system
+3524;Pedro II;true;17;system
+3525;Pedro Laurentino;true;17;system
+3526;Picos;true;17;system
+3527;Pimenteiras;true;17;system
+3528;Pio IX;true;17;system
+3529;Piracuruca;true;17;system
+3530;Piripiri;true;17;system
+3531;Porto;true;17;system
+3532;Porto Alegre do Piauí;true;17;system
+3533;Prata do Piauí;true;17;system
+3534;Queimada Nova;true;17;system
+3535;Redenção do Gurguéia;true;17;system
+3536;Regeneração;true;17;system
+3537;Riacho Frio;true;17;system
+3538;Ribeira do Piauí;true;17;system
+3539;Ribeiro Gonçalves;true;17;system
+3540;Rio Grande do Piauí;true;17;system
+3541;Santa Cruz do Piauí;true;17;system
+3542;Santa Cruz dos Milagres;true;17;system
+3543;Santa Filomena;true;17;system
+3544;Santa Luz;true;17;system
+3545;Santa Rosa do Piauí;true;17;system
+3546;Santana do Piauí;true;17;system
+3547;Santo Antônio de Lisboa;true;17;system
+3548;Santo Antônio dos Milagres;true;17;system
+3549;Santo Inácio do Piauí;true;17;system
+3550;São Braz do Piauí;true;17;system
+3551;São Félix do Piauí;true;17;system
+3552;São Francisco de Assis do Piauí;true;17;system
+3553;São Francisco do Piauí;true;17;system
+3554;São Gonçalo do Gurguéia;true;17;system
+3555;São Gonçalo do Piauí;true;17;system
+3556;São João da Canabrava;true;17;system
+3557;São João da Fronteira;true;17;system
+3558;São João da Serra;true;17;system
+3559;São João da Varjota;true;17;system
+3560;São João do Arraial;true;17;system
+3561;São João do Piauí;true;17;system
+3562;São José do Divino;true;17;system
+3563;São José do Peixe;true;17;system
+3564;São José do Piauí;true;17;system
+3565;São Julião;true;17;system
+3566;São Lourenço do Piauí;true;17;system
+3567;São Luis do Piauí;true;17;system
+3568;São Miguel da Baixa Grande;true;17;system
+3569;São Miguel do Fidalgo;true;17;system
+3570;São Miguel do Tapuio;true;17;system
+3571;São Pedro do Piauí;true;17;system
+3572;São Raimundo Nonato;true;17;system
+3573;Sebastião Barros;true;17;system
+3574;Sebastião Leal;true;17;system
+3575;Sigefredo Pacheco;true;17;system
+3576;Simões;true;17;system
+3577;Simplício Mendes;true;17;system
+3578;Socorro do Piauí;true;17;system
+3579;Sussuapara;true;17;system
+3580;Tamboril do Piauí;true;17;system
+3581;Tanque do Piauí;true;17;system
+3582;Teresina;true;17;system
+3583;União;true;17;system
+3584;Uruçuí;true;17;system
+3585;Valença do Piauí;true;17;system
+3586;Várzea Branca;true;17;system
+3587;Várzea Grande;true;17;system
+3588;Vera Mendes;true;17;system
+3589;Vila Nova do Piauí;true;17;system
+3590;Wall Ferraz;true;17;system
+3591;Angra dos Reis;true;19;system
+3592;Aperibé;true;19;system
+3593;Araruama;true;19;system
+3594;Areal;true;19;system
+3595;Armação dos Búzios;true;19;system
+3596;Arraial do Cabo;true;19;system
+3597;Barra do Piraí;true;19;system
+3598;Barra Mansa;true;19;system
+3599;Belford Roxo;true;19;system
+3600;Bom Jardim;true;19;system
+3601;Bom Jesus do Itabapoana;true;19;system
+3602;Cabo Frio;true;19;system
+3603;Cachoeiras de Macacu;true;19;system
+3604;Cambuci;true;19;system
+3605;Campos dos Goytacazes;true;19;system
+3606;Cantagalo;true;19;system
+3607;Carapebus;true;19;system
+3608;Cardoso Moreira;true;19;system
+3609;Carmo;true;19;system
+3610;Casimiro de Abreu;true;19;system
+3611;Comendador Levy Gasparian;true;19;system
+3612;Conceição de Macabu;true;19;system
+3613;Cordeiro;true;19;system
+3614;Duas Barras;true;19;system
+3615;Duque de Caxias;true;19;system
+3616;Engenheiro Paulo de Frontin;true;19;system
+3617;Guapimirim;true;19;system
+3618;Iguaba Grande;true;19;system
+3619;Itaboraí;true;19;system
+3620;Itaguaí;true;19;system
+3621;Italva;true;19;system
+3622;Itaocara;true;19;system
+3623;Itaperuna;true;19;system
+3624;Itatiaia;true;19;system
+3625;Japeri;true;19;system
+3626;Laje do Muriaé;true;19;system
+3627;Macaé;true;19;system
+3628;Macuco;true;19;system
+3629;Magé;true;19;system
+3630;Mangaratiba;true;19;system
+3631;Maricá;true;19;system
+3632;Mendes;true;19;system
+3633;Mesquita;true;19;system
+3634;Miguel Pereira;true;19;system
+3635;Miracema;true;19;system
+3636;Natividade;true;19;system
+3637;Nilópolis;true;19;system
+3638;Niterói;true;19;system
+3639;Nova Friburgo;true;19;system
+3640;Nova Iguaçu;true;19;system
+3641;Paracambi;true;19;system
+3642;Paraíba do Sul;true;19;system
+3643;Parati;true;19;system
+3644;Paty do Alferes;true;19;system
+3645;Petrópolis;true;19;system
+3646;Pinheiral;true;19;system
+3647;Piraí;true;19;system
+3648;Porciúncula;true;19;system
+3649;Porto Real;true;19;system
+3650;Quatis;true;19;system
+3651;Queimados;true;19;system
+3652;Quissamã;true;19;system
+3653;Resende;true;19;system
+3654;Rio Bonito;true;19;system
+3655;Rio Claro;true;19;system
+3656;Rio das Flores;true;19;system
+3657;Rio das Ostras;true;19;system
+3658;Rio de Janeiro;true;19;system
+3659;Santa Maria Madalena;true;19;system
+3660;Santo Antônio de Pádua;true;19;system
+3661;São Fidélis;true;19;system
+3662;São Francisco de Itabapoana;true;19;system
+3663;São Gonçalo;true;19;system
+3664;São João da Barra;true;19;system
+3665;São João de Meriti;true;19;system
+3666;São José de Ubá;true;19;system
+3667;São José do Vale do Rio Pret;true;19;system
+3668;São Pedro da Aldeia;true;19;system
+3669;São Sebastião do Alto;true;19;system
+3670;Sapucaia;true;19;system
+3671;Saquarema;true;19;system
+3672;Seropédica;true;19;system
+3673;Silva Jardim;true;19;system
+3674;Sumidouro;true;19;system
+3675;Tanguá;true;19;system
+3676;Teresópolis;true;19;system
+3677;Trajano de Morais;true;19;system
+3678;Três Rios;true;19;system
+3679;Valença;true;19;system
+3680;Varre-Sai;true;19;system
+3681;Vassouras;true;19;system
+3682;Volta Redonda;true;19;system
+3683;Acari;true;20;system
+3684;Açu;true;20;system
+3685;Afonso Bezerra;true;20;system
+3686;Água Nova;true;20;system
+3687;Alexandria;true;20;system
+3688;Almino Afonso;true;20;system
+3689;Alto do Rodrigues;true;20;system
+3690;Angicos;true;20;system
+3691;Antônio Martins;true;20;system
+3692;Apodi;true;20;system
+3693;Areia Branca;true;20;system
+3694;Arês;true;20;system
+3695;Augusto Severo;true;20;system
+3696;Baía Formosa;true;20;system
+3697;Baraúna;true;20;system
+3698;Barcelona;true;20;system
+3699;Bento Fernandes;true;20;system
+3700;Bodó;true;20;system
+3701;Bom Jesus;true;20;system
+3702;Brejinho;true;20;system
+3703;Caiçara do Norte;true;20;system
+3704;Caiçara do Rio do Vento;true;20;system
+3705;Caicó;true;20;system
+3706;Campo Redondo;true;20;system
+3707;Canguaretama;true;20;system
+3708;Caraúbas;true;20;system
+3709;Carnaúba dos Dantas;true;20;system
+3710;Carnaubais;true;20;system
+3711;Ceará-Mirim;true;20;system
+3712;Cerro Corá;true;20;system
+3713;Coronel Ezequiel;true;20;system
+3714;Coronel João Pessoa;true;20;system
+3715;Cruzeta;true;20;system
+3716;Currais Novos;true;20;system
+3717;Doutor Severiano;true;20;system
+3718;Encanto;true;20;system
+3719;Equador;true;20;system
+3720;Espírito Santo;true;20;system
+3721;Extremoz;true;20;system
+3722;Felipe Guerra;true;20;system
+3723;Fernando Pedroza;true;20;system
+3724;Florânia;true;20;system
+3725;Francisco Dantas;true;20;system
+3726;Frutuoso Gomes;true;20;system
+3727;Galinhos;true;20;system
+3728;Goianinha;true;20;system
+3729;Governador Dix-Sept Rosado;true;20;system
+3730;Grossos;true;20;system
+3731;Guamaré;true;20;system
+3732;Ielmo Marinho;true;20;system
+3733;Ipanguaçu;true;20;system
+3734;Ipueira;true;20;system
+3735;Itajá;true;20;system
+3736;Itaú;true;20;system
+3737;Jaçanã;true;20;system
+3738;Jandaíra;true;20;system
+3739;Janduís;true;20;system
+3740;Januário Cicco;true;20;system
+3741;Japi;true;20;system
+3742;Jardim de Angicos;true;20;system
+3743;Jardim de Piranhas;true;20;system
+3744;Jardim do Seridó;true;20;system
+3745;João Câmara;true;20;system
+3746;João Dias;true;20;system
+3747;José da Penha;true;20;system
+3748;Jucurutu;true;20;system
+3749;Jundiá;true;20;system
+3750;Lagoa d`Anta;true;20;system
+3751;Lagoa de Pedras;true;20;system
+3752;Lagoa de Velhos;true;20;system
+3753;Lagoa Nova;true;20;system
+3754;Lagoa Salgada;true;20;system
+3755;Lajes;true;20;system
+3756;Lajes Pintadas;true;20;system
+3757;Lucrécia;true;20;system
+3758;Luís Gomes;true;20;system
+3759;Macaíba;true;20;system
+3760;Macau;true;20;system
+3761;Major Sales;true;20;system
+3762;Marcelino Vieira;true;20;system
+3763;Martins;true;20;system
+3764;Maxaranguape;true;20;system
+3765;Messias Targino;true;20;system
+3766;Montanhas;true;20;system
+3767;Monte Alegre;true;20;system
+3768;Monte das Gameleiras;true;20;system
+3769;Mossoró;true;20;system
+3770;Natal;true;20;system
+3771;Nísia Floresta;true;20;system
+3772;Nova Cruz;true;20;system
+3773;Olho-d`Água do Borges;true;20;system
+3774;Ouro Branco;true;20;system
+3775;Paraná;true;20;system
+3776;Paraú;true;20;system
+3777;Parazinho;true;20;system
+3778;Parelhas;true;20;system
+3779;Parnamirim;true;20;system
+3780;Passa e Fica;true;20;system
+3781;Passagem;true;20;system
+3782;Patu;true;20;system
+3783;Pau dos Ferros;true;20;system
+3784;Pedra Grande;true;20;system
+3785;Pedra Preta;true;20;system
+3786;Pedro Avelino;true;20;system
+3787;Pedro Velho;true;20;system
+3788;Pendências;true;20;system
+3789;Pilões;true;20;system
+3790;Poço Branco;true;20;system
+3791;Portalegre;true;20;system
+3792;Porto do Mangue;true;20;system
+3793;Presidente Juscelino;true;20;system
+3794;Pureza;true;20;system
+3795;Rafael Fernandes;true;20;system
+3796;Rafael Godeiro;true;20;system
+3797;Riacho da Cruz;true;20;system
+3798;Riacho de Santana;true;20;system
+3799;Riachuelo;true;20;system
+3800;Rio do Fogo;true;20;system
+3801;Rodolfo Fernandes;true;20;system
+3802;Ruy Barbosa;true;20;system
+3803;Santa Cruz;true;20;system
+3804;Santa Maria;true;20;system
+3805;Santana do Matos;true;20;system
+3806;Santana do Seridó;true;20;system
+3807;Santo Antônio;true;20;system
+3808;São Bento do Norte;true;20;system
+3809;São Bento do Trairí;true;20;system
+3810;São Fernando;true;20;system
+3811;São Francisco do Oeste;true;20;system
+3812;São Gonçalo do Amarante;true;20;system
+3813;São João do Sabugi;true;20;system
+3814;São José de Mipibu;true;20;system
+3815;São José do Campestre;true;20;system
+3816;São José do Seridó;true;20;system
+3817;São Miguel;true;20;system
+3818;São Miguel do Gostoso;true;20;system
+3819;São Paulo do Potengi;true;20;system
+3820;São Pedro;true;20;system
+3821;São Rafael;true;20;system
+3822;São Tomé;true;20;system
+3823;São Vicente;true;20;system
+3824;Senador Elói de Souza;true;20;system
+3825;Senador Georgino Avelino;true;20;system
+3826;Serra de São Bento;true;20;system
+3827;Serra do Mel;true;20;system
+3828;Serra Negra do Norte;true;20;system
+3829;Serrinha;true;20;system
+3830;Serrinha dos Pintos;true;20;system
+3831;Severiano Melo;true;20;system
+3832;Sítio Novo;true;20;system
+3833;Taboleiro Grande;true;20;system
+3834;Taipu;true;20;system
+3835;Tangará;true;20;system
+3836;Tenente Ananias;true;20;system
+3837;Tenente Laurentino Cruz;true;20;system
+3838;Tibau;true;20;system
+3839;Tibau do Sul;true;20;system
+3840;Timbaúba dos Batistas;true;20;system
+3841;Touros;true;20;system
+3842;Triunfo Potiguar;true;20;system
+3843;Umarizal;true;20;system
+3844;Upanema;true;20;system
+3845;Várzea;true;20;system
+3846;Venha-Ver;true;20;system
+3847;Vera Cruz;true;20;system
+3848;Viçosa;true;20;system
+3849;Vila Flor;true;20;system
+3850;Aceguá;true;23;system
+3851;Água Santa;true;23;system
+3852;Agudo;true;23;system
+3853;Ajuricaba;true;23;system
+3854;Alecrim;true;23;system
+3855;Alegrete;true;23;system
+3856;Alegria;true;23;system
+3857;Almirante Tamandaré do Sul;true;23;system
+3858;Alpestre;true;23;system
+3859;Alto Alegre;true;23;system
+3860;Alto Feliz;true;23;system
+3861;Alvorada;true;23;system
+3862;Amaral Ferrador;true;23;system
+3863;Ametista do Sul;true;23;system
+3864;André da Rocha;true;23;system
+3865;Anta Gorda;true;23;system
+3866;Antônio Prado;true;23;system
+3867;Arambaré;true;23;system
+3868;Araricá;true;23;system
+3869;Aratiba;true;23;system
+3870;Arroio do Meio;true;23;system
+3871;Arroio do Padre;true;23;system
+3872;Arroio do Sal;true;23;system
+3873;Arroio do Tigre;true;23;system
+3874;Arroio dos Ratos;true;23;system
+3875;Arroio Grande;true;23;system
+3876;Arvorezinha;true;23;system
+3877;Augusto Pestana;true;23;system
+3878;Áurea;true;23;system
+3879;Bagé;true;23;system
+3880;Balneário Pinhal;true;23;system
+3881;Barão;true;23;system
+3882;Barão de Cotegipe;true;23;system
+3883;Barão do Triunfo;true;23;system
+3884;Barra do Guarita;true;23;system
+3885;Barra do Quaraí;true;23;system
+3886;Barra do Ribeiro;true;23;system
+3887;Barra do Rio Azul;true;23;system
+3888;Barra Funda;true;23;system
+3889;Barracão;true;23;system
+3890;Barros Cassal;true;23;system
+3891;Benjamin Constant do Sul;true;23;system
+3892;Bento Gonçalves;true;23;system
+3893;Boa Vista das Missões;true;23;system
+3894;Boa Vista do Buricá;true;23;system
+3895;Boa Vista do Cadeado;true;23;system
+3896;Boa Vista do Incra;true;23;system
+3897;Boa Vista do Sul;true;23;system
+3898;Bom Jesus;true;23;system
+3899;Bom Princípio;true;23;system
+3900;Bom Progresso;true;23;system
+3901;Bom Retiro do Sul;true;23;system
+3902;Boqueirão do Leão;true;23;system
+3903;Bossoroca;true;23;system
+3904;Bozano;true;23;system
+3905;Braga;true;23;system
+3906;Brochier;true;23;system
+3907;Butiá;true;23;system
+3908;Caçapava do Sul;true;23;system
+3909;Cacequi;true;23;system
+3910;Cachoeira do Sul;true;23;system
+3911;Cachoeirinha;true;23;system
+3912;Cacique Doble;true;23;system
+3913;Caibaté;true;23;system
+3914;Caiçara;true;23;system
+3915;Camaquã;true;23;system
+3916;Camargo;true;23;system
+3917;Cambará do Sul;true;23;system
+3918;Campestre da Serra;true;23;system
+3919;Campina das Missões;true;23;system
+3920;Campinas do Sul;true;23;system
+3921;Campo Bom;true;23;system
+3922;Campo Novo;true;23;system
+3923;Campos Borges;true;23;system
+3924;Candelária;true;23;system
+3925;Cândido Godói;true;23;system
+3926;Candiota;true;23;system
+3927;Canela;true;23;system
+3928;Canguçu;true;23;system
+3929;Canoas;true;23;system
+3930;Canudos do Vale;true;23;system
+3931;Capão Bonito do Sul;true;23;system
+3932;Capão da Canoa;true;23;system
+3933;Capão do Cipó;true;23;system
+3934;Capão do Leão;true;23;system
+3935;Capela de Santana;true;23;system
+3936;Capitão;true;23;system
+3937;Capivari do Sul;true;23;system
+3938;Caraá;true;23;system
+3939;Carazinho;true;23;system
+3940;Carlos Barbosa;true;23;system
+3941;Carlos Gomes;true;23;system
+3942;Casca;true;23;system
+3943;Caseiros;true;23;system
+3944;Catuípe;true;23;system
+3945;Caxias do Sul;true;23;system
+3946;Centenário;true;23;system
+3947;Cerrito;true;23;system
+3948;Cerro Branco;true;23;system
+3949;Cerro Grande;true;23;system
+3950;Cerro Grande do Sul;true;23;system
+3951;Cerro Largo;true;23;system
+3952;Chapada;true;23;system
+3953;Charqueadas;true;23;system
+3954;Charrua;true;23;system
+3955;Chiapeta;true;23;system
+3956;Chuí;true;23;system
+3957;Chuvisca;true;23;system
+3958;Cidreira;true;23;system
+3959;Ciríaco;true;23;system
+3960;Colinas;true;23;system
+3961;Colorado;true;23;system
+3962;Condor;true;23;system
+3963;Constantina;true;23;system
+3964;Coqueiro Baixo;true;23;system
+3965;Coqueiros do Sul;true;23;system
+3966;Coronel Barros;true;23;system
+3967;Coronel Bicaco;true;23;system
+3968;Coronel Pilar;true;23;system
+3969;Cotiporã;true;23;system
+3970;Coxilha;true;23;system
+3971;Crissiumal;true;23;system
+3972;Cristal;true;23;system
+3973;Cristal do Sul;true;23;system
+3974;Cruz Alta;true;23;system
+3975;Cruzaltense;true;23;system
+3976;Cruzeiro do Sul;true;23;system
+3977;David Canabarro;true;23;system
+3978;Derrubadas;true;23;system
+3979;Dezesseis de Novembro;true;23;system
+3980;Dilermando de Aguiar;true;23;system
+3981;Dois Irmãos;true;23;system
+3982;Dois Irmãos das Missões;true;23;system
+3983;Dois Lajeados;true;23;system
+3984;Dom Feliciano;true;23;system
+3985;Dom Pedrito;true;23;system
+3986;Dom Pedro de Alcântara;true;23;system
+3987;Dona Francisca;true;23;system
+3988;Doutor Maurício Cardoso;true;23;system
+3989;Doutor Ricardo;true;23;system
+3990;Eldorado do Sul;true;23;system
+3991;Encantado;true;23;system
+3992;Encruzilhada do Sul;true;23;system
+3993;Engenho Velho;true;23;system
+3994;Entre Rios do Sul;true;23;system
+3995;Entre-Ijuís;true;23;system
+3996;Erebango;true;23;system
+3997;Erechim;true;23;system
+3998;Ernestina;true;23;system
+3999;Erval Grande;true;23;system
+4000;Erval Seco;true;23;system
+4001;Esmeralda;true;23;system
+4002;Esperança do Sul;true;23;system
+4003;Espumoso;true;23;system
+4004;Estação;true;23;system
+4005;Estância Velha;true;23;system
+4006;Esteio;true;23;system
+4007;Estrela;true;23;system
+4008;Estrela Velha;true;23;system
+4009;Eugênio de Castro;true;23;system
+4010;Fagundes Varela;true;23;system
+4011;Farroupilha;true;23;system
+4012;Faxinal do Soturno;true;23;system
+4013;Faxinalzinho;true;23;system
+4014;Fazenda Vilanova;true;23;system
+4015;Feliz;true;23;system
+4016;Flores da Cunha;true;23;system
+4017;Floriano Peixoto;true;23;system
+4018;Fontoura Xavier;true;23;system
+4019;Formigueiro;true;23;system
+4020;Forquetinha;true;23;system
+4021;Fortaleza dos Valos;true;23;system
+4022;Frederico Westphalen;true;23;system
+4023;Garibaldi;true;23;system
+4024;Garruchos;true;23;system
+4025;Gaurama;true;23;system
+4026;General Câmara;true;23;system
+4027;Gentil;true;23;system
+4028;Getúlio Vargas;true;23;system
+4029;Giruá;true;23;system
+4030;Glorinha;true;23;system
+4031;Gramado;true;23;system
+4032;Gramado dos Loureiros;true;23;system
+4033;Gramado Xavier;true;23;system
+4034;Gravataí;true;23;system
+4035;Guabiju;true;23;system
+4036;Guaíba;true;23;system
+4037;Guaporé;true;23;system
+4038;Guarani das Missões;true;23;system
+4039;Harmonia;true;23;system
+4040;Herval;true;23;system
+4041;Herveiras;true;23;system
+4042;Horizontina;true;23;system
+4043;Hulha Negra;true;23;system
+4044;Humaitá;true;23;system
+4045;Ibarama;true;23;system
+4046;Ibiaçá;true;23;system
+4047;Ibiraiaras;true;23;system
+4048;Ibirapuitã;true;23;system
+4049;Ibirubá;true;23;system
+4050;Igrejinha;true;23;system
+4051;Ijuí;true;23;system
+4052;Ilópolis;true;23;system
+4053;Imbé;true;23;system
+4054;Imigrante;true;23;system
+4055;Independência;true;23;system
+4056;Inhacorá;true;23;system
+4057;Ipê;true;23;system
+4058;Ipiranga do Sul;true;23;system
+4059;Iraí;true;23;system
+4060;Itaara;true;23;system
+4061;Itacurubi;true;23;system
+4062;Itapuca;true;23;system
+4063;Itaqui;true;23;system
+4064;Itati;true;23;system
+4065;Itatiba do Sul;true;23;system
+4066;Ivorá;true;23;system
+4067;Ivoti;true;23;system
+4068;Jaboticaba;true;23;system
+4069;Jacuizinho;true;23;system
+4070;Jacutinga;true;23;system
+4071;Jaguarão;true;23;system
+4072;Jaguari;true;23;system
+4073;Jaquirana;true;23;system
+4074;Jari;true;23;system
+4075;Jóia;true;23;system
+4076;Júlio de Castilhos;true;23;system
+4077;Lagoa Bonita do Sul;true;23;system
+4078;Lagoa dos Três Cantos;true;23;system
+4079;Lagoa Vermelha;true;23;system
+4080;Lagoão;true;23;system
+4081;Lajeado;true;23;system
+4082;Lajeado do Bugre;true;23;system
+4083;Lavras do Sul;true;23;system
+4084;Liberato Salzano;true;23;system
+4085;Lindolfo Collor;true;23;system
+4086;Linha Nova;true;23;system
+4087;Maçambara;true;23;system
+4088;Machadinho;true;23;system
+4089;Mampituba;true;23;system
+4090;Manoel Viana;true;23;system
+4091;Maquiné;true;23;system
+4092;Maratá;true;23;system
+4093;Marau;true;23;system
+4094;Marcelino Ramos;true;23;system
+4095;Mariana Pimentel;true;23;system
+4096;Mariano Moro;true;23;system
+4097;Marques de Souza;true;23;system
+4098;Mata;true;23;system
+4099;Mato Castelhano;true;23;system
+4100;Mato Leitão;true;23;system
+4101;Mato Queimado;true;23;system
+4102;Maximiliano de Almeida;true;23;system
+4103;Minas do Leão;true;23;system
+4104;Miraguaí;true;23;system
+4105;Montauri;true;23;system
+4106;Monte Alegre dos Campos;true;23;system
+4107;Monte Belo do Sul;true;23;system
+4108;Montenegro;true;23;system
+4109;Mormaço;true;23;system
+4110;Morrinhos do Sul;true;23;system
+4111;Morro Redondo;true;23;system
+4112;Morro Reuter;true;23;system
+4113;Mostardas;true;23;system
+4114;Muçum;true;23;system
+4115;Muitos Capões;true;23;system
+4116;Muliterno;true;23;system
+4117;Não-Me-Toque;true;23;system
+4118;Nicolau Vergueiro;true;23;system
+4119;Nonoai;true;23;system
+4120;Nova Alvorada;true;23;system
+4121;Nova Araçá;true;23;system
+4122;Nova Bassano;true;23;system
+4123;Nova Boa Vista;true;23;system
+4124;Nova Bréscia;true;23;system
+4125;Nova Candelária;true;23;system
+4126;Nova Esperança do Sul;true;23;system
+4127;Nova Hartz;true;23;system
+4128;Nova Pádua;true;23;system
+4129;Nova Palma;true;23;system
+4130;Nova Petrópolis;true;23;system
+4131;Nova Prata;true;23;system
+4132;Nova Ramada;true;23;system
+4133;Nova Roma do Sul;true;23;system
+4134;Nova Santa Rita;true;23;system
+4135;Novo Barreiro;true;23;system
+4136;Novo Cabrais;true;23;system
+4137;Novo Hamburgo;true;23;system
+4138;Novo Machado;true;23;system
+4139;Novo Tiradentes;true;23;system
+4140;Novo Xingu;true;23;system
+4141;Osório;true;23;system
+4142;Paim Filho;true;23;system
+4143;Palmares do Sul;true;23;system
+4144;Palmeira das Missões;true;23;system
+4145;Palmitinho;true;23;system
+4146;Panambi;true;23;system
+4147;Pantano Grande;true;23;system
+4148;Paraí;true;23;system
+4149;Paraíso do Sul;true;23;system
+4150;Pareci Novo;true;23;system
+4151;Parobé;true;23;system
+4152;Passa Sete;true;23;system
+4153;Passo do Sobrado;true;23;system
+4154;Passo Fundo;true;23;system
+4155;Paulo Bento;true;23;system
+4156;Paverama;true;23;system
+4157;Pedras Altas;true;23;system
+4158;Pedro Osório;true;23;system
+4159;Pejuçara;true;23;system
+4160;Pelotas;true;23;system
+4161;Picada Café;true;23;system
+4162;Pinhal;true;23;system
+4163;Pinhal da Serra;true;23;system
+4164;Pinhal Grande;true;23;system
+4165;Pinheirinho do Vale;true;23;system
+4166;Pinheiro Machado;true;23;system
+4167;Pirapó;true;23;system
+4168;Piratini;true;23;system
+4169;Planalto;true;23;system
+4170;Poço das Antas;true;23;system
+4171;Pontão;true;23;system
+4172;Ponte Preta;true;23;system
+4173;Portão;true;23;system
+4174;Porto Alegre;true;23;system
+4175;Porto Lucena;true;23;system
+4176;Porto Mauá;true;23;system
+4177;Porto Vera Cruz;true;23;system
+4178;Porto Xavier;true;23;system
+4179;Pouso Novo;true;23;system
+4180;Presidente Lucena;true;23;system
+4181;Progresso;true;23;system
+4182;Protásio Alves;true;23;system
+4183;Putinga;true;23;system
+4184;Quaraí;true;23;system
+4185;Quatro Irmãos;true;23;system
+4186;Quevedos;true;23;system
+4187;Quinze de Novembro;true;23;system
+4188;Redentora;true;23;system
+4189;Relvado;true;23;system
+4190;Restinga Seca;true;23;system
+4191;Rio dos Índios;true;23;system
+4192;Rio Grande;true;23;system
+4193;Rio Pardo;true;23;system
+4194;Riozinho;true;23;system
+4195;Roca Sales;true;23;system
+4196;Rodeio Bonito;true;23;system
+4197;Rolador;true;23;system
+4198;Rolante;true;23;system
+4199;Ronda Alta;true;23;system
+4200;Rondinha;true;23;system
+4201;Roque Gonzales;true;23;system
+4202;Rosário do Sul;true;23;system
+4203;Sagrada Família;true;23;system
+4204;Saldanha Marinho;true;23;system
+4205;Salto do Jacuí;true;23;system
+4206;Salvador das Missões;true;23;system
+4207;Salvador do Sul;true;23;system
+4208;Sananduva;true;23;system
+4209;Santa Bárbara do Sul;true;23;system
+4210;Santa Cecília do Sul;true;23;system
+4211;Santa Clara do Sul;true;23;system
+4212;Santa Cruz do Sul;true;23;system
+4213;Santa Margarida do Sul;true;23;system
+4214;Santa Maria;true;23;system
+4215;Santa Maria do Herval;true;23;system
+4216;Santa Rosa;true;23;system
+4217;Santa Tereza;true;23;system
+4218;Santa Vitória do Palmar;true;23;system
+4219;Santana da Boa Vista;true;23;system
+4220;Santana do Livramento;true;23;system
+4221;Santiago;true;23;system
+4222;Santo Ângelo;true;23;system
+4223;Santo Antônio da Patrulha;true;23;system
+4224;Santo Antônio das Missões;true;23;system
+4225;Santo Antônio do Palma;true;23;system
+4226;Santo Antônio do Planalto;true;23;system
+4227;Santo Augusto;true;23;system
+4228;Santo Cristo;true;23;system
+4229;Santo Expedito do Sul;true;23;system
+4230;São Borja;true;23;system
+4231;São Domingos do Sul;true;23;system
+4232;São Francisco de Assis;true;23;system
+4233;São Francisco de Paula;true;23;system
+4234;São Gabriel;true;23;system
+4235;São Jerônimo;true;23;system
+4236;São João da Urtiga;true;23;system
+4237;São João do Polêsine;true;23;system
+4238;São Jorge;true;23;system
+4239;São José das Missões;true;23;system
+4240;São José do Herval;true;23;system
+4241;São José do Hortêncio;true;23;system
+4242;São José do Inhacorá;true;23;system
+4243;São José do Norte;true;23;system
+4244;São José do Ouro;true;23;system
+4245;São José do Sul;true;23;system
+4246;São José dos Ausentes;true;23;system
+4247;São Leopoldo;true;23;system
+4248;São Lourenço do Sul;true;23;system
+4249;São Luiz Gonzaga;true;23;system
+4250;São Marcos;true;23;system
+4251;São Martinho;true;23;system
+4252;São Martinho da Serra;true;23;system
+4253;São Miguel das Missões;true;23;system
+4254;São Nicolau;true;23;system
+4255;São Paulo das Missões;true;23;system
+4256;São Pedro da Serra;true;23;system
+4257;São Pedro das Missões;true;23;system
+4258;São Pedro do Butiá;true;23;system
+4259;São Pedro do Sul;true;23;system
+4260;São Sebastião do Caí;true;23;system
+4261;São Sepé;true;23;system
+4262;São Valentim;true;23;system
+4263;São Valentim do Sul;true;23;system
+4264;São Valério do Sul;true;23;system
+4265;São Vendelino;true;23;system
+4266;São Vicente do Sul;true;23;system
+4267;Sapiranga;true;23;system
+4268;Sapucaia do Sul;true;23;system
+4269;Sarandi;true;23;system
+4270;Seberi;true;23;system
+4271;Sede Nova;true;23;system
+4272;Segredo;true;23;system
+4273;Selbach;true;23;system
+4274;Senador Salgado Filho;true;23;system
+4275;Sentinela do Sul;true;23;system
+4276;Serafina Corrêa;true;23;system
+4277;Sério;true;23;system
+4278;Sertão;true;23;system
+4279;Sertão Santana;true;23;system
+4280;Sete de Setembro;true;23;system
+4281;Severiano de Almeida;true;23;system
+4282;Silveira Martins;true;23;system
+4283;Sinimbu;true;23;system
+4284;Sobradinho;true;23;system
+4285;Soledade;true;23;system
+4286;Tabaí;true;23;system
+4287;Tapejara;true;23;system
+4288;Tapera;true;23;system
+4289;Tapes;true;23;system
+4290;Taquara;true;23;system
+4291;Taquari;true;23;system
+4292;Taquaruçu do Sul;true;23;system
+4293;Tavares;true;23;system
+4294;Tenente Portela;true;23;system
+4295;Terra de Areia;true;23;system
+4296;Teutônia;true;23;system
+4297;Tio Hugo;true;23;system
+4298;Tiradentes do Sul;true;23;system
+4299;Toropi;true;23;system
+4300;Torres;true;23;system
+4301;Tramandaí;true;23;system
+4302;Travesseiro;true;23;system
+4303;Três Arroios;true;23;system
+4304;Três Cachoeiras;true;23;system
+4305;Três Coroas;true;23;system
+4306;Três de Maio;true;23;system
+4307;Três Forquilhas;true;23;system
+4308;Três Palmeiras;true;23;system
+4309;Três Passos;true;23;system
+4310;Trindade do Sul;true;23;system
+4311;Triunfo;true;23;system
+4312;Tucunduva;true;23;system
+4313;Tunas;true;23;system
+4314;Tupanci do Sul;true;23;system
+4315;Tupanciretã;true;23;system
+4316;Tupandi;true;23;system
+4317;Tuparendi;true;23;system
+4318;Turuçu;true;23;system
+4319;Ubiretama;true;23;system
+4320;União da Serra;true;23;system
+4321;Unistalda;true;23;system
+4322;Uruguaiana;true;23;system
+4323;Vacaria;true;23;system
+4324;Vale do Sol;true;23;system
+4325;Vale Real;true;23;system
+4326;Vale Verde;true;23;system
+4327;Vanini;true;23;system
+4328;Venâncio Aires;true;23;system
+4329;Vera Cruz;true;23;system
+4330;Veranópolis;true;23;system
+4331;Vespasiano Correa;true;23;system
+4332;Viadutos;true;23;system
+4333;Viamão;true;23;system
+4334;Vicente Dutra;true;23;system
+4335;Victor Graeff;true;23;system
+4336;Vila Flores;true;23;system
+4337;Vila Lângaro;true;23;system
+4338;Vila Maria;true;23;system
+4339;Vila Nova do Sul;true;23;system
+4340;Vista Alegre;true;23;system
+4341;Vista Alegre do Prata;true;23;system
+4342;Vista Gaúcha;true;23;system
+4343;Vitória das Missões;true;23;system
+4344;Westfália;true;23;system
+4345;Xangri-lá;true;23;system
+4346;Alta Floresta d`Oeste;true;21;system
+4347;Alto Alegre dos Parecis;true;21;system
+4348;Alto Paraíso;true;21;system
+4349;Alvorada d`Oeste;true;21;system
+4350;Ariquemes;true;21;system
+4351;Buritis;true;21;system
+4352;Cabixi;true;21;system
+4353;Cacaulândia;true;21;system
+4354;Cacoal;true;21;system
+4355;Campo Novo de Rondônia;true;21;system
+4356;Candeias do Jamari;true;21;system
+4357;Castanheiras;true;21;system
+4358;Cerejeiras;true;21;system
+4359;Chupinguaia;true;21;system
+4360;Colorado do Oeste;true;21;system
+4361;Corumbiara;true;21;system
+4362;Costa Marques;true;21;system
+4363;Cujubim;true;21;system
+4364;Espigão d`Oeste;true;21;system
+4365;Governador Jorge Teixeira;true;21;system
+4366;Guajará-Mirim;true;21;system
+4367;Itapuã do Oeste;true;21;system
+4368;Jaru;true;21;system
+4369;Ji-Paraná;true;21;system
+4370;Machadinho d`Oeste;true;21;system
+4371;Ministro Andreazza;true;21;system
+4372;Mirante da Serra;true;21;system
+4373;Monte Negro;true;21;system
+4374;Nova Brasilândia d`Oeste;true;21;system
+4375;Nova Mamoré;true;21;system
+4376;Nova União;true;21;system
+4377;Novo Horizonte do Oeste;true;21;system
+4378;Ouro Preto do Oeste;true;21;system
+4379;Parecis;true;21;system
+4380;Pimenta Bueno;true;21;system
+4381;Pimenteiras do Oeste;true;21;system
+4382;Porto Velho;true;21;system
+4383;Presidente Médici;true;21;system
+4384;Primavera de Rondônia;true;21;system
+4385;Rio Crespo;true;21;system
+4386;Rolim de Moura;true;21;system
+4387;Santa Luzia d`Oeste;true;21;system
+4388;São Felipe d`Oeste;true;21;system
+4389;São Francisco do Guaporé;true;21;system
+4390;São Miguel do Guaporé;true;21;system
+4391;Seringueiras;true;21;system
+4392;Teixeirópolis;true;21;system
+4393;Theobroma;true;21;system
+4394;Urupá;true;21;system
+4395;Vale do Anari;true;21;system
+4396;Vale do Paraíso;true;21;system
+4397;Vilhena;true;21;system
+4398;Alto Alegre;true;22;system
+4399;Amajari;true;22;system
+4400;Boa Vista;true;22;system
+4401;Bonfim;true;22;system
+4402;Cantá;true;22;system
+4403;Caracaraí;true;22;system
+4404;Caroebe;true;22;system
+4405;Iracema;true;22;system
+4406;Mucajaí;true;22;system
+4407;Normandia;true;22;system
+4408;Pacaraima;true;22;system
+4409;Rorainópolis;true;22;system
+4410;São João da Baliza;true;22;system
+4411;São Luiz;true;22;system
+4412;Uiramutã;true;22;system
+4413;Abdon Batista;true;24;system
+4414;Abelardo Luz;true;24;system
+4415;Agrolândia;true;24;system
+4416;Agronômica;true;24;system
+4417;Água Doce;true;24;system
+4418;Águas de Chapecó;true;24;system
+4419;Águas Frias;true;24;system
+4420;Águas Mornas;true;24;system
+4421;Alfredo Wagner;true;24;system
+4422;Alto Bela Vista;true;24;system
+4423;Anchieta;true;24;system
+4424;Angelina;true;24;system
+4425;Anita Garibaldi;true;24;system
+4426;Anitápolis;true;24;system
+4427;Antônio Carlos;true;24;system
+4428;Apiúna;true;24;system
+4429;Arabutã;true;24;system
+4430;Araquari;true;24;system
+4431;Araranguá;true;24;system
+4432;Armazém;true;24;system
+4433;Arroio Trinta;true;24;system
+4434;Arvoredo;true;24;system
+4435;Ascurra;true;24;system
+4436;Atalanta;true;24;system
+4437;Aurora;true;24;system
+4438;Balneário Arroio do Silva;true;24;system
+4439;Balneário Barra do Sul;true;24;system
+4440;Balneário Camboriú;true;24;system
+4441;Balneário Gaivota;true;24;system
+4442;Bandeirante;true;24;system
+4443;Barra Bonita;true;24;system
+4444;Barra Velha;true;24;system
+4445;Bela Vista do Toldo;true;24;system
+4446;Belmonte;true;24;system
+4447;Benedito Novo;true;24;system
+4448;Biguaçu;true;24;system
+4449;Blumenau;true;24;system
+4450;Bocaina do Sul;true;24;system
+4451;Bom Jardim da Serra;true;24;system
+4452;Bom Jesus;true;24;system
+4453;Bom Jesus do Oeste;true;24;system
+4454;Bom Retiro;true;24;system
+4455;Bombinhas;true;24;system
+4456;Botuverá;true;24;system
+4457;Braço do Norte;true;24;system
+4458;Braço do Trombudo;true;24;system
+4459;Brunópolis;true;24;system
+4460;Brusque;true;24;system
+4461;Caçador;true;24;system
+4462;Caibi;true;24;system
+4463;Calmon;true;24;system
+4464;Camboriú;true;24;system
+4465;Campo Alegre;true;24;system
+4466;Campo Belo do Sul;true;24;system
+4467;Campo Erê;true;24;system
+4468;Campos Novos;true;24;system
+4469;Canelinha;true;24;system
+4470;Canoinhas;true;24;system
+4471;Capão Alto;true;24;system
+4472;Capinzal;true;24;system
+4473;Capivari de Baixo;true;24;system
+4474;Catanduvas;true;24;system
+4475;Caxambu do Sul;true;24;system
+4476;Celso Ramos;true;24;system
+4477;Cerro Negro;true;24;system
+4478;Chapadão do Lageado;true;24;system
+4479;Chapecó;true;24;system
+4480;Cocal do Sul;true;24;system
+4481;Concórdia;true;24;system
+4482;Cordilheira Alta;true;24;system
+4483;Coronel Freitas;true;24;system
+4484;Coronel Martins;true;24;system
+4485;Correia Pinto;true;24;system
+4486;Corupá;true;24;system
+4487;Criciúma;true;24;system
+4488;Cunha Porã;true;24;system
+4489;Cunhataí;true;24;system
+4490;Curitibanos;true;24;system
+4491;Descanso;true;24;system
+4492;Dionísio Cerqueira;true;24;system
+4493;Dona Emma;true;24;system
+4494;Doutor Pedrinho;true;24;system
+4495;Entre Rios;true;24;system
+4496;Ermo;true;24;system
+4497;Erval Velho;true;24;system
+4498;Faxinal dos Guedes;true;24;system
+4499;Flor do Sertão;true;24;system
+4500;Florianópolis;true;24;system
+4501;Formosa do Sul;true;24;system
+4502;Forquilhinha;true;24;system
+4503;Fraiburgo;true;24;system
+4504;Frei Rogério;true;24;system
+4505;Galvão;true;24;system
+4506;Garopaba;true;24;system
+4507;Garuva;true;24;system
+4508;Gaspar;true;24;system
+4509;Governador Celso Ramos;true;24;system
+4510;Grão Pará;true;24;system
+4511;Gravatal;true;24;system
+4512;Guabiruba;true;24;system
+4513;Guaraciaba;true;24;system
+4514;Guaramirim;true;24;system
+4515;Guarujá do Sul;true;24;system
+4516;Guatambú;true;24;system
+4517;Herval d`Oeste;true;24;system
+4518;Ibiam;true;24;system
+4519;Ibicaré;true;24;system
+4520;Ibirama;true;24;system
+4521;Içara;true;24;system
+4522;Ilhota;true;24;system
+4523;Imaruí;true;24;system
+4524;Imbituba;true;24;system
+4525;Imbuia;true;24;system
+4526;Indaial;true;24;system
+4527;Iomerê;true;24;system
+4528;Ipira;true;24;system
+4529;Iporã do Oeste;true;24;system
+4530;Ipuaçu;true;24;system
+4531;Ipumirim;true;24;system
+4532;Iraceminha;true;24;system
+4533;Irani;true;24;system
+4534;Irati;true;24;system
+4535;Irineópolis;true;24;system
+4536;Itá;true;24;system
+4537;Itaiópolis;true;24;system
+4538;Itajaí;true;24;system
+4539;Itapema;true;24;system
+4540;Itapiranga;true;24;system
+4541;Itapoá;true;24;system
+4542;Ituporanga;true;24;system
+4543;Jaborá;true;24;system
+4544;Jacinto Machado;true;24;system
+4545;Jaguaruna;true;24;system
+4546;Jaraguá do Sul;true;24;system
+4547;Jardinópolis;true;24;system
+4548;Joaçaba;true;24;system
+4549;Joinville;true;24;system
+4550;José Boiteux;true;24;system
+4551;Jupiá;true;24;system
+4552;Lacerdópolis;true;24;system
+4553;Lages;true;24;system
+4554;Laguna;true;24;system
+4555;Lajeado Grande;true;24;system
+4556;Laurentino;true;24;system
+4557;Lauro Muller;true;24;system
+4558;Lebon Régis;true;24;system
+4559;Leoberto Leal;true;24;system
+4560;Lindóia do Sul;true;24;system
+4561;Lontras;true;24;system
+4562;Luiz Alves;true;24;system
+4563;Luzerna;true;24;system
+4564;Macieira;true;24;system
+4565;Mafra;true;24;system
+4566;Major Gercino;true;24;system
+4567;Major Vieira;true;24;system
+4568;Maracajá;true;24;system
+4569;Maravilha;true;24;system
+4570;Marema;true;24;system
+4571;Massaranduba;true;24;system
+4572;Matos Costa;true;24;system
+4573;Meleiro;true;24;system
+4574;Mirim Doce;true;24;system
+4575;Modelo;true;24;system
+4576;Mondaí;true;24;system
+4577;Monte Carlo;true;24;system
+4578;Monte Castelo;true;24;system
+4579;Morro da Fumaça;true;24;system
+4580;Morro Grande;true;24;system
+4581;Navegantes;true;24;system
+4582;Nova Erechim;true;24;system
+4583;Nova Itaberaba;true;24;system
+4584;Nova Trento;true;24;system
+4585;Nova Veneza;true;24;system
+4586;Novo Horizonte;true;24;system
+4587;Orleans;true;24;system
+4588;Otacílio Costa;true;24;system
+4589;Ouro;true;24;system
+4590;Ouro Verde;true;24;system
+4591;Paial;true;24;system
+4592;Painel;true;24;system
+4593;Palhoça;true;24;system
+4594;Palma Sola;true;24;system
+4595;Palmeira;true;24;system
+4596;Palmitos;true;24;system
+4597;Papanduva;true;24;system
+4598;Paraíso;true;24;system
+4599;Passo de Torres;true;24;system
+4600;Passos Maia;true;24;system
+4601;Paulo Lopes;true;24;system
+4602;Pedras Grandes;true;24;system
+4603;Penha;true;24;system
+4604;Peritiba;true;24;system
+4605;Petrolândia;true;24;system
+4606;Piçarras;true;24;system
+4607;Pinhalzinho;true;24;system
+4608;Pinheiro Preto;true;24;system
+4609;Piratuba;true;24;system
+4610;Planalto Alegre;true;24;system
+4611;Pomerode;true;24;system
+4612;Ponte Alta;true;24;system
+4613;Ponte Alta do Norte;true;24;system
+4614;Ponte Serrada;true;24;system
+4615;Porto Belo;true;24;system
+4616;Porto União;true;24;system
+4617;Pouso Redondo;true;24;system
+4618;Praia Grande;true;24;system
+4619;Presidente Castelo Branco;true;24;system
+4620;Presidente Getúlio;true;24;system
+4621;Presidente Nereu;true;24;system
+4622;Princesa;true;24;system
+4623;Quilombo;true;24;system
+4624;Rancho Queimado;true;24;system
+4625;Rio das Antas;true;24;system
+4626;Rio do Campo;true;24;system
+4627;Rio do Oeste;true;24;system
+4628;Rio do Sul;true;24;system
+4629;Rio dos Cedros;true;24;system
+4630;Rio Fortuna;true;24;system
+4631;Rio Negrinho;true;24;system
+4632;Rio Rufino;true;24;system
+4633;Riqueza;true;24;system
+4634;Rodeio;true;24;system
+4635;Romelândia;true;24;system
+4636;Salete;true;24;system
+4637;Saltinho;true;24;system
+4638;Salto Veloso;true;24;system
+4639;Sangão;true;24;system
+4640;Santa Cecília;true;24;system
+4641;Santa Helena;true;24;system
+4642;Santa Rosa de Lima;true;24;system
+4643;Santa Rosa do Sul;true;24;system
+4644;Santa Terezinha;true;24;system
+4645;Santa Terezinha do Progresso;true;24;system
+4646;Santiago do Sul;true;24;system
+4647;Santo Amaro da Imperatriz;true;24;system
+4648;São Bento do Sul;true;24;system
+4649;São Bernardino;true;24;system
+4650;São Bonifácio;true;24;system
+4651;São Carlos;true;24;system
+4652;São Cristovão do Sul;true;24;system
+4653;São Domingos;true;24;system
+4654;São Francisco do Sul;true;24;system
+4655;São João Batista;true;24;system
+4656;São João do Itaperiú;true;24;system
+4657;São João do Oeste;true;24;system
+4658;São João do Sul;true;24;system
+4659;São Joaquim;true;24;system
+4660;São José;true;24;system
+4661;São José do Cedro;true;24;system
+4662;São José do Cerrito;true;24;system
+4663;São Lourenço do Oeste;true;24;system
+4664;São Ludgero;true;24;system
+4665;São Martinho;true;24;system
+4666;São Miguel da Boa Vista;true;24;system
+4667;São Miguel do Oeste;true;24;system
+4668;São Pedro de Alcântara;true;24;system
+4669;Saudades;true;24;system
+4670;Schroeder;true;24;system
+4671;Seara;true;24;system
+4672;Serra Alta;true;24;system
+4673;Siderópolis;true;24;system
+4674;Sombrio;true;24;system
+4675;Sul Brasil;true;24;system
+4676;Taió;true;24;system
+4677;Tangará;true;24;system
+4678;Tigrinhos;true;24;system
+4679;Tijucas;true;24;system
+4680;Timbé do Sul;true;24;system
+4681;Timbó;true;24;system
+4682;Timbó Grande;true;24;system
+4683;Três Barras;true;24;system
+4684;Treviso;true;24;system
+4685;Treze de Maio;true;24;system
+4686;Treze Tílias;true;24;system
+4687;Trombudo Central;true;24;system
+4688;Tubarão;true;24;system
+4689;Tunápolis;true;24;system
+4690;Turvo;true;24;system
+4691;União do Oeste;true;24;system
+4692;Urubici;true;24;system
+4693;Urupema;true;24;system
+4694;Urussanga;true;24;system
+4695;Vargeão;true;24;system
+4696;Vargem;true;24;system
+4697;Vargem Bonita;true;24;system
+4698;Vidal Ramos;true;24;system
+4699;Videira;true;24;system
+4700;Vitor Meireles;true;24;system
+4701;Witmarsum;true;24;system
+4702;Xanxerê;true;24;system
+4703;Xavantina;true;24;system
+4704;Xaxim;true;24;system
+4705;Zortéa;true;24;system
+4706;Adamantina;true;26;system
+4707;Adolfo;true;26;system
+4708;Aguaí;true;26;system
+4709;Águas da Prata;true;26;system
+4710;Águas de Lindóia;true;26;system
+4711;Águas de Santa Bárbara;true;26;system
+4712;Águas de São Pedro;true;26;system
+4713;Agudos;true;26;system
+4714;Alambari;true;26;system
+4715;Alfredo Marcondes;true;26;system
+4716;Altair;true;26;system
+4717;Altinópolis;true;26;system
+4718;Alto Alegre;true;26;system
+4719;Alumínio;true;26;system
+4720;Álvares Florence;true;26;system
+4721;Álvares Machado;true;26;system
+4722;Álvaro de Carvalho;true;26;system
+4723;Alvinlândia;true;26;system
+4724;Americana;true;26;system
+4725;Américo Brasiliense;true;26;system
+4726;Américo de Campos;true;26;system
+4727;Amparo;true;26;system
+4728;Analândia;true;26;system
+4729;Andradina;true;26;system
+4730;Angatuba;true;26;system
+4731;Anhembi;true;26;system
+4732;Anhumas;true;26;system
+4733;Aparecida;true;26;system
+4734;Aparecida d`Oeste;true;26;system
+4735;Apiaí;true;26;system
+4736;Araçariguama;true;26;system
+4737;Araçatuba;true;26;system
+4738;Araçoiaba da Serra;true;26;system
+4739;Aramina;true;26;system
+4740;Arandu;true;26;system
+4741;Arapeí;true;26;system
+4742;Araraquara;true;26;system
+4743;Araras;true;26;system
+4744;Arco-Íris;true;26;system
+4745;Arealva;true;26;system
+4746;Areias;true;26;system
+4747;Areiópolis;true;26;system
+4748;Ariranha;true;26;system
+4749;Artur Nogueira;true;26;system
+4750;Arujá;true;26;system
+4751;Aspásia;true;26;system
+4752;Assis;true;26;system
+4753;Atibaia;true;26;system
+4754;Auriflama;true;26;system
+4755;Avaí;true;26;system
+4756;Avanhandava;true;26;system
+4757;Avaré;true;26;system
+4758;Bady Bassitt;true;26;system
+4759;Balbinos;true;26;system
+4760;Bálsamo;true;26;system
+4761;Bananal;true;26;system
+4762;Barão de Antonina;true;26;system
+4763;Barbosa;true;26;system
+4764;Bariri;true;26;system
+4765;Barra Bonita;true;26;system
+4766;Barra do Chapéu;true;26;system
+4767;Barra do Turvo;true;26;system
+4768;Barretos;true;26;system
+4769;Barrinha;true;26;system
+4770;Barueri;true;26;system
+4771;Bastos;true;26;system
+4772;Batatais;true;26;system
+4773;Bauru;true;26;system
+4774;Bebedouro;true;26;system
+4775;Bento de Abreu;true;26;system
+4776;Bernardino de Campos;true;26;system
+4777;Bertioga;true;26;system
+4778;Bilac;true;26;system
+4779;Birigui;true;26;system
+4780;Biritiba-Mirim;true;26;system
+4781;Boa Esperança do Sul;true;26;system
+4782;Bocaina;true;26;system
+4783;Bofete;true;26;system
+4784;Boituva;true;26;system
+4785;Bom Jesus dos Perdões;true;26;system
+4786;Bom Sucesso de Itararé;true;26;system
+4787;Borá;true;26;system
+4788;Boracéia;true;26;system
+4789;Borborema;true;26;system
+4790;Borebi;true;26;system
+4791;Botucatu;true;26;system
+4792;Bragança Paulista;true;26;system
+4793;Braúna;true;26;system
+4794;Brejo Alegre;true;26;system
+4795;Brodowski;true;26;system
+4796;Brotas;true;26;system
+4797;Buri;true;26;system
+4798;Buritama;true;26;system
+4799;Buritizal;true;26;system
+4800;Cabrália Paulista;true;26;system
+4801;Cabreúva;true;26;system
+4802;Caçapava;true;26;system
+4803;Cachoeira Paulista;true;26;system
+4804;Caconde;true;26;system
+4805;Cafelândia;true;26;system
+4806;Caiabu;true;26;system
+4807;Caieiras;true;26;system
+4808;Caiuá;true;26;system
+4809;Cajamar;true;26;system
+4810;Cajati;true;26;system
+4811;Cajobi;true;26;system
+4812;Cajuru;true;26;system
+4813;Campina do Monte Alegre;true;26;system
+4814;Campinas;true;26;system
+4815;Campo Limpo Paulista;true;26;system
+4816;Campos do Jordão;true;26;system
+4817;Campos Novos Paulista;true;26;system
+4818;Cananéia;true;26;system
+4819;Canas;true;26;system
+4820;Cândido Mota;true;26;system
+4821;Cândido Rodrigues;true;26;system
+4822;Canitar;true;26;system
+4823;Capão Bonito;true;26;system
+4824;Capela do Alto;true;26;system
+4825;Capivari;true;26;system
+4826;Caraguatatuba;true;26;system
+4827;Carapicuíba;true;26;system
+4828;Cardoso;true;26;system
+4829;Casa Branca;true;26;system
+4830;Cássia dos Coqueiros;true;26;system
+4831;Castilho;true;26;system
+4832;Catanduva;true;26;system
+4833;Catiguá;true;26;system
+4834;Cedral;true;26;system
+4835;Cerqueira César;true;26;system
+4836;Cerquilho;true;26;system
+4837;Cesário Lange;true;26;system
+4838;Charqueada;true;26;system
+4839;Chavantes;true;26;system
+4840;Clementina;true;26;system
+4841;Colina;true;26;system
+4842;Colômbia;true;26;system
+4843;Conchal;true;26;system
+4844;Conchas;true;26;system
+4845;Cordeirópolis;true;26;system
+4846;Coroados;true;26;system
+4847;Coronel Macedo;true;26;system
+4848;Corumbataí;true;26;system
+4849;Cosmópolis;true;26;system
+4850;Cosmorama;true;26;system
+4851;Cotia;true;26;system
+4852;Cravinhos;true;26;system
+4853;Cristais Paulista;true;26;system
+4854;Cruzália;true;26;system
+4855;Cruzeiro;true;26;system
+4856;Cubatão;true;26;system
+4857;Cunha;true;26;system
+4858;Descalvado;true;26;system
+4859;Diadema;true;26;system
+4860;Dirce Reis;true;26;system
+4861;Divinolândia;true;26;system
+4862;Dobrada;true;26;system
+4863;Dois Córregos;true;26;system
+4864;Dolcinópolis;true;26;system
+4865;Dourado;true;26;system
+4866;Dracena;true;26;system
+4867;Duartina;true;26;system
+4868;Dumont;true;26;system
+4869;Echaporã;true;26;system
+4870;Eldorado;true;26;system
+4871;Elias Fausto;true;26;system
+4872;Elisiário;true;26;system
+4873;Embaúba;true;26;system
+4874;Embu;true;26;system
+4875;Embu-Guaçu;true;26;system
+4876;Emilianópolis;true;26;system
+4877;Engenheiro Coelho;true;26;system
+4878;Espírito Santo do Pinhal;true;26;system
+4879;Espírito Santo do Turvo;true;26;system
+4880;Estiva Gerbi;true;26;system
+4881;Estrela d`Oeste;true;26;system
+4882;Estrela do Norte;true;26;system
+4883;Euclides da Cunha Paulista;true;26;system
+4884;Fartura;true;26;system
+4885;Fernando Prestes;true;26;system
+4886;Fernandópolis;true;26;system
+4887;Fernão;true;26;system
+4888;Ferraz de Vasconcelos;true;26;system
+4889;Flora Rica;true;26;system
+4890;Floreal;true;26;system
+4891;Flórida Paulista;true;26;system
+4892;Florínia;true;26;system
+4893;Franca;true;26;system
+4894;Francisco Morato;true;26;system
+4895;Franco da Rocha;true;26;system
+4896;Gabriel Monteiro;true;26;system
+4897;Gália;true;26;system
+4898;Garça;true;26;system
+4899;Gastão Vidigal;true;26;system
+4900;Gavião Peixoto;true;26;system
+4901;General Salgado;true;26;system
+4902;Getulina;true;26;system
+4903;Glicério;true;26;system
+4904;Guaiçara;true;26;system
+4905;Guaimbê;true;26;system
+4906;Guaíra;true;26;system
+4907;Guapiaçu;true;26;system
+4908;Guapiara;true;26;system
+4909;Guará;true;26;system
+4910;Guaraçaí;true;26;system
+4911;Guaraci;true;26;system
+4912;Guarani d`Oeste;true;26;system
+4913;Guarantã;true;26;system
+4914;Guararapes;true;26;system
+4915;Guararema;true;26;system
+4916;Guaratinguetá;true;26;system
+4917;Guareí;true;26;system
+4918;Guariba;true;26;system
+4919;Guarujá;true;26;system
+4920;Guarulhos;true;26;system
+4921;Guatapará;true;26;system
+4922;Guzolândia;true;26;system
+4923;Herculândia;true;26;system
+4924;Holambra;true;26;system
+4925;Hortolândia;true;26;system
+4926;Iacanga;true;26;system
+4927;Iacri;true;26;system
+4928;Iaras;true;26;system
+4929;Ibaté;true;26;system
+4930;Ibirá;true;26;system
+4931;Ibirarema;true;26;system
+4932;Ibitinga;true;26;system
+4933;Ibiúna;true;26;system
+4934;Icém;true;26;system
+4935;Iepê;true;26;system
+4936;Igaraçu do Tietê;true;26;system
+4937;Igarapava;true;26;system
+4938;Igaratá;true;26;system
+4939;Iguape;true;26;system
+4940;Ilha Comprida;true;26;system
+4941;Ilha Solteira;true;26;system
+4942;Ilhabela;true;26;system
+4943;Indaiatuba;true;26;system
+4944;Indiana;true;26;system
+4945;Indiaporã;true;26;system
+4946;Inúbia Paulista;true;26;system
+4947;Ipaussu;true;26;system
+4948;Iperó;true;26;system
+4949;Ipeúna;true;26;system
+4950;Ipiguá;true;26;system
+4951;Iporanga;true;26;system
+4952;Ipuã;true;26;system
+4953;Iracemápolis;true;26;system
+4954;Irapuã;true;26;system
+4955;Irapuru;true;26;system
+4956;Itaberá;true;26;system
+4957;Itaí;true;26;system
+4958;Itajobi;true;26;system
+4959;Itaju;true;26;system
+4960;Itanhaém;true;26;system
+4961;Itaóca;true;26;system
+4962;Itapecerica da Serra;true;26;system
+4963;Itapetininga;true;26;system
+4964;Itapeva;true;26;system
+4965;Itapevi;true;26;system
+4966;Itapira;true;26;system
+4967;Itapirapuã Paulista;true;26;system
+4968;Itápolis;true;26;system
+4969;Itaporanga;true;26;system
+4970;Itapuí;true;26;system
+4971;Itapura;true;26;system
+4972;Itaquaquecetuba;true;26;system
+4973;Itararé;true;26;system
+4974;Itariri;true;26;system
+4975;Itatiba;true;26;system
+4976;Itatinga;true;26;system
+4977;Itirapina;true;26;system
+4978;Itirapuã;true;26;system
+4979;Itobi;true;26;system
+4980;Itu;true;26;system
+4981;Itupeva;true;26;system
+4982;Ituverava;true;26;system
+4983;Jaborandi;true;26;system
+4984;Jaboticabal;true;26;system
+4985;Jacareí;true;26;system
+4986;Jaci;true;26;system
+4987;Jacupiranga;true;26;system
+4988;Jaguariúna;true;26;system
+4989;Jales;true;26;system
+4990;Jambeiro;true;26;system
+4991;Jandira;true;26;system
+4992;Jardinópolis;true;26;system
+4993;Jarinu;true;26;system
+4994;Jaú;true;26;system
+4995;Jeriquara;true;26;system
+4996;Joanópolis;true;26;system
+4997;João Ramalho;true;26;system
+4998;José Bonifácio;true;26;system
+4999;Júlio Mesquita;true;26;system
+5000;Jumirim;true;26;system
+5001;Jundiaí;true;26;system
+5002;Junqueirópolis;true;26;system
+5003;Juquiá;true;26;system
+5004;Juquitiba;true;26;system
+5005;Lagoinha;true;26;system
+5006;Laranjal Paulista;true;26;system
+5007;Lavínia;true;26;system
+5008;Lavrinhas;true;26;system
+5009;Leme;true;26;system
+5010;Lençóis Paulista;true;26;system
+5011;Limeira;true;26;system
+5012;Lindóia;true;26;system
+5013;Lins;true;26;system
+5014;Lorena;true;26;system
+5015;Lourdes;true;26;system
+5016;Louveira;true;26;system
+5017;Lucélia;true;26;system
+5018;Lucianópolis;true;26;system
+5019;Luís Antônio;true;26;system
+5020;Luiziânia;true;26;system
+5021;Lupércio;true;26;system
+5022;Lutécia;true;26;system
+5023;Macatuba;true;26;system
+5024;Macaubal;true;26;system
+5025;Macedônia;true;26;system
+5026;Magda;true;26;system
+5027;Mairinque;true;26;system
+5028;Mairiporã;true;26;system
+5029;Manduri;true;26;system
+5030;Marabá Paulista;true;26;system
+5031;Maracaí;true;26;system
+5032;Marapoama;true;26;system
+5033;Mariápolis;true;26;system
+5034;Marília;true;26;system
+5035;Marinópolis;true;26;system
+5036;Martinópolis;true;26;system
+5037;Matão;true;26;system
+5038;Mauá;true;26;system
+5039;Mendonça;true;26;system
+5040;Meridiano;true;26;system
+5041;Mesópolis;true;26;system
+5042;Miguelópolis;true;26;system
+5043;Mineiros do Tietê;true;26;system
+5044;Mira Estrela;true;26;system
+5045;Miracatu;true;26;system
+5046;Mirandópolis;true;26;system
+5047;Mirante do Paranapanema;true;26;system
+5048;Mirassol;true;26;system
+5049;Mirassolândia;true;26;system
+5050;Mococa;true;26;system
+5051;Mogi das Cruzes;true;26;system
+5052;Mogi Guaçu;true;26;system
+5053;Moji Mirim;true;26;system
+5054;Mombuca;true;26;system
+5055;Monções;true;26;system
+5056;Mongaguá;true;26;system
+5057;Monte Alegre do Sul;true;26;system
+5058;Monte Alto;true;26;system
+5059;Monte Aprazível;true;26;system
+5060;Monte Azul Paulista;true;26;system
+5061;Monte Castelo;true;26;system
+5062;Monte Mor;true;26;system
+5063;Monteiro Lobato;true;26;system
+5064;Morro Agudo;true;26;system
+5065;Morungaba;true;26;system
+5066;Motuca;true;26;system
+5067;Murutinga do Sul;true;26;system
+5068;Nantes;true;26;system
+5069;Narandiba;true;26;system
+5070;Natividade da Serra;true;26;system
+5071;Nazaré Paulista;true;26;system
+5072;Neves Paulista;true;26;system
+5073;Nhandeara;true;26;system
+5074;Nipoã;true;26;system
+5075;Nova Aliança;true;26;system
+5076;Nova Campina;true;26;system
+5077;Nova Canaã Paulista;true;26;system
+5078;Nova Castilho;true;26;system
+5079;Nova Europa;true;26;system
+5080;Nova Granada;true;26;system
+5081;Nova Guataporanga;true;26;system
+5082;Nova Independência;true;26;system
+5083;Nova Luzitânia;true;26;system
+5084;Nova Odessa;true;26;system
+5085;Novais;true;26;system
+5086;Novo Horizonte;true;26;system
+5087;Nuporanga;true;26;system
+5088;Ocauçu;true;26;system
+5089;Óleo;true;26;system
+5090;Olímpia;true;26;system
+5091;Onda Verde;true;26;system
+5092;Oriente;true;26;system
+5093;Orindiúva;true;26;system
+5094;Orlândia;true;26;system
+5095;Osasco;true;26;system
+5096;Oscar Bressane;true;26;system
+5097;Osvaldo Cruz;true;26;system
+5098;Ourinhos;true;26;system
+5099;Ouro Verde;true;26;system
+5100;Ouroeste;true;26;system
+5101;Pacaembu;true;26;system
+5102;Palestina;true;26;system
+5103;Palmares Paulista;true;26;system
+5104;Palmeira d`Oeste;true;26;system
+5105;Palmital;true;26;system
+5106;Panorama;true;26;system
+5107;Paraguaçu Paulista;true;26;system
+5108;Paraibuna;true;26;system
+5109;Paraíso;true;26;system
+5110;Paranapanema;true;26;system
+5111;Paranapuã;true;26;system
+5112;Parapuã;true;26;system
+5113;Pardinho;true;26;system
+5114;Pariquera-Açu;true;26;system
+5115;Parisi;true;26;system
+5116;Patrocínio Paulista;true;26;system
+5117;Paulicéia;true;26;system
+5118;Paulínia;true;26;system
+5119;Paulistânia;true;26;system
+5120;Paulo de Faria;true;26;system
+5121;Pederneiras;true;26;system
+5122;Pedra Bela;true;26;system
+5123;Pedranópolis;true;26;system
+5124;Pedregulho;true;26;system
+5125;Pedreira;true;26;system
+5126;Pedrinhas Paulista;true;26;system
+5127;Pedro de Toledo;true;26;system
+5128;Penápolis;true;26;system
+5129;Pereira Barreto;true;26;system
+5130;Pereiras;true;26;system
+5131;Peruíbe;true;26;system
+5132;Piacatu;true;26;system
+5133;Piedade;true;26;system
+5134;Pilar do Sul;true;26;system
+5135;Pindamonhangaba;true;26;system
+5136;Pindorama;true;26;system
+5137;Pinhalzinho;true;26;system
+5138;Piquerobi;true;26;system
+5139;Piquete;true;26;system
+5140;Piracaia;true;26;system
+5141;Piracicaba;true;26;system
+5142;Piraju;true;26;system
+5143;Pirajuí;true;26;system
+5144;Pirangi;true;26;system
+5145;Pirapora do Bom Jesus;true;26;system
+5146;Pirapozinho;true;26;system
+5147;Pirassununga;true;26;system
+5148;Piratininga;true;26;system
+5149;Pitangueiras;true;26;system
+5150;Planalto;true;26;system
+5151;Platina;true;26;system
+5152;Poá;true;26;system
+5153;Poloni;true;26;system
+5154;Pompéia;true;26;system
+5155;Pongaí;true;26;system
+5156;Pontal;true;26;system
+5157;Pontalinda;true;26;system
+5158;Pontes Gestal;true;26;system
+5159;Populina;true;26;system
+5160;Porangaba;true;26;system
+5161;Porto Feliz;true;26;system
+5162;Porto Ferreira;true;26;system
+5163;Potim;true;26;system
+5164;Potirendaba;true;26;system
+5165;Pracinha;true;26;system
+5166;Pradópolis;true;26;system
+5167;Praia Grande;true;26;system
+5168;Pratânia;true;26;system
+5169;Presidente Alves;true;26;system
+5170;Presidente Bernardes;true;26;system
+5171;Presidente Epitácio;true;26;system
+5172;Presidente Prudente;true;26;system
+5173;Presidente Venceslau;true;26;system
+5174;Promissão;true;26;system
+5175;Quadra;true;26;system
+5176;Quatá;true;26;system
+5177;Queiroz;true;26;system
+5178;Queluz;true;26;system
+5179;Quintana;true;26;system
+5180;Rafard;true;26;system
+5181;Rancharia;true;26;system
+5182;Redenção da Serra;true;26;system
+5183;Regente Feijó;true;26;system
+5184;Reginópolis;true;26;system
+5185;Registro;true;26;system
+5186;Restinga;true;26;system
+5187;Ribeira;true;26;system
+5188;Ribeirão Bonito;true;26;system
+5189;Ribeirão Branco;true;26;system
+5190;Ribeirão Corrente;true;26;system
+5191;Ribeirão do Sul;true;26;system
+5192;Ribeirão dos Índios;true;26;system
+5193;Ribeirão Grande;true;26;system
+5194;Ribeirão Pires;true;26;system
+5195;Ribeirão Preto;true;26;system
+5196;Rifaina;true;26;system
+5197;Rincão;true;26;system
+5198;Rinópolis;true;26;system
+5199;Rio Claro;true;26;system
+5200;Rio das Pedras;true;26;system
+5201;Rio Grande da Serra;true;26;system
+5202;Riolândia;true;26;system
+5203;Riversul;true;26;system
+5204;Rosana;true;26;system
+5205;Roseira;true;26;system
+5206;Rubiácea;true;26;system
+5207;Rubinéia;true;26;system
+5208;Sabino;true;26;system
+5209;Sagres;true;26;system
+5210;Sales;true;26;system
+5211;Sales Oliveira;true;26;system
+5212;Salesópolis;true;26;system
+5213;Salmourão;true;26;system
+5214;Saltinho;true;26;system
+5215;Salto;true;26;system
+5216;Salto de Pirapora;true;26;system
+5217;Salto Grande;true;26;system
+5218;Sandovalina;true;26;system
+5219;Santa Adélia;true;26;system
+5220;Santa Albertina;true;26;system
+5221;Santa Bárbara d`Oeste;true;26;system
+5222;Santa Branca;true;26;system
+5223;Santa Clara d`Oeste;true;26;system
+5224;Santa Cruz da Conceição;true;26;system
+5225;Santa Cruz da Esperança;true;26;system
+5226;Santa Cruz das Palmeiras;true;26;system
+5227;Santa Cruz do Rio Pardo;true;26;system
+5228;Santa Ernestina;true;26;system
+5229;Santa Fé do Sul;true;26;system
+5230;Santa Gertrudes;true;26;system
+5231;Santa Isabel;true;26;system
+5232;Santa Lúcia;true;26;system
+5233;Santa Maria da Serra;true;26;system
+5234;Santa Mercedes;true;26;system
+5235;Santa Rita d`Oeste;true;26;system
+5236;Santa Rita do Passa Quatro;true;26;system
+5237;Santa Rosa de Viterbo;true;26;system
+5238;Santa Salete;true;26;system
+5239;Santana da Ponte Pensa;true;26;system
+5240;Santana de Parnaíba;true;26;system
+5241;Santo Anastácio;true;26;system
+5242;Santo André;true;26;system
+5243;Santo Antônio da Alegria;true;26;system
+5244;Santo Antônio de Posse;true;26;system
+5245;Santo Antônio do Aracanguá;true;26;system
+5246;Santo Antônio do Jardim;true;26;system
+5247;Santo Antônio do Pinhal;true;26;system
+5248;Santo Expedito;true;26;system
+5249;Santópolis do Aguapeí;true;26;system
+5250;Santos;true;26;system
+5251;São Bento do Sapucaí;true;26;system
+5252;São Bernardo do Campo;true;26;system
+5253;São Caetano do Sul;true;26;system
+5254;São Carlos;true;26;system
+5255;São Francisco;true;26;system
+5256;São João da Boa Vista;true;26;system
+5257;São João das Duas Pontes;true;26;system
+5258;São João de Iracema;true;26;system
+5259;São João do Pau d`Alho;true;26;system
+5260;São Joaquim da Barra;true;26;system
+5261;São José da Bela Vista;true;26;system
+5262;São José do Barreiro;true;26;system
+5263;São José do Rio Pardo;true;26;system
+5264;São José do Rio Preto;true;26;system
+5265;São José dos Campos;true;26;system
+5266;São Lourenço da Serra;true;26;system
+5267;São Luís do Paraitinga;true;26;system
+5268;São Manuel;true;26;system
+5269;São Miguel Arcanjo;true;26;system
+5270;São Paulo;true;26;system
+5271;São Pedro;true;26;system
+5272;São Pedro do Turvo;true;26;system
+5273;São Roque;true;26;system
+5274;São Sebastião;true;26;system
+5275;São Sebastião da Grama;true;26;system
+5276;São Simão;true;26;system
+5277;São Vicente;true;26;system
+5278;Sarapuí;true;26;system
+5279;Sarutaiá;true;26;system
+5280;Sebastianópolis do Sul;true;26;system
+5281;Serra Azul;true;26;system
+5282;Serra Negra;true;26;system
+5283;Serrana;true;26;system
+5284;Sertãozinho;true;26;system
+5285;Sete Barras;true;26;system
+5286;Severínia;true;26;system
+5287;Silveiras;true;26;system
+5288;Socorro;true;26;system
+5289;Sorocaba;true;26;system
+5290;Sud Mennucci;true;26;system
+5291;Sumaré;true;26;system
+5292;Suzanápolis;true;26;system
+5293;Suzano;true;26;system
+5294;Tabapuã;true;26;system
+5295;Tabatinga;true;26;system
+5296;Taboão da Serra;true;26;system
+5297;Taciba;true;26;system
+5298;Taguaí;true;26;system
+5299;Taiaçu;true;26;system
+5300;Taiúva;true;26;system
+5301;Tambaú;true;26;system
+5302;Tanabi;true;26;system
+5303;Tapiraí;true;26;system
+5304;Tapiratiba;true;26;system
+5305;Taquaral;true;26;system
+5306;Taquaritinga;true;26;system
+5307;Taquarituba;true;26;system
+5308;Taquarivaí;true;26;system
+5309;Tarabai;true;26;system
+5310;Tarumã;true;26;system
+5311;Tatuí;true;26;system
+5312;Taubaté;true;26;system
+5313;Tejupá;true;26;system
+5314;Teodoro Sampaio;true;26;system
+5315;Terra Roxa;true;26;system
+5316;Tietê;true;26;system
+5317;Timburi;true;26;system
+5318;Torre de Pedra;true;26;system
+5319;Torrinha;true;26;system
+5320;Trabiju;true;26;system
+5321;Tremembé;true;26;system
+5322;Três Fronteiras;true;26;system
+5323;Tuiuti;true;26;system
+5324;Tupã;true;26;system
+5325;Tupi Paulista;true;26;system
+5326;Turiúba;true;26;system
+5327;Turmalina;true;26;system
+5328;Ubarana;true;26;system
+5329;Ubatuba;true;26;system
+5330;Ubirajara;true;26;system
+5331;Uchoa;true;26;system
+5332;União Paulista;true;26;system
+5333;Urânia;true;26;system
+5334;Uru;true;26;system
+5335;Urupês;true;26;system
+5336;Valentim Gentil;true;26;system
+5337;Valinhos;true;26;system
+5338;Valparaíso;true;26;system
+5339;Vargem;true;26;system
+5340;Vargem Grande do Sul;true;26;system
+5341;Vargem Grande Paulista;true;26;system
+5342;Várzea Paulista;true;26;system
+5343;Vera Cruz;true;26;system
+5344;Vinhedo;true;26;system
+5345;Viradouro;true;26;system
+5346;Vista Alegre do Alto;true;26;system
+5347;Vitória Brasil;true;26;system
+5348;Votorantim;true;26;system
+5349;Votuporanga;true;26;system
+5350;Zacarias;true;26;system
+5351;Amparo de São Francisco;true;25;system
+5352;Aquidabã;true;25;system
+5353;Aracaju;true;25;system
+5354;Arauá;true;25;system
+5355;Areia Branca;true;25;system
+5356;Barra dos Coqueiros;true;25;system
+5357;Boquim;true;25;system
+5358;Brejo Grande;true;25;system
+5359;Campo do Brito;true;25;system
+5360;Canhoba;true;25;system
+5361;Canindé de São Francisco;true;25;system
+5362;Capela;true;25;system
+5363;Carira;true;25;system
+5364;Carmópolis;true;25;system
+5365;Cedro de São João;true;25;system
+5366;Cristinápolis;true;25;system
+5367;Cumbe;true;25;system
+5368;Divina Pastora;true;25;system
+5369;Estância;true;25;system
+5370;Feira Nova;true;25;system
+5371;Frei Paulo;true;25;system
+5372;Gararu;true;25;system
+5373;General Maynard;true;25;system
+5374;Gracho Cardoso;true;25;system
+5375;Ilha das Flores;true;25;system
+5376;Indiaroba;true;25;system
+5377;Itabaiana;true;25;system
+5378;Itabaianinha;true;25;system
+5379;Itabi;true;25;system
+5380;Itaporanga d`Ajuda;true;25;system
+5381;Japaratuba;true;25;system
+5382;Japoatã;true;25;system
+5383;Lagarto;true;25;system
+5384;Laranjeiras;true;25;system
+5385;Macambira;true;25;system
+5386;Malhada dos Bois;true;25;system
+5387;Malhador;true;25;system
+5388;Maruim;true;25;system
+5389;Moita Bonita;true;25;system
+5390;Monte Alegre de Sergipe;true;25;system
+5391;Muribeca;true;25;system
+5392;Neópolis;true;25;system
+5393;Nossa Senhora Aparecida;true;25;system
+5394;Nossa Senhora da Glória;true;25;system
+5395;Nossa Senhora das Dores;true;25;system
+5396;Nossa Senhora de Lourdes;true;25;system
+5397;Nossa Senhora do Socorro;true;25;system
+5398;Pacatuba;true;25;system
+5399;Pedra Mole;true;25;system
+5400;Pedrinhas;true;25;system
+5401;Pinhão;true;25;system
+5402;Pirambu;true;25;system
+5403;Poço Redondo;true;25;system
+5404;Poço Verde;true;25;system
+5405;Porto da Folha;true;25;system
+5406;Propriá;true;25;system
+5407;Riachão do Dantas;true;25;system
+5408;Riachuelo;true;25;system
+5409;Ribeirópolis;true;25;system
+5410;Rosário do Catete;true;25;system
+5411;Salgado;true;25;system
+5412;Santa Luzia do Itanhy;true;25;system
+5413;Santa Rosa de Lima;true;25;system
+5414;Santana do São Francisco;true;25;system
+5415;Santo Amaro das Brotas;true;25;system
+5416;São Cristóvão;true;25;system
+5417;São Domingos;true;25;system
+5418;São Francisco;true;25;system
+5419;São Miguel do Aleixo;true;25;system
+5420;Simão Dias;true;25;system
+5421;Siriri;true;25;system
+5422;Telha;true;25;system
+5423;Tobias Barreto;true;25;system
+5424;Tomar do Geru;true;25;system
+5425;Umbaúba;true;25;system
+5426;Abreulândia;true;27;system
+5427;Aguiarnópolis;true;27;system
+5428;Aliança do Tocantins;true;27;system
+5429;Almas;true;27;system
+5430;Alvorada;true;27;system
+5431;Ananás;true;27;system
+5432;Angico;true;27;system
+5433;Aparecida do Rio Negro;true;27;system
+5434;Aragominas;true;27;system
+5435;Araguacema;true;27;system
+5436;Araguaçu;true;27;system
+5437;Araguaína;true;27;system
+5438;Araguanã;true;27;system
+5439;Araguatins;true;27;system
+5440;Arapoema;true;27;system
+5441;Arraias;true;27;system
+5442;Augustinópolis;true;27;system
+5443;Aurora do Tocantins;true;27;system
+5444;Axixá do Tocantins;true;27;system
+5445;Babaçulândia;true;27;system
+5446;Bandeirantes do Tocantins;true;27;system
+5447;Barra do Ouro;true;27;system
+5448;Barrolândia;true;27;system
+5449;Bernardo Sayão;true;27;system
+5450;Bom Jesus do Tocantins;true;27;system
+5451;Brasilândia do Tocantins;true;27;system
+5452;Brejinho de Nazaré;true;27;system
+5453;Buriti do Tocantins;true;27;system
+5454;Cachoeirinha;true;27;system
+5455;Campos Lindos;true;27;system
+5456;Cariri do Tocantins;true;27;system
+5457;Carmolândia;true;27;system
+5458;Carrasco Bonito;true;27;system
+5459;Caseara;true;27;system
+5460;Centenário;true;27;system
+5461;Chapada da Natividade;true;27;system
+5462;Chapada de Areia;true;27;system
+5463;Colinas do Tocantins;true;27;system
+5464;Colméia;true;27;system
+5465;Combinado;true;27;system
+5466;Conceição do Tocantins;true;27;system
+5467;Couto de Magalhães;true;27;system
+5468;Cristalândia;true;27;system
+5469;Crixás do Tocantins;true;27;system
+5470;Darcinópolis;true;27;system
+5471;Dianópolis;true;27;system
+5472;Divinópolis do Tocantins;true;27;system
+5473;Dois Irmãos do Tocantins;true;27;system
+5474;Dueré;true;27;system
+5475;Esperantina;true;27;system
+5476;Fátima;true;27;system
+5477;Figueirópolis;true;27;system
+5478;Filadélfia;true;27;system
+5479;Formoso do Araguaia;true;27;system
+5480;Fortaleza do Tabocão;true;27;system
+5481;Goianorte;true;27;system
+5482;Goiatins;true;27;system
+5483;Guaraí;true;27;system
+5484;Gurupi;true;27;system
+5485;Ipueiras;true;27;system
+5486;Itacajá;true;27;system
+5487;Itaguatins;true;27;system
+5488;Itapiratins;true;27;system
+5489;Itaporã do Tocantins;true;27;system
+5490;Jaú do Tocantins;true;27;system
+5491;Juarina;true;27;system
+5492;Lagoa da Confusão;true;27;system
+5493;Lagoa do Tocantins;true;27;system
+5494;Lajeado;true;27;system
+5495;Lavandeira;true;27;system
+5496;Lizarda;true;27;system
+5497;Luzinópolis;true;27;system
+5498;Marianópolis do Tocantins;true;27;system
+5499;Mateiros;true;27;system
+5500;Maurilândia do Tocantins;true;27;system
+5501;Miracema do Tocantins;true;27;system
+5502;Miranorte;true;27;system
+5503;Monte do Carmo;true;27;system
+5504;Monte Santo do Tocantins;true;27;system
+5505;Muricilândia;true;27;system
+5506;Natividade;true;27;system
+5507;Nazaré;true;27;system
+5508;Nova Olinda;true;27;system
+5509;Nova Rosalândia;true;27;system
+5510;Novo Acordo;true;27;system
+5511;Novo Alegre;true;27;system
+5512;Novo Jardim;true;27;system
+5513;Oliveira de Fátima;true;27;system
+5514;Palmas;true;27;system
+5515;Palmeirante;true;27;system
+5516;Palmeiras do Tocantins;true;27;system
+5517;Palmeirópolis;true;27;system
+5518;Paraíso do Tocantins;true;27;system
+5519;Paranã;true;27;system
+5520;Pau d`Arco;true;27;system
+5521;Pedro Afonso;true;27;system
+5522;Peixe;true;27;system
+5523;Pequizeiro;true;27;system
+5524;Pindorama do Tocantins;true;27;system
+5525;Piraquê;true;27;system
+5526;Pium;true;27;system
+5527;Ponte Alta do Bom Jesus;true;27;system
+5528;Ponte Alta do Tocantins;true;27;system
+5529;Porto Alegre do Tocantins;true;27;system
+5530;Porto Nacional;true;27;system
+5531;Praia Norte;true;27;system
+5532;Presidente Kennedy;true;27;system
+5533;Pugmil;true;27;system
+5534;Recursolândia;true;27;system
+5535;Riachinho;true;27;system
+5536;Rio da Conceição;true;27;system
+5537;Rio dos Bois;true;27;system
+5538;Rio Sono;true;27;system
+5539;Sampaio;true;27;system
+5540;Sandolândia;true;27;system
+5541;Santa Fé do Araguaia;true;27;system
+5542;Santa Maria do Tocantins;true;27;system
+5543;Santa Rita do Tocantins;true;27;system
+5544;Santa Rosa do Tocantins;true;27;system
+5545;Santa Tereza do Tocantins;true;27;system
+5546;Santa Terezinha do Tocantins;true;27;system
+5547;São Bento do Tocantins;true;27;system
+5548;São Félix do Tocantins;true;27;system
+5549;São Miguel do Tocantins;true;27;system
+5550;São Salvador do Tocantins;true;27;system
+5551;São Sebastião do Tocantins;true;27;system
+5552;São Valério da Natividade;true;27;system
+5553;Silvanópolis;true;27;system
+5554;Sítio Novo do Tocantins;true;27;system
+5555;Sucupira;true;27;system
+5556;Taguatinga;true;27;system
+5557;Taipas do Tocantins;true;27;system
+5558;Talismã;true;27;system
+5559;Tocantínia;true;27;system
+5560;Tocantinópolis;true;27;system
+5561;Tupirama;true;27;system
+5562;Tupiratins;true;27;system
+5563;Wanderlândia;true;27;system
+5564;Xambioá;true;27;system

@@ -1,0 +1,28 @@
+id;name;acronym;country_id;created_by
+1;Acre;AC;1;system
+2;Alagoas;AL;1;system
+3;Amazonas;AM;1;system
+4;Amapá;AP;1;system
+5;Bahia;BA;1;system
+6;Ceará;CE;1;system
+7;Distrito Federal;DF;1;system
+8;Espírito Santo;ES;1;system
+9;Goiás;GO;1;system
+10;Maranhão;MA;1;system
+11;Minas Gerais;MG;1;system
+12;Mato Grosso do Sul;MS;1;system
+13;Mato Grosso;MT;1;system
+14;Pará;PA;1;system
+15;Paraíba;PB;1;system
+16;Pernambuco;PE;1;system
+17;Piauí;PI;1;system
+18;Paraná;PR;1;system
+19;Rio de Janeiro;RJ;1;system
+20;Rio Grande do Norte;RN;1;system
+21;Rondônia;RO;1;system
+22;Roraima;RR;1;system
+23;Rio Grande do Sul;RS;1;system
+24;Santa Catarina;SC;1;system
+25;Sergipe;SE;1;system
+26;São Paulo;SP;1;system
+27;Tocantins;TO;1;system

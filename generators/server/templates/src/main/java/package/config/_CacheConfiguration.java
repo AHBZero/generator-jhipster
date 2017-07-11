@@ -153,6 +153,7 @@ public class CacheConfiguration {
             cm.createCache(<%=packageName%>.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
             <%_ } _%>
             <%_ } _%>
+            cm.createCache(<%=packageName%>.domain.Photo.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

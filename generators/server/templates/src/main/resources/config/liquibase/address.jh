@@ -9,7 +9,8 @@ entity State {
 }
 
 entity City {
-	name String
+	name String,
+	active Boolean
 }
 
 entity Address {
@@ -29,13 +30,14 @@ enum PhoneType {
 }
 
 relationship OneToMany {
-	State{country} to Country,
-    City{state} to State
+	City{city} to Address,
+    State{state} to City,
+    Country{country} to State
 }
 
-relationship ManyToMany {
-	Address{city} to City
-}
+dto * with mapstruct
 
+service * with serviceClass
 
+paginate * with pager
 

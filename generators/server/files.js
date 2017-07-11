@@ -535,7 +535,7 @@ function writeFiles() {
 
             /* User management resources files */
             if (this.databaseType === 'sql') {
-                this.template(`${SERVER_MAIN_RES_DIR}config/liquibase/jhipster-jdl.jh`, `${SERVER_MAIN_RES_DIR}config/liquibase/jhipster-jdl.jh`);
+                this.template(`${SERVER_MAIN_RES_DIR}config/liquibase/address.jh`, `${SERVER_MAIN_RES_DIR}config/liquibase/address.jh`);
                 this.template(`${SERVER_MAIN_RES_DIR}config/liquibase/users.csv`, `${SERVER_MAIN_RES_DIR}config/liquibase/users.csv`);
                 this.copy(`${SERVER_MAIN_RES_DIR}config/liquibase/authorities.csv`, `${SERVER_MAIN_RES_DIR}config/liquibase/authorities.csv`);
                 this.copy(`${SERVER_MAIN_RES_DIR}config/liquibase/users_authorities.csv`, `${SERVER_MAIN_RES_DIR}config/liquibase/users_authorities.csv`);
@@ -582,7 +582,7 @@ function writeFiles() {
             this.template(`${SERVER_MAIN_SRC_DIR}package/service/_PhotoUploadService.java`, `${javaDir}service/PhotoUploadService.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/repository/_PhotoRepository.java`, `${javaDir}repository/PhotoRepository.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/event/_ProcessPhotoEvent.java`, `${javaDir}event/ProcessPhotoEvent.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/service/util/_ObjectId.java`, `${javaDir}service/util/_ObjectId.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/service/util/_ObjectId.java`, `${javaDir}service/util/ObjectId.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/service/dto/_UserDTO.java`, `${javaDir}service/dto/UserDTO.java`);
 
             this.template(`${SERVER_MAIN_SRC_DIR}package/web/rest/vm/_ManagedUserVM.java`, `${javaDir}web/rest/vm/ManagedUserVM.java`);

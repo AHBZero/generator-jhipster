@@ -18,6 +18,8 @@
 -%>
 package <%=packageName%>.web.rest.errors;
 
+import org.springframework.http.HttpStatus;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

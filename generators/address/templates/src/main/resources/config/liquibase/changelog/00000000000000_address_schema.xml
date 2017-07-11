@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="00000000000003" author="jhipster">
+
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/countries.csv"
+                  separator=";"
+                  tableName="country"/>
+
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/states.csv"
+                  separator=";"
+                  tableName="state"/>
+
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/cities.csv"
+                  separator=";"
+                  tableName="city">
+            <column name="active" type="boolean"/>
+        </loadData>
+
+    </changeSet>
+
+</databaseChangeLog>

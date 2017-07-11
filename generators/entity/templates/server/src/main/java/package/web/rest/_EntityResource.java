@@ -64,6 +64,7 @@ import java.net.URISyntaxException;
 <%_ const viaService = service !== 'no';
     if (pagination === 'no' && dto === 'mapstruct' && !viaService && fieldsContainNoOwnerOneToOne === true) { _%>
 import java.util.LinkedList;<% } %>
+import java.util.List;
 import java.util.Optional;<% if (databaseType === 'cassandra') { %>
 import java.util.UUID;<% } %><% if (!viaService && (searchEngine === 'elasticsearch' || fieldsContainNoOwnerOneToOne === true)) { %>
 import java.util.stream.Collectors;<% } %><% if (searchEngine === 'elasticsearch' || fieldsContainNoOwnerOneToOne === true) { %>
