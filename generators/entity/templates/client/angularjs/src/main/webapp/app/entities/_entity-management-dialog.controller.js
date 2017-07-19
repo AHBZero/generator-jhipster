@@ -88,7 +88,9 @@
                     + "\n            vm." + relationships[idx].relationshipFieldNamePlural.toLowerCase() + ".push(" + relationships[idx].relationshipFieldName + ");"
                     + "\n        });";
                     } else {
-                        query = 'vm.' + relationships[idx].otherEntityNameCapitalizedPlural.toLowerCase() + ' = ' + relationships[idx].otherEntityNameCapitalized + '.query();';
+                        query =  relationships[idx].otherEntityNameCapitalized + '.query(function (result) { ' +
+                            'vm.' + relationships[idx].otherEntityNameCapitalizedPlural.toLowerCase() + ' = result.content' +
+                            '});';
                     }
                 }
 

@@ -167,7 +167,7 @@ public class PhotoUploadService {
             ImageIO.write(image, "png", destFile);
             s3client.putObject(new PutObjectRequest(bucketName + "/" + photo.getId(), photo.getOriginalName(), destFile));
 
-            photo.setFile(null);
+            photo.setImage(null);
 
             photo.setProcessed(true);
             photoRepository.save(photo);

@@ -206,7 +206,20 @@
 
             function addAlert(alertOptions, extAlerts) {
                 var text = $translate.instant(alertOptions.msg, alertOptions.params);
-                noty.error(text, extAlerts);
+
+                switch (alertOptions.type) {
+                    case 'error' :
+                        noty.error(text, extAlerts);
+                        break;
+                    case 'success' :
+                        noty.success(text, extAlerts);
+                        break;
+                    default :
+                        noty.alert(text, extAlerts);
+                        break;
+
+                }
+
                 alertOptions.alertId = alertId++;
             <%_ if (enableTranslation) { _%>
                 alertOptions.msg = $translate.instant(alertOptions.msg, alertOptions.params);

@@ -500,6 +500,10 @@ function askForField(done) {
                 {
                     value: 'byte[]',
                     name: '[BETA] Blob'
+                },
+                {
+                    value: 'point',
+                    name: '[BETA] JTS Point'
                 }
             ],
             default: 0

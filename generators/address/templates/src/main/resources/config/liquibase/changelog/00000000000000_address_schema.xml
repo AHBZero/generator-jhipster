@@ -14,7 +14,9 @@
         <loadData encoding="UTF-8"
                   file="config/liquibase/states.csv"
                   separator=";"
-                  tableName="state"/>
+                  tableName="state">
+            <column name="active" type="boolean"/>
+        </loadData>
 
         <loadData encoding="UTF-8"
                   file="config/liquibase/cities.csv"

@@ -93,7 +93,6 @@ import <%=packageName%>.domain.enumeration.<%= element %>;
 @Document(indexName = "<%= entityInstance.toLowerCase() %>")
 <%_ } _%>
 public class <%= entityClass %> extends AbstractAuditingEntity implements Serializable {
-
 <% if (databaseType === 'sql') { %>
     @Id
     <%_ if (prodDatabaseType === 'mysql' || prodDatabaseType === 'mariadb') { _%>

@@ -5,7 +5,8 @@ entity Country {
 
 entity State {
 	name String,
-    acronym String
+    acronym String,
+    active Boolean
 }
 
 entity City {
@@ -17,6 +18,8 @@ entity Address {
 	street String,
     number String,
     zipcode String,
+    district String,
+    complement String
 }
 
 entity Phone {
@@ -29,15 +32,15 @@ enum PhoneType {
 	HOME, PROFESSIONAL, CELLULAR, OTHER
 }
 
-relationship OneToMany {
-	City{city} to Address,
-    State{state} to City,
-    Country{country} to State
+relationship ManyToOne {
+	Address{city} to City,
+    City{state} to State,
+    State{country} to Country
 }
 
 dto * with mapstruct
 
 service * with serviceClass
 
-paginate * with pager
+paginate * with pagination
 
