@@ -494,7 +494,7 @@ _%>
         <%= entityClass %>DTO <%= entityInstance %>DTO = <%= entityInstance %>Mapper.toDto(updated<%= entityClass %>);
         <%_ } _%>
 
-        rest<%= entityClass %>MockMvc.perform(put("/api/<%= entityApiUrl %>")
+        rest<%= entityClass %>MockMvc.perform(put("/api/<%= entityApiUrl %>/{id}", updated<%= entityClass %>.getId())
             .contentType(TestUtil.APPLICATION_JSON_UTF8)
             .content(TestUtil.convertObjectToJsonBytes(<% if (dto === 'mapstruct') { %><%= entityInstance %>DTO<% } else { %>updated<%= entityClass %><% } %>)))
             .andExpect(status().isOk());
@@ -529,7 +529,7 @@ _%>
         <%= entityClass %>DTO <%= entityInstance %>DTO = <%= entityInstance %>Mapper.toDto(<%= entityInstance %>);<% } %>
 
         // If the entity doesn't have an ID, it will be created instead of just being updated
-        rest<%= entityClass %>MockMvc.perform(put("/api/<%= entityApiUrl %>")
+        rest<%= entityClass %>MockMvc.perform(put("/api/<%= entityApiUrl %>/{id}", "NOPE")
             .contentType(TestUtil.APPLICATION_JSON_UTF8)
             .content(TestUtil.convertObjectToJsonBytes(<%= entityInstance %><% if (dto === 'mapstruct') { %>DTO<% } %>)))
             .andExpect(status().isCreated());

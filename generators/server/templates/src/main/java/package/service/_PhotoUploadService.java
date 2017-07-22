@@ -70,7 +70,7 @@ public class PhotoUploadService {
     //    @ConditionalOnExpression("#{environment.acceptsProfiles('" + Constants.SPRING_PROFILE_SCHEDULED + "')}")
     @Scheduled(cron = "0 1 * * * *")
     public void uploadPhotos() {
-        List<Photo> photos = photoRepository.findByFileIsNotNull();
+        List<Photo> photos = photoRepository.findByImageIsNotNull();
         if (photos != null && !photos.isEmpty()) {
             photos.forEach(p -> processPhoto(p, true));
         }
@@ -87,7 +87,7 @@ public class PhotoUploadService {
 
     @Async
     public void uploadPhotosAsync() {
-        List<Photo> photos = photoRepository.findByFileIsNotNull();
+        List<Photo> photos = photoRepository.findByImageIsNotNull();
         if (photos != null && !photos.isEmpty()) {
             photos.forEach(p -> processPhoto(p, true));
         }
@@ -132,12 +132,12 @@ public class PhotoUploadService {
         Photo photo = photoRepository.findOne(photoToUpload.getId()).createUuid();
 
         log.info("Processing photos from async service...");
-        if (photo.getFile() == null) {
+        if (photo.getImage() == null) {
             return;
         }
 
         log.info("Reading image...");
-        ByteArrayInputStream stream = new ByteArrayInputStream(photo.getFile());
+        ByteArrayInputStream stream = new ByteArrayInputStream(photo.getImage());
         BufferedImage image = null;
         try {
             image = ImageIO.read(stream);
