@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "state",
+            "otherEntityName": "state",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20170717170701",
+    "entityTableName": "city",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass"
+}

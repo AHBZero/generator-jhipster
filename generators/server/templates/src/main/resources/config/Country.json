@@ -1,0 +1,19 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "acronym",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170717170659",
+    "entityTableName": "country",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass"
+}

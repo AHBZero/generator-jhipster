@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "areaCode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "number",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "PhoneType",
+            "fieldValues": "HOME,PROFESSIONAL,CELLULAR,OTHER"
+        }
+    ],
+    "changelogDate": "20170717170703",
+    "entityTableName": "phone",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass"
+}

@@ -380,6 +380,7 @@ function writeFiles() {
                     const enumInfo = {
                         enumName: fieldType,
                         enumValues: field.fieldValues.split(',').join(', '),
+                        enumValuesFormatted: field.fieldValues.split(',').join(',\n'),
                         enumInstance: field.enumInstance,
                         angularAppName: this.angularAppName,
                         enums: field.fieldValues.replace(/\s/g, '').split(','),

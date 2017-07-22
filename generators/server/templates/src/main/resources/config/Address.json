@@ -1,0 +1,50 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "city",
+            "otherEntityName": "city",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "selectize": true,
+            "selectizeRender": false,
+            "selectizeCreate": false,
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "street",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "number",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "zipcode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "district",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "complement",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170717170702",
+    "entityTableName": "address",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass"
+}

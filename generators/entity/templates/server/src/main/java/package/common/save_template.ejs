@@ -33,4 +33,4 @@ if (!viaService) {
         <%= returnPrefix %> <%= entityInstance %>Repository.save(<%= entityInstance %>);<% } if (searchEngine === 'elasticsearch') { %>
         <%= entityInstance %>SearchRepository.save(<%= resultEntity %>);<% if (returnDirectly) { %>
         return result;<% }}} else { %>
-        <%= returnPrefix %> <%= entityInstance %>Service.update(<%= instanceName %>);<% } %>
+        <%= returnPrefix %> <%= entityInstance %>Service.save(<%= instanceName %>);<% } %>

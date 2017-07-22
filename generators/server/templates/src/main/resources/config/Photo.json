@@ -1,0 +1,48 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "uuid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "thumbnail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "thumbnailName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "medium",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mediumName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "original",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "originalName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "processed",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "image",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image"
+        }
+    ],
+    "changelogDate": "20170717222445",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "photo",
+    "pagination": "pagination"
+}

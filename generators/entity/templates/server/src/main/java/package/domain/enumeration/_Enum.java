@@ -19,5 +19,28 @@
 package <%=packageName%>.domain.enumeration;
 
 public enum <%= enumName %> {
-    <%= enumValues %>
+
+    <%= enumValuesFormatted %>;
+
+    @JsonCreator
+    public static <%= enumName %> findByValue(String value) {
+        for (<%= enumName %> p : values()) {
+            if (p.getValue().equalsIgnoreCase(value)) {
+                return p;
+            }
+        }
+        if (StringUtils.isNumeric(value) && NumberUtils.isParsable(value)) {
+            Integer ordinal = NumberUtils.toInt(value);
+            if (ordinal < values().length) {
+                return values()[ordinal];
+            }
+        }
+
+        return null;
+    }
+
+    @JsonValue
+    public String getValue() {
+        return this.name();
+    }
 }

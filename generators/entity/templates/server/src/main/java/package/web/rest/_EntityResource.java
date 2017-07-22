@@ -104,7 +104,7 @@ public class <%= entityClass %>Resource {
         log.debug("REST request to update <%= entityClass %> : {}", <%= instanceName %>);
         if (<%= instanceName %>.getId() == null || id == null) {
             return create<%= entityClass %>(<%= instanceName %>);
-        }<%- include('../../common/save_template', {viaService: viaService, returnDirectly: false}); -%>
+        }<%- include('../../common/update_template', {viaService: viaService, returnDirectly: false}); -%>
         return ResponseEntity.ok()
             .headers(HeaderUtil.createEntityUpdateAlert(ENTITY_NAME, <%= instanceName %>.getId()))
             .body(result);
