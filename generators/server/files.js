@@ -212,11 +212,11 @@ function writeFiles() {
             this.template(`${SERVER_MAIN_SRC_DIR}package/security/_SecurityUtils.java`, `${javaDir}security/SecurityUtils.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthoritiesConstants.java`, `${javaDir}security/AuthoritiesConstants.java`);
 
-            if (this.authenticationType === 'jwt') {
+            // if (this.authenticationType === 'jwt') {
                 this.template(`${SERVER_MAIN_SRC_DIR}package/security/jwt/_TokenProvider.java`, `${javaDir}security/jwt/TokenProvider.java`);
                 this.template(`${SERVER_MAIN_SRC_DIR}package/security/jwt/_JWTConfigurer.java`, `${javaDir}security/jwt/JWTConfigurer.java`);
                 this.template(`${SERVER_MAIN_SRC_DIR}package/security/jwt/_JWTFilter.java`, `${javaDir}security/jwt/JWTFilter.java`);
-            }
+            // }
 
             /* Skip the code below for --skip-user-management */
             if (this.skipUserManagement) return;
@@ -613,11 +613,11 @@ function writeFiles() {
 
             this.template(`${SERVER_TEST_SRC_DIR}package/web/rest/_AccountResourceIntTest.java`, `${testDir}web/rest/AccountResourceIntTest.java`);
             this.template(`${SERVER_TEST_SRC_DIR}package/security/_SecurityUtilsUnitTest.java`, `${testDir}security/SecurityUtilsUnitTest.java`);
-            if (this.authenticationType === 'jwt') {
+            // if (this.authenticationType === 'jwt') {
                 this.template(`${SERVER_TEST_SRC_DIR}package/security/jwt/_JWTFilterTest.java`, `${testDir}security/jwt/JWTFilterTest.java`);
                 this.template(`${SERVER_TEST_SRC_DIR}package/security/jwt/_TokenProviderTest.java`, `${testDir}security/jwt/TokenProviderTest.java`);
                 this.template(`${SERVER_TEST_SRC_DIR}package/web/rest/_UserJWTControllerIntTest.java`, `${testDir}web/rest/UserJWTControllerIntTest.java`);
-            }
+            // }
 
             if (this.databaseType === 'sql' || this.databaseType === 'mongodb') {
                 this.template(`${SERVER_TEST_SRC_DIR}package/repository/_CustomAuditEventRepositoryIntTest.java`, `${testDir}repository/CustomAuditEventRepositoryIntTest.java`);

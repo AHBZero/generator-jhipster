@@ -324,7 +324,7 @@ dependencies {
     <%_ if (websocket === 'spring-websocket') { _%>
     compile "org.springframework.boot:spring-boot-starter-websocket"
     <%_ } _%>
-    compile "org.springframework.boot:spring-boot-starter-thymeleaf"
+    //compile "org.springframework.boot:spring-boot-starter-thymeleaf"
     <%_ if (databaseType === 'cassandra' || applicationType === 'gateway') { _%>
     compile "com.google.guava:guava:18.0"
     compile "com.datastax.cassandra:cassandra-driver-extras:" + dependencyManagement.managedVersions["com.datastax.cassandra:cassandra-driver-core"]
@@ -467,6 +467,16 @@ dependencies {
     compile("com.vividsolutions:jts:1.13") {
         exclude module: 'xercesImpl'
     }
+
+    compile group: 'br.com.caelum.stella', name: 'caelum-stella-core', version: '2.1.2'
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.7.0'
+
+
+    compile group: 'com.querydsl', name: 'querydsl-jpa', version: '4.1.4'
+    compile group: 'org.thymeleaf', name: 'thymeleaf', version: '3.0.0.RELEASE'
+    compile group: 'org.thymeleaf', name: 'thymeleaf-spring4', version: '3.0.0.RELEASE'
+    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time', version: '3.0.0.RELEASE'
+
 
 
 }
