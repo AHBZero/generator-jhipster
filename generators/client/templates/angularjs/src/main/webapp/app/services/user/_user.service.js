@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .factory('User', User);
 
+    /** @ngInject **/
     function User ($resource) {
         var service = $resource(<% if(authenticationType === 'uaa') { %>'<%= uaaBaseName.toLowerCase() %>/api/users/:login'<%} else { %>'api/users/:login'<% } %>, {}, {
             'query': {method: 'GET', isArray: true},

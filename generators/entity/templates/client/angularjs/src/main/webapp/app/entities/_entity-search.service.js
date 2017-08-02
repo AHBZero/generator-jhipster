@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .factory('<%= entityClass %>Search', <%= entityClass %>Search);
 
+    /** @ngInject **/
     function <%= entityClass %>Search($resource) {
         var resourceUrl = <% if (applicationType === 'gateway' && locals.microserviceName) {%> '<%= microserviceName.toLowerCase() %>/' +<% } %> 'api/_search/<%= entityApiUrl %>/:id';
 

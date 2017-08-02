@@ -40,6 +40,7 @@
         ])
         .run(run);
 
+    /** @ngInject **/
     function run(stateHandler<% if (enableTranslation) { %>, translationHandler<% } %>) {
         stateHandler.initialize();<% if (enableTranslation) { %>
         translationHandler.initialize();<% } %>

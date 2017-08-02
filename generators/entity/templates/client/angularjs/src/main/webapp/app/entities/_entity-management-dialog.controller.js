@@ -24,6 +24,7 @@
         .module('<%=angularAppName%>')
         .controller('<%= entityAngularName %>ManageController', <%= entityAngularName %>ManageController);
 
+    /** @ngInject **/
     function <%= entityAngularName %>ManageController ($stateParams, previousState, $state<% if (fieldsContainOwnerOneToOne) { %>, $q<% } %><% if (fieldsContainBlob) { %>, DataUtils<% } %>, entity, <%= entityClass %><% for (idx in differentTypes) { if (differentTypes[idx] !== entityClass) {%>, <%= differentTypes[idx] %><% } } %>) {
         var vm = this;
 

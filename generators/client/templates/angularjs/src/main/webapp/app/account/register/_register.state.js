@@ -25,6 +25,7 @@
 
     stateConfig.$inject = ['$stateProvider'];
 
+    /** @ngInject **/
     function stateConfig($stateProvider) {
         $stateProvider.state('register', {
             parent: 'account',

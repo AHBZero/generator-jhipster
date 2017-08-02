@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .controller('<%= entityAngularName %>DetailController', <%= entityAngularName %>DetailController);
 
+    /** @ngInject **/
     function <%= entityAngularName %>DetailController($scope, $rootScope, $stateParams, previousState<% if (fieldsContainBlob) { %>, DataUtils<% } %>, entity<% for (idx in differentTypes) { %>, <%= differentTypes[idx] %><% } %>) {
         var vm = this;
 

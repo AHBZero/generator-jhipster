@@ -25,7 +25,7 @@
 
     stateConfig.$inject = ['$stateProvider'];
 
-    function stateConfig($stateProvider) {
+    /** @ngInject **/  function stateConfig($stateProvider) {
         $stateProvider.state('logs', {
             parent: 'admin',
             url: '/logs',

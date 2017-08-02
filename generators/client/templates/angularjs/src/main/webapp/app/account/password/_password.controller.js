@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .controller('PasswordController', PasswordController);
 
+    /** @ngInject **/
     function PasswordController (Auth, Principal) {
         var vm = this;
 

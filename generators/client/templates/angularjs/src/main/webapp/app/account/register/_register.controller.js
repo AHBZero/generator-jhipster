@@ -23,7 +23,7 @@
         .module('<%=angularAppName%>')
         .controller('RegisterController', RegisterController);
 
-
+    /** @ngInject **/
     function RegisterController (<% if (enableTranslation){ %>$translate, <% } %>$timeout, Auth, LoginService) {
         var vm = this;
 

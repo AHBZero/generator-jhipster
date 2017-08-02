@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .provider('AlertService', AlertService);
 
+    /** @ngInject **/
     function AlertService () {
         this.toast = false;
         /*jshint validthis: true */

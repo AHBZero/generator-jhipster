@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .controller('<%= entityAngularName %>Controller', <%= entityAngularName %>Controller);
 
+    /** @ngInject **/
     function <%= entityAngularName %>Controller(<% if (pagination === 'pagination' || pagination === 'pager') { %>$state, <% } %><% if (fieldsContainBlob) { %>DataUtils, <% } %><%= entityClass %><% if (searchEngine === 'elasticsearch') { %>, <%= entityClass %>Search<% } %><% if (pagination !== 'no') { %>, ParseLinks, AlertService, paginationConstants<% } %> <%_ if (pagination === 'pager' || pagination === 'pagination'){ %>, pagingParams<% } %>) {
 
         var vm = this;

@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .controller('HomeController', HomeController);
 
+    /** @ngInject **/
     function HomeController ($scope, Principal, LoginService, $state) {
         var vm = this;
 

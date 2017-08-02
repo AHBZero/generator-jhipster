@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .config(stateConfig);
 
+    /** @ngInject **/
     function stateConfig($stateProvider) {
         $stateProvider
             .state('error', {

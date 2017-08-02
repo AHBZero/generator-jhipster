@@ -4,6 +4,7 @@
     angular.module('<%=angularAppName%>')
         .controller('NewLoginController', NewLoginController);
 
+    /** @ngInject **/
     function NewLoginController($rootScope, $state, $timeout, Auth, Principal) {
         var vm = this;
 
@@ -17,7 +18,7 @@
         vm.requestResetPassword = requestResetPassword;
         vm.isLoginWhatsapp = false;
 
-        function login() {
+        function login(event) {
             event.preventDefault();
 
             Auth.login({

@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .controller('UserManagementDeleteController', UserManagementDeleteController);
 
+    /** @ngInject **/
     function UserManagementDeleteController ($uibModalInstance, entity, User) {
         var vm = this;
 

@@ -25,7 +25,7 @@
 
     stateConfig.$inject = ['$stateProvider'];
 
-    function stateConfig($stateProvider) {
+    /** @ngInject **/  function stateConfig($stateProvider) {
         $stateProvider.state('social-register', {
             parent: 'account',
             url: '/social-register/:provider?{success:boolean}',

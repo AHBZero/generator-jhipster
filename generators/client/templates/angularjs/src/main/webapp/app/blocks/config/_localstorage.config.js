@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .config(localStorageConfig);
 
+    /** @ngInject **/
     function localStorageConfig($localStorageProvider, $sessionStorageProvider, $sceProvider) {
         $localStorageProvider.setKeyPrefix('<%=angularAppName%>-');
         $sessionStorageProvider.setKeyPrefix('<%=angularAppName%>-');

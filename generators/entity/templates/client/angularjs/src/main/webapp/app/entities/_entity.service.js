@@ -27,6 +27,7 @@ _%>
         .module('<%=angularAppName%>')
         .factory('<%= entityClass %>', <%= entityClass %>);
 
+    /** @ngInject **/
     function <%= entityClass %> ($resource<% if (hasDate) { %>, DateUtils<% } %>) {
         var resourceUrl = <% if (applicationType === 'gateway' && locals.microserviceName) {%> '<%= microserviceName.toLowerCase() %>/' +<% } %> 'api/<%= entityApiUrl %>/:id/:action';
 

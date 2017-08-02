@@ -23,6 +23,7 @@
         .module('<%=angularAppName%>')
         .controller('<%= entityAngularName %>DeleteController',<%= entityAngularName %>DeleteController);
 
+    /** @ngInject **/
     function <%= entityAngularName %>DeleteController($uibModalInstance, entity, <%= entityClass %>) {
         var vm = this;
 
