@@ -502,7 +502,7 @@ function askForField(done) {
                     name: '[BETA] Blob'
                 },
                 {
-                    value: 'point',
+                    value: 'Point',
                     name: '[BETA] JTS Point'
                 }
             ],

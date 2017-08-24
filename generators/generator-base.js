@@ -1751,6 +1751,7 @@ module.exports = class extends PrivateBase {
      * get the java main class name.
      */
     getMainClassName() {
+      console.log(3);
         const main = _.upperFirst(this.getAngularAppName());
         const acceptableForJava = new RegExp('^[A-Z][a-zA-Z0-9_]*$');
 

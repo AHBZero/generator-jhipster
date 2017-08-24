@@ -249,6 +249,7 @@ module.exports = JhipsterClientGenerator.extend({
         configureGlobal() {
             // Application name modified, using each technology's conventions
             this.camelizedBaseName = _.camelCase(this.baseName);
+            console.log(1);
             this.angularAppName = this.getAngularAppName();
             this.angularXAppName = this.getAngularXAppName();
             this.capitalizedBaseName = _.upperFirst(this.baseName);

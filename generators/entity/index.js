@@ -161,6 +161,8 @@ module.exports = EntityGenerator.extend({
                 }
             }
 
+            this.log(chalk.green(`\nFound the ${this.filename} configuration file, entity can be automatically generated!\n`));
+
             this.skipClient = this.applicationType === 'microservice' || this.options['skip-client'] || this.config.get('skipClient');
             this.skipServer = this.options['skip-server'] || this.config.get('skipServer');
 

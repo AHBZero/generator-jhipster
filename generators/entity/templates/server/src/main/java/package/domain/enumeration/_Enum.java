@@ -18,6 +18,11 @@
 -%>
 package <%=packageName%>.domain.enumeration;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
+
 public enum <%= enumName %> {
 
     <%= enumValuesFormatted %>;
