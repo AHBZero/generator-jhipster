@@ -11,7 +11,7 @@ import java.util.List;
 @SuppressWarnings("unused")
 public interface PhotoRepository extends JpaRepository<Photo, Long> {
 
-    List<Photo> findByImageIsNotNull();
+    List<Photo> findByFileIsNotNull();
 
     List<Photo> findByProcessedFalse();
 

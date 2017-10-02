@@ -70,7 +70,7 @@ public class PhotoUploadService {
     //    @ConditionalOnExpression("#{environment.acceptsProfiles('" + Constants.SPRING_PROFILE_SCHEDULED + "')}")
     @Scheduled(cron = "0 1 * * * *")
     public void uploadPhotos() {
-        List<Photo> photos = photoRepository.findByImageIsNotNull();
+        List<Photo> photos = photoRepository.findByFileIsNotNull();
         if (photos != null && !photos.isEmpty()) {
             photos.forEach(p -> processPhoto(p, true));
         }
@@ -87,7 +87,7 @@ public class PhotoUploadService {
 
     @Async
     public void uploadPhotosAsync() {
-        List<Photo> photos = photoRepository.findByImageIsNotNull();
+        List<Photo> photos = photoRepository.findByFileIsNotNull();
         if (photos != null && !photos.isEmpty()) {
             photos.forEach(p -> processPhoto(p, true));
         }
@@ -132,12 +132,12 @@ public class PhotoUploadService {
         Photo photo = photoRepository.findOne(photoToUpload.getId()).createUuid();
 
         log.info("Processing photos from async service...");
-        if (photo.getImage() == null) {
+        if (photo.getFile() == null) {
             return;
         }
 
         log.info("Reading image...");
-        ByteArrayInputStream stream = new ByteArrayInputStream(photo.getImage());
+        ByteArrayInputStream stream = new ByteArrayInputStream(photo.getFile());
         BufferedImage image = null;
         try {
             image = ImageIO.read(stream);
@@ -167,7 +167,7 @@ public class PhotoUploadService {
             ImageIO.write(image, "png", destFile);
             s3client.putObject(new PutObjectRequest(bucketName + "/" + photo.getId(), photo.getOriginalName(), destFile));
 
-            photo.setImage(null);
+            photo.setFile(null);
 
             photo.setProcessed(true);
             photoRepository.save(photo);

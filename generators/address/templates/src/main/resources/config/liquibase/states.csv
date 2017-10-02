@@ -1,28 +1,28 @@
 id;name;acronym;country_id;created_by;active
-1AC;Acre;AC;1;system;true
-2AL;Alagoas;AL;1;system;true
-3AM;Amazonas;AM;1;system;true
-4AP;Amapá;AP;1;system;true
-5BA;Bahia;BA;1;system;true
-6CE;Ceará;CE;1;system;true
-7DF;Distrito Federal;DF;1;system;true
-8ES;Espírito Santo;ES;1;system;true
-9GO;Goiás;GO;1;system;true
-10MA;Maranhão;MA;1;system;true
-11MG;Minas Gerais;MG;1;system;true
-12MS;Mato Grosso do Sul;MS;1;system;true
-13MT;Mato Grosso;MT;1;system;true
-14PA;Pará;PA;1;system;true
-15PB;Paraíba;PB;1;system;true
-16PE;Pernambuco;PE;1;system;true
-17PI;Piauí;PI;1;system;true
-18PR;Paraná;PR;1;system;true
-19RJ;Rio de Janeiro;RJ;1;system;true
-20RN;Rio Grande do Norte;RN;1;system;true
-21RO;Rondônia;RO;1;system;true
-22RR;Roraima;RR;1;system;true
-23RS;Rio Grande do Sul;RS;1;system;true
-24SC;Santa Catarina;SC;1;system;true
-25SE;Sergipe;SE;1;system;true
-26SP;São Paulo;SP;1;system;true
-27TO;Tocantins;TO;1;system;true
+1AC;Acre;AC;55BR;system;true
+2AL;Alagoas;AL;55BR;system;true
+3AM;Amazonas;AM;55BR;system;true
+4AP;Amapá;AP;55BR;system;true
+5BA;Bahia;BA;55BR;system;true
+6CE;Ceará;CE;55BR;system;true
+7DF;Distrito Federal;DF;55BR;system;true
+8ES;Espírito Santo;ES;55BR;system;true
+9GO;Goiás;GO;55BR;system;true
+10MA;Maranhão;MA;55BR;system;true
+11MG;Minas Gerais;MG;55BR;system;true
+12MS;Mato Grosso do Sul;MS;55BR;system;true
+13MT;Mato Grosso;MT;55BR;system;true
+14PA;Pará;PA;55BR;system;true
+15PB;Paraíba;PB;55BR;system;true
+16PE;Pernambuco;PE;55BR;system;true
+17PI;Piauí;PI;55BR;system;true
+18PR;Paraná;PR;55BR;system;true
+19RJ;Rio de Janeiro;RJ;55BR;system;true
+20RN;Rio Grande do Norte;RN;55BR;system;true
+21RO;Rondônia;RO;55BR;system;true
+22RR;Roraima;RR;55BR;system;true
+23RS;Rio Grande do Sul;RS;55BR;system;true
+24SC;Santa Catarina;SC;55BR;system;true
+25SE;Sergipe;SE;55BR;system;true
+26SP;São Paulo;SP;55BR;system;true
+27TO;Tocantins;TO;55BR;system;true

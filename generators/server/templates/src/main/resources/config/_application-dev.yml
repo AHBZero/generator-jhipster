@@ -78,32 +78,32 @@ spring:
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
         <%_ if (devDatabaseType === 'mysql') { _%>
-        url: jdbc:mysql://localhost:3306/<%= baseName %>?useUnicode=true&characterEncoding=utf8&useSSL=false
-        username: <%= baseName %>
+        url: jdbc:mysql://localhost:3306/<%= baseName.toLowerCase() %>?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: <%= baseName.toLowerCase() %>
         password: password
         <%_ } else if (devDatabaseType === 'mariadb') { _%>
-        url: jdbc:mariadb://localhost:3306/<%= baseName %>
+        url: jdbc:mariadb://localhost:3306/<%= baseName.toLowerCase() %>
         username: root
         password:
         <%_ } else if (devDatabaseType === 'postgresql') { _%>
-        url: jdbc:postgresql://localhost:5432/<%= baseName %>
-        username: <%= baseName %>
+        url: jdbc:postgresql://localhost:5432/<%= baseName.toLowerCase() %>
+        username: <%= baseName.toLowerCase() %>
         password:
         <%_ } else if (devDatabaseType === 'oracle') { _%>
         url: jdbc:oracle:thin:@localhost:1521:xe
         username: system
         password: oracle
         <%_ } else if (devDatabaseType === 'mssql') { _%>
-        url: jdbc:sqlserver://localhost:1433;database=<%= baseName %>
+        url: jdbc:sqlserver://localhost:1433;database=<%= baseName.toLowerCase() %>
         username: SA
         password: yourStrong(!)Password
         <%_ } else if (devDatabaseType === 'h2Disk') { _%>
-        url: jdbc:h2:file:./<%= BUILD_DIR %>h2db/db/<%= lowercaseBaseName %>;DB_CLOSE_DELAY=-1
-        username: <%= baseName %>
+        url: jdbc:h2:file:./<%= BUILD_DIR %>h2db/db/<%= lowercaseBaseName.toLowerCase() %>;DB_CLOSE_DELAY=-1
+        username: <%= baseName.toLowerCase() %>
         password:
         <%_ } else if (devDatabaseType === 'h2Memory') { _%>
-        url: jdbc:h2:mem:<%= lowercaseBaseName %>;DB_CLOSE_DELAY=-1
-        username: <%= baseName %>
+        url: jdbc:h2:mem:<%= lowercaseBaseName.toLowerCase() %>;DB_CLOSE_DELAY=-1
+        username: <%= baseName.toLowerCase() %>
         password:
         <%_ } _%>
         <%_ if (devDatabaseType === 'mysql' || devDatabaseType === 'mariadb' || devDatabaseType === 'mssql') { _%>
