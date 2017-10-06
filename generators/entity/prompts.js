@@ -296,7 +296,6 @@ function askForDTO() {
                     value: 'no',
                     name: 'No, use the entity directly'
                 }
-
             ],
             default: 0
         }
@@ -334,10 +333,28 @@ function askForService() {
 
             ],
             default: 0
+        },
+        {
+            when: response => response.service !== 'no',
+            type: 'list',
+            name: 'facadeForService',
+            message: 'Do you use Facade class?',
+            choices: [
+                {
+                    value: 'facadeClass',
+                    name: 'Yes, generate the entity directly in service and without transactions'
+                },
+                {
+                    value: 'no',
+                    name: 'No, use transactions directly in service class'
+                }
+            ],
+            default: 0
         }
     ];
     this.prompt(prompts).then((props) => {
         this.service = props.service;
+        this.facadeForService = props.facadeForService;
         done();
     });
 }

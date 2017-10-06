@@ -17,9 +17,9 @@
  limitations under the License.
 -%>
 package <%=packageName%>.service;
-<%  const instanceType = (dto === 'mapstruct') ? entityClass + 'DTO' : entityClass;
-    const instanceName = (dto === 'mapstruct') ? entityInstance + 'DTO' : entityInstance; %>
-<%_ if (dto === 'mapstruct') { _%>
+<%  const instanceType = (dto === 'mapstruct' && facadeForService === 'no') ? entityClass + 'DTO' : entityClass;
+    const instanceName = (dto === 'mapstruct' && facadeForService === 'no') ? entityInstance + 'DTO' : entityInstance; %>
+<%_ if (dto === 'mapstruct' && facadeForService === 'no') { _%>
 import <%=packageName%>.service.dto.<%= entityClass %>DTO;
 <%_ } else { _%>
 import <%=packageName%>.domain.<%= entityClass %>;

@@ -252,6 +252,7 @@ module.exports = EntityGenerator.extend({
         this.changelogDate = this.fileData.changelogDate;
         this.dto = this.fileData.dto;
         this.service = this.fileData.service;
+        this.facadeForService = this.fileData.facadeForService;
         this.fluentMethods = this.fileData.fluentMethods;
         this.pagination = this.fileData.pagination;
         this.searchEngine = this.fileData.searchEngine || this.searchEngine;
@@ -402,6 +403,10 @@ module.exports = EntityGenerator.extend({
                 this.warning(`service is missing in .jhipster/${this.name}.json, using no as fallback`);
                 this.service = 'no';
             }
+            if (_.isUndefined(this.facadeForService)) {
+                this.warning(`facadeForService is missing in .jhipster/${this.name}.json, using no as fallback`);
+                this.facadeForService = 'no';
+            }
             if (_.isUndefined(this.pagination)) {
                 if (this.databaseType === 'sql' || this.databaseType === 'mongodb') {
                     this.warning(`pagination is missing in .jhipster/${this.name}.json, using no as fallback`);
@@ -427,6 +432,7 @@ module.exports = EntityGenerator.extend({
             this.data.changelogDate = this.changelogDate;
             this.data.dto = this.dto;
             this.data.service = this.service;
+            this.data.facadeForService = this.facadeForService;
             this.data.entityTableName = this.entityTableName;
             if (this.databaseType === 'sql' || this.databaseType === 'mongodb') {
                 this.data.pagination = this.pagination;

@@ -118,7 +118,39 @@ const serverFiles = {
             }]
         },
         {
-            condition: generator => generator.dto === 'mapstruct',
+            condition: generator => generator.facadeForService === 'facadeClass',
+            path: SERVER_MAIN_SRC_DIR,
+            templates: [
+                {
+                    file: 'package/facade/_EntityFacade.java',
+                    renameTo: generator => `${generator.packageFolder}/facade/${generator.entityClass}Facade.java`
+                }
+            ]
+        },
+        {
+            condition: generator => generator.dto === 'mapstruct' && generator.facadeForService === 'facadeClass',
+            path: SERVER_MAIN_SRC_DIR,
+            templates: [
+                {
+                    file: 'package/facade/dto/_EntityDTO.java',
+                    renameTo: generator => `${generator.packageFolder}/facade/dto/${generator.entityClass}DTO.java`
+                },
+                {
+                    file: 'package/facade/dto/_EntitySimpleDTO.java',
+                    renameTo: generator => `${generator.packageFolder}/facade/dto/${generator.entityClass}SimpleDTO.java`
+                },
+                {
+                    file: 'package/facade/mapper/_BaseEntityMapper.java',
+                    renameTo: generator => `${generator.packageFolder}/facade/mapper/EntityMapper.java`
+                },
+                {
+                    file: 'package/facade/mapper/_EntityMapper.java',
+                    renameTo: generator => `${generator.packageFolder}/facade/mapper/${generator.entityClass}Mapper.java`
+                }
+            ]
+        },
+        {
+            condition: generator => generator.dto === 'mapstruct' && generator.facadeForService !== 'facadeClass',
             path: SERVER_MAIN_SRC_DIR,
             templates: [
                 {

@@ -19,7 +19,7 @@
 <%_ if (!viaService) { _%>
 
     private final <%= entityClass %>Repository <%= entityInstance %>Repository;
-    <%_ if (dto === 'mapstruct') { _%>
+    <%_ if (dto === 'mapstruct' && facadeForService === 'no') { _%>
 
     private final <%= entityClass %>Mapper <%= entityInstance %>Mapper;
     <%_ } _%>
@@ -29,19 +29,19 @@
     <%_ } _%>
 <%_  } else { _%>
 
-    private final <%= entityClass %><% if(viaFacade) {%>Facade <% } else { %>Service <% } %><%= entityInstance %><% if(viaFacade) {%>Facade<% } else { %>Service<% } %>;
+    private final <%= entityClass %>Service <%= entityInstance %>Service;
 <%_ } _%>
 
-    public <%= constructorName %>(<% if (!viaService) { %><%= entityClass %>Repository <%= entityInstance %>Repository<% if (dto === 'mapstruct') { %>, <%= entityClass %>Mapper <%= entityInstance %>Mapper<% } %><% if (searchEngine === 'elasticsearch') { %>, <%= entityClass %>SearchRepository <%= entityInstance %>SearchRepository<% } %><%  } else { %><%= entityClass %><% if(viaFacade) {%>Facade <% } else { %>Service <% } %><%= entityInstance %><% if(viaFacade) {%>Facade<% } else { %>Service<% } %><% } %>) {
+    public <%= constructorName %>(<% if (!viaService) { %><%= entityClass %>Repository <%= entityInstance %>Repository<% if (dto === 'mapstruct' && facadeForService === 'no') { %>, <%= entityClass %>Mapper <%= entityInstance %>Mapper<% } %><% if (searchEngine === 'elasticsearch') { %>, <%= entityClass %>SearchRepository <%= entityInstance %>SearchRepository<% } %><%  } else { %><%= entityClass %>Service <%= entityInstance %>Service<% } %>) {
         <%_ if (!viaService) { _%>
         this.<%= entityInstance %>Repository = <%= entityInstance %>Repository;
-            <%_ if (dto === 'mapstruct') { _%>
+            <%_ if (dto === 'mapstruct' && facadeForService === 'no') { _%>
         this.<%= entityInstance %>Mapper = <%= entityInstance %>Mapper;
             <%_ } _%>
             <%_ if (searchEngine === 'elasticsearch') { _%>
         this.<%= entityInstance %>SearchRepository = <%= entityInstance %>SearchRepository;
             <%_ } _%>
         <%_  } else { _%>
-        this.<%= entityInstance %><% if(viaFacade) {%>Facade<% } else { %>Service<% } %> = <%= entityInstance %><% if(viaFacade) {%>Facade<% } else { %>Service<% } %>;
+        this.<%= entityInstance %>Service = <%= entityInstance %>Service;
         <%_ } _%>
     }

@@ -16,13 +16,22 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -%>
-package <%=packageName%>.repository.search;
+package <%=packageName%>.facade.mapper;
 
-import <%=packageName%>.domain.<%=entityClass%>;
-import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;<% if (databaseType === 'cassandra') { %>
+import org.mapstruct.Mapping;
+import java.util.List;
 
-import java.util.UUID;<% } %>
+public interface EntityMapper <D, E> {
 
-public interface <%=entityClass%>SearchRepository extends ElasticsearchRepository<<%=entityClass%>, <% if (databaseType === 'sql' || databaseType === 'mongodb') { %>String<% } %><% if (databaseType === 'cassandra') { %>UUID<% } %>> {
-    void deleteById(String id);
+    @Mapping(target = "createdBy", ignore = true)
+    @Mapping(target = "createdDate", ignore = true)
+    @Mapping(target = "lastModifiedBy", ignore = true)
+    @Mapping(target = "lastModifiedDate", ignore = true)
+    E toEntity(D dto);
+
+    D toDto(E entity);
+
+    List <E> toEntity(List<D> dtoList);
+
+    List <D> toDto(List<E> entityList);
 }

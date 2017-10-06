@@ -29,9 +29,14 @@ import <%=packageName%>.repository.<%= entityClass %>Repository;<% if (searchEng
 import <%=packageName%>.repository.search.<%= entityClass %>SearchRepository;<% }} %>
 import <%=packageName%>.web.rest.util.HeaderUtil;<% if (pagination !== 'no') { %>
 import <%=packageName%>.web.rest.util.PaginationUtil;<% } %>
+<%_ if(facadeForService === 'facadeClass') { _%>
+import <%=packageName%>.facade.<%= entityClass %>Facade;<% } %>
 <%_ if (dto === 'mapstruct') { _%>
+    <%_ if(facadeForService === 'facadeClass') { %>
+import <%=packageName%>.facade.dto.<%= entityClass %>DTO;
+    <%_ } else { %>
 import <%=packageName%>.service.dto.<%= entityClass %>DTO;
-<%_ if (service === 'no') { _%>
+<%_ } if (service === 'no') { _%>
 import <%=packageName%>.service.mapper.<%= entityClass %>Mapper;
 <%_ } } _%>
 <%_ if (pagination !== 'no') { _%>
@@ -62,6 +67,8 @@ import javax.validation.Valid;<% } %>
 import java.net.URI;
 import java.net.URISyntaxException;
 <%_ const viaService = service !== 'no';
+    const viaFacade = facadeForService === 'facadeClass';
+    const isFacade = false;
     if (pagination === 'no' && dto === 'mapstruct' && !viaService && fieldsContainNoOwnerOneToOne === true) { _%>
 import java.util.LinkedList;<% } %>
 import java.util.List;
@@ -82,7 +89,7 @@ public class <%= entityClass %>Resource {
     <%_
     const instanceType = (dto === 'mapstruct') ? entityClass + 'DTO' : entityClass;
     const instanceName = (dto === 'mapstruct') ? entityInstance + 'DTO' : entityInstance;
-    _%><%- include('../../common/inject_template', {viaService: viaService, constructorName: entityClass + 'Resource'}); -%>
+    _%><%- include('../../common/inject_template', {viaFacade: viaFacade, viaService: viaService, constructorName: entityClass + 'Resource'}); -%>
 
     @PostMapping("/<%= entityApiUrl %>")
     @Timed
@@ -91,7 +98,7 @@ public class <%= entityClass %>Resource {
         log.debug("REST request to save <%= entityClass %> : {}", <%= instanceName %>);
         if (<%= instanceName %>.getId() != null) {
             return ResponseEntity.badRequest().headers(HeaderUtil.createFailureAlert(ENTITY_NAME, "idexists", "A new <%= entityInstance %> cannot already have an ID")).body(null);
-        }<%- include('../../common/save_template', {viaService: viaService, returnDirectly: false}); -%>
+        }<%- include('../../common/save_template', {isFacade: isFacade, viaService: viaService, returnDirectly: false}); -%>
         return ResponseEntity.created(new URI("/api/<%= entityApiUrl %>/" + result.getId()))
             .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId()))
             .body(result);
@@ -104,7 +111,7 @@ public class <%= entityClass %>Resource {
         log.debug("REST request to update <%= entityClass %> : {}", <%= instanceName %>);
         if (<%= instanceName %>.getId() == null || id == null) {
             return create<%= entityClass %>(<%= instanceName %>);
-        }<%- include('../../common/update_template', {viaService: viaService, returnDirectly: false}); -%>
+        }<%- include('../../common/update_template', {isFacade: isFacade, viaService: viaService, returnDirectly: false}); -%>
         return ResponseEntity.ok()
             .headers(HeaderUtil.createEntityUpdateAlert(ENTITY_NAME, <%= instanceName %>.getId()))
             .body(result);
@@ -112,13 +119,13 @@ public class <%= entityClass %>Resource {
 
     @GetMapping("/<%= entityApiUrl %>")
     @Timed
-    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})<%- include('../../common/get_all_template', {viaService: viaService}); -%>
+    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})<%- include('../../common/get_all_template', {viaFacade: viaFacade, viaService: viaService}); -%>
 
     @GetMapping("/<%= entityApiUrl %>/{id}")
     @Timed
     @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})
     public ResponseEntity<<%= instanceType %>> get<%= entityClass %>(@PathVariable <%= pkType %> id) {
-        log.debug("REST request to get <%= entityClass %> : {}", id);<%- include('../../common/get_template', {viaService: viaService, returnDirectly:false}); -%>
+        log.debug("REST request to get <%= entityClass %> : {}", id);<%- include('../../common/get_template', {isFacade: isFacade, viaService: viaService, returnDirectly:false}); -%>
         return ResponseUtil.wrapOrNotFound(Optional.ofNullable(<%= instanceName %>));
     }
 
@@ -126,11 +133,11 @@ public class <%= entityClass %>Resource {
     @Timed
     @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})
     public ResponseEntity<Void> delete<%= entityClass %>(@PathVariable <%= pkType %> id) {
-        log.debug("REST request to delete <%= entityClass %> : {}", id);<%- include('../../common/delete_template', {viaService: viaService}); -%>
+        log.debug("REST request to delete <%= entityClass %> : {}", id);<%- include('../../common/delete_template', {isFacade: isFacade, viaService: viaService}); -%>
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id<% if (pkType !== 'String') { %>.toString()<% } %>)).build();
     }<% if (searchEngine === 'elasticsearch') { %>
 
     @GetMapping("/_search/<%= entityApiUrl %>")
     @Timed
-    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})<%- include('../../common/search_template', {viaService: viaService}); -%><% } %>
+    @Secured({AuthoritiesConstants.ADMIN, AuthoritiesConstants.USER})<%- include('../../common/search_template', {isFacade: isFacade, viaService: viaService}); -%><% } %>
 }

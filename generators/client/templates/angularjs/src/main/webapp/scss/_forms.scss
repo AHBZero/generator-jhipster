@@ -71,9 +71,8 @@
   margin: 0 !important;
 
   @media (min-width: $screen-sm-min) {
-    @include transform(translateX(-50%));
     position: relative;
-    left: 50%;
+    left: 15%;
     width: 70%;
   }
 }

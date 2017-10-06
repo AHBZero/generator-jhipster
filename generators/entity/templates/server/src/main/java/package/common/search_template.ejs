@@ -17,8 +17,8 @@
  limitations under the License.
 -%>
 <%_
-    const instanceType = (dto === 'mapstruct') ? entityClass + 'DTO' : entityClass;
-    const instanceName = (dto === 'mapstruct') ? entityInstance + 'DTO' : entityInstance;
+    const instanceType = (dto === 'mapstruct' ) ? entityClass + 'DTO' : entityClass;
+    const instanceName = (dto === 'mapstruct' ) ? entityInstance + 'DTO' : entityInstance;
     const mapper = entityInstance + 'Mapper';
     const entityToDtoReference = mapper + '::' + 'toDto';
     const entityListToDtoListReference = mapper + '.' + 'toDto';
@@ -28,9 +28,9 @@
     <% } if (pagination !== 'no') { %>
     public ResponseEntity<List<<%= instanceType %>>> search<%= entityClassPlural %>(@RequestParam String query, @ApiParam Pageable pageable) {
         log.debug("REST request to search for a page of <%= entityClassPlural %> for query {}", query);<% if (viaService) { %>
-        Page<<%= instanceType %>> page = <%= entityInstance %>Service.search(query, pageable);<% } else { %>
+        Page<<%= instanceType %>> page = <%= entityInstance %><% if(facadeForService === 'facadeClass') { %>Facade<% } else { %>Service<% } %>.search(query, pageable);<% } else { %>
         Page<<%= entityClass %>> page = <%= entityInstance %>SearchRepository.search(queryStringQuery(query), pageable);<% } %>
         HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/<%= entityApiUrl %>");
-        return new ResponseEntity<>(<% if (!viaService && dto === 'mapstruct') { %><%= entityListToDtoListReference %>(page.getContent())<% } else { %>page.getContent()<% } %>, headers, HttpStatus.OK);
+        return new ResponseEntity<>(<% if (!viaService && dto === 'mapstruct' ) { %><%= entityListToDtoListReference %>(page.getContent())<% } else { %>page.getContent()<% } %>, headers, HttpStatus.OK);
     <% } -%>
 }
