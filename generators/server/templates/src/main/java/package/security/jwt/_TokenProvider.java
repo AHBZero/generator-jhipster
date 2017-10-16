@@ -23,7 +23,7 @@ import io.github.jhipster.config.JHipsterProperties;
 import java.util.*;
 import java.util.stream.Collectors;
 import javax.annotation.PostConstruct;
-
+import org.apache.commons.codec.binary.Base64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -42,7 +42,7 @@ public class TokenProvider {
 
     private static final String AUTHORITIES_KEY = "auth";
 
-    private String secretKey;
+    private byte[] secretKey;
 
     private long tokenValidityInMilliseconds;
 
@@ -56,8 +56,7 @@ public class TokenProvider {
 
     @PostConstruct
     public void init() {
-        this.secretKey =
-            jHipsterProperties.getSecurity().getAuthentication().getJwt().getSecret();
+        this.secretKey = Base64.encodeBase64(jHipsterProperties.getSecurity().getAuthentication().getJwt().getSecret().getBytes());
 
         this.tokenValidityInMilliseconds =
             1000 * jHipsterProperties.getSecurity().getAuthentication().getJwt().getTokenValidityInSeconds();

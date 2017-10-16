@@ -1,42 +1,44 @@
 <%#
- Copyright 2013-2017 the original author or authors from the JHipster project.
+    Copyright 2013-2017the original author or authors from the JHipster project.
 
- This file is part of the JHipster project, see https://jhipster.github.io/
- for more information.
+    This file is part of the JHipster project,see https://jhipster.github.io/
+    for more information.
 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
+    Licensed under the Apache License,Version2.0(the"License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-      http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
--%>
-package <%=packageName%>.web.rest.errors;
+    Unless required by applicable law or agreed to in writing,software
+    distributed under the License is distributed on an"AS IS"BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -%>
+    package <%=packageName%>.web.rest.errors;
 
-import java.util.List;
+    import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.core.annotation.AnnotationUtils;
-<%_ if (databaseType !== 'no' && databaseType !== 'cassandra') { _%>
-import org.springframework.dao.ConcurrencyFailureException;
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+    import org.springframework.core.annotation.AnnotationUtils;
+<%_ if(databaseType!=='no'&&databaseType!=='cassandra'){_%>
+    import org.springframework.dao.ConcurrencyFailureException;
+<%_}_%>
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.http.ResponseEntity.BodyBuilder;
+    import org.springframework.security.access.AccessDeniedException;
+    import org.springframework.validation.BindingResult;
+    import <%=packageName%>.service.exceptions.BusinessException;
+    import org.springframework.validation.FieldError;
+<%_ if(this.authenticationType ==='oauth2'){ _%>
+    import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
 <%_ } _%>
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.ResponseEntity.BodyBuilder;
-import org.springframework.security.access.AccessDeniedException;
-import org.springframework.validation.BindingResult;
-import <%=packageName%>.service.exceptions.BusinessException;
-import org.springframework.validation.FieldError;
-import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
-import org.springframework.web.HttpRequestMethodNotSupportedException;
-import org.springframework.web.bind.MethodArgumentNotValidException;
-import org.springframework.web.bind.annotation.*;
+    import org.springframework.web.HttpRequestMethodNotSupportedException;
+    import org.springframework.web.bind.MethodArgumentNotValidException;
+    import org.springframework.web.bind.annotation.*;
 
 /**
  * Controller advice to translate the server side exceptions to client-friendly json structures.
@@ -45,12 +47,12 @@ import org.springframework.web.bind.annotation.*;
 public class ExceptionTranslator {
 
     private final Logger log = LoggerFactory.getLogger(ExceptionTranslator.class);
-<%_ if (databaseType !== 'no' && databaseType !== 'cassandra') { _%>
+<%_ if(databaseType !=='no'&&databaseType !=='cassandra'){ _%>
 
-    @ExceptionHandler(ConcurrencyFailureException.class)
-    @ResponseStatus(HttpStatus.CONFLICT)
-    @ResponseBody
-    public ErrorVM processConcurrencyError(ConcurrencyFailureException ex) {
+        @ExceptionHandler(ConcurrencyFailureException.class)
+        @ResponseStatus(HttpStatus.CONFLICT)
+        @ResponseBody
+        public ErrorVM processConcurrencyError (ConcurrencyFailureException ex){
         return new ErrorVM(ErrorConstants.ERR_CONCURRENCY_FAILURE);
     }
 <%_ } _%>
@@ -117,10 +119,12 @@ public class ExceptionTranslator {
         return builder.body(errorResponse);
     }
 
+    <%_ if(this.authenticationType ==='oauth2'){ _%>
     @ExceptionHandler(OAuth2Exception.class)
-    public ResponseEntity<OAuth2Exception> processOAuth2Exception(OAuth2Exception ex) {
+    public ResponseEntity<OAuth2Exception> processOAuth2Exception (OAuth2Exception ex){
         BodyBuilder builder;
         builder = ResponseEntity.status(HttpStatus.UNAUTHORIZED);
         return builder.body(ex);
     }
+    <%_ } _%>
 }

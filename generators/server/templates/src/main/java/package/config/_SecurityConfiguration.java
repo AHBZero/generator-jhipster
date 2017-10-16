@@ -31,7 +31,9 @@ import io.github.jhipster.config.JHipsterProperties;
 
 import io.github.jhipster.security.Http401UnauthorizedEntryPoint;
 
+<%_ if (authenticationType === 'oauth2') { _%>
 import <%=packageName%>.security.AjaxLogoutSuccessHandler;
+<%_ } _%>
 import <%=packageName%>.security.CustomBasicAuthenticationEntryPoint;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.BeanInitializationException;
@@ -61,8 +63,9 @@ import org.springframework.web.filter.CorsFilter;
 <%_ } _%>
 
 import javax.annotation.PostConstruct;
+<%_ if (authenticationType === 'oauth2') { _%>
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
-
+<%_ } _%>
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)

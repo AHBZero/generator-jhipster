@@ -373,19 +373,20 @@ function writeFiles() {
             this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/sender/_Result.java`, `${javaDir}service/push/sender/Result.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/service/push/sender/_Sender.java`, `${javaDir}service/push/sender/Sender.java`);
             // gedanken
-
-            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AjaxLogoutSuccessHandler.java`, `${javaDir}security/AjaxLogoutSuccessHandler.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthenticationManagerImpl.java`, `${javaDir}security/AuthenticationManagerImpl.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthenticationToken.java`, `${javaDir}security/AuthenticationToken.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthorizationServerTokenServicesImpl.java`, `${javaDir}security/AuthorizationServerTokenServicesImpl.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomAuthenticationKeyGenerator.java`, `${javaDir}security/CustomAuthenticationKeyGenerator.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomBasicAuthenticationEntryPoint.java`, `${javaDir}security/CustomBasicAuthenticationEntryPoint.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomOAuth2AccessToken.java`, `${javaDir}security/CustomOAuth2AccessToken.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomTokenEnhancer.java`, `${javaDir}security/CustomTokenEnhancer.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomTokenGranter.java`, `${javaDir}security/CustomTokenGranter.java`);
-            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_OAuth2RequestFactoryImpl.java`, `${javaDir}security/OAuth2RequestFactoryImpl.java`);
+            this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthenticationToken.java`, `${javaDir}security/AuthenticationToken.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/security/_UserTokenService.java`, `${javaDir}security/UserTokenService.java`);
 
+            if (this.authenticationType !== 'jwt') {
+                this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AjaxLogoutSuccessHandler.java`, `${javaDir}security/AjaxLogoutSuccessHandler.java`);
+                this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthenticationManagerImpl.java`, `${javaDir}security/AuthenticationManagerImpl.java`);
+                this.template(`${SERVER_MAIN_SRC_DIR}package/security/_AuthorizationServerTokenServicesImpl.java`, `${javaDir}security/AuthorizationServerTokenServicesImpl.java`);
+                this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomAuthenticationKeyGenerator.java`, `${javaDir}security/CustomAuthenticationKeyGenerator.java`);
+                this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomOAuth2AccessToken.java`, `${javaDir}security/CustomOAuth2AccessToken.java`);
+                this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomTokenEnhancer.java`, `${javaDir}security/CustomTokenEnhancer.java`);
+                this.template(`${SERVER_MAIN_SRC_DIR}package/security/_CustomTokenGranter.java`, `${javaDir}security/CustomTokenGranter.java`);
+                this.template(`${SERVER_MAIN_SRC_DIR}package/security/_OAuth2RequestFactoryImpl.java`, `${javaDir}security/OAuth2RequestFactoryImpl.java`);
+            }
 
             this.template(`${SERVER_MAIN_SRC_DIR}package/config/_ApplicationProperties.java`, `${javaDir}config/ApplicationProperties.java`);
             this.template(`${SERVER_MAIN_SRC_DIR}package/config/_JacksonConfiguration.java`, `${javaDir}config/JacksonConfiguration.java`);
