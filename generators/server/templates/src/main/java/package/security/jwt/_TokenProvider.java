@@ -42,8 +42,12 @@ public class TokenProvider {
 
     private static final String AUTHORITIES_KEY = "auth";
 
-    private byte[] secretKey;
 
+    <%_ if(this.authenticationType ==='oauth2'){ _%>
+    private String secretKey;
+    <%_ } else { _%>
+    private byte[] secretKey;
+    <%_ } _%>
     private long tokenValidityInMilliseconds;
 
     private long tokenValidityInMillisecondsForRememberMe;
@@ -56,7 +60,12 @@ public class TokenProvider {
 
     @PostConstruct
     public void init() {
+        <%_ if(this.authenticationType ==='oauth2'){ _%>
+        this.secretKey =
+            jHipsterProperties.getSecurity().getAuthentication().getJwt().getSecret();
+        <%_ } else { _%>
         this.secretKey = Base64.encodeBase64(jHipsterProperties.getSecurity().getAuthentication().getJwt().getSecret().getBytes());
+        <%_ } _%>
 
         this.tokenValidityInMilliseconds =
             1000 * jHipsterProperties.getSecurity().getAuthentication().getJwt().getTokenValidityInSeconds();
