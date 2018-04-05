@@ -328,7 +328,7 @@
             <column name="lastModifiedAt" type="timestamp"/>
         </createTable>
 
-        <sql endDelimiter="/" dbms="mssql">
+        <sql endDelimiter="/" dbms="mysql">
             CREATE TRIGGER before_insert_user
             BEFORE INSERT ON user
             FOR EACH ROW
