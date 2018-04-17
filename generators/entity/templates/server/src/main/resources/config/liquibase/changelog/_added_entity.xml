@@ -154,7 +154,8 @@
         <addPrimaryKey columnNames="<%= getPluralColumnName(name) %>_id, <%= getPluralColumnName(relationshipName) %>_id" tableName="<%= joinTableName %>"/>
         <% } %><% } %>
 
-        <sql endDelimiter="/">
+            <sql endDelimiter="/" dbms="<%= prodDatabaseType %>">
+            
             CREATE TRIGGER before_insert_<%= entityTableName %>
             BEFORE INSERT ON <%= entityTableName %>
             FOR EACH ROW
